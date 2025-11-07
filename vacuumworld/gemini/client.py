@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from google.genai import Client
+from google.genai.chats import Chat
 from google.genai.types import GenerateContentResponse
 
 import os
@@ -12,9 +13,10 @@ class GeminiClient():
         self.__load_gemini_api_key(dot_env_path=dot_env_path)
 
         self.__client: Client = Client(api_key=os.environ["GEMINI_API_KEY"])
+        self.__chat: Chat = self.__client.chats.create(model=self.__model_name)
 
     def query(self, prompt: str) -> GenerateContentResponse:
-        return self.__client.models.generate_content(model=self.__model_name, contents=prompt)
+        return self.__chat.send_message(message=prompt)
 
     def __load_gemini_api_key(self, dot_env_path: str) -> None:
         try:
