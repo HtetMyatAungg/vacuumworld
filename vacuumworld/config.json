@@ -77,5 +77,5 @@
     "randomness_basic_primes": [7, 11, 101],
     "randomness_test": false,
     "randomness_basic_primes_test": [1, 1, 5],
-    "version_number": "4.4.2"
+    "version_number": "4.4.3"
 }
