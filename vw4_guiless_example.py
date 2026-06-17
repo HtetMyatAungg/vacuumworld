@@ -33,4 +33,4 @@ class MyMind(VWActorMindSurrogate):
 
 
 if __name__ == "__main__":
-    run(default_mind=MyMind(), efforts=VWActionEffort.REASONABLE_EFFORTS, gui=False, load="files/guiless.json")
+    run(default_mind=MyMind(), efforts=VWActionEffort.REASONABLE_EFFORTS, gui=True, load="files/guiless.json")

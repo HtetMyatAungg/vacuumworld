@@ -1,0 +1,914 @@
+{
+  "percepts": [
+    {
+      "forwardleft": {
+        "walls": [],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": "green"
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": "green"
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "left": {
+        "walls": [],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": "green"
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "forward",
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "forward",
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "forward",
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": "orange"
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": "orange"
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "forward",
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [
+          "forward"
+        ],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": "green"
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": null
+      }
+    },
+    {
+      "forwardleft": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "forward": {
+        "walls": [],
+        "dirt": null
+      },
+      "forwardright": {
+        "walls": [],
+        "dirt": null
+      },
+      "left": {
+        "walls": [
+          "left"
+        ],
+        "dirt": null
+      },
+      "center": {
+        "walls": [],
+        "dirt": null
+      },
+      "right": {
+        "walls": [],
+        "dirt": "green"
+      }
+    }
+  ],
+  "actions": [
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "turn_right",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "turn_right",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "turn_right",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "turn_right",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "move_forward",
+    "turn_right",
+    "move_forward",
+    "move_forward"
+  ]
+}

@@ -1,3 +1,5 @@
+## This python file is used to gather percepts from a 3x2 grid around the agent.
+
 #!/usr/bin/env python3
 from typing import Iterable, override
 from pyoptional.pyoptional import PyOptional
@@ -17,35 +19,26 @@ from vacuumworld.common.vwobservation import VWObservation
 from vacuumworld.model.environment.vwlocation import VWLocation
 from vacuumworld.common.vworientation import VWOrientation
 from pystarworldsturbo.common.action_outcome import ActionOutcome
-from vacuumworld.model.actions.vwbroadcast_action import VWBroadcastAction
-from vacuumworld.model.actions.vwactions import VWPhysicalAction
-from vacuumworld.model.actions.vwactions import VWCommunicativeAction
-from vacuumworld.model.actions.vwbroadcast_action import VWBroadcastAction
-from vacuumworld.model.actions.vweffort import VWActionEffort
-from vacuumworld.model.actor.mind.surrogate.vw_llm_actor_mind_surrogate import VWLLMActorMindSurrogate
 
-from google.genai.types import GenerateContentResponse
-from google.genai.errors import ClientError
-import re
-
-
-class MyMind(VWLLMActorMindSurrogate):
+class MyMind(VWActorMindSurrogate):
     def __init__(self) -> None:
-        # A `.env` file must be present in the same directory as this script, containing the GEMINI_API_KEY variable.
-        super(MyMind, self).__init__(dot_env_path=".env")
+        super(MyMind, self).__init__()
         self.__intended_turn: VWDirection | None = None
         self.cycle = 0
-        self.beforeorient = "None"
-        self.deduced_n: int | None = None
-        # Add here all the attributes you need/want.
+        self.beforeorient = "none"
 
     def percepts(self, turned_left, turned_right):
         cur_orient = self.get_own_orientation()
+        coord = self.get_own_position()
+        x, y = coord
         obs = self.get_latest_observation()
         left = obs.get_left()
+        left_coord = (x - 1, y)
         right = obs.get_right()
-        wall_current = obs.is_wall_immediately_ahead()
+        right_coord = (x + 1, y)
+        front = obs.get_forward()
         wall_ahead = obs.is_wall_one_step_ahead()
+
         wall_right = right.is_empty() or right.or_else_raise().has_wall_on(VWOrientation.north) or right.or_else_raise().has_wall_on(VWOrientation.east) or right.or_else_raise().has_wall_on(VWOrientation.south)
         wall_left = left.is_empty() or left.or_else_raise().has_wall_on(VWOrientation.north) or left.or_else_raise().has_wall_on(VWOrientation.east) or left.or_else_raise().has_wall_on(VWOrientation.south)
         forward_off_grid = obs.get_forward().is_empty()
@@ -99,18 +92,11 @@ class MyMind(VWLLMActorMindSurrogate):
             percept += "the cell to your forward left has a wall, you can move forward left to the cell."
         else:
             percept += "there is no wall to your forward left tile."
+        print(percept)
         self.beforeorient = cur_orient
-        return percept
 
     @override
     def revise(self) -> None:
-        None
-
-    @override
-    def decide(self) -> Iterable[VWAction]:
-        if self.deduced_n is not None:
-            return [VWIdleAction()]
-
         obs = self.get_latest_observation()
         outcomes = obs.get_latest_actions_outcomes_as_dict()
         turned_left = False
@@ -121,47 +107,18 @@ class MyMind(VWLLMActorMindSurrogate):
         if VWTurnAction in outcomes and ActionOutcome.success in outcomes[VWTurnAction]:
             if self.__intended_turn == VWDirection.left:
                 turned_left = True
-        percept = self.percepts(turned_left, turned_right)
-        # Replace this trivial decision process with something meaningful.
-        prompt = (
-            f"You are in a grid of n by n size. Your goal is to determine the n by moving around the grid. "
-            f"You will be given information of 3x2 of the grid around you. The information at cycle {self.cycle}: "
-            + percept
-            + "\n Based on the above information, decide your next action. You can choose to move forward, turn left, turn right, speak (broadcast a message), or do nothing (idle). "
-            "Respond with only one action in the format of ActionName(parameters). For example, VWMoveAction() for moving forward, VWTurnAction(left) for turning left, VWTurnAction(right) for turning right. Only respond with the action, do not include any explanations or additional text. ")
-        return [self.decide_physical_with_ai(prompt=prompt)]
+        self.percepts(turned_left,turned_right)   
         
 
     @override
-    def backup_decide_after_llm_error(self, original_prompt: str, error: ClientError, action_superclass: type[VWPhysicalAction | VWCommunicativeAction]) -> VWAction:
-        # Fallback decision process when an error occurs while querying the Gemini model.
-        # Do something with the original prompt and the error, if needed.
-
-        # For demonstration purposes, we will print the error details.
-        # Remove if not needed, or use a proper logging mechanism.
-        print(f"An error occurred while querying the Gemini model for a {action_superclass.__name__} with the prompt:\n{original_prompt}")
-        print(f"Error details:\n{self.format_llm_error(error=error)}")
-        return VWIdleAction()
-
-    @override
-    def parse_gemini_response(self, response: GenerateContentResponse) -> VWAction:
-        # Parse the response from the Gemini model and return a valid VWAction.
-
-        # For demonstration purposes, we will print the full response.
-        # Remove if not needed, or use a proper logging mechanism.
+    def decide(self) -> Iterable[VWAction]:
+        self.__intended_turn = VWDirection.right
+        obs = self.get_latest_observation()
         self.cycle += 1
-        print(f"Gemini response:\n{self.format_llm_response_object(response=response)}")
-        action_text = response.text.strip()
-        if action_text == "VWMoveAction()":
-            return VWMoveAction()
-        if action_text == "VWTurnAction(left)":
-            return VWTurnAction(direction=VWDirection.left)
-        if action_text == "VWTurnAction(right)":
-            return VWTurnAction(direction=VWDirection.right)
-        if action_text in ("VWSpeakAction()", "VWBroadcastAction()"):
-            return VWBroadcastAction(message="Hello from the LLM!")
-        return VWIdleAction()
-
+        wall_ahead = obs.is_wall_one_step_ahead()
+        if wall_ahead:
+            return [VWTurnAction(direction=VWDirection.right)]
+        return [VWMoveAction()]
 
 if __name__ == "__main__":
     run(default_mind=MyMind(), efforts=VWActionEffort.REASONABLE_EFFORTS)

@@ -25,7 +25,7 @@ from vacuumworld.model.actions.vweffort import VWActionEffort
 from vacuumworld.model.actor.mind.surrogate.vw_llm_actor_mind_surrogate import VWLLMActorMindSurrogate
 
 from google.genai.types import GenerateContentResponse
-from google.genai.errors import ClientError
+from google.genai.errors import ClientError, ServerError
 import re
 
 
@@ -128,9 +128,15 @@ class MyMind(VWLLMActorMindSurrogate):
             f"You will be given information of 3x2 of the grid around you. The information at cycle {self.cycle}: "
             + percept
             + "\n Based on the above information, decide your next action. You can choose to move forward, turn left, turn right, speak (broadcast a message), or do nothing (idle). "
-            "Respond with only one action in the format of ActionName(parameters). For example, VWMoveAction() for moving forward, VWTurnAction(left) for turning left, VWTurnAction(right) for turning right. Only respond with the action, do not include any explanations or additional text. ")
-        return [self.decide_physical_with_ai(prompt=prompt)]
+            "Respond with only one action in the format of ActionName(parameters). For example, VWMoveAction() for moving forward, VWTurnAction(left) for turning left, VWTurnAction(right) for turning right. Only respond with the action, do not include any explanations or additional text. "
+            "If you have enough information to deduce the value of n, respond with SpeakAction('n=the deduced value of n'). For example, if you deduce that n is 5, respond with SpeakAction('n=5').")
         
+        try: 
+            return [self.decide_physical_with_ai(prompt=prompt)]
+        except ServerError as e:
+            error_message = self.format_llm_error(error=e)
+            print(f"An error occurred while querying the Gemini model:\n{error_message}")
+            return [self.backup_decide_after_llm_error(original_prompt=prompt, error=e, action_superclass=VWPhysicalAction)]
 
     @override
     def backup_decide_after_llm_error(self, original_prompt: str, error: ClientError, action_superclass: type[VWPhysicalAction | VWCommunicativeAction]) -> VWAction:
@@ -146,7 +152,7 @@ class MyMind(VWLLMActorMindSurrogate):
     @override
     def parse_gemini_response(self, response: GenerateContentResponse) -> VWAction:
         # Parse the response from the Gemini model and return a valid VWAction.
-
+        n = 8
         # For demonstration purposes, we will print the full response.
         # Remove if not needed, or use a proper logging mechanism.
         self.cycle += 1
@@ -158,8 +164,14 @@ class MyMind(VWLLMActorMindSurrogate):
             return VWTurnAction(direction=VWDirection.left)
         if action_text == "VWTurnAction(right)":
             return VWTurnAction(direction=VWDirection.right)
-        if action_text in ("VWSpeakAction()", "VWBroadcastAction()"):
-            return VWBroadcastAction(message="Hello from the LLM!")
+        deduced_n_match = re.match(r"SpeakAction\('n=(\d+)'\)", action_text)
+        if deduced_n_match:
+            self.deduced_n = int(deduced_n_match.group(1))
+            if self.deduced_n != n:
+                return [self.decide_physical_with_ai(prompt=f"The correct n is {n}, the deduced n is {self.deduced_n}. Based on the previous percepts and actions, figure out where the error in reasoning might be and respond with a corrected action to take. Remember to only respond with one action in the format of ActionName(parameters), do not include any explanations or additional text.")]
+            else: 
+                print(f"Deduced n: {self.deduced_n}")
+        
         return VWIdleAction()
 
 
