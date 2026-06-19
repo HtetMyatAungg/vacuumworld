@@ -32,7 +32,6 @@ def _name(x):
 class MyMind(VWActorMindSurrogate):
     def __init__(self) -> None:
         super().__init__()
-        self.n = self.
         self.cycle = 0
         self.ego_history = []      # MODEL-FACING: egocentric, no global coords, no pose
         self.truth_history = []    # HARNESS-ONLY: pose + global coords + compass walls
