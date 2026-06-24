@@ -68,7 +68,7 @@
     "project_repo_raw_content_url": "https://raw.githubusercontent.com/dicelab-rhul/vacuumworld/main/",
     "initial_environment_dim": 8,
     "min_environment_dim": 3,
-    "max_environment_dim": 100,
+    "max_environment_dim": 13,
     "max_number_of_actions_per_actor_per_cycle": 2,
     "max_number_of_physical_actions_per_actor_per_cycle": 1,
     "max_number_of_communicative_actions_per_actor_per_cycle": 1,
