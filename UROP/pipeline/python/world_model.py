@@ -21,7 +21,7 @@ with open("UROP/pipeline/Percepts/World_Model_percepts.json", "w") as f:
 
 # seen(loc(0,0))
 
-with open("UROP/pipeline/prolog/evaluation.pl", "w") as f:
+with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
     f.write("% ground truth/oracle: 8x8 sweep\n")
     f.write(":- discontiguous seen/1." + "\n" + ":- discontiguous wall/2.\n")
     for coord, data in seen.items():
