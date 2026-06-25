@@ -1,23 +1,92 @@
-% Percept facts
-dirt(X, Y, Colour)
-agent(Id, X, Y, Colour)
-location(X, Y)
-History (percept stream, tagged by cycle)
-perceived(Cycle, Observation)
-% e.g. perceived(1, dirt(2,3, green))
-     % perceived(3, agent(ag2))
-     % perceived(3, location(ag2, (3,4)))
-% Internal
-grid_size(X)          % grid size
-wall(X, Y, Dir)       % Dir in {north, south, ...}
-empty_location(X, Y)
-location(X, Y)
+%% VacuumWorld Autoformalization Schema
+%% DICE Lab UROP — single agent, dirt only, N×N grid, 0-based indexing
+%%
+%% Coordinate system:
+%%   (X, Y) where X = column (east +), Y = row (south +)
+%%   (0, 0) = north-west corner
+%%
+%% LLM fills Sections A and B; Sections C and D are fixed scaffolding.
 
-% State of the world — the set of percepts that hold at the final state, without repetition (dedup is required, see §3).
-% Generalised knowledge
-available(Action)     % e.g. move(X, Y, Dir), inaction (do nothing)
-possible(Action)      % an action is possible
-% Testing primitives
-% Revise/log the percept to file → getPercepts → transformPerceptToSchema.
-seen(Percept) % — a percept we expect the final state to contain.
-% Test: for every member P of the final state, P must be a member of seen(P).
+:- dynamic dirt/3, agent/4, location/2, perceived/2,
+           grid_size/1, wall/3, empty_location/2, seen/1.
+
+:- discontiguous dirt/3, agent/4, location/2, wall/3,
+                 empty_location/2, perceived/2, seen/1.
+
+
+%% ---- Section A: Translation (LLM fills) ------------------------------------
+%% Emit ground facts from the deduplicated percept log:
+%%   grid_size(N). location(X,Y). dirt(X,Y,Colour).
+%%   agent(Id,X,Y,Colour). empty_location(X,Y).
+
+%% >>> BEGIN translation facts
+
+
+%% >>> END translation facts
+
+
+%% ---- Section B: Wall Rules (LLM fills) -------------------------------------
+%% Define wall(X, Y, Dir) for the four boundary directions.
+%% Rules must generalise over grid_size(N), not enumerate specific walls.
+
+%% >>> BEGIN wall rules
+
+
+%% >>> END wall rules
+
+
+%% ---- Section C: Generalised Knowledge (fixed) ------------------------------
+
+direction(north).
+direction(south).
+direction(east).
+direction(west).
+
+available(move(Dir)) :- direction(Dir).
+available(clean).
+available(idle).
+
+possible(move(Dir), X, Y) :-
+    location(X, Y),
+    direction(Dir),
+    \+ wall(X, Y, Dir).
+
+possible(clean, X, Y) :-
+    location(X, Y),
+    dirt(X, Y, _).
+
+possible(idle, X, Y) :-
+    location(X, Y).
+
+
+%% ---- Section D: Testing Primitives (fixed) ---------------------------------
+%% Validates Section A against seen/1 facts populated by the harness.
+%% Section B is validated separately by the F1-vs-N generalisation harness.
+
+model_fact(location(X, Y))       :- location(X, Y).
+model_fact(dirt(X, Y, C))        :- dirt(X, Y, C).
+model_fact(agent(I, X, Y, C))    :- agent(I, X, Y, C).
+model_fact(empty_location(X, Y)) :- empty_location(X, Y).
+
+final_state(State) :- findall(F, model_fact(F), State).
+
+sound    :- forall(model_fact(F), seen(F)).
+complete :- forall(seen(F), model_fact(F)).
+exact    :- sound, complete.
+
+%% Re-create an N×N grid for testing wall rules at held-out N.
+setup_grid(N) :-
+    retractall(grid_size(_)),
+    assertz(grid_size(N)),
+    retractall(location(_, _)),
+    N1 is N - 1,
+    forall( ( between(0, N1, X), between(0, N1, Y) ),
+            assertz(location(X, Y)) ).
+
+predicted_walls(Walls) :-
+    findall(wall(X, Y, D), wall(X, Y, D), Ws),
+    sort(Ws, Walls).
+
+walls_at(N, Walls) :-
+    setup_grid(N),
+    predicted_walls(Walls).
