@@ -1,6 +1,6 @@
 import json
 
-o = json.loads(open('UROP/Percepts/event_percepts.json').read())
+o = json.loads(open('UROP/pipeline/Percepts/event_percepts.json').read())
 
 
 seen = dict()
@@ -15,13 +15,13 @@ for item in o:
         seen[coord] = {'coord': list(coord), 'walls': cell['walls'], 'dirt': cell['dirt'], 'agent': agent}
 
 result = list(seen.values())
-with open("UROP/Percepts/World_Model_percepts.json", "w") as f:
+with open("UROP/pipeline/Percepts/World_Model_percepts.json", "w") as f:
     json.dump(result, f, indent=2)
 
 
 # seen(loc(0,0))
 
-with open("UROP/prolog/test.pl", "w") as f:
+with open("UROP/pipeline/prolog/evaluation.pl", "w") as f:
     f.write("% ground truth/oracle: 8x8 sweep\n")
     f.write(":- discontiguous seen/1." + "\n" + ":- discontiguous wall/2.\n")
     for coord, data in seen.items():
@@ -31,5 +31,3 @@ with open("UROP/prolog/test.pl", "w") as f:
         direction = data['walls']
         for dirc in direction:
             f.write(f"wall(loc{coord}, {dirc})." + "\n")
-        # YOU write: format coord (and data) into a fact string,
-        # f.write(fact + "\n")
