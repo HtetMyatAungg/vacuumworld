@@ -31,3 +31,11 @@ with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
         direction = data['walls']
         for dirc in direction:
             f.write(f"wall(loc{coord}, {dirc})." + "\n")
+    for coord, data in seen.items():
+        dirt = data['dirt']
+        if dirt != None:
+            f.write(f"seen(dirt(loc{coord}, {dirt}))." + "\n")
+    for coord, data in seen.items():
+        agent = data['agent']
+        if agent != None:
+            f.write(f"seen(agent('{agent['id']}', loc{coord}, {agent['colour']}))." + "\n")
