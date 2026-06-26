@@ -16,7 +16,7 @@
 
 %% ---- Section A: Translation (LLM fills) ------------------------------------
 %% Emit ground facts from the deduplicated percept log:
-%%   grid_size(N). seen(loc(X,Y)). dirt(loc(X,Y), Colour).
+%%   grid_size(N). grid(loc(X,Y)). dirt(loc(X,Y), Colour).
 %%   agent(Id, loc(X,Y), Colour). empty_location(loc(X,Y)).
 
 %% >>> BEGIN translation facts
@@ -35,43 +35,18 @@
 %% >>> END wall rules
 
 
-%% ---- Section C: Generalised Knowledge (fixed) ------------------------------
+%% ---- Section C: Testing Primitives (fixed) ---------------------------------
 
-direction(north).
-direction(south).
-direction(east).
-direction(west).
+%% --- C.1  Section A evaluation (translation) --------------------------------
+%% exact/0 checks grid/1 facts only.
 
-available(move(Dir)) :- direction(Dir).
-available(clean).
-available(idle).
-
-possible(move(Dir), loc(X, Y)) :-
-    seen(loc(X, Y)),
-    direction(Dir),
-    \+ wall(loc(X, Y), Dir),
-    \+ agent(_, loc(X, Y), _).
-
-possible(clean, loc(X, Y)) :-
-    seen(loc(X, Y)),
-    dirt(loc(X, Y), _).
-
-possible(idle, loc(X, Y)) :-
-    seen(loc(X, Y)).
-
-
-%% ---- Section D: Testing Primitives (fixed) ---------------------------------
-
-%% --- D.1  Section A evaluation (translation) --------------------------------
-%% exact/0 checks seen/1 facts only.
-
-model_seen(loc(X, Y)) :- seen(loc(X, Y)).
+model_seen(loc(X, Y)) :- grid(loc(X, Y)).
 
 sound    :- forall(model_seen(F), oracle(F)).
 complete :- forall(oracle(F), model_seen(F)).
 exact    :- sound, complete.
 
-%% --- D.2  Section B evaluation (wall generalisation, F1-vs-N) ----------------
+%% --- C.2  Section B evaluation (wall generalisation, F1-vs-N) ----------------
 %% setup_grid(N) creates an N×N grid and reasserts grid_size so the LLM's
 %% wall rules can fire at a held-out N.
 

@@ -25,7 +25,7 @@ with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
     f.write("% ground truth/oracle: 8x8 sweep\n")
     f.write(":- discontiguous seen/1." + "\n" + ":- discontiguous wall/2.\n")
     for coord, data in seen.items():
-        f.write(f"seen(loc{coord})." + "\n" )
+        f.write(f"grid(loc{coord})." + "\n" )
 
     for coord, data in seen.items():
         direction = data['walls']
