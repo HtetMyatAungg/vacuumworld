@@ -97,3 +97,10 @@ wall(loc(7, 5), east).
 wall(loc(7, 6), east).
 wall(loc(7, 7), east).
 wall(loc(7, 7), south).
+seen(dirt(loc(2, 1), orange)).
+seen(dirt(loc(3, 4), orange)).
+seen(dirt(loc(4, 6), orange)).
+seen(dirt(loc(5, 1), green)).
+seen(dirt(loc(6, 4), orange)).
+seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0, 3), orange)).
+seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4, 0), green)).

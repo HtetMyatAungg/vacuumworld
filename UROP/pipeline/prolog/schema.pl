@@ -1,5 +1,5 @@
 %% VacuumWorld Autoformalization Schema
-%% DICE Lab UROP — single agent, dirt only, N×N grid, 0-based indexing
+%% DICE Lab UROP — single agent, dirt and agent, N×N grid, 0-based indexing
 %%
 %% Coordinate system:
 %%   (X, Y) where X = column (east +), Y = row (south +)
@@ -7,17 +7,17 @@
 %%
 %% LLM fills Sections A and B; Sections C and D are fixed scaffolding.
 
-:- dynamic dirt/3, agent/4, location/2, perceived/2,
-           grid_size/1, wall/3, empty_location/2, seen/1.
+:- dynamic dirt/2, agent/3, perceived/2,
+           grid_size/1, wall/2, empty_location/1, seen/1, location/2.
 
-:- discontiguous dirt/3, agent/4, location/2, wall/3,
-                 empty_location/2, perceived/2, seen/1.
+:- discontiguous dirt/2, agent/3, wall/2,
+                 empty_location/1, perceived/2, seen/1.
 
 
 %% ---- Section A: Translation (LLM fills) ------------------------------------
 %% Emit ground facts from the deduplicated percept log:
-%%   grid_size(N). location(X,Y). dirt(X,Y,Colour).
-%%   agent(Id,X,Y,Colour). empty_location(X,Y).
+%%   grid_size(N). seen(loc(X,Y)). dirt(loc(X,Y), Colour).
+%%   agent(Id, loc(X,Y), Colour). empty_location(loc(X,Y)).
 
 %% >>> BEGIN translation facts
 
@@ -26,7 +26,7 @@
 
 
 %% ---- Section B: Wall Rules (LLM fills) -------------------------------------
-%% Define wall(X, Y, Dir) for the four boundary directions.
+%% Define wall(loc(X, Y), Dir) for the four boundary directions.
 %% Rules must generalise over grid_size(N), not enumerate specific walls.
 
 %% >>> BEGIN wall rules
@@ -46,35 +46,35 @@ available(move(Dir)) :- direction(Dir).
 available(clean).
 available(idle).
 
-possible(move(Dir), X, Y) :-
-    location(X, Y),
+possible(move(Dir), loc(X, Y)) :-
+    seen(loc(X, Y)),
     direction(Dir),
-    \+ wall(X, Y, Dir).
+    \+ wall(loc(X, Y), Dir),
+    \+ agent(_, loc(X, Y), _).
 
-possible(clean, X, Y) :-
-    location(X, Y),
-    dirt(X, Y, _).
+possible(clean, loc(X, Y)) :-
+    seen(loc(X, Y)),
+    dirt(loc(X, Y), _).
 
-possible(idle, X, Y) :-
-    location(X, Y).
+possible(idle, loc(X, Y)) :-
+    seen(loc(X, Y)).
 
 
 %% ---- Section D: Testing Primitives (fixed) ---------------------------------
-%% Validates Section A against seen/1 facts populated by the harness.
-%% Section B is validated separately by the F1-vs-N generalisation harness.
 
-model_fact(location(X, Y))       :- location(X, Y).
-model_fact(dirt(X, Y, C))        :- dirt(X, Y, C).
-model_fact(agent(I, X, Y, C))    :- agent(I, X, Y, C).
-model_fact(empty_location(X, Y)) :- empty_location(X, Y).
+%% --- D.1  Section A evaluation (translation) --------------------------------
+%% exact/0 checks seen/1 facts only, matching the UROP summary specification.
 
-final_state(State) :- findall(F, model_fact(F), State).
+model_seen(loc(X, Y)) :- seen(loc(X, Y)).
 
-sound    :- forall(model_fact(F), seen(F)).
-complete :- forall(seen(F), model_fact(F)).
+sound    :- forall(model_seen(F), oracle(F)).
+complete :- forall(oracle(F), model_seen(F)).
 exact    :- sound, complete.
 
-%% Re-create an N×N grid for testing wall rules at held-out N.
+%% --- D.2  Section B evaluation (wall generalisation, F1-vs-N) ----------------
+%% setup_grid(N) creates an N×N grid and reasserts grid_size so the LLM's
+%% wall rules can fire at a held-out N.
+
 setup_grid(N) :-
     retractall(grid_size(_)),
     assertz(grid_size(N)),
@@ -84,9 +84,43 @@ setup_grid(N) :-
             assertz(location(X, Y)) ).
 
 predicted_walls(Walls) :-
-    findall(wall(X, Y, D), wall(X, Y, D), Ws),
+    findall(wall(loc(X, Y), D), wall(loc(X, Y), D), Ws),
+    sort(Ws, Walls).
+
+oracle_walls(N, Walls) :-
+    N1 is N - 1,
+    findall(wall(loc(X, Y), D), (
+        between(0, N1, X), between(0, N1, Y),
+        direction(D),
+        (D = north, Y =:= 0 ;
+         D = south, Y =:= N1 ;
+         D = west,  X =:= 0 ;
+         D = east,  X =:= N1)
+    ), Ws),
     sort(Ws, Walls).
 
 walls_at(N, Walls) :-
     setup_grid(N),
     predicted_walls(Walls).
+
+wall_f1(N) :-
+    walls_at(N, Pred),
+    oracle_walls(N, Oracle),
+    intersection(Pred, Oracle, TPList),
+    length(TPList, TP),
+    length(Pred, PredN),
+    length(Oracle, OracleN),
+    FP is PredN - TP,
+    FN is OracleN - TP,
+    format("N=~w  TP=~w  FP=~w  FN=~w~n", [N, TP, FP, FN]),
+    (TP > 0 ->
+        Precision is TP / (TP + FP),
+        Recall is TP / (TP + FN),
+        F1 is 2 * Precision * Recall / (Precision + Recall),
+        format("  Precision=~4f  Recall=~4f  F1=~4f~n", [Precision, Recall, F1])
+    ;
+        writeln("  F1=0.0000 (no true positives)")
+    ).
+
+wall_f1_sweep(Ns) :-
+    forall(member(N, Ns), wall_f1(N)).
