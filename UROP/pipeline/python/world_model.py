@@ -39,3 +39,9 @@ with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
         agent = data['agent']
         if agent != None:
             f.write(f"seen(agent('{agent['id']}', loc{coord}, {agent['colour']}))." + "\n")
+    for coord, data in seen.items():
+        agent = data['agent']
+        dirt = data['dirt']
+        wall = data['walls']
+        if agent == None and dirt == None and wall == []:
+            f.write(f"empty_location(loc{coord})." + "\n")

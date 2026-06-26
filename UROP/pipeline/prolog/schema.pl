@@ -1,5 +1,5 @@
 %% VacuumWorld Autoformalization Schema
-%% DICE Lab UROP — single agent, dirt and agent, N×N grid, 0-based indexing
+%% DICE Lab UROP - single agent, dirt and agent, N×N grid, 0-based indexing
 %%
 %% Coordinate system:
 %%   (X, Y) where X = column (east +), Y = row (south +)
@@ -63,7 +63,7 @@ possible(idle, loc(X, Y)) :-
 %% ---- Section D: Testing Primitives (fixed) ---------------------------------
 
 %% --- D.1  Section A evaluation (translation) --------------------------------
-%% exact/0 checks seen/1 facts only, matching the UROP summary specification.
+%% exact/0 checks seen/1 facts only.
 
 model_seen(loc(X, Y)) :- seen(loc(X, Y)).
 
