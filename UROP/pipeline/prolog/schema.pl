@@ -37,6 +37,11 @@
 
 %% ---- Section C: Testing Primitives (fixed) ---------------------------------
 
+direction(north).
+direction(south).
+direction(east).
+direction(west).
+
 %% --- C.1  Section A evaluation (translation) --------------------------------
 %% exact/0 checks grid/1 facts only.
 
