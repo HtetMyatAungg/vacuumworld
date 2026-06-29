@@ -1,6 +1,21 @@
-# First Run: Claude Sonnet 4.6, Zero-Shot, 8x8 Grid
+# First Run: Zero-Shot, 8x8 Grid
 
-## Constraint Evaluation — 8/8 passed
+## Setup
+
+- Prompt: zero-shot translation of deduplicated percept log into Prolog
+- Models: Claude Sonnet 4.6, Gemini 2.5 Flash
+- Temperature: 1.0 for both
+- Grid: 8x8, 5 dirt cells, 2 agents
+- Samples: 5 per model
+- Repair loop: up to 5 syntax-error retries per sample
+
+## Claude Sonnet 4.6
+
+### Multi-sample results
+
+All 5 samples are byte-identical (deterministic output despite temperature=1).
+
+### Constraint Evaluation — 5/8 passed (all samples)
 
 | Section | Constraint | Result |
 |---------|-----------|--------|
@@ -8,41 +23,66 @@
 | A | bounds | PASS |
 | A | coverage | PASS |
 | A | implies_grid | PASS |
-| B | wall_count | PASS |
-| B | no_interior_walls | PASS |
+| B | wall_count | ERROR/FAIL |
+| B | no_interior_walls | ERROR/FAIL |
 | B | cell_wall_counts | PASS |
-| B | all_directions | PASS |
+| B | all_directions | ERROR/FAIL |
 
-## F1 Results (wall_f1_sweep)
+### F1 Sweep — 1.0 across all N (all samples)
 
-| N  | TP | FP | FN | Precision | Recall | F1     |
-|----|----|----|-----|-----------|--------|--------|
-| 3  | 6  | 26 | 6   | 0.1875    | 0.5000 | 0.2727 |
-| 4  | 8  | 24 | 8   | 0.2500    | 0.5000 | 0.3333 |
-| 5  | 10 | 22 | 10  | 0.3125    | 0.5000 | 0.3846 |
-| 6  | 12 | 20 | 12  | 0.3750    | 0.5000 | 0.4286 |
-| 7  | 14 | 18 | 14  | 0.4375    | 0.5000 | 0.4667 |
-| **8**  | **32** | **0**  | **0**   | **1.0000** | **1.0000** | **1.0000** |
-| 9  | 16 | 16 | 20  | 0.5000    | 0.4444 | 0.4706 |
-| 10 | 16 | 16 | 24  | 0.5000    | 0.4000 | 0.4444 |
-| 11 | 16 | 16 | 28  | 0.5000    | 0.3636 | 0.4211 |
-| 12 | 16 | 16 | 32  | 0.5000    | 0.3333 | 0.4000 |
-| 13 | 16 | 16 | 36  | 0.5000    | 0.3077 | 0.3810 |
+Wall rules fully generalise to held-out grid sizes.
 
-F1-vs-N curve peaks at N=8 (training size) and decays on both sides — classic hardcoding signature.
+### Finding: anonymous variable style
 
-## Finding: Partial Abstraction
-
-The LLM's wall rules reference `grid_size(N)` for the boundary condition:
+Sonnet's wall rules use `_` for the unused coordinate:
 
 ```prolog
-wall(loc(X,Y), north) :- grid_size(N), grid(loc(X,Y)), Y =:= 0, X >= 0, X < N.
+wall(loc(X,_), west) :- grid_size(_), X =:= 0.
+wall(loc(X,_), east) :- grid_size(N), X =:= N - 1.
+wall(loc(_,Y), north) :- grid_size(_), Y =:= 0.
+wall(loc(_,Y), south) :- grid_size(N), Y =:= N - 1.
 ```
 
-The boundary logic is correctly generalised (`Y =:= 0`, `X < N`), but cell enumeration is anchored to the 8x8 `grid/1` facts instead of using `between/3`. At held-out N, `setup_grid` reasserts `grid_size(N)` but the `grid/1` facts remain the original 64 cells from N=8.
+The rules are logically correct and generalise perfectly, but `constraint_eval.pl` fails because it expects `wall/2` to return fully ground `loc(X,Y)` terms. The F1 sweep handles it correctly since it enumerates cells with `between` and just tests whether `wall/2` succeeds.
 
-**Partial abstraction**: the model generalised the boundary rule but not the cell iteration. It understood *what* makes a wall, but not *where* to check for one.
+## Gemini 2.5 Flash
 
-## Note
+### Multi-sample results
 
-Original LLM output contained both enumerated wall facts AND generalised wall rules — the model hedged by producing both. The enumerated facts were removed before evaluation so the generalised rules could be tested in isolation.
+All 5 samples are distinct. Section A passes for all. Section B varies:
+
+| Sample | Constraint B | F1 (all N) | Wall style |
+|--------|-------------|------------|------------|
+| 1 | 2/4 FAIL | 1.0 | anonymous vars + `is` |
+| 2 | 2/4 FAIL | 1.0 | anonymous vars + hardcoded 0, `is` for N-1 |
+| 3 | 4/4 PASS | 1.0 | fully ground, correct |
+| 4 | 2/4 FAIL | 1.0 | `=` for 0, `is` for N-1, singleton warnings |
+| 5 | 1/4 FAIL | 1.0 | `>=`/`<` guards with unbound vars |
+
+### Key finding: constraint_eval vs F1 disagreement
+
+All 5 Gemini samples achieve **F1=1.0 across all held-out N** — the wall rules are logically correct in every case. The constraint_eval failures (4/5 samples) are caused by formalisation style differences, not logical errors:
+
+- Samples 1, 2: anonymous variables (`_` / `_Y`) leave coordinates unbound
+- Sample 4: singleton variables (uses `X,Y` in head but doesn't bind both)
+- Sample 5: arithmetic guards (`X >= 0, X < N`) fail when the other coordinate is unbound
+
+Only sample 3 uses fully ground `loc(X,Y)` with `grid(loc(X,Y))` as guard — the style constraint_eval expects.
+
+## Summary
+
+| | Section A | F1 generalisation | constraint_eval B | Style |
+|---|-----------|-------------------|-------------------|-------|
+| Sonnet (5/5 identical) | 4/4 PASS | 1.0 all N | 2/4 PASS | anonymous vars |
+| Gemini sample 3 | 4/4 PASS | 1.0 all N | 4/4 PASS | fully ground |
+| Gemini other 4 | 4/4 PASS | 1.0 all N | 1-2/4 PASS | mixed styles |
+
+### Conclusions
+
+1. **Both models abstract correctly** — F1=1.0 across all N for every sample. Neither model hardcodes wall constants from the training grid. The core research question is answered for zero-shot: both Claude and Gemini abstract the boundary rule.
+
+2. **constraint_eval is style-sensitive, F1 is style-robust** — constraint_eval penalises valid formalisation styles (anonymous variables, partial grounding). The F1 sweep, which enumerates cells externally and tests wall/2 as a predicate, correctly identifies all samples as fully generalised. F1 is the more reliable metric for the abstraction question.
+
+3. **Claude is deterministic, Gemini varies** — Sonnet produces the same output every time (despite temperature=1), while Gemini explores different formalisation styles across samples. Both converge on correct logic, but Gemini's variation is useful for studying the space of possible formalisations.
+
+4. **No hardcoding signature observed** — the F1-vs-N curve is flat at 1.0 for both models. The predicted decay pattern for a hardcoding model (peak at N=8, decay away) does not appear.

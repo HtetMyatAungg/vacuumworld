@@ -3,11 +3,10 @@
 
 :- discontiguous grid/1, dirt/2, agent/3, empty_location/1, wall/2.
 
-%% grid/1 derived from the LLM's translation facts.
-grid(loc(X,Y)) :-
-    seen(dirt(loc(X,Y),_));
-    seen(agent(_, loc(X,Y),_));
-    empty_location(loc(X,Y)).
+%% grid/1 is expected to come from the LLM translation file as ground facts.
+%% Do NOT define it here — defining it as a rule that calls empty_location/1
+%% causes infinite mutual recursion when the LLM defines empty_location/1
+%% in terms of grid/1.
 
 %% ---- Section A: Translation Constraints ------------------------------------
 
@@ -108,7 +107,7 @@ all_directions_ok :-
 %% ---- Full Report -----------------------------------------------------------
 
 check(Name, Goal, Result) :-
-    ( call(Goal)
+    ( catch(call(Goal), E, (format("  ERROR ~w: ~w~n", [Name, E]), fail))
     -> format("  PASS  ~w~n", [Name]), Result = pass
     ;  format("  FAIL  ~w~n", [Name]), Result = fail
     ).
