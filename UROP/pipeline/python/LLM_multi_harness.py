@@ -17,6 +17,23 @@ with open("UROP/pipeline/Percepts/World_Model_percepts.json", "r") as json:
 zero_shot_prompt = f"""
 You are translating observations from a square grid environment into Prolog.
 
+Below is a deduplicated percept log from an agent that swept every cell of an N×N grid.
+Each entry records a coordinate, any walls detected, and whether dirt or an agent was present.
+
+Coordinate system:
+- (X, Y) where X = column (east increases), Y = row (south increases)
+- (0, 0) is the north-west corner
+
+Percept log:
+{percepts}
+
+Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents, and boundary wall rules.
+No markdown, no comments, no explanation.
+"""
+
+schema_prompt = f"""
+You are translating observations from a square grid environment into Prolog.
+
 Below is a deduplicated percept log from an agent that swept every cell of an N×N grid. Each entry records a coordinate, any walls detected at that cell, and whether dirt or another agent was present.
 
 Coordinate system:
@@ -120,6 +137,12 @@ Start your response with the first Prolog fact and end with the last.
 
 """
 
+PROMPT_TYPES = {
+    "zero-shot":    "zero_shot",
+    "schema-based": "schema_based",
+    "one-shot":     "one_shot",
+}
+
 def strip_markdown(text):
     if not text:
         return ""
@@ -131,9 +154,13 @@ def strip_markdown(text):
             end = i
             break
     return "\n".join(lines[start:end])
-def call_anthropic(prompt, n):
+
+
+def call_anthropic(prompt, n, prompt_type="zero-shot"):
     client = anthropic.Anthropic()
     messages = [{"role": "user", "content": prompt}]
+    prefix = PROMPT_TYPES[prompt_type]
+    file_path = f"UROP/pipeline/prolog/result/claude-sonnet-4.6/{prompt_type}/{prefix}_sample_{n}.pl"
     for attempt in range(5):
         response = client.messages.create(
             model="claude-sonnet-4-6",
@@ -141,25 +168,22 @@ def call_anthropic(prompt, n):
             temperature=1,
             messages=messages
         )
-
         code = response.content[0].text
-        with open(f"UROP/pipeline/prolog/result/claude-sonnet-4.6/zero_shot_sample_{n}.pl", "w") as f:
+        with open(file_path, "w") as f:
             f.write(code)
-        # write and check syntax
-        result = subprocess.run(["swipl", "-l", f"UROP/pipeline/prolog/result/claude-sonnet-4.6/zero_shot_sample_{n}.pl", "-g", "halt"], capture_output=True, text=True)
-        
+        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
-            break  # clean load, done
-
-        # feed error back as a multi-turn conversation
+            break
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"claude-sonnet-4.6 sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
+    print(f"claude-sonnet-4.6 [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
 
-def call_gemini(prompt, n):
+def call_gemini(prompt, n, prompt_type="zero-shot"):
     client = genai.Client()
     contents = [types.Content(role="user", parts=[types.Part.from_text(text=prompt)])]
+    prefix = PROMPT_TYPES[prompt_type]
+    file_path = f"UROP/pipeline/prolog/result/gemini-2.5-flash/{prompt_type}/{prefix}_sample_{n}.pl"
     for attempt in range(5):
         response = client.models.generate_content(
             model="gemini-2.5-flash",
@@ -170,25 +194,22 @@ def call_gemini(prompt, n):
                 thinking_config=types.ThinkingConfig(thinking_budget=8000),
             ),
         )
-
         code = response.text
-        file_path = f"UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_{n}.pl"
         with open(file_path, "w") as f:
             f.write(code)
-        # write and check syntax
         result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
-
         if result.returncode == 0:
-            break  # clean load, done
-
-        # feed error back as a multi-turn conversation
+            break
         contents.append(types.Content(role="model", parts=[types.Part.from_text(text=code)]))
         contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
-    print(f"gemini-2.5-flash sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
+    print(f"gemini-2.5-flash [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-def call_gemini_small(prompt, n):
+
+def call_gemini_small(prompt, n, prompt_type="zero-shot"):
     client = genai.Client()
     contents = [types.Content(role="user", parts=[types.Part.from_text(text=prompt)])]
+    prefix = PROMPT_TYPES[prompt_type]
+    file_path = f"UROP/pipeline/prolog/result/gemini-3.1-flash-lite/{prompt_type}/{prefix}_sample_{n}.pl"
     for attempt in range(5):
         response = client.models.generate_content(
             model="gemini-3.1-flash-lite",
@@ -199,7 +220,6 @@ def call_gemini_small(prompt, n):
             ),
         )
         code = response.text
-        file_path = f"UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero_shot_sample_{n}.pl"
         with open(file_path, "w") as f:
             f.write(code)
         result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
@@ -207,14 +227,17 @@ def call_gemini_small(prompt, n):
             break
         contents.append(types.Content(role="model", parts=[types.Part.from_text(text=code)]))
         contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
-    print(f"gemini-3.1-flash-lite sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
+    print(f"gemini-3.1-flash-lite [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-def call_cerebras(prompt, n, model="gemma-4-31b"):
+
+def call_cerebras(prompt, n, prompt_type="zero-shot", model="gemma-4-31b"):
     client = OpenAI(
         api_key=os.environ.get('CEREBRAS_API_KEY'),
         base_url="https://api.cerebras.ai/v1"
     )
     messages = [{"role": "user", "content": prompt}]
+    prefix = PROMPT_TYPES[prompt_type]
+    file_path = f"UROP/pipeline/prolog/result/{model}/{prompt_type}/{prefix}_sample_{n}.pl"
     for attempt in range(5):
         response = client.chat.completions.create(
             model=model,
@@ -222,7 +245,6 @@ def call_cerebras(prompt, n, model="gemma-4-31b"):
             messages=messages
         )
         code = strip_markdown(response.choices[0].message.content)
-        file_path = f"UROP/pipeline/prolog/result/cerebras-zai-glm-4.7/zero_shot_sample_{n}.pl"
         with open(file_path, "w") as f:
             f.write(code)
         result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
@@ -230,14 +252,17 @@ def call_cerebras(prompt, n, model="gemma-4-31b"):
             break
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"{model} sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
+    print(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-def call_deepseek(prompt, n):
+
+def call_deepseek(prompt, n, prompt_type="zero-shot"):
     client = OpenAI(
         api_key=os.environ.get('DEEPSEEK_API_KEY'),
         base_url="https://api.deepseek.com"
     )
     messages = [{"role": "user", "content": prompt}]
+    prefix = PROMPT_TYPES[prompt_type]
+    file_path = f"UROP/pipeline/prolog/result/deepseek-2.5-flash/{prompt_type}/{prefix}_sample_{n}.pl"
     for attempt in range(5):
         response = client.chat.completions.create(
             temperature=1.0,
@@ -246,7 +271,6 @@ def call_deepseek(prompt, n):
             messages=messages
         )
         code = response.choices[0].message.content
-        file_path = f"UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_{n}.pl"
         with open(file_path, "w") as f:
             f.write(code)
         result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
@@ -254,11 +278,19 @@ def call_deepseek(prompt, n):
             break
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"deepseek-chat sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
-#for n in range(1,6):
-    #call_anthropic(zero_shot_prompt,n)
-    #call_gemini(zero_shot_prompt,n)
-    #call_deepseek(zero_shot_prompt,n)
+    print(f"deepseek-chat [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-for n in range(1,6):
-    call_cerebras(zero_shot_prompt,n)
+
+prompts = [
+    ("zero-shot",    zero_shot_prompt),
+    ("schema-based", schema_prompt),
+    ("one-shot",     one_shot_prompt),
+]
+
+for prompt_type, prompt in prompts:
+    for n in range(1, 6):
+        call_anthropic(prompt, n, prompt_type)
+        call_gemini(prompt, n, prompt_type)
+        call_gemini_small(prompt, n, prompt_type)
+        call_deepseek(prompt, n, prompt_type)
+        call_cerebras(prompt, n, prompt_type)

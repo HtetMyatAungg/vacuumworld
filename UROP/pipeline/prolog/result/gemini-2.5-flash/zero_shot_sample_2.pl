@@ -1,138 +1,43 @@
 grid_size(8).
 
-grid(loc(0,0)).
-grid(loc(0,1)).
-grid(loc(0,2)).
-grid(loc(0,3)).
-grid(loc(0,4)).
-grid(loc(0,5)).
-grid(loc(0,6)).
-grid(loc(0,7)).
-grid(loc(1,0)).
-grid(loc(1,1)).
-grid(loc(1,2)).
-grid(loc(1,3)).
-grid(loc(1,4)).
-grid(loc(1,5)).
-grid(loc(1,6)).
-grid(loc(1,7)).
-grid(loc(2,0)).
-grid(loc(2,1)).
-grid(loc(2,2)).
-grid(loc(2,3)).
-grid(loc(2,4)).
-grid(loc(2,5)).
-grid(loc(2,6)).
-grid(loc(2,7)).
-grid(loc(3,0)).
-grid(loc(3,1)).
-grid(loc(3,2)).
-grid(loc(3,3)).
-grid(loc(3,4)).
-grid(loc(3,5)).
-grid(loc(3,6)).
-grid(loc(3,7)).
-grid(loc(4,0)).
-grid(loc(4,1)).
-grid(loc(4,2)).
-grid(loc(4,3)).
-grid(loc(4,4)).
-grid(loc(4,5)).
-grid(loc(4,6)).
-grid(loc(4,7)).
-grid(loc(5,0)).
-grid(loc(5,1)).
-grid(loc(5,2)).
-grid(loc(5,3)).
-grid(loc(5,4)).
-grid(loc(5,5)).
-grid(loc(5,6)).
-grid(loc(5,7)).
-grid(loc(6,0)).
-grid(loc(6,1)).
-grid(loc(6,2)).
-grid(loc(6,3)).
-grid(loc(6,4)).
-grid(loc(6,5)).
-grid(loc(6,6)).
-grid(loc(6,7)).
-grid(loc(7,0)).
-grid(loc(7,1)).
-grid(loc(7,2)).
-grid(loc(7,3)).
-grid(loc(7,4)).
-grid(loc(7,5)).
-grid(loc(7,6)).
-grid(loc(7,7)).
+wall(west, 0, 6).
+wall(west, 0, 7).
+wall(south, 0, 7).
+wall(west, 0, 5).
+wall(west, 0, 4).
+wall(west, 0, 3).
+wall(west, 0, 2).
+wall(west, 0, 1).
+wall(north, 0, 0).
+wall(west, 0, 0).
+wall(south, 1, 7).
+wall(north, 1, 0).
+wall(south, 2, 7).
+wall(north, 2, 0).
+wall(north, 3, 0).
+wall(south, 3, 7).
+wall(north, 4, 0).
+wall(south, 4, 7).
+wall(north, 5, 0).
+wall(south, 5, 7).
+wall(north, 6, 0).
+wall(south, 6, 7).
+wall(north, 7, 0).
+wall(east, 7, 0).
+wall(east, 7, 1).
+wall(east, 7, 2).
+wall(east, 7, 3).
+wall(east, 7, 4).
+wall(east, 7, 5).
+wall(east, 7, 6).
+wall(east, 7, 7).
+wall(south, 7, 7).
 
-seen(dirt(loc(2,1), orange)).
-seen(dirt(loc(3,4), orange)).
-seen(dirt(loc(4,6), orange)).
-seen(dirt(loc(5,1), green)).
-seen(dirt(loc(6,4), orange)).
+dirt(orange, 2, 1).
+dirt(orange, 3, 4).
+dirt(orange, 4, 6).
+dirt(green, 5, 1).
+dirt(orange, 6, 4).
 
-seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0,3), orange)).
-seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4,0), green)).
-
-empty_location(loc(0,0)).
-empty_location(loc(0,1)).
-empty_location(loc(0,2)).
-empty_location(loc(0,4)).
-empty_location(loc(0,5)).
-empty_location(loc(0,6)).
-empty_location(loc(0,7)).
-empty_location(loc(1,0)).
-empty_location(loc(1,1)).
-empty_location(loc(1,2)).
-empty_location(loc(1,3)).
-empty_location(loc(1,4)).
-empty_location(loc(1,5)).
-empty_location(loc(1,6)).
-empty_location(loc(1,7)).
-empty_location(loc(2,0)).
-empty_location(loc(2,2)).
-empty_location(loc(2,3)).
-empty_location(loc(2,4)).
-empty_location(loc(2,5)).
-empty_location(loc(2,6)).
-empty_location(loc(2,7)).
-empty_location(loc(3,0)).
-empty_location(loc(3,1)).
-empty_location(loc(3,2)).
-empty_location(loc(3,3)).
-empty_location(loc(3,5)).
-empty_location(loc(3,6)).
-empty_location(loc(3,7)).
-empty_location(loc(4,1)).
-empty_location(loc(4,2)).
-empty_location(loc(4,3)).
-empty_location(loc(4,4)).
-empty_location(loc(4,5)).
-empty_location(loc(4,7)).
-empty_location(loc(5,0)).
-empty_location(loc(5,2)).
-empty_location(loc(5,3)).
-empty_location(loc(5,4)).
-empty_location(loc(5,5)).
-empty_location(loc(5,6)).
-empty_location(loc(5,7)).
-empty_location(loc(6,0)).
-empty_location(loc(6,1)).
-empty_location(loc(6,2)).
-empty_location(loc(6,3)).
-empty_location(loc(6,5)).
-empty_location(loc(6,6)).
-empty_location(loc(6,7)).
-empty_location(loc(7,0)).
-empty_location(loc(7,1)).
-empty_location(loc(7,2)).
-empty_location(loc(7,3)).
-empty_location(loc(7,4)).
-empty_location(loc(7,5)).
-empty_location(loc(7,6)).
-empty_location(loc(7,7)).
-
-wall(loc(0, _), west).
-wall(loc(_X, 0), north).
-wall(loc(X, _), east) :- grid_size(N), X is N - 1.
-wall(loc(_, Y), south) :- grid_size(N), Y is N - 1.
+agent(orange, 0, 3).
+agent(green, 4, 0).

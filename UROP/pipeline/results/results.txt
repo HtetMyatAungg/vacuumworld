@@ -1,1260 +1,34 @@
 
-=== gemini-3.1-flash-lite ===
-
---- sample 1 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 2 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 3 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 4 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 5 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
 === claude-sonnet-4.6 ===
 
 --- sample 1 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 2 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 3 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 4 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 5 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
-=== gemini-2.5-flash ===
-
---- sample 1 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 2 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 3 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 4 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:134:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:135:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:136:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:137:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:134:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:135:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:136:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_4.pl:137:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 5 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
-=== deepseek-2.5-flash ===
-
---- sample 1 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
   FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-    dual_category: [loc(2,1),loc(3,4),loc(4,6),loc(5,1),loc(6,4)]
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:137:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:138:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:139:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:140:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:137:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:138:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:139:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_1.pl:140:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 2 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  FAIL  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  ERROR wall_count: error(instantiation_error,context(system:(=:=)/2,_92))
-  FAIL  wall_count
-  ERROR no_interior_walls: error(instantiation_error,context(system:(=:=)/2,_242))
-  FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(instantiation_error,context(system:(=:=)/2,_436))
-  FAIL  cell_wall_counts
-  ERROR all_directions: error(instantiation_error,context(system:(=:=)/2,_644))
-  FAIL  all_directions
-
---- Summary: 3/8 passed, 5 failed ---
-
-Violations:
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:8:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:9:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:11:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:12:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:13:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:14:
-Warning:    Singleton variables: [Y]
-ERROR: [Thread main] -g check_all: =:=/2: Arguments are not sufficiently instantiated
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:8:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:9:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:11:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:12:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:13:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_2.pl:14:
-Warning:    Singleton variables: [Y]
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): =:=/2: Arguments are not sufficiently instantiated
-
---- sample 3 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  FAIL  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 4 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  FAIL  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_4.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 5 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  FAIL  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:71:12: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:72:13: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:130:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:131:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:132:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_5.pl:133:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
-=== gemma3-4b ===
-
---- sample 1 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  ERROR partition: error(instantiation_error,context(system:(>=)/2,_8160))
-  FAIL  partition
-  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_8300))
-  FAIL  bounds
-  ERROR coverage: error(instantiation_error,context(system:(>=)/2,_8484))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
   FAIL  coverage
-  ERROR implies_grid: error(instantiation_error,context(system:(>=)/2,_8630))
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
   FAIL  implies_grid
 
 --- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
   FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
   FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
   FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
   FAIL  all_directions
 
---- Summary: 0/8 passed, 8 failed ---
+--- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:4:
-Warning:    Singleton variables: [Colour]
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:5:63: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:26:39: Syntax error: Unexpected end of file
-ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiated
-N=3  TP=5  FP=3  FN=7
-  Precision=0.6250  Recall=0.4167  F1=0.5000
-N=4  TP=6  FP=4  FN=10
-  Precision=0.6000  Recall=0.3750  F1=0.4615
-N=5  TP=7  FP=5  FN=13
-  Precision=0.5833  Recall=0.3500  F1=0.4375
-N=6  TP=8  FP=6  FN=16
-  Precision=0.5714  Recall=0.3333  F1=0.4211
-N=7  TP=9  FP=7  FN=19
-  Precision=0.5625  Recall=0.3214  F1=0.4091
-N=8  TP=10  FP=7  FN=22
-  Precision=0.5882  Recall=0.3125  F1=0.4082
-N=9  TP=10  FP=7  FN=26
-  Precision=0.5882  Recall=0.2778  F1=0.3774
-N=10  TP=10  FP=7  FN=30
-  Precision=0.5882  Recall=0.2500  F1=0.3509
-N=11  TP=10  FP=7  FN=34
-  Precision=0.5882  Recall=0.2273  F1=0.3279
-N=12  TP=10  FP=7  FN=38
-  Precision=0.5882  Recall=0.2083  F1=0.3077
-N=13  TP=10  FP=7  FN=42
-  Precision=0.5882  Recall=0.1923  F1=0.2899
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:4:
-Warning:    Singleton variables: [Colour]
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:5:63: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_1.pl:26:39: Syntax error: Unexpected end of file
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 2 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  FAIL  partition
-  FAIL  bounds
-  FAIL  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  FAIL  wall_count
-  PASS  no_interior_walls
-  FAIL  cell_wall_counts
-  FAIL  all_directions
-
---- Summary: 2/8 passed, 6 failed ---
-
-Violations:
-    out_of_bounds: [loc(0,5),loc(0,6),loc(0,7),loc(1,5),loc(1,6),loc(1,7),loc(2,5),loc(2,6),loc(2,7),loc(3,5),loc(3,6),loc(3,7),loc(4,5),loc(4,6),loc(4,7),loc(5,0),loc(5,1),loc(5,2),loc(5,3),loc(5,4),loc(5,5),loc(5,6),loc(5,7),loc(6,0),loc(6,1),loc(6,2),loc(6,3),loc(6,4),loc(6,5),loc(6,6),loc(6,7),loc(7,0),loc(7,1),loc(7,2),loc(7,3),loc(7,4),loc(7,5),loc(7,6),loc(7,7)]
-    wrong_wall_counts: [loc(0,0)-2-0,loc(0,1)-1-0,loc(0,2)-1-0,loc(0,3)-1-0,loc(0,4)-2-0,loc(1,0)-1-0,loc(1,4)-1-0,loc(2,0)-1-0,loc(2,4)-1-0,loc(3,0)-1-0,loc(3,4)-1-0,loc(4,0)-2-0,loc(4,1)-1-0,loc(4,2)-1-0,loc(4,3)-1-0,loc(4,4)-2-0]
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_2.pl:80:10: Syntax error: Unexpected end of file
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -1277,7 +51,64 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_2.pl:80:10: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 2 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1293,52 +124,49 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
   FAIL  partition
   PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_348))
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
   FAIL  implies_grid
 
 --- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
   FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
   FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
   FAIL  cell_wall_counts
-  PASS  all_directions
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
 
---- Summary: 2/8 passed, 6 failed ---
+--- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:2:21: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:3:35: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:4:40: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:5:28: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
 ERROR: [Thread main]         seen/0
-N=3  TP=2  FP=3  FN=10
-  Precision=0.4000  Recall=0.1667  F1=0.2353
-N=4  TP=6  FP=5  FN=10
-  Precision=0.5455  Recall=0.3750  F1=0.4444
-N=5  TP=7  FP=16  FN=13
-  Precision=0.3043  Recall=0.3500  F1=0.3256
-N=6  TP=2  FP=21  FN=22
-  Precision=0.0870  Recall=0.0833  F1=0.0851
-N=7  TP=3  FP=21  FN=25
-  Precision=0.1250  Recall=0.1071  F1=0.1154
-N=8  TP=2  FP=29  FN=30
-  Precision=0.0645  Recall=0.0625  F1=0.0635
-N=9  TP=2  FP=29  FN=34
-  Precision=0.0645  Recall=0.0556  F1=0.0597
-N=10  TP=2  FP=29  FN=38
-  Precision=0.0645  Recall=0.0500  F1=0.0563
-N=11  TP=2  FP=29  FN=42
-  Precision=0.0645  Recall=0.0455  F1=0.0533
-N=12  TP=2  FP=29  FN=46
-  Precision=0.0645  Recall=0.0417  F1=0.0506
-N=13  TP=2  FP=29  FN=50
-  Precision=0.0645  Recall=0.0385  F1=0.0482
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:2:21: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:3:35: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:4:40: Syntax error: Operator expected
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_3.pl:5:28: Syntax error: Operator expected
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1348,8 +176,33 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 
 --- sample 4 ---
-ERROR: [Thread main] Prolog initialisation failed:
-ERROR: [Thread main] script_file `'UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_4.pl'' does not exist
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -1372,7 +225,6 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-ERROR: [Thread main] source_sink `'UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_4.pl'' does not exist
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1382,8 +234,33 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 
 --- sample 5 ---
-ERROR: [Thread main] Prolog initialisation failed:
-ERROR: [Thread main] script_file `'UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_5.pl'' does not exist
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -1406,7 +283,705 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-ERROR: [Thread main] source_sink `'UROP/pipeline/prolog/result/gemma3-4b/zero_shot_sample_5.pl'' does not exist
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+=== gemini-2.5-flash ===
+
+--- sample 1 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_348))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 2 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_348))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 3 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8352))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:11:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: agent/4
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:14:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:19:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:20:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:21:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:22:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:24:
+Warning:    Clauses of agent/4 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:10
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous agent/4. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:25:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: agent/4
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:26:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:27:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:29:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:30:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:11:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: agent/4
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:14:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:19:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:20:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:21:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:22:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:24:
+Warning:    Clauses of agent/4 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:10
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous agent/4. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:25:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: agent/4
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:26:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:27:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:29:
+Warning:    Clauses of dirt/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:13
+Warning:    Current predicate: wall/3
+Warning:    Use :- discontiguous dirt/3. to suppress this message
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:30:
+Warning:    Clauses of wall/3 are not together in the source-file
+Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/zero_shot_sample_3.pl:2
+Warning:    Current predicate: dirt/3
+Warning:    Use :- discontiguous wall/3. to suppress this message
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 4 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_348))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 5 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_348))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+=== deepseek-2.5-flash ===
+
+--- sample 1 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 2 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 3 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_2372))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_2594))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_2758))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2918))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_3072))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_3226))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_3374))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:13:43: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:40:45: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:65:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:67:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:68:
+Warning:    Singleton variables: [Y]
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:13:43: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:40:45: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:65:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:67:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_3.pl:68:
+Warning:    Singleton variables: [Y]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 4 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 5 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1421,51 +996,52 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
 
 --- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_1.pl:135:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
+--- Summary: 1/8 passed, 7 failed ---
 
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_1.pl:135:
-Warning:    Singleton variables: [N]
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1478,51 +1054,72 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_1684))
+  FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1906))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_2070))
+  FAIL  implies_grid
 
 --- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2230))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2384))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2538))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2686))
+  FAIL  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:135:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
+--- Summary: 1/8 passed, 7 failed ---
 
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:135:
-Warning:    Singleton variables: [N]
+Violations:
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:5:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:25:28: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:67:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:68:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:69:
+Warning:    Singleton variables: [Y]
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:5:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:25:28: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:67:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:68:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_2.pl:69:
+Warning:    Singleton variables: [Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1535,66 +1132,52 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
 
 --- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
   FAIL  wall_count
-  PASS  no_interior_walls
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
   FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
   FAIL  all_directions
 
---- Summary: 5/8 passed, 3 failed ---
+--- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-    wrong_wall_counts: [loc(0,7)-2-1,loc(1,7)-1-0,loc(2,7)-1-0,loc(3,7)-1-0,loc(4,7)-1-0,loc(5,7)-1-0,loc(6,7)-1-0,loc(7,0)-2-1,loc(7,1)-1-0,loc(7,2)-1-0,loc(7,3)-1-0,loc(7,4)-1-0,loc(7,5)-1-0,loc(7,6)-1-0,loc(7,7)-2-0]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:135:
-Warning:    Singleton variables: [X,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:136:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:137:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:138:
-Warning:    Singleton variables: [Y]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=6  FP=0  FN=6
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=4  TP=8  FP=0  FN=8
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=5  TP=10  FP=0  FN=10
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=6  TP=12  FP=0  FN=12
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=7  TP=14  FP=0  FN=14
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=8  TP=16  FP=0  FN=16
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=9  TP=18  FP=0  FN=18
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=10  TP=20  FP=0  FN=20
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=11  TP=22  FP=0  FN=22
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=12  TP=24  FP=0  FN=24
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-N=13  TP=26  FP=0  FN=26
-  Precision=1.0000  Recall=0.5000  F1=0.6667
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:135:
-Warning:    Singleton variables: [X,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:136:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:137:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_3.pl:138:
-Warning:    Singleton variables: [Y]
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1607,47 +1190,72 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_1684))
+  FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1906))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_2070))
+  FAIL  implies_grid
 
 --- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2230))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2384))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2538))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2686))
+  FAIL  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
+--- Summary: 1/8 passed, 7 failed ---
 
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
+Violations:
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:5:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:25:28: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:67:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:68:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:69:
+Warning:    Singleton variables: [Y]
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:5:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:25:28: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:66:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:67:
+Warning:    Singleton variables: [X]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:68:
+Warning:    Singleton variables: [Y]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_4.pl:69:
+Warning:    Singleton variables: [Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1660,55 +1268,52 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
   PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
 
 --- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_5.pl:134:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_5.pl:136:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
+--- Summary: 1/8 passed, 7 failed ---
 
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_5.pl:134:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero_shot_sample_5.pl:136:
-Warning:    Singleton variables: [N]
+Violations:
+ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR: [Thread main]   However, there are definitions for:
+ERROR: [Thread main]         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
