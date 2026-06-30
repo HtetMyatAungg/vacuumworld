@@ -65,17 +65,18 @@ implies_grid_ok :-
 wall_count_ok :-
     grid_size(N),
     Expected is 4 * N,
-    findall(wall(loc(X,Y),D), wall(loc(X,Y),D), Ws),
+    N1 is N - 1,
+    findall(loc(X,Y)-D, (between(0,N1,X), between(0,N1,Y), wall(loc(X,Y),D)), Ws),
     sort(Ws, Unique),
     length(Unique, Expected).
 
 %% B.2 No interior walls.
 
 interior_wall(loc(X,Y), D) :-
-    wall(loc(X,Y), D),
-    grid_size(N), N1 is N - 1,
-    X > 0, X < N1,
-    Y > 0, Y < N1.
+    grid_size(N), N1 is N - 1, N2 is N1 - 1,
+    between(1, N2, X),
+    between(1, N2, Y),
+    wall(loc(X,Y), D).
 
 no_interior_walls_ok :- \+ interior_wall(_, _).
 
@@ -102,7 +103,12 @@ cell_wall_counts_ok :- \+ wrong_cell_wall_count(_, _, _).
 %% B.4 All four directions present.
 
 all_directions_ok :-
-    wall(_, north), wall(_, south), wall(_, east), wall(_, west).
+    grid_size(N), N1 is N - 1,
+    findall(D, (between(0,N1,X), between(0,N1,Y), wall(loc(X,Y),D)), Ds),
+    memberchk(north, Ds),
+    memberchk(south, Ds),
+    memberchk(east, Ds),
+    memberchk(west, Ds).
 
 %% ---- Full Report -----------------------------------------------------------
 

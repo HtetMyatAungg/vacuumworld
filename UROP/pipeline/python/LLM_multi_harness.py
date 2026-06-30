@@ -3,10 +3,8 @@ import anthropic
 from google import genai
 from google.genai import types
 import subprocess
-from transformers import AutoProcessor, AutoModelForMultimodalLM
-
-
-
+from openai import OpenAI
+import os
 
 dotenv.load_dotenv()
 
@@ -42,12 +40,97 @@ Section B — Wall rules:
 Define wall(loc(X,Y), Dir) rules for boundary walls.
 Your rules must generalise — they should work for any grid size, not just the one observed.
 Do not enumerate wall(loc(X,Y), Dir) as facts.
+Output the Prolog code only. Do not include any explanation, comments, or markdown.
+Start your response with the first Prolog fact and end with the last.
 
 """
 
-one_shot_prompt = f""" 
+one_shot_prompt = f"""
+You are translating observations from a square grid environment into Prolog.
+
+Below is a deduplicated percept log from an agent that swept every cell of an N×N grid. Each entry records a coordinate, any walls detected at that cell, and whether dirt or another agent was present.
+
+Coordinate system:
+- (X, Y) where X = column (east increases), Y = row (south increases)
+- (0, 0) is the north-west corner
+
+Here is an example.
+
+Example percept log:
+[
+  {{"coord": [0,0], "walls": ["north","west"], "dirt": null,    "agent": null}},
+  {{"coord": [1,0], "walls": ["north"],        "dirt": null,    "agent": null}},
+  {{"coord": [2,0], "walls": ["north","east"], "dirt": null,    "agent": {{"id": "agent-1", "colour": "white"}}}},
+  {{"coord": [0,1], "walls": ["west"],         "dirt": null,    "agent": null}},
+  {{"coord": [1,1], "walls": [],               "dirt": "green", "agent": null}},
+  {{"coord": [2,1], "walls": ["east"],         "dirt": null,    "agent": null}},
+  {{"coord": [0,2], "walls": ["south","west"], "dirt": null,    "agent": null}},
+  {{"coord": [1,2], "walls": ["south"],        "dirt": null,    "agent": null}},
+  {{"coord": [2,2], "walls": ["south","east"], "dirt": null,    "agent": null}}
+]
+
+Example Prolog output:
+grid_size(3).
+
+grid(loc(0,0)).
+grid(loc(1,0)).
+grid(loc(2,0)).
+grid(loc(0,1)).
+grid(loc(1,1)).
+grid(loc(2,1)).
+grid(loc(0,2)).
+grid(loc(1,2)).
+grid(loc(2,2)).
+
+seen(dirt(loc(1,1), green)).
+seen(agent('agent-1', loc(2,0), white)).
+
+empty_location(loc(0,0)).
+empty_location(loc(1,0)).
+empty_location(loc(0,1)).
+empty_location(loc(2,1)).
+empty_location(loc(0,2)).
+empty_location(loc(1,2)).
+empty_location(loc(2,2)).
+
+wall(loc(X,Y), north) :- grid(loc(X,Y)), grid_size(N), Y =:= 0.
+wall(loc(X,Y), south) :- grid(loc(X,Y)), grid_size(N), Y =:= N - 1.
+wall(loc(X,Y), west)  :- grid(loc(X,Y)), X =:= 0.
+wall(loc(X,Y), east)  :- grid(loc(X,Y)), grid_size(N), X =:= N - 1.
+
+Now translate this percept log:
+{percepts}
+
+Produce ONLY valid Prolog — no markdown, no comments, no explanation.
+
+Section A — Translation facts:
+Assert the following ground facts from the percept log:
+- grid_size(N) where N is the side length of the grid.
+- grid(loc(X,Y)) are facts with the entire grid coordinates.
+- seen(dirt(loc(X,Y), Colour)) for each cell containing dirt.
+- seen(agent(Id, loc(X,Y), Colour)) for each cell containing an agent.
+- empty_location(loc(X,Y)) for each cell that has neither dirt nor an agent.
+
+Section B — Wall rules:
+Define wall(loc(X,Y), Dir) rules for boundary walls.
+Your rules must generalise — they should work for any grid size, not just the one observed.
+Do not enumerate wall(loc(X,Y), Dir) as facts.
+Output the Prolog code only. Do not include any explanation, comments, or markdown.
+Start your response with the first Prolog fact and end with the last.
 
 """
+
+def strip_markdown(text):
+    if not text:
+        return ""
+    lines = text.splitlines()
+    start = 1 if lines and lines[0].startswith("```") else 0
+    end = len(lines)
+    for i in range(start, len(lines)):
+        if lines[i].strip() == "```":
+            end = i
+            break
+    return "\n".join(lines[start:end])
 def call_anthropic(prompt, n):
     client = anthropic.Anthropic()
     messages = [{"role": "user", "content": prompt}]
@@ -73,28 +156,6 @@ def call_anthropic(prompt, n):
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
     print(f"claude-sonnet-4.6 sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-    # messages_opus = [{"role": "user", "content": prompt}]
-    # for attempt in range(5):
-    #     response = client.messages.create(
-    #         model="claude-opus-4-8",
-    #         max_tokens=4096,
-    #         temperature=1,
-    #         messages=messages_opus
-    #     )
-    #
-    #     code = response.content[0].text
-    #     with open(f"UROP/pipeline/prolog/result/claude-opus-4.8/zero_shot_sample_{n}.pl", "w") as f:
-    #         f.write(code)
-    #     # write and check syntax
-    #     result = subprocess.run(["swipl", "-l", f"UROP/pipeline/prolog/result/claude-opus-4.8/zero_shot_sample_{n}.pl", "-g", "halt"], capture_output=True, text=True)
-    #
-    #     if result.returncode == 0:
-    #         break  # clean load, done
-    #
-    #     # feed error back as a multi-turn conversation
-    #     messages_opus.append({"role": "assistant", "content": code})
-    #     messages_opus.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    # print(f"claude-opus-4.8 sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
 def call_gemini(prompt, n):
     client = genai.Client()
@@ -125,22 +186,79 @@ def call_gemini(prompt, n):
         contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
     print(f"gemini-2.5-flash sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-def call_gemma(zero_prompt,n):
-    from google import genai
-
+def call_gemini_small(prompt, n):
     client = genai.Client()
+    contents = [types.Content(role="user", parts=[types.Part.from_text(text=prompt)])]
+    for attempt in range(5):
+        response = client.models.generate_content(
+            model="gemini-3.1-flash-lite",
+            contents=contents,
+            config=types.GenerateContentConfig(
+                temperature=1.0,
+                top_p=0.95,
+            ),
+        )
+        code = response.text
+        file_path = f"UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero_shot_sample_{n}.pl"
+        with open(file_path, "w") as f:
+            f.write(code)
+        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        if result.returncode == 0:
+            break
+        contents.append(types.Content(role="model", parts=[types.Part.from_text(text=code)]))
+        contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
+    print(f"gemini-3.1-flash-lite sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-    response = client.models.generate_content(
-    model="gemma-4-26b-a4b-it",
-    contents=zero_prompt
+def call_cerebras(prompt, n, model="gemma-4-31b"):
+    client = OpenAI(
+        api_key=os.environ.get('CEREBRAS_API_KEY'),
+        base_url="https://api.cerebras.ai/v1"
     )
-    file_path = f"UROP/pipeline/prolog/result/gemma_open_weight/zero_shot_sample_{n}.pl"
-    with open(file_path, "w") as f:
-        f.write(response.text)
+    messages = [{"role": "user", "content": prompt}]
+    for attempt in range(5):
+        response = client.chat.completions.create(
+            model=model,
+            max_tokens=4096,
+            messages=messages
+        )
+        code = strip_markdown(response.choices[0].message.content)
+        file_path = f"UROP/pipeline/prolog/result/cerebras-zai-glm-4.7/zero_shot_sample_{n}.pl"
+        with open(file_path, "w") as f:
+            f.write(code)
+        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        if result.returncode == 0:
+            break
+        messages.append({"role": "assistant", "content": code})
+        messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
+    print(f"{model} sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-
+def call_deepseek(prompt, n):
+    client = OpenAI(
+        api_key=os.environ.get('DEEPSEEK_API_KEY'),
+        base_url="https://api.deepseek.com"
+    )
+    messages = [{"role": "user", "content": prompt}]
+    for attempt in range(5):
+        response = client.chat.completions.create(
+            temperature=1.0,
+            model="deepseek-chat",
+            max_tokens=4096,
+            messages=messages
+        )
+        code = response.choices[0].message.content
+        file_path = f"UROP/pipeline/prolog/result/deepseek-2.5-flash/zero_shot_sample_{n}.pl"
+        with open(file_path, "w") as f:
+            f.write(code)
+        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        if result.returncode == 0:
+            break
+        messages.append({"role": "assistant", "content": code})
+        messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
+    print(f"deepseek-chat sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 #for n in range(1,6):
     #call_anthropic(zero_shot_prompt,n)
     #call_gemini(zero_shot_prompt,n)
+    #call_deepseek(zero_shot_prompt,n)
 
-call_gemma(zero_shot_prompt,1)
+for n in range(1,6):
+    call_cerebras(zero_shot_prompt,n)
