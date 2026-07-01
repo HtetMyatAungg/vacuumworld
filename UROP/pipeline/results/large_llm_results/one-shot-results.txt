@@ -18,7 +18,7 @@
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -47,7 +47,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -71,7 +71,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -100,7 +100,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -124,7 +124,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -153,7 +153,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -177,7 +177,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -206,7 +206,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -230,7 +230,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -259,7 +259,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -285,7 +285,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_1.pl:135:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -314,7 +316,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_1.pl:135:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -338,9 +342,11 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:137:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -369,9 +375,11 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:137:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -395,9 +403,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -426,9 +434,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -452,7 +460,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_4.pl:135:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -481,7 +491,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_4.pl:135:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -505,9 +517,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -536,9 +548,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -564,7 +576,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -593,7 +605,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -605,7 +617,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  FAIL  partition
+  PASS  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -616,11 +628,8 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-    dual_category: [loc(5,1)]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+--- Summary: 8/8 passed, 0 failed ---
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -649,7 +658,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -673,7 +682,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -702,7 +711,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -726,7 +735,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -755,7 +764,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -767,7 +776,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  FAIL  partition
+  PASS  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -778,10 +787,8 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+--- Summary: 8/8 passed, 0 failed ---
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -810,7 +817,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -824,7 +831,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  FAIL  partition
+  PASS  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -835,13 +842,10 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 7/8 passed, 1 failed ---
-
-Violations:
-    dual_category: [loc(4,0),loc(6,4)]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:132:
+--- Summary: 8/8 passed, 0 failed ---
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:130:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -870,9 +874,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:132:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:130:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -898,10 +902,10 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 7/8 passed, 1 failed ---
 
 Violations:
-    dual_category: [loc(6,4)]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:131:
+    dual_category: [loc(0,3),loc(6,4)]
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:38:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -930,9 +934,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:131:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:38:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -956,9 +960,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:130:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -987,9 +991,9 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:130:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:135:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -998,63 +1002,6 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 
 --- sample 4 ---
-=== Constraint Evaluation ===
-
---- Section A (translation) ---
-  PASS  partition
-  PASS  bounds
-  PASS  coverage
-  PASS  implies_grid
-
---- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
-
---- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:130:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:130:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
-
---- sample 5 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
@@ -1072,9 +1019,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 7/8 passed, 1 failed ---
 
 Violations:
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:133:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:133:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1103,9 +1050,66 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:133:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:133:
 Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 5 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  PASS  partition
+  PASS  bounds
+  PASS  coverage
+  PASS  implies_grid
+
+--- Section B (walls) ---
+  PASS  wall_count
+  PASS  no_interior_walls
+  PASS  cell_wall_counts
+  PASS  all_directions
+
+--- Summary: 8/8 passed, 0 failed ---
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:29:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+N=3  TP=12  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=4  TP=16  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=5  TP=20  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=6  TP=24  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=7  TP=28  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=8  TP=32  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=9  TP=36  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=10  TP=40  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=11  TP=44  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=12  TP=48  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+N=13  TP=52  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:29:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1131,9 +1135,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/one-shot/one_shot_sample_1.pl:134:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1162,9 +1164,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/one-shot/one_shot_sample_1.pl:134:
-Warning:    Singleton variables: [N]
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1188,7 +1188,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1217,7 +1217,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1241,7 +1241,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1270,7 +1270,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1294,7 +1294,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1323,7 +1323,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1347,7 +1347,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
@@ -1376,7 +1376,7 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 

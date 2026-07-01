@@ -132,7 +132,7 @@ empty_location(loc(7,5)).
 empty_location(loc(7,6)).
 empty_location(loc(7,7)).
 
-wall(loc(X,Y), north) :- grid(loc(X,Y)), Y =:= 0.
+wall(loc(X,Y), north) :- grid(loc(X,Y)), grid_size(N), Y =:= 0.
 wall(loc(X,Y), south) :- grid(loc(X,Y)), grid_size(N), Y =:= N - 1.
 wall(loc(X,Y), west)  :- grid(loc(X,Y)), X =:= 0.
 wall(loc(X,Y), east)  :- grid(loc(X,Y)), grid_size(N), X =:= N - 1.

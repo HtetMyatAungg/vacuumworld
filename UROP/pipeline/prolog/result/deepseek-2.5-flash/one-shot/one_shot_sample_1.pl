@@ -103,7 +103,6 @@ empty_location(loc(1,4)).
 empty_location(loc(2,4)).
 empty_location(loc(4,4)).
 empty_location(loc(5,4)).
-empty_location(loc(6,4)).
 empty_location(loc(7,4)).
 empty_location(loc(0,5)).
 empty_location(loc(1,5)).
@@ -124,11 +123,10 @@ empty_location(loc(0,7)).
 empty_location(loc(1,7)).
 empty_location(loc(2,7)).
 empty_location(loc(3,7)).
+empty_location(loc(4,7)).
 empty_location(loc(5,7)).
 empty_location(loc(6,7)).
 empty_location(loc(7,7)).
-empty_location(loc(4,0)).
-empty_location(loc(4,7)).
 wall(loc(X,Y), north) :- grid(loc(X,Y)), grid_size(N), Y =:= 0.
 wall(loc(X,Y), south) :- grid(loc(X,Y)), grid_size(N), Y =:= N - 1.
 wall(loc(X,Y), west)  :- grid(loc(X,Y)), X =:= 0.

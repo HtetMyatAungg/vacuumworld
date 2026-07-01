@@ -70,7 +70,6 @@ seen(dirt(loc(3,4), orange)).
 seen(dirt(loc(4,6), orange)).
 seen(dirt(loc(5,1), green)).
 seen(dirt(loc(6,4), orange)).
-
 seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0,3), orange)).
 seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4,0), green)).
 
@@ -95,6 +94,7 @@ empty_location(loc(4,2)).
 empty_location(loc(5,2)).
 empty_location(loc(6,2)).
 empty_location(loc(7,2)).
+empty_location(loc(0,4)).
 empty_location(loc(1,3)).
 empty_location(loc(2,3)).
 empty_location(loc(3,3)).

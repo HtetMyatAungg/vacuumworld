@@ -1,4 +1,5 @@
 grid_size(8).
+
 grid(loc(0,0)).
 grid(loc(1,0)).
 grid(loc(2,0)).
@@ -63,13 +64,15 @@ grid(loc(4,7)).
 grid(loc(5,7)).
 grid(loc(6,7)).
 grid(loc(7,7)).
-seen(dirt(loc(1,1), orange)).
+
+seen(dirt(loc(2,1), orange)).
 seen(dirt(loc(3,4), orange)).
 seen(dirt(loc(4,6), orange)).
 seen(dirt(loc(6,4), orange)).
 seen(dirt(loc(5,1), green)).
 seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0,3), orange)).
 seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4,0), green)).
+
 empty_location(loc(0,0)).
 empty_location(loc(1,0)).
 empty_location(loc(2,0)).
@@ -78,7 +81,7 @@ empty_location(loc(5,0)).
 empty_location(loc(6,0)).
 empty_location(loc(7,0)).
 empty_location(loc(0,1)).
-empty_location(loc(2,1)).
+empty_location(loc(1,1)).
 empty_location(loc(3,1)).
 empty_location(loc(4,1)).
 empty_location(loc(6,1)).
@@ -123,10 +126,10 @@ empty_location(loc(0,7)).
 empty_location(loc(1,7)).
 empty_location(loc(2,7)).
 empty_location(loc(3,7)).
-empty_location(loc(4,7)).
 empty_location(loc(5,7)).
 empty_location(loc(6,7)).
 empty_location(loc(7,7)).
+
 wall(loc(X,Y), north) :- grid(loc(X,Y)), grid_size(N), Y =:= 0.
 wall(loc(X,Y), south) :- grid(loc(X,Y)), grid_size(N), Y =:= N - 1.
 wall(loc(X,Y), west)  :- grid(loc(X,Y)), X =:= 0.

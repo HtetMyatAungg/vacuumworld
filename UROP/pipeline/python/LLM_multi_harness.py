@@ -301,25 +301,12 @@ prompts = [
     ("one-shot",     one_shot_prompt),
 ]
 
-for prompt_type, prompt in prompts:
-    for n in range(1, 6):
-        try:
-            call_anthropic(prompt, n, prompt_type)
-        except Exception as e:
-            print(f"Error occurred while calling Anthropic for sample {n}: {e}")
-        try:
-            call_gemini(prompt, n, prompt_type)
-        except Exception as e:
-            print(f"Error occurred while calling Gemini for sample {n}: {e}")
-        try:
-            call_gemini_small(prompt, n, prompt_type)
-        except Exception as e:
-            print(f"Error occurred while calling Gemini Small for sample {n}: {e}")
-        try:
-            call_deepseek(prompt, n, prompt_type)
-        except Exception as e:
-            print(f"Error occurred while calling DeepSeek for sample {n}: {e}")
-        try:
-            call_cerebras(prompt, n, prompt_type)
-        except Exception as e:
-            print(f"Error occurred while calling Cerebras for sample {n}: {e}")
+#for prompt_type, prompt in prompts:
+for n in range(1, 6):
+    prompt = one_shot_prompt 
+    prompt_type = "one-shot"
+    call_anthropic(prompt, n, prompt_type)
+    call_gemini(prompt, n, prompt_type)
+    call_gemini_small(prompt, n, prompt_type)
+    call_deepseek(prompt, n, prompt_type)
+    call_cerebras(prompt, n, prompt_type)
