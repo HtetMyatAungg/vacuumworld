@@ -1,0 +1,2842 @@
+--- zero-shot ---
+
+=== gemma3-4b ===
+
+--- sample 1 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(instantiation_error,context(system:(>=)/2,_736))
+  FAIL  partition
+  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_876))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6380))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6544))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6704))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6858))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_7012))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7160))
+  FAIL  all_directions
+
+--- Summary: 0/8 passed, 8 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_1.pl:14:
+Warning:    Singleton variable in branch: N
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_1.pl:14:
+Warning:    Singleton variable in branch: N
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 2 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 3 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:1:9: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:2:18: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:3:
+Warning:    Singleton variables: [S,E]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:13:26: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:1:9: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:2:18: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:3:
+Warning:    Singleton variables: [S,E]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:13:26: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 4 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
+ERROR: -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `loc(0,0)' (a compound)
+
+--- sample 5 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:10:6: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:28:17: Syntax error: Unexpected end of file
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:10:6: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:28:17: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 6 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 7 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 8 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_7462))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_7684))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_7848))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8008))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8162))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8316))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8464))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:3:7: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:11:12: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:20:14: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:30:1: Syntax error: Unbalanced operator
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:33:8: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:39:8: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:45:
+Warning:    Singleton variables: [FinalString]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:3:7: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:11:12: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:20:14: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:30:1: Syntax error: Unbalanced operator
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:33:8: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:39:8: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:45:
+Warning:    Singleton variables: [FinalString]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 9 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:2:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:12:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:16:5: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:35:
+Warning:    Singleton variables: [WallCount]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:37:59: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:2:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:12:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:16:5: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:35:
+Warning:    Singleton variables: [WallCount]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:37:59: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 10 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6924))
+  FAIL  partition
+  PASS  bounds
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_7178))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  FAIL  wall_count
+  PASS  no_interior_walls
+  FAIL  cell_wall_counts
+  FAIL  all_directions
+
+--- Summary: 2/8 passed, 6 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
+Warning:    Singleton variables: [N,Grid]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
+ERROR:    Type error: `callable' expected, found `findall((_9550,_9556,_9562,_9568,_9570),(cell(_9550,_9556),wall_present(_9550,_9556,_9562),dirt_value(_9550,_9556,_9568),agent_value(_9550,_9556,_9570)),_9546);[]' (a compound)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:17:
+Warning:    Singleton variables: [X,Y,Wall]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:19:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:21:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:23:
+Warning:    Singleton variables: [Grid]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:29:17: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
+Warning:    Singleton variables: [N,Grid]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
+ERROR:    Type error: `callable' expected, found `findall((_10756,_10762,_10768,_10774,_10776),(cell(_10756,_10762),wall_present(_10756,_10762,_10768),dirt_value(_10756,_10762,_10774),agent_value(_10756,_10762,_10776)),_10752);[]' (a compound)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:17:
+Warning:    Singleton variables: [X,Y,Wall]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:19:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:21:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:23:
+Warning:    Singleton variables: [Grid]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:29:17: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 11 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(instantiation_error,context(system:(>)/2,_726))
+  FAIL  partition
+  ERROR bounds: error(instantiation_error,context(system:(>)/2,_866))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6370))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6534))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6694))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6848))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_7002))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7150))
+  FAIL  all_directions
+
+--- Summary: 0/8 passed, 8 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:10:48: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:11:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:12:43: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:13:47: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:16:20: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:10:48: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:11:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:12:43: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:13:47: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:16:20: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 12 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:7:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:15:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:18:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:21:
+Warning:    Singleton variables: [N]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:7:
+Warning:    Singleton variables: [X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:15:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:18:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:21:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 13 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_13.pl:20:
+Warning:    Singleton variables: [N]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_13.pl:20:
+Warning:    Singleton variables: [N]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 14 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:4:18: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:5:12: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:14:64: Syntax error: Unexpected end of file
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:4:18: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:5:12: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:14:64: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 15 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(instantiation_error,context(system:(>=)/2,_7722))
+  FAIL  partition
+  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_7862))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_262))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_422))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_576))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_730))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_878))
+  FAIL  all_directions
+
+--- Summary: 0/8 passed, 8 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+ERROR: -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `_938-1' (a compound)
+
+--- sample 16 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:1:8: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:4:30: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:1:8: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:4:30: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 17 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6114))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6336))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6500))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6660))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6814))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6968))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7116))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
+Warning:    Test is always false: Y==N
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
+Warning:    Test is always false: X==N
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
+Warning:    Test is always false: Y==N
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
+Warning:    Test is always false: X==N
+ERROR: -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Arguments are not sufficiently instantiated
+
+--- sample 18 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6132))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6354))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6518))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6678))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6832))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6986))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7134))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:2:
+Warning:    Singleton variables: [Cell,X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:3:
+Warning:    Singleton variables: [West,X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:4:
+Warning:    Singleton variables: [South,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:5:
+Warning:    Singleton variables: [East,X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:6:
+Warning:    Singleton variables: [North,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:8:36: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:9:35: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:10:
+Warning:    Singleton variables: [None]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:12:
+Warning:    Singleton variables: [Id,Colour,X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+Warning:    Test is always false: Wall==West
+Warning:    Test is always false: Wall==South
+Warning:    Test is always false: Wall==East
+Warning:    Test is always false: Wall==North
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:36:
+Warning:    Singleton variables: [X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:39:34: Syntax error: Unexpected end of file
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:2:
+Warning:    Singleton variables: [Cell,X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:3:
+Warning:    Singleton variables: [West,X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:4:
+Warning:    Singleton variables: [South,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:5:
+Warning:    Singleton variables: [East,X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:6:
+Warning:    Singleton variables: [North,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:8:36: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:9:35: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:10:
+Warning:    Singleton variables: [None]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:12:
+Warning:    Singleton variables: [Id,Colour,X,Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+Warning:    Test is always false: Wall==West
+Warning:    Test is always false: Wall==South
+Warning:    Test is always false: Wall==East
+Warning:    Test is always false: Wall==North
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:36:
+Warning:    Singleton variables: [X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:39:34: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 19 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(instantiation_error,context(system:(>=)/2,_744))
+  FAIL  partition
+  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_884))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6388))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6552))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6712))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6866))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_7020))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7168))
+  FAIL  all_directions
+
+--- Summary: 0/8 passed, 8 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
+Warning:    Singleton variables: [West,South,East,North]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
+Warning:    Singleton variable in branch: West
+Warning:    Singleton variable in branch: South
+Warning:    Singleton variable in branch: East
+Warning:    Singleton variable in branch: North
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 20 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:4:16: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:7:27: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:28:42: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:33:38: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:4:16: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:7:27: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:28:42: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:33:38: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+=== qwen2.5-3b ===
+
+--- sample 1 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:1:21: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:9:41: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:11:140: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:12:141: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:13:136: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:14:104: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:1:21: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:9:41: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:11:140: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:12:141: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:13:136: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:14:104: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 2 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 3 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:1:
+Warning:    Singleton variables: [NW]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:5:
+Warning:    Singleton variables: [PE]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13:
+Warning:    Singleton variables: [N]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:18:20: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:29:
+Warning:    Singleton variables: [T]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:37:
+Warning:    Clauses of perimeter/1 are not together in the source-file
+Warning:    Earlier definition at /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13
+Warning:    Current predicate: world/1
+Warning:    Use :- discontiguous perimeter/1. to suppress this message
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:1:
+Warning:    Singleton variables: [NW]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:5:
+Warning:    Singleton variables: [PE]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13:
+Warning:    Singleton variables: [N]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:18:20: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:29:
+Warning:    Singleton variables: [T]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:37:
+Warning:    Clauses of perimeter/1 are not together in the source-file
+Warning:    Earlier definition at /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13
+Warning:    Current predicate: world/1
+Warning:    Use :- discontiguous perimeter/1. to suppress this message
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 4 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:12:3: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:23:3: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:31:
+Warning:    Singleton variables: [N2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:38:
+Warning:    Singleton variables: [Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:39:
+Warning:    Singleton variables: [Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:41:
+Warning:    Singleton variables: [Ec,Y,E_0,Y_]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:12:3: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:23:3: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:31:
+Warning:    Singleton variables: [N2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:38:
+Warning:    Singleton variables: [Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:39:
+Warning:    Singleton variables: [Y]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:41:
+Warning:    Singleton variables: [Ec,Y,E_0,Y_]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 5 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8996))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_9218))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_9382))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_9542))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_9696))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_9850))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9998))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
+Warning:    Singleton variables: [X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
+Warning:    Singleton variable in branch: X
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
+Warning:    Singleton variables: [X]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
+Warning:    Singleton variables: [X0,X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
+Warning:    Singleton variables: [X]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
+Warning:    Singleton variable in branch: X
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
+Warning:    Singleton variables: [X]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
+Warning:    Singleton variables: [X0,X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
+ERROR: -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): false
+
+--- sample 6 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_13700))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_13922))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_14086))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_14246))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_14400))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_14554))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_14702))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:1:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:11:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:37:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:1:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:11:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:37:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 7 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6938))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_7160))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_7324))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_7484))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_7638))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_7792))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7940))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:7:21: Syntax error: Operator priority clash
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:32:28: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:38:
+Warning:    Singleton variables: [T,V,S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
+Warning:    Singleton variables: [O,A,B,C,K,L,U,P,Q]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
+ERROR:    Type error: `module' expected, found `list_domain(domains([],_14352,[_14362],[_14368],[_14374]),domains([_14386,_14392],[_14398]),[],[],_14346)' (a compound)
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:7:21: Syntax error: Operator priority clash
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:32:28: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:38:
+Warning:    Singleton variables: [T,V,S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
+Warning:    Singleton variables: [O,A,B,C,K,L,U,P,Q]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
+ERROR:    Type error: `module' expected, found `list_domain(domains([],_15558,[_15568],[_15574],[_15580]),domains([_15592,_15598],[_15604]),[],[],_15552)' (a compound)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 8 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:1:20: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:33:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:40:77: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:46:78: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:54:77: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:61:
+Warning:    Singleton variables: [Z]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:63:
+Warning:    Singleton variables: [Z]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:1:20: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:33:44: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:40:77: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:46:78: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:54:77: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:61:
+Warning:    Singleton variables: [Z]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:63:
+Warning:    Singleton variables: [Z]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 9 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:1:
+Warning:    Singleton variables: [X,Y,Walls]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:5:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:11:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:52:21: Syntax error: end_of_file_in_quasi_quotation
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:1:
+Warning:    Singleton variables: [X,Y,Walls]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:5:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:11:5: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:52:21: Syntax error: end_of_file_in_quasi_quotation
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 10 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
+Warning:    Singleton variables: [X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:7:22: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:18:33: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:30:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:38:22: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
+Warning:    Singleton variables: [X,Y]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:7:22: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:18:33: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:30:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:38:22: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 11 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_11.pl:1:1: Syntax error: End of file in /* ... */ comment
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_11.pl:1:1: Syntax error: End of file in /* ... */ comment
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 12 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 13 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:1:197: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:3:18: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:5:23: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:7:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:9:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:11:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:13:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:15:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
+Warning:    Singleton variables: [Content]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
+Warning:    Singleton variables: [AgentContent,AgentColor]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:1:197: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:3:18: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:5:23: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:7:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:9:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:11:31: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:13:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:15:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
+Warning:    Singleton variables: [Content]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
+Warning:    Singleton variables: [AgentContent,AgentColor]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
+ERROR:    No permission to modify static procedure `(;)/2'
+ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 14 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8990))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_9212))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_9376))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_9536))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_9690))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_9844))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9992))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:1:249: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:8:51: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:11:63: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:13:81: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:14:35: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:16:24: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:17:25: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:19:33: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:21:41: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:23:41: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:1:249: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:8:51: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:11:63: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:13:81: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:14:35: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:16:24: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:17:25: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:19:33: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:21:41: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:23:41: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 15 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_15.pl:22:14: Syntax error: Unexpected end of file
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_15.pl:22:14: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 16 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6106))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6328))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6492))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6652))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6806))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6960))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7108))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:3:12: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:7:
+Warning:    Singleton variables: [Cn]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
+Warning:    Singleton variables: [Ns]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
+ERROR:    Type error: `callable' expected, found `grid(_11610,_11612),(_11634\=north->(_11634\=south;_11652=0);_11634\=west;_11676=0;_11672),neighbor_bounds(_11688,_11652),append(_11612,[_11688|_11704],_11634)' (a compound)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:16:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:17:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:18:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:19:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:20:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:21:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:22:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:23:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:24:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:25:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:26:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:27:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:28:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:29:
+Warning:    Singleton variables: [W]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:30:32: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:32:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:33:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:34:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:35:
+Warning:    Singleton variables: [W]
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:3:12: Syntax error: Illegal start of term
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:7:
+Warning:    Singleton variables: [Cn]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
+Warning:    Singleton variables: [Ns]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
+ERROR:    Type error: `callable' expected, found `grid(_12816,_12818),(_12840\=north->(_12840\=south;_12858=0);_12840\=west;_12882=0;_12878),neighbor_bounds(_12894,_12858),append(_12818,[_12894|_12910],_12840)' (a compound)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:16:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:17:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:18:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:19:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:20:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:21:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:22:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:23:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:24:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:25:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:26:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:27:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:28:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:29:
+Warning:    Singleton variables: [W]
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:30:32: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:32:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:33:
+Warning:    Singleton variables: [E]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:34:
+Warning:    Singleton variables: [S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:35:
+Warning:    Singleton variables: [W]
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 17 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_6140))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_6362))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_6526))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_6686))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_6840))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_6994))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_7142))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
+Warning:    Singleton variable in branch: N
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
+Warning:    Singleton variables: [Y0]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
+Warning:    Singleton variable in branch: Y0
+Warning:    Singleton variable in branch: V1
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
+Warning:    Singleton variables: [D]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
+Warning:    Singleton variable in branch: N2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:31:82: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:36:21: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:40:56: Syntax error: Operator expected
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
+Warning:    Singleton variable in branch: N
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
+Warning:    Singleton variables: [Y0]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
+Warning:    Singleton variable in branch: Y0
+Warning:    Singleton variable in branch: V1
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
+Warning:    Singleton variables: [D]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
+Warning:    Singleton variable in branch: N2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:31:82: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:36:21: Syntax error: Operator expected
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:40:56: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 18 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:26:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:29:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:26:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:29:
+ERROR:    Full stop in clause-body?  Cannot redefine ,/2
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 19 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_19.pl:1:1: Syntax error: End of file in quoted atom
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_19.pl:1:1: Syntax error: End of file in quoted atom
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+
+--- sample 20 ---
+=== Constraint Evaluation ===
+
+--- Section A (translation) ---
+  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_204))
+  FAIL  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_426))
+  FAIL  coverage
+  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_590))
+  FAIL  implies_grid
+
+--- Section B (walls) ---
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_750))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_904))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1058))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1206))
+  FAIL  all_directions
+
+--- Summary: 1/8 passed, 7 failed ---
+
+Violations:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:18:34: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:22:5: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:29:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:40:
+Warning:    Singleton variables: [N,E,S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:41:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
+Warning:    Singleton variables: [Rest,N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
+Warning:    Singleton variables: [N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
+Warning:    Singleton variables: [N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+ERROR: -g check_all: dual_category/2: Unknown procedure: seen/1
+ERROR:   However, there are definitions for:
+ERROR:         seen/0
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:18:34: Syntax error: Illegal start of term
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:22:5: Syntax error: Operator expected
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:29:
+Warning:    Singleton variables: [W]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:40:
+Warning:    Singleton variables: [N,E,S]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:41:
+Warning:    Singleton variables: [N]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
+Warning:    Singleton variables: [Rest,N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
+Warning:    Singleton variables: [N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
+Warning:    Singleton variables: [N,E2,S2]
+Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
+Warning:    Singleton variable in \+: E2
+Warning:    Singleton variable in \+: S2
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.9)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+

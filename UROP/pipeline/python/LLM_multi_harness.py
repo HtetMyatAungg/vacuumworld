@@ -110,10 +110,8 @@ empty_location(loc(0,2)).
 empty_location(loc(1,2)).
 empty_location(loc(2,2)).
 
-wall(loc(X,Y), north) :- grid(loc(X,Y)), grid_size(N), Y =:= 0.
-wall(loc(X,Y), south) :- grid(loc(X,Y)), grid_size(N), Y =:= N - 1.
-wall(loc(X,Y), west)  :- grid(loc(X,Y)), X =:= 0.
-wall(loc(X,Y), east)  :- grid(loc(X,Y)), grid_size(N), X =:= N - 1.
+(The example stops here. Boundary wall rules are not shown — you must derive
+them yourself for the percept log below, generalised to work for any grid size.)
 
 Now translate this percept log:
 {percepts}
@@ -143,6 +141,12 @@ PROMPT_TYPES = {
     "one-shot":     "one_shot",
 }
 
+def write_repair_log(model, prompt_type, n, attempt, status):
+    repair_path = f"UROP/pipeline/results/repair/{model}_{prompt_type}_repair.txt"
+    repair= f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}\n"
+    with open(repair_path, "a") as f:
+        f.write(repair)
+
 def strip_markdown(text):
     if not text:
         return ""
@@ -171,9 +175,11 @@ def call_anthropic(prompt, n, prompt_type="zero-shot"):
         code = response.content[0].text
         with open(file_path, "w") as f:
             f.write(code)
-        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
+            write_repair_log("claude-sonnet-4.6", prompt_type, n, attempt, "SUCCESS")
             break
+        write_repair_log("claude-sonnet-4.6", prompt_type, n, attempt, "FAIL")
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
     print(f"claude-sonnet-4.6 [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
@@ -197,9 +203,11 @@ def call_gemini(prompt, n, prompt_type="zero-shot"):
         code = response.text
         with open(file_path, "w") as f:
             f.write(code)
-        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
+            write_repair_log("gemini-2.5-flash", prompt_type, n, attempt, "SUCCESS")
             break
+        write_repair_log("gemini-2.5-flash", prompt_type, n, attempt, "FAIL")
         contents.append(types.Content(role="model", parts=[types.Part.from_text(text=code)]))
         contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
     print(f"gemini-2.5-flash [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
@@ -222,9 +230,11 @@ def call_gemini_small(prompt, n, prompt_type="zero-shot"):
         code = response.text
         with open(file_path, "w") as f:
             f.write(code)
-        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
+            write_repair_log("gemini-3.1-flash-lite", prompt_type, n, attempt, "SUCCESS")
             break
+        write_repair_log("gemini-3.1-flash-lite", prompt_type, n, attempt, "FAIL")
         contents.append(types.Content(role="model", parts=[types.Part.from_text(text=code)]))
         contents.append(types.Content(role="user", parts=[types.Part.from_text(text=f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation.")]))
     print(f"gemini-3.1-flash-lite [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
@@ -247,9 +257,11 @@ def call_cerebras(prompt, n, prompt_type="zero-shot", model="gemma-4-31b"):
         code = strip_markdown(response.choices[0].message.content)
         with open(file_path, "w") as f:
             f.write(code)
-        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
+            write_repair_log(model, prompt_type, n, attempt, "SUCCESS")
             break
+        write_repair_log(model, prompt_type, n, attempt, "FAIL")
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
     print(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
@@ -273,9 +285,11 @@ def call_deepseek(prompt, n, prompt_type="zero-shot"):
         code = response.choices[0].message.content
         with open(file_path, "w") as f:
             f.write(code)
-        result = subprocess.run(["swipl", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
+        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
         if result.returncode == 0:
+            write_repair_log("deepseek-chat", prompt_type, n, attempt, "SUCCESS")
             break
+        write_repair_log("deepseek-chat", prompt_type, n, attempt, "FAIL")
         messages.append({"role": "assistant", "content": code})
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
     print(f"deepseek-chat [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
@@ -289,8 +303,23 @@ prompts = [
 
 for prompt_type, prompt in prompts:
     for n in range(1, 6):
-        call_anthropic(prompt, n, prompt_type)
-        call_gemini(prompt, n, prompt_type)
-        call_gemini_small(prompt, n, prompt_type)
-        call_deepseek(prompt, n, prompt_type)
-        call_cerebras(prompt, n, prompt_type)
+        try:
+            call_anthropic(prompt, n, prompt_type)
+        except Exception as e:
+            print(f"Error occurred while calling Anthropic for sample {n}: {e}")
+        try:
+            call_gemini(prompt, n, prompt_type)
+        except Exception as e:
+            print(f"Error occurred while calling Gemini for sample {n}: {e}")
+        try:
+            call_gemini_small(prompt, n, prompt_type)
+        except Exception as e:
+            print(f"Error occurred while calling Gemini Small for sample {n}: {e}")
+        try:
+            call_deepseek(prompt, n, prompt_type)
+        except Exception as e:
+            print(f"Error occurred while calling DeepSeek for sample {n}: {e}")
+        try:
+            call_cerebras(prompt, n, prompt_type)
+        except Exception as e:
+            print(f"Error occurred while calling Cerebras for sample {n}: {e}")

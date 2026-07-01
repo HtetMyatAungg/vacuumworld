@@ -1,18 +1,64 @@
-```prolog
-% Function to translate percept log into a Prolog schema
+grid(0, [wall(west)]).
+grid(N, Cords) :-
+  N > 0,
+  between(0, N-1, N2),
+  grid(N2, NextCords),
+  append(NextCords, [N], Cords).
 
-translate_percept_log_to_schemas() {
-  percepts = [coord(coord("0", "6"), wall(loc(0, 0), "west")), coord(coord(1, 6), wall(loc(1, 0), "south")), coord(coord(2, 6), wall(loc(2, 0), "south")), coord(loc(0, 7), [wall(loc(0, 5), "west")]), coord(loc(1, 7), [wall(loc(1, 5), "south")]), coord(loc(2, 7), [wall(loc(2, 5), "south")]...),
-    {coord(coord(0, 6), seen(dirt(loc(0, 6), "orange"))), coord(coord(1, 6), seen(agent(Id, loc(1, 6), "orange")))}],
-    seen(wall(loc(X,Y),"west")), empty_location(loc(X,Y)))
-}
+coordinate(X, Y) -->
+  { coordinate(0, Y), X = 0 },
+  { coordinate(N, Y), N > 0, (X <= N, X > 1) }.
 
-```
+% Walls
+wall(west).
+forall(coordinate(_Y, Y)/N:-(coordinate(X, Y)), grid(N)) :-
+  \+ wall(west),
+  walls_west(0, 0, N-1, N).
 
-This Prolog schema translates the percept log into a set of clauses representing it. The `translate_percept_log_to_schemas/1` function takes a list of percept records as input and returns a prolog schema that maps those percept records to valid Prolog clauses. Here is an example output for a small grid: 
+walls_west(_, Y, X2, N) :-
+  (X2 < X, wall(west); coordinate(X, Y)),
+walls_west(N, Y, N, N).
+walls_west(X, Y, NextX, N) :-
+  walls_west(NextX, Y, NextX-1, N).
 
-```
-% Example Output
+% Agent states
+agent(agent_id(_Id), _Cord),
+agent(agent_colour(orange), [coordinate(0, 6); coordinate(4, 8)]),
+agent(agent_colour(green), [2;5;7]).
 
-? (coord(coord(0, 6), wall(loc(0, 6), "north")))
-```
+% Initial state
+state(grid(N), X0/1, walls(west/south)/N, coord(X/Y)/1, N, agent_id/1,
+       agent_colour/1).
+
+% States transitions
+next_state(state(Grid/N, _, _, Agents/CordN, AgentIDs/IDN, AgentColours/ColourN),
+           grid(GridNew/N2), walls/0, coord(NextX/NextY), NextAgentID/IDN, NextAgentColour/ColourN)
+<-
+  NextX <~ [0],
+  wall(west)/N2,
+  coordinate(N, Y) <--> (NextX = X \<- wall(south)),
+  agent(agent_id(X)/1CordNew -> N2 <-\> (agent(agentID/X)/AgentIDs),
+  next_agent_id(NewId), NextAgentID = \(X, AgentIDs),
+  NextAgentColours/ColourN,
+  agent_colour(agent_colour(X/N)/ColourN).
+
+next_state(state(_Grid/4, _X0, _, AgentIDs/1CordNew, AgentID/IDN, Agents_Colour_IDN),
+           state(grid(N+1)/N2, X/Y, walls(south)/N2, coord(NextX/NextY), NextAgentID/IDN, NextAgentColour/ColourN),
+  [wall(south)], next_state) :-
+  outside(state(Grid, X0, walls(west/south)/N, X/Cord/1CordNew,
+                       AgentIDs/IDN, agent_colour(ColourNew),
+                       Agents/CordsN)) :- grid(N+1), walls/2 \+(X = N -> wall(south)),
+        (agent(agentID/X)/AgentIDs -> next_state(state/Grid, X0, walls(west/south)/N, coord(X/Y, Agent_ids),
+                                                 ID_N, agent_colour(ColourNew))),
+outside(grid(0)).
+
+% Agents states
+is_cleaned(grid(1)).
+next_state(state(Grid/4, N, walls(west/south)/South), state(Grid/4, N, walls(west/south)/South) :-
+  (X/N /= Id \ X).
+
+% Boundaries
+outside(grid(0)).
+
+% Goal: No agents present
+no_agents(state(grid(_)), _).
