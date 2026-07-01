@@ -12,7 +12,7 @@ constraints passed. Large models fail via `existence_error` on undefined
 0.85/8). Zero-shot tells us nothing about abstraction vs hardcoding — it's a
 floor effect where the models never produce queryable Prolog at all.
 
-## One-shot (large models) — flat F1=1.0, but INVALID data
+## One-shot (large models) — flat F1=1.0
 
 All 5 large models score a perfect flat 1.0 across N=3-13. This result is
 contaminated: these `.pl` files were generated under the old one-shot prompt
@@ -25,7 +25,7 @@ cannot be used as abstraction evidence.
 **Action: regenerate one-shot samples for all large models under the fixed
 prompt, then re-run evaluator.py, before this condition goes in the report.**
 
-## One-shot (small models) — same contamination, but a hint of signal
+## One-shot (small models)
 
 gemma3-4b: 0.03 at N=3 decaying to 0.0 by higher N. qwen2.5-3b: 0.01 at N=3
 to 0.0. Near-total failure overall (avg ~1.8/8 constraints), but this is the
@@ -72,6 +72,35 @@ both model classes and all three prompt types, that shows a real N-dependent
 downward trend rather than flat-zero or flat-ceiling. It's the closest thing
 to evidence for the hardcoding side of the research question, and it shows
 up specifically in a small model under schema-based prompting.
+
+### Direct evidence: inspecting the actual generated wall/2 rules
+
+Rather than relying on the smoothed F1 curve, we pulled the `wall/2` clause
+bodies from all 20 gemma3-4b schema-based samples directly. **Zero of the 20
+samples correctly call `grid_size(N)` to parametrise the rule** — the
+instruction ("Your rules must generalise — they should work for any grid
+size") is essentially never followed. Breakdown of what they do instead:
+
+| Failure mode | Count | Example |
+|---|---|---|
+| Hardcoded literal boundary numbers | 14/20 | `x = 8, y < 9` (sample 1); `X < 5, Y < 7` (sample 2) |
+| Omits `wall/2` entirely | 2/20 | samples 6, 11 |
+| Truncated/malformed clause | 1/20 | sample 3 |
+| Nonsensical logic (reuses `N` as the direction argument, never as size) | 1/20 | sample 14: `wall(loc(X,Y), N) :- X < 0, Y < 0.` |
+| Degenerate unconditional facts (marks every cell walled) | 1/20 | sample 19 |
+| Syntactically resembles an `N`-parametrised form but never binds `N` via `grid_size/1` (near-miss) | 1/20 | sample 20: `X < N, ... Y = N - 1`, no `grid_size(N)` call anywhere in the clause |
+
+The 14 hardcoding samples also don't agree on *which* number to memorize —
+mostly 8/9 (close to the real 8×8 percept grid in
+`World_Model_percepts.json`), but also 4/5, 3, and 7 in others. So this
+isn't "the model reliably memorizes the one demonstrated grid size" — it's a
+general failure to produce the parametrised form, which happens to manifest
+as hardcoded-looking literals almost every time. This is much stronger,
+direct textual evidence for the hardcoding side of the research question
+than the F1-vs-N curve alone, and it explains the curve mechanically: each
+sample's literal boundary can only "accidentally" fire true for whichever
+test `N` happens to line up with its baked-in number, so F1 degrades as the
+swept `N` moves away from that.
 
 ## Known failure modes found during this analysis
 

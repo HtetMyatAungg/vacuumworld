@@ -1,84 +1,21 @@
 Section A — Translation facts:
-grid_size(8).
+grid_size(12).
+grid(loc(X,Y)) :-
+    X >= 0,
+    Y >= 0,
+    X < 13,
+    Y < 13.
 
-grid(loc(0,0)).
-grid(loc(1,0)).
-grid(loc(2,0)).
-grid(loc(3,0)).
-grid(loc(4,0)).
-grid(loc(5,0)).
-grid(loc(6,0)).
-grid(loc(7,0)).
-grid(loc(0,1)).
-grid(loc(1,1)).
-grid(loc(2,1)).
-grid(loc(3,1)).
-grid(loc(4,1)).
-grid(loc(5,1)).
-grid(loc(6,1)).
-grid(loc(0,2)).
-grid(loc(1,2)).
-grid(loc(2,2)).
-grid(loc(3,2)).
-grid(loc(4,2)).
-grid(loc(5,2)).
-grid(loc(6,2)).
-grid(loc(0,3)).
-grid(loc(1,3)).
-grid(loc(2,3)).
-grid(loc(3,3)).
-grid(loc(4,3)).
-grid(loc(5,3)).
-grid(loc(6,3)).
-grid(loc(0,4)).
-grid(loc(1,4)).
-grid(loc(2,4)).
-grid(loc(3,4)).
-grid(loc(4,4)).
-grid(loc(5,4)).
-grid(loc(6,4)).
-grid(loc(7,4)).
-grid(loc(0,5)).
-grid(loc(1,5)).
-grid(loc(2,5)).
-grid(loc(3,5)).
-grid(loc(4,5)).
-grid(loc(5,5)).
-grid(loc(6,5)).
-grid(loc(7,5)).
-grid(loc(0,6)).
-grid(loc(1,6)).
-grid(loc(2,6)).
-grid(loc(3,6)).
-grid(loc(4,6)).
-grid(loc(5,6)).
-grid(loc(6,6)).
-grid(loc(7,6)).
-grid(loc(0,7)).
-grid(loc(1,7)).
-grid(loc(2,7)).
-grid(loc(3,7)).
-grid(loc(4,7)).
-grid(loc(5,7)).
-grid(loc(6,7)).
-grid(loc(7,7)).
+seen(dirt(loc(X,Y), _)) :- grid(loc(X,Y)), \+ seen(agent(_Id, loc(X,Y), _Colr)).
+seen(dirt(loc(0,Y), o)). 
+seen(dirt(loc(X,0), g)).
+empty_location(loc(X,Y)) :-
+    \+ seen(_loc(X,Y,_)),
+    \+ seen(dirt(loc(X,Y)_)),
+    \+ seen(agent(_Id, loc(X,Y),_Colr)).
 
-seen(dirt(loc(X,Y), Colour)) :-
-  seen(loc(X,Y)),
-  percept(dirt(loc(X,Y), Colour)).
-
-seen(agent(Id, loc(X,Y), Colour)) :-
-  seen(loc(X,Y)),
-  percept(agent(Id, loc(X,Y), Colour)).
-
-empty_location(loc(X,Y)), not_seen(loc(X,Y)).
-
-not_seen(loc(X,Y)) :- grid(loc(X,Y)).
-not_seen(loc(X,Y)) :- grid(loc(_,Y)).
-not_seen(loc(X,Y)) :- grid(loc(X,_)).
-not_seen(loc(X,Y)), percept(walk(loc(X,Y))) :-
-  wall(loc(X,Y), Dir),
-  not(grid(loc(X,Y))).
-not_seen(loc(X,Y)), percept(strike(loc(X,Y))) :-
-  wall(loc(X,Y), Dir),
-  not(grid(loc(X,Y))).
+Section B — Wall rules:
+wall(south, _).
+wall(east, _).
+wall(north, _).
+wall(west, _)

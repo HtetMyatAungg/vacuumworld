@@ -1,4 +1,4 @@
-grid_size(10).
+grid_size(8).
 
 grid(loc(0,0)).
 grid(loc(1,0)).
@@ -8,7 +8,6 @@ grid(loc(4,0)).
 grid(loc(5,0)).
 grid(loc(6,0)).
 grid(loc(7,0)).
-grid(loc(8,0)).
 
 grid(loc(0,1)).
 grid(loc(1,1)).
@@ -18,7 +17,6 @@ grid(loc(4,1)).
 grid(loc(5,1)).
 grid(loc(6,1)).
 grid(loc(7,1)).
-grid(loc(8,1)).
 
 grid(loc(0,2)).
 grid(loc(1,2)).
@@ -28,7 +26,6 @@ grid(loc(4,2)).
 grid(loc(5,2)).
 grid(loc(6,2)).
 grid(loc(7,2)).
-grid(loc(8,2)).
 
 grid(loc(0,3)).
 grid(loc(1,3)).
@@ -38,7 +35,6 @@ grid(loc(4,3)).
 grid(loc(5,3)).
 grid(loc(6,3)).
 grid(loc(7,3)).
-grid(loc(8,3)).
 
 grid(loc(0,4)).
 grid(loc(1,4)).
@@ -48,7 +44,6 @@ grid(loc(4,4)).
 grid(loc(5,4)).
 grid(loc(6,4)).
 grid(loc(7,4)).
-grid(loc(8,4)).
 
 grid(loc(0,5)).
 grid(loc(1,5)).
@@ -58,17 +53,15 @@ grid(loc(4,5)).
 grid(loc(5,5)).
 grid(loc(6,5)).
 grid(loc(7,5)).
-grid(loc(8,5)).
 
 grid(loc(0,6)).
 grid(loc(1,6)).
 grid(loc(2,6)).
 grid(loc(3,6)).
-grid(loc(4,6)).  
+grid(loc(4,6)).
 grid(loc(5,6)).
 grid(loc(6,6)).
 grid(loc(7,6)).
-grid(loc(8,6)).
 
 grid(loc(0,7)).
 grid(loc(1,7)).
@@ -78,6 +71,16 @@ grid(loc(4,7)).
 grid(loc(5,7)).
 grid(loc(6,7)).
 grid(loc(7,7)).
-grid(loc(8,7)).
 
-empty_location(loc(X,Y) :- grid(loc(X,Y)), \+ seen(dirt(loc(X,Y,_))), \+ seen(agent(_,loc(X,Y),_))).
+seen(dirt(loc(X,Y), Colour)) :-
+    member({X,Y}, [[0,6],[1,6],[2,6], [0,7],[1,7],[2,7]]),
+    \+ member({Colour}, [null, "green"]).
+
+seen(agent(Id, loc(X,Y), Colour)) :-
+    nonvar(Id),
+    X > 0,
+    Y > 0,
+    \+ grid(loc(X-1,Y)),
+    \+ seen(dirt(loc(X-1,Y), null)).
+
+empty_location(loc(X,Y)).

@@ -255,13 +255,13 @@ prompts = [
     ("one-shot",     one_shot_prompt),
 ]
 
-for prompt_type, prompt in prompts:
-    for n in range(1, 21):
-        try:
-            call_gemma(prompt,n,prompt_type)
-        except Exception as e:
-            print(f"Error occurred while processing sample {n}: {e}")
-        try:
-            call_qwen(prompt,n,prompt_type)
-        except Exception as e:
-            print(f"Error occurred while processing sample {n}: {e}")
+#for prompt_type, prompt in prompts:
+for n in range(1, 21):
+    try:
+        call_gemma(one_shot_prompt,n,"one-shot")
+    except Exception as e:
+        print(f"Error occurred while processing sample {n}: {e}")
+    try:
+        call_qwen(one_shot_prompt,n,"one-shot")
+    except Exception as e:
+        print(f"Error occurred while processing sample {n}: {e}")

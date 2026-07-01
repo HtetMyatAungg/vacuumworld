@@ -1,32 +1,71 @@
-Section A — Translation facts:
-grid_size(12).
-grid(loc(X,Y)).
+The previous Prolog failed SWI-Prolog validation.
 
-seen(dirt(loc(X,Y), null)).
-seen(dirt(loc(X,Y), green)).
-seen(dirt(loc(X,Y), orange)).
+Validation output:
+ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/one-shot/one_shot_sample_1.pl:4:5: Syntax error: Operator expected
 
-seen(agent("02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", loc(X,Y), null)).
-seen(agent("043d6f15-dfc1-4a2a-ae0c-bdcb3132ad1a", loc(X,Y), green)).
+Previous output:
+grid_size(11).
 
-empty_location(loc(X,Y)) :-
-  \+ grid(loc(X,Y)),
-  \+ seen(dirt(_, _Colour), Loc),
-  \+ seen(agent(_Id,Loc, _Colour), Loc).
+grid(loc(X,Y)) :-
+    X between 0, 10,
+    Y between 0, 10.
 
-Section B — Wall rules:
-wall(loc(X,Y), north) :-
-  grid_size(12),
-  member({X,-1}, [{0,_Y} .. {6,_Y}]).
-walldir(walk(north), loc(X,Y), east).
-walldir(walk(south), loc(X,Y), west).
-walldir(walk(east), loc(X,Y), south).
-walldir(walk(west), loc(X,Y), north).
+seen(dirt(loc(X,Y), colour(Green)))     :- percept(Coord, Walls, Dirt, Agent),
+                                               coord_to_loc(Coord, X, Y),
+                                               Dirt = dirt(true).
 
-\+ walldir(walk(_Dir1-LANL-LOC3WALLETCHTDIR), LOC2-WORKEXCEPTDIR, Dir) :-
-  \+ grid(loc({X},Y)) ;
-  member(Id@loc(_,_{Y}), [loc(0,1)-id(loc({C-X},WARLDIR@south-id),{D-Y}), loc(6,5)-id(loc(walldir@west-loc,{T-C}@north-id),{Z-D})]).
+seen(dirt(loc(X,Y), colour(Orange)))    :- percept(Coord, Walls, Dirt, Agent),
+                                               seen_dirt_at_location(Dirt, Location, Colour).
 
-\+ grid(loc(X,Y)) :-
-  \+ seen(dirt(_, _Col), Loc),
-  \+ seen(agent(_Id,Loc, _Col), Loc).
+seen(agent(Id, loc(X,Y), colour(Green)) ) :-
+    percept(Coord, Walls, Dirt, Agent),
+    coord_to_loc(Coord, X2 , Y ),
+    Dirt = dirt(false),
+    X2 \= X.
+
+seen(dirt(loc(X,0), colour(_ )) )   :- percept(_,_,dirt(true),agent(_)).
+
+seen(agent(Id, loc(W_,Y ),colour(Green))):-
+    percept(coord, CoordB, Walls,Ball, IdAtom),
+    atom_string(Id,IdAtom).
+
+wall(loc(X,Y,W)):-
+    X between 0 ,9,
+    Y between 1 ,10,
+    Dir = dir(north),
+    not(walk(loc(_,Y,dirc(dir(s))),_W)).
+
+walk(loc(W,X,Y),Dir):-
+    X between 0,9,
+    Y between 0, 9,
+    Dir = dir(east),
+    not(walk(loc(X,Y,dirc(dir(n))),_W)).
+
+seen(dirt(loc(10,_), colour(_ )) )   :- seen_agent_on_location(_, loc(X7,Y ), _ ),
+                                               coord_to_loc(CoordA, X7, Y ).
+
+seen(agent(Id, loc(_,Y_Coord3),colour(Green))):-
+    percept(coord, CoordB, Walls,Ball, IdAtom),
+    atom_string(Id,IdAtom).
+
+walk(loc(W_,Y,CDir),dir(north)):-
+    not(walk(loc(X2,Y,dirc(dir(e))),_W)),
+    X2 between 0 ,9.
+
+walk(loc(_X,Y,CDir),dir(south)):-
+    not(walk(loc(X3,Y),_)).
+
+walk(loc(X,W,dir(east)):-
+    not(walk(loc(X,Y,CDir),_W)),
+    Y between 1 ,10.
+
+walk(loc(_,Y,dir(north)):-
+    not(walk(loc(_X,W_),dir(north))),
+
+seen(agent(Id, loc(_,10), colour(_ ))):-
+    seen_agent_on_location(_,loc(W_,10,_ ),
+                            not(agentId2,dirc(dir(s)),not(walk(loc(_,W9Y9),dir(north))))).
+
+empty_location(loc(X,Y)):-
+    X between 0 ,10,
+    Y between 1 ,10.

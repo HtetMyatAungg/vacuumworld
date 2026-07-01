@@ -1,49 +1,9 @@
-grid_size(9).
-wall(loc(0,0),north).
-wall(loc(0,1),north).
-wall(loc(0,2),north).
-wall(loc(0,3),north).
-wall(loc(0,4),north).
-wall(loc(0,5),north).
-wall(loc(0,6),north).
-wall(loc(0,7),north).
-wall(loc(1,0),west).
-wall(loc(2,0),west).
-wall(loc(1,1),west).
-wall(loc(2,1),west).
-wall(loc(1,2),west).
-wall(loc(2,2),west).
-wall(loc(1,3),west).
-wall(loc(2,3),west).
-wall(loc(1,4),west).
-wall(loc(2,4),west).
-wall(loc(1,5),west).
-wall(loc(2,5),west).
-wall(loc(1,6),west).
-wall(loc(2,6),west).
-wall(loc(1,7),west).
-wall(loc(2,7),west).
-wall(loc(0,8),south).
-wall(loc(1,8),south).
-wall(loc(2,8),south).
-wall(loc(0,7),east).
-wall(loc(1,7),east).
-wall(loc(2,7),east).
-wall(loc(0,6),east).
-wall(loc(1,6),east).
-wall(loc(2,6),east).
-wall(loc(0,5),east).
-wall(loc(1,5),east).
-wall(loc(2,5),east).
-wall(loc(0,4),east).
-wall(loc(1,4),east).
-wall(loc(2,4),east).
-wall(loc(0,3),east).
-wall(loc(1,3),east).
-wall(loc(2,3),east).
-wall(loc(0,2),east).
-wall(loc(1,2),east).
-wall(loc(2,2),east).
-wall(loc(0,1),east).
-wall(loc(1,1),east).
-wall(loc(2,1),east).
+grid_size(8).
+grid(Loc) :- Loc in [0..7], Loc in [0..7].
+seen(dirt(Loc, Colour)) :- Loc in [0..7], Loc in [0..7], Colour ins [red, orange, green].
+seen(agent(Id, Loc, Colour)) :- Id in ['02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'], Loc in [0..7], Loc in [0..7], Colour ins [green].
+empty_location(Loc) :- Loc in [0..7], Loc in [0..7], not (seen(dirt(Loc,_)) or seen(agent(_,Loc,_))).
+wall(loc(X,Y), north) :- X in [0..6], Y in [0..7].
+wall(loc(X,Y), south) :- X in [0..6], Y in [1..7].
+wall(loc(X,Y), east) :- X in [1..7], Y in [0..7].
+wall(loc(X,Y), west) :- X in [0..6], Y in [0..7].

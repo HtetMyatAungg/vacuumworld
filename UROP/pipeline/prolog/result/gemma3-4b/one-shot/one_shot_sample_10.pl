@@ -1,10 +1,9 @@
-grid_size(9).
-grid(X,Y) :- X >= 0, X < 9, Y >= 0, Y < 9.
-seen(dirt(X,Y), Colour) :- X in [0..8], Y in [0..8], (mod(X,2) = 0 and mod(Y,2) = 0 -> Colour = 'orange'; Colour = 'green').
-seen(agent(Id, X, Y), Colour) :- Id = "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", X in [0..8], Y in [0..8], Colour = 'green'.
-empty_location(X,Y) :- X in [0..8], Y in [0..8], not (seen(dirt(_,X), _ ) and seen(agent(_,X,_), _) ).
-
-wall(X,Y,North) :- X in [0..8], Y = 8.
-wall(X,Y,South) :- X in [0..8], Y in [0..7].
-wall(X,Y,East) :- Y in [0..8], X = 8.
-wall(X,Y,West) :- Y in [0..8], X in [0..7].
+grid_size(8).
+grid(loc(X,Y)) :- \+ (X < 0 | X > 7 | Y < 0 | Y > 7).
+seen(dirt(loc(X,Y),Colour)) :- X >= 0, X <= 7, Y >= 0, Y <= 7, Colour `in` {'orange','green'}.
+seen(agent(Id,loc(X,Y),Colour)) :- X >= 0, X <= 7, Y >= 0, Y <= 7, Id `= ''`, Colour = 'green'.
+empty_location(loc(X,Y)) :- X >= 0, X <= 7, Y >= 0, Y <= 7.
+wall(loc(X, Y), north) :- X >= 0, X <= 7, Y = 0.
+wall(loc(X, Y), south) :- X >= 0, X <= 7, Y = 7.
+wall(loc(X, Y), east) :- Y >= 0, Y <= 7, X = 7.
+wall(loc(X, Y), west) :- Y >= 0, Y <= 7, X = 0.

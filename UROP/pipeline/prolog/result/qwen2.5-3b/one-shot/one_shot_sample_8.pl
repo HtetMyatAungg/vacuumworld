@@ -1,138 +1,31 @@
-grid_size(14).
+grid_size(10).
 
-grid(loc(0,0)).
-grid(loc(1,0)).
-grid(loc(2,0)).
-grid(loc(3,0)).
-grid(loc(4,0)).
-grid(loc(5,0)).
-grid(loc(6,0)).
-grid(loc(7,0)).
-grid(loc(0,1)).
-grid(loc(1,1)).
-grid(loc(2,1)).
-grid(loc(3,1)).
-grid(loc(4,1)).
-grid(loc(5,1)).
-grid(loc(6,1)).
-grid(loc(7,1)).
-grid(loc(0,2)).
-grid(loc(1,2)).
-grid(loc(2,2)).
-grid(loc(3,2)).
-grid(loc(4,2)).
-grid(loc(5,2)).
-grid(loc(6,2)).
-grid(loc(7,2)).
-grid(loc(0,3)).
-grid(loc(1,3)).
-grid(loc(2,3)).
-grid(loc(3,3)).
-grid(loc(4,3)).
-grid(loc(5,3)).
-grid(loc(6,3)).
-grid(loc(7,3)).
-grid(loc(0,4)).
-grid(loc(1,4)).
-grid(loc(2,4)).
-grid(loc(3,4)).
-grid(loc(4,4)).
-grid(loc(5,4)).
-grid(loc(6,4)).
-grid(loc(7,4)).
-grid(loc(0,5)).
-grid(loc(1,5)).
-grid(loc(2,5)).
-grid(loc(3,5)).
-grid(loc(4,5)).
-grid(loc(5,5)).
-grid(loc(6,5)).
-grid(loc(7,5)).
-grid(loc(0,6)).
-grid(loc(1,6)).
-grid(loc(2,6)).
-grid(loc(3,6)).
-grid(loc(4,6)).
-grid(loc(5,6)).
-grid(loc(6,6)).
-grid(loc(7,6)).
-grid(loc(0,7)).
-grid(loc(1,7)).
-grid(loc(2,7)).
-grid(loc(3,7)).
-grid(loc(4,7)).
-grid(loc(5,7)).
-grid(loc(6,7)).
+grid(loc(_X,_Y)).
 
-seen(dirt(loc(4,6), orange)).
-seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0,5), orange)).
-seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4,0), green)).
+seen(dirt(loc(_X,_Y),_Colour)).
+seen(agent(_,loc(_X,_Y),_Colour)).
+empty_location(loc(_X,_Y)).
 
-empty_location(loc(0,0)).
-empty_location(loc(1,0)).
-empty_location(loc(2,0)).
-empty_location(loc(3,0)).
-empty_location(loc(4,0)).
-empty_location(loc(5,0)).
-empty_location(loc(6,0)).
-empty_location(loc(7,0)).
-empty_location(loc(0,1)).
-empty_location(loc(1,1)).
-empty_location(loc(2,1)).
-empty_location(loc(3,1)).
-empty_location(loc(4,1)).
-empty_location(loc(5,1)).
-empty_location(loc(6,1)).
-empty_location(loc(7,1)).
-empty_location(loc(0,2)).
-empty_location(loc(1,2)).
-empty_location(loc(2,2)).
-empty_location(loc(3,2)).
-empty_location(loc(4,2)).
-empty_location(loc(5,2)).
-empty_location(loc(6,2)).
-empty_location(loc(7,2)).
-empty_location(loc(0,3)).
-empty_location(loc(1,3)).
-empty_location(loc(2,3)).
-empty_location(loc(3,3)).
-empty_location(loc(4,3)).
-empty_location(loc(5,3)).
-empty_location(loc(6,3)).
-empty_location(loc(7,3)).
-empty_location(loc(0,4)).
-empty_location(loc(1,4)).
-empty_location(loc(2,4)).
-empty_location(loc(3,4)).
-empty_location(loc(4,4)).
-empty_location(loc(5,4)).
-empty_location(loc(6,4)).
-empty_location(loc(7,4)).
-empty_location(loc(0,5)).
-empty_location(loc(1,5)).
-empty_location(loc(2,5)).
-empty_location(loc(3,5)).
-empty_location(loc(4,5)).
-empty_location(loc(5,5)).
-empty_location(loc(6,5)).
-empty_location(loc(7,5)).
-empty_location(loc(0,6)).
-empty_location(loc(1,6)).
-empty_location(loc(2,6)).
-empty_location(loc(3,6)).
-empty_location(loc(4,6)).
-empty_location(loc(5,6)).
-empty_location(loc(6,6)).
-empty_location(loc(7,6)).
-empty_location(loc(0,7)).
-empty_location(loc(1,7)).
-empty_location(loc(2,7)).
-empty_location(loc(3,7)).
-empty_location(loc(4,7)).
-empty_location(loc(5,7)).
-empty_location(loc(6,7)).
+% Define boundary walls
 
-wallow(loc(X,Y, east)) :- grid(loc(X,Y)), X = 0.
-wallow(loc(X,Y, west)) :- grid(loc(X,Y)), X = 7.
-wallow(loc(X,Y, north)) :- grid(loc(X,Y)), Y = 0.
-wallow(loc(X,Y, south)) :- grid(loc(X,Y)), Y = 7.
+walldir(walkdir(wall(loc(X,Y,north)), right), left).
+walldir(walkdir(walkdir(loc(X,Y,south),right),left),right).
+
+walkdir(_, _Dir).
+
+walkdir(walkdir(loc(X, Y, north),right), left).
+
+walkdir(walldir((loc(X, Y, west),left)), right).
+
+% Define walls on the other sides if applicable.
+walldir(walldir(loc(X,Y,east),_Dir),_Revwalledir).
+
+revside(loc(4,_Y),north,west).
+revside(loc(_X,4),south,east).
+revside(_,west,north).
+revside(east,south,_).
+revside(_,north,west).
+
+walldir(walkdir(walldir(walkdir(loc(X,Y,east),_Dir), _Revwalledir),_OtherSideDir),_Dir).
+
+% End of Prolog code

@@ -72,21 +72,12 @@ grid(loc(5,7)).
 grid(loc(6,7)).
 grid(loc(7,7)).
 
-seen(dirt(loc(X,Y), Colour)) :- grid(loc(X,Y)), non_var(Colour), non_var(Y), per_coord(coord(X,Y), [Color], Dirt), member(empty_location(Color), Dirt).
+seen(dirt(loc(X,Y), Colour)) :-
+    member({X,Y}, [0,1,2,3,4,5,6,7]).
 
 seen(agent(Id, loc(X,Y), Colour)) :-
-  grid(loc(X,Y)), non_var(Id), non_var(Colour), non_var(Y),
-  per_agent(agent(_, Id, LocA, _), coord(X,Y)),
-  remove_from_set(Loc, [LocA], SetB),
-  seen(empty_location(Location) | SetB).
+    member({X,Y}, [0,1,2,3,4,5,6,7]),
+    atomic(Id),
+    \+ seen(dirt(loc(X,Y)), _).
 
-empty_location(loc(0,Y)).
-empty_location(loc(X,8)).
-
-% Rest of the Section B
-wallow(loc(X,Y,west)) :- grid_size(N), X > 0, !.
-wallow(loc(X,Y,east)) :- grid_size(N), Y < N - 1, !.
-wallow(loc(X,Y,north)) :- grid_size(N), Y > 0, !.
-wallow(loc(X,Y,south)) :- grid_size(N), X < N - 1, !.
-
-wallow/3.
+empty_location(loc(X,Y)).
