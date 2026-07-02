@@ -28,12 +28,9 @@
 --- Summary: 0/8 passed, 8 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_1.pl:14:
-Warning:    Singleton variable in branch: N
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -55,15 +52,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_1.pl:14:
-Warning:    Singleton variable in branch: N
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -92,8 +86,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -121,7 +114,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -150,13 +142,10 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:1:9: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:2:18: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:3:
-Warning:    Singleton variables: [S,E]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:13:26: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -180,8 +169,6 @@ N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:1:9: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:2:18: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:3:
-Warning:    Singleton variables: [S,E]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:13:26: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -189,7 +176,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -219,10 +205,8 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
+ERROR: [Thread main]         seen/0ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
 ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `loc(0,0)' (a compound)
-
 --- sample 5 ---
 === Constraint Evaluation ===
 
@@ -252,8 +236,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:28:17: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -284,7 +267,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 6 ---
 === Constraint Evaluation ===
 
@@ -312,8 +294,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -341,7 +322,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 7 ---
 === Constraint Evaluation ===
@@ -370,8 +350,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -399,7 +378,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 8 ---
 === Constraint Evaluation ===
@@ -432,12 +410,9 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:30:1: Syntax error: Unbalanced operator
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:33:8: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:39:8: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:45:
-Warning:    Singleton variables: [FinalString]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -465,15 +440,12 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:30:1: Syntax error: Unbalanced operator
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:33:8: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:39:8: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:45:
-Warning:    Singleton variables: [FinalString]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 9 ---
 === Constraint Evaluation ===
@@ -503,13 +475,10 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:2:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:12:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:16:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:35:
-Warning:    Singleton variables: [WallCount]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:37:59: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -534,8 +503,6 @@ N=13  TP=0  FP=0  FN=52
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:2:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:12:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:16:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:35:
-Warning:    Singleton variables: [WallCount]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:37:59: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -543,7 +510,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 10 ---
 === Constraint Evaluation ===
@@ -565,23 +531,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 2/8 passed, 6 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
-Warning:    Singleton variables: [N,Grid]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
 ERROR:    Type error: `callable' expected, found `findall((_5754,_5760,_5766,_5772,_5774),(cell(_5754,_5760),wall_present(_5754,_5760,_5766),dirt_value(_5754,_5760,_5772),agent_value(_5754,_5760,_5774)),_5750);[]' (a compound)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:17:
-Warning:    Singleton variables: [X,Y,Wall]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:19:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:21:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:23:
-Warning:    Singleton variables: [Grid]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:29:17: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -603,18 +558,8 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
-Warning:    Singleton variables: [N,Grid]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
 ERROR:    Type error: `callable' expected, found `findall((_8042,_8048,_8054,_8060,_8062),(cell(_8042,_8048),wall_present(_8042,_8048,_8054),dirt_value(_8042,_8048,_8060),agent_value(_8042,_8048,_8062)),_8038);[]' (a compound)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:17:
-Warning:    Singleton variables: [X,Y,Wall]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:19:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:21:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:23:
-Warning:    Singleton variables: [Grid]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:29:17: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -622,7 +567,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 11 ---
 === Constraint Evaluation ===
@@ -657,8 +601,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:16:20: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -692,7 +635,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 12 ---
 === Constraint Evaluation ===
 
@@ -718,18 +660,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:7:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:15:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:18:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:21:
-Warning:    Singleton variables: [N]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -751,21 +684,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:7:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:15:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:18:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_12.pl:21:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 13 ---
 === Constraint Evaluation ===
@@ -792,12 +716,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_13.pl:20:
-Warning:    Singleton variables: [N]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -819,15 +740,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_13.pl:20:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 14 ---
 === Constraint Evaluation ===
@@ -859,8 +777,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:14:64: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -892,7 +809,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 15 ---
 === Constraint Evaluation ===
 
@@ -921,9 +837,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `_48-1' (a compound)
-
+ERROR: [Thread main]         seen/0ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `_48-1' (a compound)
 --- sample 16 ---
 === Constraint Evaluation ===
 
@@ -953,8 +867,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:4:30: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -985,7 +898,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 17 ---
 === Constraint Evaluation ===
 
@@ -1011,27 +923,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
-Warning:    Test is always false: Y==N
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
-Warning:    Test is always false: X==N
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:29:
-Warning:    Test is always false: Y==N
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_17.pl:32:
-Warning:    Test is always false: X==N
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Arguments are not sufficiently instantiated
-
+ERROR: [Thread main]         seen/0ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Arguments are not sufficiently instantiated
 --- sample 18 ---
 === Constraint Evaluation ===
 
@@ -1057,47 +951,12 @@ ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: A
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:2:
-Warning:    Singleton variables: [Cell,X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:3:
-Warning:    Singleton variables: [West,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:4:
-Warning:    Singleton variables: [South,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:5:
-Warning:    Singleton variables: [East,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:6:
-Warning:    Singleton variables: [North,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:8:36: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:9:35: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:10:
-Warning:    Singleton variables: [None]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:12:
-Warning:    Singleton variables: [Id,Colour,X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
-Warning:    Test is always false: Wall==West
-Warning:    Test is always false: Wall==South
-Warning:    Test is always false: Wall==East
-Warning:    Test is always false: Wall==North
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:36:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:39:34: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1119,42 +978,8 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:2:
-Warning:    Singleton variables: [Cell,X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:3:
-Warning:    Singleton variables: [West,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:4:
-Warning:    Singleton variables: [South,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:5:
-Warning:    Singleton variables: [East,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:6:
-Warning:    Singleton variables: [North,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:8:36: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:9:35: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:10:
-Warning:    Singleton variables: [None]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:12:
-Warning:    Singleton variables: [Id,Colour,X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:21:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:29:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
-Warning:    Test is always false: Wall==West
-Warning:    Test is always false: Wall==South
-Warning:    Test is always false: Wall==East
-Warning:    Test is always false: Wall==North
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:36:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:39:34: Syntax error: Unexpected end of file
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -1162,7 +987,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 19 ---
 === Constraint Evaluation ===
@@ -1190,17 +1014,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 0/8 passed, 8 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1222,20 +1038,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
-Warning:    Singleton variables: [West,South,East,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_19.pl:10:
-Warning:    Singleton variable in branch: West
-Warning:    Singleton variable in branch: South
-Warning:    Singleton variable in branch: East
-Warning:    Singleton variable in branch: North
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 20 ---
 === Constraint Evaluation ===
@@ -1268,8 +1076,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:33:38: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1301,7 +1108,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 === qwen2.5-3b ===
 
@@ -1338,8 +1144,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:14:104: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1374,7 +1179,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 2 ---
 === Constraint Evaluation ===
 
@@ -1402,8 +1206,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1431,7 +1234,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -1458,24 +1260,10 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:1:
-Warning:    Singleton variables: [NW]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Singleton variables: [PE]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13:
-Warning:    Singleton variables: [N]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:18:20: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:29:
-Warning:    Singleton variables: [T]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:37:
-Warning:    Clauses of perimeter/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13
-Warning:    Current predicate: world/1
-Warning:    Use :- discontiguous perimeter/1. to suppress this message
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1497,27 +1285,13 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:1:
-Warning:    Singleton variables: [NW]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Singleton variables: [PE]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13:
-Warning:    Singleton variables: [N]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:18:20: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:29:
-Warning:    Singleton variables: [T]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:37:
-Warning:    Clauses of perimeter/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:13
-Warning:    Current predicate: world/1
-Warning:    Use :- discontiguous perimeter/1. to suppress this message
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -1546,18 +1320,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:12:3: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:23:3: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:31:
-Warning:    Singleton variables: [N2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:38:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:39:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Singleton variables: [Ec,Y,E_0,Y_]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1581,21 +1346,12 @@ N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:12:3: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:23:3: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:31:
-Warning:    Singleton variables: [N2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:38:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:39:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Singleton variables: [Ec,Y,E_0,Y_]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -1623,38 +1379,20 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
-Warning:    Singleton variable in branch: X
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
-Warning:    Singleton variables: [X]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
-Warning:    Singleton variables: [X0,X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
-Warning:    Singleton variable in branch: X
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
-Warning:    Singleton variables: [X]
+ERROR: [Thread main]         seen/0ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
-Warning:    Singleton variables: [X0,X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
 ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): false
-
 --- sample 6 ---
 === Constraint Evaluation ===
 
@@ -1690,8 +1428,7 @@ ERROR:    No permission to modify static procedure `(;)/2'
 ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1728,7 +1465,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 7 ---
 === Constraint Evaluation ===
 
@@ -1756,16 +1492,11 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:7:21: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:32:28: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:38:
-Warning:    Singleton variables: [T,V,S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
-Warning:    Singleton variables: [O,A,B,C,K,L,U,P,Q]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
 ERROR:    Type error: `module' expected, found `list_domain(domains([],_10810,[_10820],[_10826],[_10832]),domains([_10844,_10850],[_10856]),[],[],_10804)' (a compound)
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1789,10 +1520,6 @@ N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:7:21: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:32:28: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:38:
-Warning:    Singleton variables: [T,V,S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
-Warning:    Singleton variables: [O,A,B,C,K,L,U,P,Q]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
 ERROR:    Type error: `module' expected, found `list_domain(domains([],_13172,[_13182],[_13188],[_13194]),domains([_13206,_13212],[_13218]),[],[],_13166)' (a compound)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
@@ -1801,7 +1528,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 8 ---
 === Constraint Evaluation ===
@@ -1833,14 +1559,9 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:40:77: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:46:78: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:54:77: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:61:
-Warning:    Singleton variables: [Z]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:63:
-Warning:    Singleton variables: [Z]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1867,17 +1588,12 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:40:77: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:46:78: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:54:77: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:61:
-Warning:    Singleton variables: [Z]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:63:
-Warning:    Singleton variables: [Z]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 9 ---
 === Constraint Evaluation ===
@@ -1904,15 +1620,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:1:
-Warning:    Singleton variables: [X,Y,Walls]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:5:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:11:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:52:21: Syntax error: end_of_file_in_quasi_quotation
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1934,8 +1647,6 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:1:
-Warning:    Singleton variables: [X,Y,Walls]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:5:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:11:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:52:21: Syntax error: end_of_file_in_quasi_quotation
@@ -1945,7 +1656,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 10 ---
 === Constraint Evaluation ===
@@ -1972,8 +1682,6 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
-Warning:    Singleton variables: [X,Y]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:7:22: Syntax error: Operator expected
@@ -1982,8 +1690,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:38:22: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2005,8 +1712,6 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
-Warning:    Singleton variables: [X,Y]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:7:22: Syntax error: Operator expected
@@ -2019,7 +1724,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 11 ---
 === Constraint Evaluation ===
@@ -2049,8 +1753,7 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_11.pl:1:1: Syntax error: End of file in /* ... */ comment
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2080,7 +1783,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 12 ---
 === Constraint Evaluation ===
 
@@ -2108,8 +1810,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2137,7 +1838,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 13 ---
 === Constraint Evaluation ===
@@ -2175,19 +1875,14 @@ ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:15:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
-Warning:    Singleton variables: [Content]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
-Warning:    Singleton variables: [AgentContent,AgentColor]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
 ERROR:    No permission to modify static procedure `(;)/2'
 ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2220,12 +1915,8 @@ ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:15:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
-Warning:    Singleton variables: [Content]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:17:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
-Warning:    Singleton variables: [AgentContent,AgentColor]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
 ERROR:    No permission to modify static procedure `(;)/2'
 ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
@@ -2235,7 +1926,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 14 ---
 === Constraint Evaluation ===
@@ -2274,8 +1964,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:23:41: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2314,7 +2003,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 15 ---
 === Constraint Evaluation ===
 
@@ -2343,8 +2031,7 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_15.pl:22:14: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2374,7 +2061,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 16 ---
 === Constraint Evaluation ===
 
@@ -2401,53 +2087,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:3:12: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:7:
-Warning:    Singleton variables: [Cn]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
-Warning:    Singleton variables: [Ns]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
 ERROR:    Type error: `callable' expected, found `grid(_7948,_7950),(_7972\=north->(_7972\=south;_7990=0);_7972\=west;_8014=0;_8010),neighbor_bounds(_8026,_7990),append(_7950,[_8026|_8042],_7972)' (a compound)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:16:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:17:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:18:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:19:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:20:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:21:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:22:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:23:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:24:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:25:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:26:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:27:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:28:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:29:
-Warning:    Singleton variables: [W]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:30:32: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:32:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:33:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:34:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:35:
-Warning:    Singleton variables: [W]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2470,56 +2115,15 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:3:12: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:7:
-Warning:    Singleton variables: [Cn]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
-Warning:    Singleton variables: [Ns]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
 ERROR:    Type error: `callable' expected, found `grid(_10310,_10312),(_10334\=north->(_10334\=south;_10352=0);_10334\=west;_10376=0;_10372),neighbor_bounds(_10388,_10352),append(_10312,[_10388|_10404],_10334)' (a compound)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:16:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:17:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:18:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:19:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:20:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:21:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:22:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:23:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:24:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:25:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:26:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:27:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:28:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:29:
-Warning:    Singleton variables: [W]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:30:32: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:32:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:33:
-Warning:    Singleton variables: [E]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:34:
-Warning:    Singleton variables: [S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:35:
-Warning:    Singleton variables: [W]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 17 ---
 === Constraint Evaluation ===
@@ -2546,26 +2150,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
-Warning:    Singleton variable in branch: N
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
-Warning:    Singleton variables: [Y0]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
-Warning:    Singleton variable in branch: Y0
-Warning:    Singleton variable in branch: V1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
-Warning:    Singleton variables: [D]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
-Warning:    Singleton variable in branch: N2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:31:82: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:36:21: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:40:56: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2587,19 +2177,6 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:2:
-Warning:    Singleton variable in branch: N
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
-Warning:    Singleton variables: [Y0]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:15:
-Warning:    Singleton variable in branch: Y0
-Warning:    Singleton variable in branch: V1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
-Warning:    Singleton variables: [D]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:20:
-Warning:    Singleton variable in branch: N2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:31:82: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:36:21: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:40:56: Syntax error: Operator expected
@@ -2609,7 +2186,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 18 ---
 === Constraint Evaluation ===
@@ -2642,8 +2218,7 @@ ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2676,7 +2251,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 19 ---
 === Constraint Evaluation ===
 
@@ -2705,8 +2279,7 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_19.pl:1:1: Syntax error: End of file in quoted atom
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2736,7 +2309,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 20 ---
 === Constraint Evaluation ===
 
@@ -2764,31 +2336,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:18:34: Syntax error: Illegal start of term
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:22:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:29:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:40:
-Warning:    Singleton variables: [N,E,S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:41:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
-Warning:    Singleton variables: [Rest,N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
-Warning:    Singleton variables: [N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
-Warning:    Singleton variables: [N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2812,31 +2362,9 @@ N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:18:34: Syntax error: Illegal start of term
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:22:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:29:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:40:
-Warning:    Singleton variables: [N,E,S]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:41:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
-Warning:    Singleton variables: [Rest,N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:50:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
-Warning:    Singleton variables: [N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:59:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
-Warning:    Singleton variables: [N,E2,S2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:65:
-Warning:    Singleton variable in \+: E2
-Warning:    Singleton variable in \+: S2
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-

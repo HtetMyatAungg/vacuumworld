@@ -1,6 +1,8 @@
 % ground truth/oracle: 8x8 sweep
-:- discontiguous seen/1.
+:- discontiguous oracle_seen/1.
+:- discontiguous oracle_empty/1.
 :- discontiguous wall/2.
+grid_size(8).
 grid(loc(0, 6)).
 grid(loc(1, 6)).
 grid(loc(2, 6)).
@@ -97,41 +99,41 @@ wall(loc(7, 5), east).
 wall(loc(7, 6), east).
 wall(loc(7, 7), east).
 wall(loc(7, 7), south).
-seen(dirt(loc(2, 1), orange)).
-seen(dirt(loc(3, 4), orange)).
-seen(dirt(loc(4, 6), orange)).
-seen(dirt(loc(5, 1), green)).
-seen(dirt(loc(6, 4), orange)).
-seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0, 3), orange)).
-seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4, 0), green)).
-empty_location(loc(1, 6)).
-empty_location(loc(2, 6)).
-empty_location(loc(1, 5)).
-empty_location(loc(2, 5)).
-empty_location(loc(1, 4)).
-empty_location(loc(2, 4)).
-empty_location(loc(1, 3)).
-empty_location(loc(2, 3)).
-empty_location(loc(1, 2)).
-empty_location(loc(2, 2)).
-empty_location(loc(1, 1)).
-empty_location(loc(3, 1)).
-empty_location(loc(3, 2)).
-empty_location(loc(3, 3)).
-empty_location(loc(3, 5)).
-empty_location(loc(3, 6)).
-empty_location(loc(4, 5)).
-empty_location(loc(4, 4)).
-empty_location(loc(4, 3)).
-empty_location(loc(4, 2)).
-empty_location(loc(4, 1)).
-empty_location(loc(5, 2)).
-empty_location(loc(5, 3)).
-empty_location(loc(5, 4)).
-empty_location(loc(5, 5)).
-empty_location(loc(5, 6)).
-empty_location(loc(6, 5)).
-empty_location(loc(6, 6)).
-empty_location(loc(6, 3)).
-empty_location(loc(6, 2)).
-empty_location(loc(6, 1)).
+oracle_seen(dirt(loc(2, 1), orange)).
+oracle_seen(dirt(loc(3, 4), orange)).
+oracle_seen(dirt(loc(4, 6), orange)).
+oracle_seen(dirt(loc(5, 1), green)).
+oracle_seen(dirt(loc(6, 4), orange)).
+oracle_seen(agent('9af04778-08d6-4e40-8c6f-ba123d292a22', loc(0, 3), orange)).
+oracle_seen(agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', loc(4, 0), green)).
+oracle_empty(loc(1, 6)).
+oracle_empty(loc(2, 6)).
+oracle_empty(loc(1, 5)).
+oracle_empty(loc(2, 5)).
+oracle_empty(loc(1, 4)).
+oracle_empty(loc(2, 4)).
+oracle_empty(loc(1, 3)).
+oracle_empty(loc(2, 3)).
+oracle_empty(loc(1, 2)).
+oracle_empty(loc(2, 2)).
+oracle_empty(loc(1, 1)).
+oracle_empty(loc(3, 1)).
+oracle_empty(loc(3, 2)).
+oracle_empty(loc(3, 3)).
+oracle_empty(loc(3, 5)).
+oracle_empty(loc(3, 6)).
+oracle_empty(loc(4, 5)).
+oracle_empty(loc(4, 4)).
+oracle_empty(loc(4, 3)).
+oracle_empty(loc(4, 2)).
+oracle_empty(loc(4, 1)).
+oracle_empty(loc(5, 2)).
+oracle_empty(loc(5, 3)).
+oracle_empty(loc(5, 4)).
+oracle_empty(loc(5, 5)).
+oracle_empty(loc(5, 6)).
+oracle_empty(loc(6, 5)).
+oracle_empty(loc(6, 6)).
+oracle_empty(loc(6, 3)).
+oracle_empty(loc(6, 2)).
+oracle_empty(loc(6, 1)).

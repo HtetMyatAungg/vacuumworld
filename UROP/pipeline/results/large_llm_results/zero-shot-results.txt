@@ -29,8 +29,7 @@
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -58,7 +57,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -87,8 +85,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -116,7 +113,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -145,8 +141,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -174,7 +169,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -203,8 +197,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -232,7 +225,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -261,8 +253,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -290,7 +281,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 === gemini-2.5-flash ===
 
@@ -316,8 +306,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -345,7 +334,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -369,8 +357,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -398,7 +385,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -422,8 +408,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -451,7 +436,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -475,8 +459,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -504,7 +487,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -528,8 +510,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -557,7 +538,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 === gemini-3.1-flash-lite ===
 
@@ -588,8 +568,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -617,7 +596,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -646,8 +624,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -675,7 +652,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -702,330 +678,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:2:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:4:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:6:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:6:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:7:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:7:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:8:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:10:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:11:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:13:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:14:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:16:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:17:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:19:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:20:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:22:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:22:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:23:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:23:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:24:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:24:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:25:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:25:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:26:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:29:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:30:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:32:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:33:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:34:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:35:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:35:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:36:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:40:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:40:
-Warning:    Clauses of agent/4 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:13
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous agent/4. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:41:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:41:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:42:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:42:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:43:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:48:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:49:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:51:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:52:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:52:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:53:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:56:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:57:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:57:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:58:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:58:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:59:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:59:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:60:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:60:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:61:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:61:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:62:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:62:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:63:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:63:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:64:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:64:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1047,333 +702,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:2:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:4:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:5:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:6:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:6:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:7:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:7:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:8:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:10:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:11:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:13:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:14:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:16:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:17:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:19:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:20:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:22:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:22:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:23:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:23:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:24:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:24:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:25:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:25:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:26:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:29:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:30:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:32:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:33:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:34:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:35:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:35:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:36:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:40:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:40:
-Warning:    Clauses of agent/4 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:13
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous agent/4. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:41:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:41:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:42:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:42:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:43:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:48:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:49:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:51:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:52:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:52:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:53:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:56:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:57:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:57:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:58:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:58:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:59:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:59:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:60:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:60:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:61:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:61:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:62:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:62:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:63:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:63:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:64:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:64:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_3.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -1400,330 +734,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:2:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:4:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:5:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:5:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:6:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:6:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:7:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:7:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:8:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:10:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:11:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:13:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:14:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:16:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:17:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:19:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:20:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:22:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:22:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:23:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:23:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:24:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:24:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:25:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:25:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:26:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:29:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:30:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:32:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:33:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:34:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:35:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:35:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:36:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:40:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:40:
-Warning:    Clauses of agent/4 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:13
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous agent/4. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:42:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:42:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:43:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:48:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:49:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:51:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:52:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:52:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:53:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:56:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:57:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:57:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:58:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:58:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:59:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:59:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:60:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:60:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:61:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:61:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:62:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:62:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:63:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:63:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:64:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:64:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1745,333 +758,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:2:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:4:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:5:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:5:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:6:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:6:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:7:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:7:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:8:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:10:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:11:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:13:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:14:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:16:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:17:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:19:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:20:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:22:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:22:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:23:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:23:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:24:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:24:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:25:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:25:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:26:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:29:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:30:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:32:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:33:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:34:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:35:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:35:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:36:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:40:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:40:
-Warning:    Clauses of agent/4 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:13
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous agent/4. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: agent/4
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:41:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:42:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:42:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:43:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:48:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:49:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:51:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:52:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:52:
-Warning:    Clauses of dirt/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:21
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous dirt/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:53:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: dirt/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:56:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:57:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:57:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:58:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:58:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:59:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:59:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:60:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:60:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:61:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:61:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:62:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:62:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:63:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:63:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:64:
-Warning:    Clauses of cell/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: wall/3
-Warning:    Use :- discontiguous cell/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:64:
-Warning:    Clauses of wall/3 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-3.1-flash-lite/zero-shot/zero_shot_sample_4.pl:1
-Warning:    Current predicate: cell/2
-Warning:    Use :- discontiguous wall/3. to suppress this message
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -2100,8 +792,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2129,7 +820,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 === deepseek-2.5-flash ===
 
@@ -2158,18 +848,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:65:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:66:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:67:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:68:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2191,21 +872,12 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:65:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:66:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:67:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_1.pl:68:
-Warning:    Singleton variables: [Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -2236,8 +908,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/de
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/zero-shot/zero_shot_sample_2.pl:67:8: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2268,7 +939,6 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 3 ---
 === Constraint Evaluation ===
 
@@ -2296,8 +966,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2325,7 +994,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -2354,8 +1022,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2383,7 +1050,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -2407,8 +1073,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2436,7 +1101,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 === gemma-4-31b ===
 
@@ -2467,8 +1131,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2496,7 +1159,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -2525,8 +1187,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2554,7 +1215,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -2583,8 +1243,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2612,7 +1271,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -2641,18 +1299,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:5:29: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:25:28: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:66:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:67:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:68:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:69:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2676,21 +1325,12 @@ N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:5:29: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:25:28: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:66:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:67:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:68:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma-4-31b/zero-shot/zero_shot_sample_4.pl:69:
-Warning:    Singleton variables: [Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -2719,8 +1359,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2748,4 +1387,3 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-

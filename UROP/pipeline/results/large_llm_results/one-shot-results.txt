@@ -24,7 +24,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -53,7 +52,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -77,7 +91,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -106,7 +119,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -130,7 +158,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -159,7 +186,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -183,7 +225,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -212,7 +253,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -236,7 +292,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -265,7 +320,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 === gemini-2.5-flash ===
 
@@ -285,15 +355,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_1.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -316,15 +383,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_1.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -342,17 +422,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:137:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -375,17 +450,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:135:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_2.pl:137:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -403,15 +489,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -434,15 +517,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_3.pl:134:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -460,15 +556,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_4.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -491,15 +584,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_4.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -517,15 +623,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -548,15 +651,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemini-2.5-flash/one-shot/one_shot_sample_5.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 === gemini-3.1-flash-lite ===
 
@@ -582,7 +698,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -611,7 +726,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -635,7 +765,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -664,7 +793,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -688,7 +832,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -717,7 +860,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -741,7 +899,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -770,7 +927,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -794,7 +966,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -823,7 +994,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 === deepseek-2.5-flash ===
 
@@ -843,15 +1029,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:130:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -874,15 +1057,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_1.pl:130:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=4  FP=1  FN=1
+  Precision=0.8000  Recall=0.8000  F1=0.8000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=30  FP=27  FN=1
+  Precision=0.5263  Recall=0.9677  F1=0.6818
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -903,15 +1099,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
     dual_category: [loc(0,3),loc(6,4)]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:38:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -934,15 +1127,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_2.pl:38:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=4  FP=1  FN=1
+  Precision=0.8000  Recall=0.8000  F1=0.8000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=29  FP=29  FN=2
+  Precision=0.5000  Recall=0.9355  F1=0.6517
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -960,15 +1166,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -991,15 +1194,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_3.pl:135:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -1019,15 +1235,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 7/8 passed, 1 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:133:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1050,15 +1263,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_4.pl:133:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=25  FN=0
+  Precision=0.5536  Recall=1.0000  F1=0.7126
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -1076,15 +1302,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  all_directions
 
 --- Summary: 8/8 passed, 0 failed ---
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:29:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1107,15 +1330,28 @@ N=12  TP=48  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=13  TP=52  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/deepseek-2.5-flash/one-shot/one_shot_sample_5.pl:29:
-Warning:    Singleton variables: [N]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 === gemma-4-31b ===
 
@@ -1141,7 +1377,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1170,7 +1405,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 2 ---
 === Constraint Evaluation ===
@@ -1194,7 +1444,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1223,7 +1472,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -1247,7 +1511,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1276,7 +1539,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -1300,7 +1578,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1329,7 +1606,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -1353,7 +1645,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=12  FP=0  FN=0
   Precision=1.0000  Recall=1.0000  F1=1.0000
 N=4  TP=16  FP=0  FN=0
@@ -1382,4 +1673,19 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=5  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+agent  TP=2  FP=0  FN=0
+  Precision=1.0000  Recall=1.0000  F1=1.0000
+
+empty  TP=31  FP=26  FN=0
+  Precision=0.5439  Recall=1.0000  F1=0.7045
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).

@@ -23,7 +23,8 @@ with open("UROP/pipeline/Percepts/World_Model_percepts.json", "w") as f:
 
 with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
     f.write("% ground truth/oracle: 8x8 sweep\n")
-    f.write(":- discontiguous seen/1." + "\n" + ":- discontiguous wall/2.\n")
+    f.write(":- discontiguous oracle_seen/1.\n" + ":- discontiguous oracle_empty/1.\n" + ":- discontiguous wall/2.\n")
+    f.write("grid_size(8).\n")
     for coord, data in seen.items():
         f.write(f"grid(loc{coord})." + "\n" )
 
@@ -34,14 +35,14 @@ with open("UROP/pipeline/prolog/f1_eval.pl", "w") as f:
     for coord, data in seen.items():
         dirt = data['dirt']
         if dirt != None:
-            f.write(f"seen(dirt(loc{coord}, {dirt}))." + "\n")
+            f.write(f"oracle_seen(dirt(loc{coord}, {dirt}))." + "\n")
     for coord, data in seen.items():
         agent = data['agent']
         if agent != None:
-            f.write(f"seen(agent('{agent['id']}', loc{coord}, {agent['colour']}))." + "\n")
+            f.write(f"oracle_seen(agent('{agent['id']}', loc{coord}, {agent['colour']}))." + "\n")
     for coord, data in seen.items():
         agent = data['agent']
         dirt = data['dirt']
         wall = data['walls']
         if agent == None and dirt == None and wall == []:
-            f.write(f"empty_location(loc{coord})." + "\n")
+            f.write(f"oracle_empty(loc{coord})." + "\n")

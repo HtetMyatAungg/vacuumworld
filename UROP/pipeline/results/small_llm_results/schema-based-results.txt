@@ -24,8 +24,7 @@
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: >=/2: Arithmetic: `x/0' is not a function
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: >=/2: Arithmetic: `x/0' is not a functionN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -53,8 +52,9 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >=/2: Arithmetic: `x/0' is not a function
 --- sample 2 ---
 === Constraint Evaluation ===
 
@@ -79,26 +79,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:3:
-Warning:    Singleton variables: [X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:4:
-Warning:    Singleton variables: [Id,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:6:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:7:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:8:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton variables: [X]
-ERROR: [Thread main] -g check_all: out_of_bounds/1: Arguments are not sufficiently instantiated
-N=3  TP=10  FP=20  FN=2
+ERROR: [Thread main] -g check_all: out_of_bounds/1: Arguments are not sufficiently instantiatedN=3  TP=10  FP=20  FN=2
   Precision=0.3333  Recall=0.8333  F1=0.4762
 N=4  TP=14  FP=42  FN=2
   Precision=0.2500  Recall=0.8750  F1=0.3889
@@ -120,31 +101,28 @@ N=12  TP=34  FP=374  FN=14
   Precision=0.0833  Recall=0.7083  F1=0.1491
 N=13  TP=36  FP=432  FN=16
   Precision=0.0769  Recall=0.6923  F1=0.1385
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:3:
-Warning:    Singleton variables: [X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:4:
-Warning:    Singleton variables: [Id,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:6:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:7:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:8:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton variables: [X]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 3 ---
 === Constraint Evaluation ===
@@ -173,8 +151,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:6:20: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -207,7 +184,27 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:2:21: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:3:35: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:4:40: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:5:31: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_3.pl:6:20: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 4 ---
 === Constraint Evaluation ===
@@ -239,8 +236,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:10:23: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -276,7 +272,30 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:2:16: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:3:30: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:4:36: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:5:26: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:6:30: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:8:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:9:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_4.pl:10:23: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 5 ---
 === Constraint Evaluation ===
@@ -300,8 +319,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: >=/2: Arithmetic: `x/0' is not a function
-N=3  TP=3  FP=0  FN=9
+ERROR: [Thread main] -g check_all: >=/2: Arithmetic: `x/0' is not a functionN=3  TP=3  FP=0  FN=9
   Precision=1.0000  Recall=0.2500  F1=0.4000
 N=4  TP=4  FP=0  FN=12
   Precision=1.0000  Recall=0.2500  F1=0.4000
@@ -329,8 +347,9 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >=/2: Arithmetic: `x/0' is not a function
 --- sample 6 ---
 === Constraint Evaluation ===
 
@@ -357,8 +376,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_6.pl:15:9: Syntax error: Unexpected end of file
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -390,7 +408,26 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_6.pl:2:16: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_6.pl:3:31: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_6.pl:4:39: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_6.pl:15:9: Syntax error: Unexpected end of file
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 7 ---
 === Constraint Evaluation ===
@@ -414,10 +451,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_7.pl:4:
-Warning:    Singleton variables: [Colour]
-ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiated
-N=3  TP=6  FP=0  FN=6
+ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiatedN=3  TP=6  FP=0  FN=6
   Precision=1.0000  Recall=0.5000  F1=0.6667
 N=4  TP=8  FP=0  FN=8
   Precision=1.0000  Recall=0.5000  F1=0.6667
@@ -439,16 +473,15 @@ N=12  TP=13  FP=13  FN=35
   Precision=0.5000  Recall=0.2708  F1=0.3514
 N=13  TP=13  FP=13  FN=39
   Precision=0.5000  Recall=0.2500  F1=0.3333
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_7.pl:4:
-Warning:    Singleton variables: [Colour]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >=/2: Arguments are not sufficiently instantiated
 --- sample 8 ---
 === Constraint Evaluation ===
 
@@ -472,8 +505,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:7:27: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:8:28: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:9:28: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: </2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: </2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -505,7 +537,26 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:6:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:7:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:8:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_8.pl:9:28: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 9 ---
 === Constraint Evaluation ===
@@ -530,8 +581,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:7:34: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:8:26: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:9:26: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: </2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: </2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -563,7 +613,26 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:6:34: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:7:34: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:8:26: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_9.pl:9:26: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 10 ---
 === Constraint Evaluation ===
@@ -595,8 +664,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:9:27: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -632,7 +700,30 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:2:21: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:3:35: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:4:41: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:5:31: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:6:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:7:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:8:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_10.pl:9:27: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 11 ---
 === Constraint Evaluation ===
@@ -656,8 +747,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -685,7 +775,22 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 12 ---
 === Constraint Evaluation ===
@@ -709,10 +814,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_12.pl:4:
-Warning:    Singleton variables: [Colour]
-ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiated
-N=3  TP=6  FP=0  FN=6
+ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiatedN=3  TP=6  FP=0  FN=6
   Precision=1.0000  Recall=0.5000  F1=0.6667
 N=4  TP=8  FP=0  FN=8
   Precision=1.0000  Recall=0.5000  F1=0.6667
@@ -734,16 +836,15 @@ N=12  TP=11  FP=11  FN=37
   Precision=0.5000  Recall=0.2292  F1=0.3143
 N=13  TP=11  FP=11  FN=41
   Precision=0.5000  Recall=0.2115  F1=0.2973
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_12.pl:4:
-Warning:    Singleton variables: [Colour]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >=/2: Arguments are not sufficiently instantiated
 --- sample 13 ---
 === Constraint Evaluation ===
 
@@ -770,8 +871,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_13.pl:5:30: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=3  FP=3  FN=9
+ERROR: [Thread main]         seen/0N=3  TP=3  FP=3  FN=9
   Precision=0.5000  Recall=0.2500  F1=0.3333
 N=4  TP=4  FP=4  FN=12
   Precision=0.5000  Recall=0.2500  F1=0.3333
@@ -803,7 +903,26 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_13.pl:2:20: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_13.pl:3:29: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_13.pl:4:46: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_13.pl:5:30: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 14 ---
 === Constraint Evaluation ===
@@ -829,48 +948,22 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:3:
-Warning:    Singleton variables: [X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:4:
-Warning:    Singleton variables: [Id,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:6:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:7:
-Warning:    Singleton variables: [E,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:8:
-Warning:    Singleton variables: [S,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:9:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:11:
-Warning:    Singleton variables: [E,N]
-ERROR: [Thread main] -g check_all: out_of_bounds/1: Arguments are not sufficiently instantiated
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:3:
-Warning:    Singleton variables: [X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:4:
-Warning:    Singleton variables: [Id,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:6:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:7:
-Warning:    Singleton variables: [E,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:8:
-Warning:    Singleton variables: [S,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:9:
-Warning:    Singleton variables: [W]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_14.pl:11:
-Warning:    Singleton variables: [E,N]
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): >/2: Arguments are not sufficiently instantiated
+ERROR: [Thread main] -g check_all: out_of_bounds/1: Arguments are not sufficiently instantiatedERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): >/2: Arguments are not sufficiently instantiated=== Content F1 Evaluation ===
+
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 15 ---
 === Constraint Evaluation ===
@@ -898,8 +991,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_15.pl:5:30: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=6  FP=0  FN=6
+ERROR: [Thread main]         seen/0N=3  TP=6  FP=0  FN=6
   Precision=1.0000  Recall=0.5000  F1=0.6667
 N=4  TP=8  FP=0  FN=8
   Precision=1.0000  Recall=0.5000  F1=0.6667
@@ -931,7 +1023,26 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_15.pl:2:20: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_15.pl:3:34: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_15.pl:4:39: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_15.pl:5:30: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 16 ---
 === Constraint Evaluation ===
@@ -963,8 +1074,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:9:27: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1000,7 +1110,30 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:2:20: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:3:34: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:4:39: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:5:30: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:6:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:7:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:8:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_16.pl:9:27: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 17 ---
 === Constraint Evaluation ===
@@ -1032,8 +1165,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:9:27: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1069,7 +1201,30 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:2:16: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:3:25: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:4:103: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:5:32: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:6:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:7:28: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:8:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_17.pl:9:27: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 18 ---
 === Constraint Evaluation ===
@@ -1093,10 +1248,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 4/8 passed, 4 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_18.pl:4:
-Warning:    Singleton variables: [Colour]
-ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiated
-N=3  TP=6  FP=0  FN=6
+ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiatedN=3  TP=6  FP=0  FN=6
   Precision=1.0000  Recall=0.5000  F1=0.6667
 N=4  TP=8  FP=0  FN=8
   Precision=1.0000  Recall=0.5000  F1=0.6667
@@ -1118,16 +1270,15 @@ N=12  TP=18  FP=18  FN=30
   Precision=0.5000  Recall=0.3750  F1=0.4286
 N=13  TP=18  FP=18  FN=34
   Precision=0.5000  Recall=0.3462  F1=0.4091
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_18.pl:4:
-Warning:    Singleton variables: [Colour]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >=/2: Arguments are not sufficiently instantiated
 --- sample 19 ---
 === Constraint Evaluation ===
 
@@ -1153,28 +1304,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:3:
-Warning:    Singleton variables: [Dirt,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:4:
-Warning:    Singleton variables: [Agent,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:6:
-Warning:    Singleton variables: [X,Y,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:7:
-Warning:    Singleton variables: [X,Y,South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:8:
-Warning:    Singleton variables: [X,Y,East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:9:
-Warning:    Singleton variables: [X,Y,West]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=12  FP=24  FN=0
+ERROR: [Thread main]         seen/0N=3  TP=12  FP=24  FN=0
   Precision=0.3333  Recall=1.0000  F1=0.5000
 N=4  TP=16  FP=48  FN=0
   Precision=0.2500  Recall=1.0000  F1=0.4000
@@ -1196,31 +1328,28 @@ N=12  TP=48  FP=528  FN=0
   Precision=0.0833  Recall=1.0000  F1=0.1538
 N=13  TP=52  FP=624  FN=0
   Precision=0.0769  Recall=1.0000  F1=0.1429
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:2:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:3:
-Warning:    Singleton variables: [Dirt,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:4:
-Warning:    Singleton variables: [Agent,X,Y,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:5:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:6:
-Warning:    Singleton variables: [X,Y,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:7:
-Warning:    Singleton variables: [X,Y,South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:8:
-Warning:    Singleton variables: [X,Y,East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_19.pl:9:
-Warning:    Singleton variables: [X,Y,West]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 20 ---
 === Constraint Evaluation ===
@@ -1248,29 +1377,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 0/8 passed, 8 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:7:
-Warning:    Singleton variables: [North,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:8:
-Warning:    Singleton variables: [South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:9:
-Warning:    Singleton variables: [East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:10:
-Warning:    Singleton variables: [West,N]
-ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiated
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:1:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:7:
-Warning:    Singleton variables: [North,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:8:
-Warning:    Singleton variables: [South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:9:
-Warning:    Singleton variables: [East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/schema-based/schema_based_sample_20.pl:10:
-Warning:    Singleton variables: [West,N]
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): </2: Arguments are not sufficiently instantiated
+ERROR: [Thread main] -g check_all: >=/2: Arguments are not sufficiently instantiatedERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): </2: Arguments are not sufficiently instantiated=== Content F1 Evaluation ===
 
+ERROR: [Thread main] -g content_f1_report: >=/2: Arguments are not sufficiently instantiated
 === qwen2.5-3b ===
 
 --- sample 1 ---
@@ -1294,16 +1403,7 @@ ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): </2: Argumen
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:5:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:22:
-Warning:    Singleton variables: [Y2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:25:
-Warning:    Singleton variables: [Y2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:28:
-Warning:    Singleton variables: [X2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:31:
-Warning:    Singleton variables: [Y2]
-ERROR: [Thread main] -g check_all: findall_loop/4: Unknown procedure: {}/1
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: findall_loop/4: Unknown procedure: {}/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1326,22 +1426,16 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:5:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:22:
-Warning:    Singleton variables: [Y2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:25:
-Warning:    Singleton variables: [Y2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:28:
-Warning:    Singleton variables: [X2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:31:
-Warning:    Singleton variables: [Y2]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_1.pl:5:5: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: findall_loop/4: Unknown procedure: {}/1
 --- sample 2 ---
 === Constraint Evaluation ===
 
@@ -1363,21 +1457,8 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton-marked variable appears more than once: _N
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:18:26: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:20:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:21:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:22:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:23:
-Warning:    Singleton variables: [Y]
-ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/3
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/3N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1399,27 +1480,17 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:9:
-Warning:    Singleton-marked variable appears more than once: _N
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:18:26: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:20:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:21:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:22:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:23:
-Warning:    Singleton variables: [Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_2.pl:18:26: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/3
 --- sample 3 ---
 === Constraint Evaluation ===
 
@@ -1445,79 +1516,18 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:4:
-Warning:    Singleton variables: [Y]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:10:
 ERROR:    No permission to modify static procedure `true/0'
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:15:5: Syntax error: Operator expected
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:20:
 ERROR:    No permission to modify static procedure `true/0'
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:25:
-Warning:    Singleton variables: [Y1,NE,X1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:25:
-Warning:    Singleton variable in branch: Y1
-Warning:    Singleton variable in branch: NW
-Warning:    Singleton variable in branch: NE
-Warning:    Singleton variable in branch: X1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:34:
-Warning:    Clauses of wall/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:22
-Warning:    Current predicate: loc/2
-Warning:    Use :- discontiguous wall/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:36:
-Warning:    Singleton variables: [Y1,N2,X2,X,SW2,N1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:47:
-Warning:    Singleton variables: [X2,X,NE2,N1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:47:
-Warning:    Singleton variable in branch: X2
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NE2
-Warning:    Singleton variable in branch: N1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:55:
-Warning:    Singleton variables: [NX,Y1,Y,N2,X,X3,N1,NW3,X1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:65:
-Warning:    Singleton variables: [X1,X2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:65:
-Warning:    Singleton variable in branch: X1
-Warning:    Singleton variable in branch: X2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:68:
 ERROR:    No permission to modify static procedure `true/0'
-ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiated
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:4:
-Warning:    Singleton variables: [Y]
-ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:10:
+ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiatedERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:10:
 ERROR:    No permission to modify static procedure `true/0'
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:15:5: Syntax error: Operator expected
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:20:
 ERROR:    No permission to modify static procedure `true/0'
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:25:
-Warning:    Singleton variables: [Y1,NE,X1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:25:
-Warning:    Singleton variable in branch: Y1
-Warning:    Singleton variable in branch: NW
-Warning:    Singleton variable in branch: NE
-Warning:    Singleton variable in branch: X1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:34:
-Warning:    Clauses of wall/2 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:22
-Warning:    Current predicate: loc/2
-Warning:    Use :- discontiguous wall/2. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:36:
-Warning:    Singleton variables: [Y1,N2,X2,X,SW2,N1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:47:
-Warning:    Singleton variables: [X2,X,NE2,N1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:47:
-Warning:    Singleton variable in branch: X2
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NE2
-Warning:    Singleton variable in branch: N1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:55:
-Warning:    Singleton variables: [NX,Y1,Y,N2,X,X3,N1,NW3,X1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:65:
-Warning:    Singleton variables: [X1,X2]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:65:
-Warning:    Singleton variable in branch: X1
-Warning:    Singleton variable in branch: X2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_3.pl:68:
 ERROR:    No permission to modify static procedure `true/0'
 ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): wall/2: Unknown procedure: wall/1
@@ -1530,8 +1540,7 @@ ERROR: [Thread main]         call/5
 ERROR: [Thread main]         call/6
 ERROR: [Thread main]         call/7
 ERROR: [Thread main]         call/8
-ERROR: [Thread main]         wall/2
-
+ERROR: [Thread main]         wall/2TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 --- sample 4 ---
 === Constraint Evaluation ===
 
@@ -1553,18 +1562,9 @@ ERROR: [Thread main]         wall/2
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:3:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:9:
-Warning:    Singleton variables: [AgentDetails]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:19:
-Warning:    Singleton variables: [AgentDetails,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:29:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:30:3: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:31:3: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:32:
-Warning:    Singleton variables: [X]
-ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/2
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/2N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1587,24 +1587,23 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:3:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:9:
-Warning:    Singleton variables: [AgentDetails]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:19:
-Warning:    Singleton variables: [AgentDetails,Colour]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:29:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:30:3: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:31:3: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:32:
-Warning:    Singleton variables: [X]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
 
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:3:7: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:30:3: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_4.pl:31:3: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/2
 --- sample 5 ---
 === Constraint Evaluation ===
 
@@ -1624,15 +1623,12 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
     wrong_wall_counts: [loc(0,0)-2-0,loc(0,1)-1-0,loc(0,2)-1-0,loc(0,3)-1-0,loc(0,4)-1-0,loc(0,5)-1-0,loc(0,6)-1-0,loc(0,7)-2-0,loc(1,0)-1-0,loc(1,7)-1-0,loc(2,0)-1-0,loc(2,7)-1-0,loc(3,0)-1-0,loc(3,7)-1-0,loc(4,0)-1-0,loc(4,7)-1-0,loc(5,0)-1-0,loc(5,7)-1-0,loc(6,0)-1-0,loc(6,7)-1-0,loc(7,0)-2-0,loc(7,1)-1-0,loc(7,2)-1-0,loc(7,3)-1-0,loc(7,4)-1-0,loc(7,5)-1-0,loc(7,6)-1-0,loc(7,7)-2-0]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_5.pl:21:
-Warning:    Singleton variables: [X,Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -1655,15 +1651,28 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_5.pl:21:
-Warning:    Singleton variables: [X,Y]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 6 ---
 === Constraint Evaluation ===
@@ -1685,11 +1694,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
     wrong_wall_counts: [loc(0,0)-2-0,loc(0,1)-1-0,loc(0,2)-1-0,loc(0,3)-1-0,loc(0,4)-1-0,loc(0,5)-1-0,loc(0,6)-2-0,loc(1,0)-1-0,loc(1,6)-1-0,loc(2,0)-1-0,loc(2,6)-1-0,loc(3,0)-1-0,loc(3,6)-1-0,loc(4,0)-1-0,loc(4,6)-1-0,loc(5,0)-1-0,loc(5,6)-1-0,loc(6,0)-2-0,loc(6,1)-1-0,loc(6,2)-1-0,loc(6,3)-1-0,loc(6,4)-1-0,loc(6,5)-1-0,loc(6,6)-2-0]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:3:9: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:6:
-Warning:    Singleton variables: [Name]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:17:11: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:22:
-Warning:    Singleton variables: [R]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:28:34: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -1697,7 +1702,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -1721,11 +1725,7 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:3:9: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:6:
-Warning:    Singleton variables: [Name]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:17:11: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:22:
-Warning:    Singleton variables: [R]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:28:34: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -1733,8 +1733,18 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
 
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:3:9: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:17:11: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_6.pl:28:34: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/2
 --- sample 7 ---
 === Constraint Evaluation ===
 
@@ -1760,8 +1770,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_7.pl:24:5: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1792,7 +1801,25 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_7.pl:4:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_7.pl:11:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_7.pl:24:5: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 8 ---
 === Constraint Evaluation ===
@@ -1815,32 +1842,13 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:4:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:6:
-Warning:    Singleton variables: [I,J,Opaque]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:8:
-Warning:    Singleton variables: [I,J,Cord,Coord,Dirt,Color]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:8:
-Warning:    Singleton variable in branch: Coord
-Warning:    Singleton variable in branch: Dirt
-Warning:    Singleton variable in branch: Color
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:11:
-Warning:    Singleton variables: [I,J,Coord]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:15:19: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:18:19: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:20:
-Warning:    Singleton variables: [North,East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:21:
-Warning:    Singleton variables: [South,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:22:
-Warning:    Singleton variables: [East,South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:29:
-Warning:    Singleton variables: [I]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:31:38: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:33:38: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1863,26 +1871,29 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:4:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:6:
-Warning:    Singleton variables: [I,J,Opaque]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:8:
-Warning:    Singleton variables: [I,J,Cord,Coord,Dirt,Color]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:8:
-Warning:    Singleton variable in branch: Coord
-Warning:    Singleton variable in branch: Dirt
-Warning:    Singleton variable in branch: Color
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:11:
-Warning:    Singleton variables: [I,J,Coord]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:15:19: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:18:19: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:20:
-Warning:    Singleton variables: [North,East]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:21:
-Warning:    Singleton variables: [South,North]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:22:
-Warning:    Singleton variables: [East,South]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:29:
-Warning:    Singleton variables: [I]
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:31:38: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:33:38: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
+
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:4:7: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:15:19: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:18:19: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:31:38: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_8.pl:33:38: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
@@ -1892,29 +1903,13 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-
 --- sample 9 ---
-TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:4:5: Syntax error: Operator expected
+TIMEOUT: killed after 10s (likely non-terminating generated Prolog)ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:4:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:12:17: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:15:52: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:21:
-Warning:    Singleton-marked variable appears more than once: _X
-Warning:    Singleton-marked variable appears more than once: _Y
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:26:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:26:
-Warning:    Singleton-marked variable appears more than once: _X
-Warning:    Singleton-marked variable appears more than once: _Y
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:29:4: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:33:4: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:36:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:36:
-Warning:    Singleton-marked variable appears more than once: _X
-Warning:    Singleton-marked variable appears more than once: _Y
-ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): >/2: Arguments are not sufficiently instantiated
-
+ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): >/2: Arguments are not sufficiently instantiatedTIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 --- sample 10 ---
 === Constraint Evaluation ===
 
@@ -1937,15 +1932,10 @@ ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): >/2: Argumen
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:76:
-Warning:    Singleton variables: [L]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:80:55: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:82:
-Warning:    Singleton variables: [X,L]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:88:10: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:89:12: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/1
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1967,11 +1957,7 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:76:
-Warning:    Singleton variables: [L]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:80:55: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:82:
-Warning:    Singleton variables: [X,L]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:88:10: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:89:12: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
@@ -1980,8 +1966,12 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:80:55: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:88:10: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_10.pl:89:12: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/1
 --- sample 11 ---
 === Constraint Evaluation ===
 
@@ -2011,43 +2001,10 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:60:0: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:67:11: Syntax error: Illegal start of term
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:73:11: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:79:
-Warning:    Singleton variables: [S,N,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:79:
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: E
-Warning:    Singleton variable in branch: NE1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:85:
-Warning:    Singleton variables: [S,Y,N,NW1,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:85:
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: Y
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: NE1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:91:
-Warning:    Singleton variables: [S,N,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:91:
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: NE1
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:101:84: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:107:64: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:116:45: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/1
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: seen/1: Unknown procedure: percept/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2078,38 +2035,6 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:60:0: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:67:11: Syntax error: Illegal start of term
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:73:11: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:79:
-Warning:    Singleton variables: [S,N,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:79:
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: E
-Warning:    Singleton variable in branch: NE1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:85:
-Warning:    Singleton variables: [S,Y,N,NW1,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:85:
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: Y
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: NE1
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:91:
-Warning:    Singleton variables: [S,N,NE1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:91:
-Warning:    Singleton variable in branch: S
-Warning:    Singleton variable in branch: D
-Warning:    Singleton variable in branch: X
-Warning:    Singleton variable in branch: NW1
-Warning:    Singleton variable in branch: N
-Warning:    Singleton variable in branch: W
-Warning:    Singleton variable in branch: NE1
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:101:84: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:107:64: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:116:45: Syntax error: Operator expected
@@ -2119,8 +2044,24 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
 
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:3:34: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:19:24: Syntax error: Operator priority clash
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:25:47: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:27:47: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:29:45: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:31:45: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:60:0: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:67:11: Syntax error: Illegal start of term
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:73:11: Syntax error: Illegal start of term
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:101:84: Syntax error: Operator priority clash
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:107:64: Syntax error: Operator priority clash
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_11.pl:116:45: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/1
 --- sample 12 ---
 === Constraint Evaluation ===
 
@@ -2150,23 +2091,12 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:33:39: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:36:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:42:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:47:
-Warning:    Clauses of w3/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:27
-Warning:    Current predicate: w4/1
-Warning:    Use :- discontiguous w3/1. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:48:
-Warning:    Clauses of w4/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:28
-Warning:    Current predicate: w3/1
-Warning:    Use :- discontiguous w4/1. to suppress this message
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -2199,23 +2129,38 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:33:39: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:36:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:42:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:47:
-Warning:    Clauses of w3/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:27
-Warning:    Current predicate: w4/1
-Warning:    Use :- discontiguous w3/1. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:48:
-Warning:    Clauses of w4/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:28
-Warning:    Current predicate: w3/1
-Warning:    Use :- discontiguous w4/1. to suppress this message
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=1  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:4:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:8:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:12:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:18:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:30:40: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:31:40: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:32:39: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:33:39: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:36:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_12.pl:42:5: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 13 ---
 === Constraint Evaluation ===
@@ -2238,31 +2183,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:4:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:7:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:10:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:10:
-Warning:    Singleton variable in branch: Id
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:20:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:20:
-Warning:    Singleton variable in \+: Y
-Warning:    Singleton variable in branch: Id
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:38:
-Warning:    Singleton variables: [X2,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:38:
-Warning:    Singleton variable in \+: X2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:44:
-Warning:    Singleton variables: [X3,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:44:
-Warning:    Singleton variable in \+: X3
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:52:6: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:63:45: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:65:
-Warning:    Singleton variables: [SeenWalls,Wellloc,Y,WellLoc,WalksPos,SeenWails,Wails]
-ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2285,37 +2208,20 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:4:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:7:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:10:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:10:
-Warning:    Singleton variable in branch: Id
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:20:
-Warning:    Singleton variables: [Id]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:20:
-Warning:    Singleton variable in \+: Y
-Warning:    Singleton variable in branch: Id
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:38:
-Warning:    Singleton variables: [X2,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:38:
-Warning:    Singleton variable in \+: X2
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:44:
-Warning:    Singleton variables: [X3,X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:44:
-Warning:    Singleton variable in \+: X3
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:52:6: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:63:45: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:65:
-Warning:    Singleton variables: [SeenWalls,Wellloc,Y,WellLoc,WalksPos,SeenWails,Wails]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:4:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:52:6: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_13.pl:63:45: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: >/2: Arguments are not sufficiently instantiated
 --- sample 14 ---
 === Constraint Evaluation ===
 
@@ -2347,7 +2253,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -2382,8 +2287,18 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
 
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:3:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:9:4: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:25:4: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:33:4: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:41:4: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_14.pl:49:4: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: seen/1: Unknown procedure: percept/4
 --- sample 15 ---
 === Constraint Evaluation ===
 
@@ -2405,12 +2320,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 1/8 passed, 7 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_15.pl:37:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_15.pl:40:
-Warning:    Singleton variables: [X]
-ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: >/2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2432,18 +2342,15 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_15.pl:37:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_15.pl:40:
-Warning:    Singleton variables: [X]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
-
+ERROR: [Thread main] -g content_f1_report: >/2: Arguments are not sufficiently instantiated
 --- sample 16 ---
 === Constraint Evaluation ===
 
@@ -2469,8 +2376,7 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:14:48: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:16:4: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:25:81: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: is/2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: is/2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2501,8 +2407,15 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
 
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:14:48: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:16:4: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_16.pl:25:81: Syntax error: Operator expected
+ERROR: [Thread main] -g content_f1_report: is/2: Arguments are not sufficiently instantiated
 --- sample 17 ---
 === Constraint Evaluation ===
 
@@ -2523,14 +2436,8 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Violations:
     wrong_wall_counts: [loc(0,0)-2-0,loc(0,1)-1-0,loc(0,2)-1-0,loc(0,3)-1-0,loc(0,4)-1-0,loc(0,5)-1-0,loc(0,6)-2-0,loc(1,0)-1-0,loc(1,6)-1-0,loc(2,0)-1-0,loc(2,6)-1-0,loc(3,0)-1-0,loc(3,6)-1-0,loc(4,0)-1-0,loc(4,6)-1-0,loc(5,0)-1-0,loc(5,6)-1-0,loc(6,0)-2-0,loc(6,1)-1-0,loc(6,2)-1-0,loc(6,3)-1-0,loc(6,4)-1-0,loc(6,5)-1-0,loc(6,6)-2-0]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:5:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:8:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:10:59: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:11:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:15:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:18:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:19:74: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:24:6: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:26:8: Syntax error: Operator expected
@@ -2542,7 +2449,6 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-
 N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
@@ -2566,14 +2472,8 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:5:5: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:8:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:10:59: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:11:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:15:7: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:18:
-Warning:    Singleton variables: [Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:19:74: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:24:6: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:26:8: Syntax error: Operator expected
@@ -2585,7 +2485,30 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:5:5: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:10:59: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:15:7: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:19:74: Syntax error: Operator priority clash
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:24:6: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:26:8: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:32:5: Syntax error: Operator priority clash
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_17.pl:34:17: Syntax error: Illegal start of term
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 18 ---
 === Constraint Evaluation ===
@@ -2612,29 +2535,9 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:8:23: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:11:
-Warning:    Singleton variables: [Colour]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:17:23: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:20:
-Warning:    Clauses of grid_size/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:1
-Warning:    Current predicate: seen/1
-Warning:    Use :- discontiguous grid_size/1. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:21:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:23:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:24:
-Warning:    Singleton variables: [Wet,Dir,Wall1,OtherDirs,X,WetNotDir,OtherDir]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:30:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:31:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:32:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:33:53: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: is/2: Arguments are not sufficiently instantiated
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: is/2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2657,26 +2560,7 @@ N=12  TP=0  FP=0  FN=48
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:8:23: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:11:
-Warning:    Singleton variables: [Colour]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:17:23: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:20:
-Warning:    Clauses of grid_size/1 are not together in the source-file
-Warning:    Earlier definition at /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:1
-Warning:    Current predicate: seen/1
-Warning:    Use :- discontiguous grid_size/1. to suppress this message
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:21:
-Warning:    Singleton variables: [X]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:23:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:24:
-Warning:    Singleton variables: [Wet,Dir,Wall1,OtherDirs,X,WetNotDir,OtherDir]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:30:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:31:
-Warning:    Singleton variables: [Y]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:32:
-Warning:    Singleton variables: [X,Y]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:33:53: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -2684,7 +2568,25 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:8:23: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:17:23: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_18.pl:33:53: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 19 ---
 === Constraint Evaluation ===
@@ -2706,26 +2608,15 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 2/8 passed, 6 failed ---
 
 Violations:
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:11:
-Warning:    Singleton variables: [XY,Colour,L,Nw]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:11:
 ERROR:    Type error: `callable' expected, found `grid(size_y(_4598,_4600),seen(dirt(loc(_4612,_4598))),\+wall(loc(_4612,_4628))),_4586' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:19:33: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:21:
-Warning:    Singleton variables: [XY,L,Ni,Xw,LX]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:21:
 ERROR:    Type error: `callable' expected, found `grid(size_y(_8592,_8594),seen(dirt(loc(_8606,_8592))),seen(agent(_8616,loc(_8606,_8624))),\+wall(loc(_8606,_8638))),_8578' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:27:17: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:28:
-Warning:    Singleton variables: [Y1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:29:
-Warning:    Singleton variables: [X2,Y3,N4]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:30:
-Warning:    Singleton variables: [X5,Y6,N7]
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2747,29 +2638,40 @@ N=12  TP=0  FP=0  FN=48
   F1=0.0000 (no true positives)
 N=13  TP=0  FP=0  FN=52
   F1=0.0000 (no true positives)
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:11:
-Warning:    Singleton variables: [XY,Colour,L,Nw]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:11:
 ERROR:    Type error: `callable' expected, found `grid(size_y(_6886,_6888),seen(dirt(loc(_6900,_6886))),\+wall(loc(_6900,_6916))),_6874' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:19:33: Syntax error: Illegal start of term
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:21:
-Warning:    Singleton variables: [XY,L,Ni,Xw,LX]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:21:
 ERROR:    Type error: `callable' expected, found `grid(size_y(_10880,_10882),seen(dirt(loc(_10894,_10880))),seen(agent(_10904,loc(_10894,_10912))),\+wall(loc(_10894,_10926))),_10866' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:27:17: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:28:
-Warning:    Singleton variables: [Y1]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:29:
-Warning:    Singleton variables: [X2,Y3,N4]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:30:
-Warning:    Singleton variables: [X5,Y6,N7]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:11:
+ERROR:    Type error: `callable' expected, found `grid(size_y(_12952,_12954),seen(dirt(loc(_12966,_12952))),\+wall(loc(_12966,_12982))),_12940' (a compound)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:19:33: Syntax error: Illegal start of term
+ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:21:
+ERROR:    Type error: `callable' expected, found `grid(size_y(_1552,_1554),seen(dirt(loc(_1566,_1552))),seen(agent(_1576,loc(_1566,_1584))),\+wall(loc(_1566,_1598))),_1538' (a compound)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_19.pl:27:17: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
 --- sample 20 ---
 === Constraint Evaluation ===
@@ -2794,17 +2696,10 @@ Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:3:27: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:7:33: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:13:31: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:19:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:20:
-Warning:    Singleton variables: [M,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:21:
-Warning:    Singleton variables: [N,M]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:24:17: Syntax error: Operator expected
 ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
 ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0
-N=3  TP=0  FP=3  FN=12
+ERROR: [Thread main]         seen/0N=3  TP=0  FP=3  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=4  FN=16
   F1=0.0000 (no true positives)
@@ -2829,12 +2724,6 @@ N=13  TP=0  FP=6  FN=52
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:3:27: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:7:33: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:13:31: Syntax error: Operator expected
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:19:
-Warning:    Singleton variables: [N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:20:
-Warning:    Singleton variables: [M,N]
-Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:21:
-Warning:    Singleton variables: [N,M]
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:24:17: Syntax error: Operator expected
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -2842,4 +2731,23 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
+=== Content F1 Evaluation ===
 
+dirt  TP=0  FP=0  FN=5
+  F1=0.0000 (no true positives)
+
+agent  TP=0  FP=0  FN=2
+  F1=0.0000 (no true positives)
+
+empty  TP=0  FP=0  FN=31
+  F1=0.0000 (no true positives)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:3:27: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:7:33: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:13:31: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_20.pl:24:17: Syntax error: Operator expected
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
