@@ -1,7 +1,4 @@
 import dotenv
-import anthropic
-from google import genai
-from google.genai import types
 import subprocess
 from openai import OpenAI
 import os
@@ -186,7 +183,8 @@ def call_qwen(prompt, n, prompt_type="zero-shot", model="qwen2.5:3b"):
     )
     messages = [{"role": "user", "content": prompt}]
     prefix = PROMPT_TYPES[prompt_type]
-    file_path = f"UROP/pipeline/prolog/result/qwen2.5-3b/{prompt_type}/{prefix}_sample_{n}.pl"
+    model_dir = model.replace(":", "-")
+    file_path = f"UROP/pipeline/prolog/result/{model_dir}/{prompt_type}/{prefix}_sample_{n}.pl"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     result = None
     for attempt in range(5):
@@ -221,7 +219,8 @@ def call_gemma(prompt, n, prompt_type="zero-shot", model="gemma3:4b"):
     )
     messages = [{"role": "user", "content": prompt}]
     prefix = PROMPT_TYPES[prompt_type]
-    file_path = f"UROP/pipeline/prolog/result/gemma3-4b/{prompt_type}/{prefix}_sample_{n}.pl"
+    model_dir = model.replace(":", "-")
+    file_path = f"UROP/pipeline/prolog/result/{model_dir}/{prompt_type}/{prefix}_sample_{n}.pl"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     result = None
     for attempt in range(5):
@@ -230,7 +229,7 @@ def call_gemma(prompt, n, prompt_type="zero-shot", model="gemma3:4b"):
             max_tokens=4096,
             temperature=1.0,
             messages=messages,
-            extra_body={"options": {"num_ctx": 131072}}
+            extra_body={"options": {"num_ctx": 16384}}
         )
         code = strip_markdown(response.choices[0].message.content)
         with open(file_path, "w") as f:
@@ -255,13 +254,16 @@ prompts = [
     ("one-shot",     one_shot_prompt),
 ]
 
-#for prompt_type, prompt in prompts:
-for n in range(1, 21):
-    try:
-        call_gemma(one_shot_prompt,n,"one-shot")
-    except Exception as e:
-        print(f"Error occurred while processing sample {n}: {e}")
-    try:
-        call_qwen(one_shot_prompt,n,"one-shot")
-    except Exception as e:
-        print(f"Error occurred while processing sample {n}: {e}")
+for prompt_type, prompt in prompts:
+    for n in range(1, 21):
+        try:
+            call_gemma(one_shot_prompt,n,prompt_type,model="gemma2:9b")
+        except Exception as e:
+            print(f"Error occurred while processing sample {n}: {e}")
+
+for prompt_type, prompt in prompts:
+    for n in range(1, 21):
+        try:
+            call_qwen(one_shot_prompt,n,prompt_type,model="qwen2.5:7b")
+        except Exception as e:
+            print(f"Error occurred while processing sample {n}: {e}")

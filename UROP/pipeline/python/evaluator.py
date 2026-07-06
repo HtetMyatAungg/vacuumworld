@@ -12,7 +12,6 @@ def run_swipl(cmd, timeout=10):
         return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
         return subprocess.CompletedProcess(cmd, -1, stdout="", stderr=f"TIMEOUT: killed after {timeout}s (likely non-terminating generated Prolog)\n")
-
 PROMPT_TYPES = {
     "zero-shot":    "zero_shot",
     "schema-based": "schema_based",
@@ -41,11 +40,6 @@ for prompt_type, prefix in PROMPT_TYPES.items():
                 f.write(r2.stdout)
                 f.write(filter_warnings(r2.stderr))
 
-                if prompt_type in ("schema-based", "one-shot"):
-                    r3 = run_swipl(["swipl", "-l", "UROP/pipeline/prolog/content_f1.pl", "-l", pl_file, "-g", "content_f1_report", "-t", "halt"])
-                    f.write(r3.stdout)
-                    f.write(filter_warnings(r3.stderr))
-
 for prompt_type, prefix in PROMPT_TYPES.items():
     with open(f"UROP/pipeline/results/small_llm_results/{prompt_type}-results.txt", "w") as f:
         f.write(f"--- {prompt_type} ---\n")
@@ -67,9 +61,4 @@ for prompt_type, prefix in PROMPT_TYPES.items():
                 r2 = run_swipl(["swipl", "-l", "UROP/pipeline/prolog/f1_N.pl", "-l", pl_file, "-g", "wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13])", "-t", "halt"])
                 f.write(r2.stdout)
                 f.write(filter_warnings(r2.stderr))
-
-                if prompt_type in ("schema-based", "one-shot"):
-                    r3 = run_swipl(["swipl", "-l", "UROP/pipeline/prolog/content_f1.pl", "-l", pl_file, "-g", "content_f1_report", "-t", "halt"])
-                    f.write(r3.stdout)
-                    f.write(filter_warnings(r3.stderr))
 
