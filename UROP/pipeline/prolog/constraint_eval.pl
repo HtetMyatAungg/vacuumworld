@@ -153,3 +153,23 @@ check_all :-
         nl, writeln("Violations:"), report_violations
     ; true
     ).
+
+%% ---- CSV export -------------------------------------------------------------
+
+check_all_to_csv(File) :-
+    setup_call_cleanup(
+        open(File, write, S),
+        write_checks_csv(S),
+        close(S)
+    ).
+
+write_checks_csv(S) :-
+    format(S, "check,result~n", []),
+    check(partition, partition_ok, R1), format(S, "partition,~w~n", [R1]),
+    check(bounds, bounds_ok, R2), format(S, "bounds,~w~n", [R2]),
+    check(coverage, coverage_ok, R3), format(S, "coverage,~w~n", [R3]),
+    check(implies_grid, implies_grid_ok, R4), format(S, "implies_grid,~w~n", [R4]),
+    check(wall_count, wall_count_ok, R5), format(S, "wall_count,~w~n", [R5]),
+    check(no_interior_walls, no_interior_walls_ok, R6), format(S, "no_interior_walls,~w~n", [R6]),
+    check(cell_wall_counts, cell_wall_counts_ok, R7), format(S, "cell_wall_counts,~w~n", [R7]),
+    check(all_directions, all_directions_ok, R8), format(S, "all_directions,~w~n", [R8]).

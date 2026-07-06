@@ -85,12 +85,22 @@ wall_f1_csv(N, Row) :-
     Row = row(N, TP, FP, FN, Precision, Recall, F1).
 
 wall_f1_to_csv(Ns, File) :-
-    open(File, write, S),
-    format(S, "N,TP,FP,FN,Precision,Recall,F1~n", []),
-    forall(
-        member(N, Ns),
-        ( wall_f1_csv(N, row(N, TP, FP, FN, P, R, F1)),
-          format(S, "~w,~w,~w,~w,~4f,~4f,~4f~n", [N, TP, FP, FN, P, R, F1])
-        )
-    ),
-    close(S).
+    setup_call_cleanup(
+        open(File, write, S),
+        ( format(S, "N,TP,FP,FN,Precision,Recall,F1~n", []),
+          forall(member(N, Ns), write_f1_row(S, N))
+        ),
+        close(S)
+    ).
+
+write_f1_row(S, N) :-
+    ( catch(
+          wall_f1_csv(N, row(N, TP, FP, FN, P, R, F1)),
+          Error,
+          ( format(user_error, "wall_f1_to_csv: N=~w failed: ~w~n", [N, Error]),
+            fail
+          )
+      )
+    -> format(S, "~w,~w,~w,~w,~4f,~4f,~4f~n", [N, TP, FP, FN, P, R, F1])
+    ;  format(S, "~w,ERROR,ERROR,ERROR,ERROR,ERROR,ERROR~n", [N])
+    ).

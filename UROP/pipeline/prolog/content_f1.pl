@@ -51,3 +51,67 @@ content_f1_report :-
     agent_f1,
     nl,
     empty_f1.
+
+%% ---- CSV export -------------------------------------------------------------
+
+f1_score_row(Pred, Oracle, row(TP, FP, FN, Precision, Recall, F1)) :-
+    intersection(Pred, Oracle, TPList),
+    length(TPList, TP),
+    length(Pred, PredN),
+    length(Oracle, OracleN),
+    FP is PredN - TP,
+    FN is OracleN - TP,
+    (TP > 0 ->
+        Precision is TP / (TP + FP),
+        Recall is TP / (TP + FN),
+        F1 is 2 * Precision * Recall / (Precision + Recall)
+    ;
+        Precision = 0.0, Recall = 0.0, F1 = 0.0
+    ).
+
+dirt_f1_row(Row) :-
+    findall(seen(dirt(L,C)), oracle_seen(dirt(L,C)), Oracle),
+    findall(seen(dirt(L,C)), (seen(dirt(L,C)), ground(L), ground(C)), PredRaw),
+    sort(Oracle, OracleSorted),
+    sort(PredRaw, Pred),
+    f1_score_row(Pred, OracleSorted, Row).
+
+agent_f1_row(Row) :-
+    findall(seen(agent(Id,L,C)), oracle_seen(agent(Id,L,C)), Oracle),
+    findall(seen(agent(Id,L,C)), (seen(agent(Id,L,C)), ground(Id), ground(L), ground(C)), PredRaw),
+    sort(Oracle, OracleSorted),
+    sort(PredRaw, Pred),
+    f1_score_row(Pred, OracleSorted, Row).
+
+empty_f1_row(Row) :-
+    findall(L, oracle_empty(L), Oracle),
+    findall(L, (empty_location(L), ground(L)), PredRaw),
+    sort(Oracle, OracleSorted),
+    sort(PredRaw, Pred),
+    f1_score_row(Pred, OracleSorted, Row).
+
+content_f1_to_csv(File) :-
+    setup_call_cleanup(
+        open(File, write, S),
+        write_content_f1_csv(S),
+        close(S)
+    ).
+
+write_content_f1_csv(S) :-
+    format(S, "category,TP,FP,FN,Precision,Recall,F1~n", []),
+    write_content_row(S, dirt, dirt_f1_row),
+    write_content_row(S, agent, agent_f1_row),
+    write_content_row(S, empty, empty_f1_row).
+
+write_content_row(S, Label, Goal) :-
+    ( catch(
+          call(Goal, Row),
+          Error,
+          ( format(user_error, "content_f1_to_csv: ~w failed: ~w~n", [Label, Error]),
+            fail
+          )
+      )
+    -> Row = row(TP, FP, FN, P, R, F1),
+       format(S, "~w,~w,~w,~w,~4f,~4f,~4f~n", [Label, TP, FP, FN, P, R, F1])
+    ;  format(S, "~w,ERROR,ERROR,ERROR,ERROR,ERROR,ERROR~n", [Label])
+    ).

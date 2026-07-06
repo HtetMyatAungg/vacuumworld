@@ -12,6 +12,7 @@ def run_swipl(cmd, timeout=10):
         return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
         return subprocess.CompletedProcess(cmd, -1, stdout="", stderr=f"TIMEOUT: killed after {timeout}s (likely non-terminating generated Prolog)\n")
+
 PROMPT_TYPES = {
     "zero-shot":    "zero_shot",
     "schema-based": "schema_based",
