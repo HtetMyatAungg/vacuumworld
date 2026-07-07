@@ -1,5 +1,4 @@
 grid_size(7).
-
 grid(0,0).
 grid(1,0).
 grid(2,0).
@@ -49,29 +48,16 @@ grid(3,6).
 grid(4,6).
 grid(5,6).
 grid(6,6).
-grid(0,7).
-grid(1,7).
-grid(2,7).
-grid(3,7).
-grid(4,7).
-grid(5,7).
-grid(6,7).
-
-dirt(1,1,'green').
-dirt(4,5,'orange').
-
-
-
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4, 0,'green').
-agent('97a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 7, 1,'green').
-
-empty(0,2).
-empty(0,3).
-empty(0,4).
+dirt(4,5,'green').
+dirt(5,4,'orange').
+agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c,4,0,'green'). 
+   
+empty(X,Y):- \+ member(X,[0,1,2,3,4,5,6]),member(Y,[0,1,2,3,4,5,6]).
+wall(0,Y,'south').
+wall(7,Y,'south').
+wall(X,0 ,'north').
+wall(X,7,'north').
 
 
 
-wall(0,Y,'north').
-wall(X,0,'west').
-wall(6,Y,'east').
-wall(X,7,'south').
+

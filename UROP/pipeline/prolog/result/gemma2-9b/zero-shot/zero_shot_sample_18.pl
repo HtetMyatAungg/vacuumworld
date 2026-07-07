@@ -56,22 +56,43 @@ grid(3,7).
 grid(4,7).
 grid(5,7).
 grid(6,7).
+dirt(4,5,'green').
 
-dirt(1,1,'green').
-dirt(4,5,'orange').
+agent('9f9ae8c3-e2f0-4b1d-a05c-df88e1e4fc05',4,6,'green').
 
-
-
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4, 0,'green').
-agent('97a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 7, 1,'green').
-
+empty(0,0).
+empty(0,1).
 empty(0,2).
 empty(0,3).
 empty(0,4).
+empty(0,5).
+empty(0,6).
+empty(0,7).
+empty(1,0).
+empty(1,5).
+
+agent('9f9ae8c3-e2f0-4b1d-a05c-df88e1e4fc05',4,6,'green').
 
 
 
-wall(0,Y,'north').
-wall(X,0,'west').
-wall(6,Y,'east').
-wall(X,7,'south').
+wall(0, Y, north).
+wall(1, Y, north).
+wall(2, Y, north).
+wall(3, Y, north).
+wall(4, Y, north).
+wall(5, Y, north).
+wall(6, Y, north).
+
+wall(X, 0, west).
+wall(X, 1, west).
+wall(X, 2, west).
+wall(X, 3, west).
+wall(X, 4, west).
+wall(X, 5, west).
+wall(X, 6, west).
+
+
+
+wall(7, Y, east).
+
+wall(X, 7, south).
