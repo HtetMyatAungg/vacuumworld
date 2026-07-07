@@ -7,17 +7,17 @@
 %%
 %% LLM fills Sections A and B; Sections C and D are fixed scaffolding.
 
-:- dynamic dirt/2, agent/3, perceived/2,
-           grid_size/1, wall/2, empty_location/1, seen/1, location/2.
+:- dynamic dirt/3, agent/4, perceived/2,
+           grid_size/1, wall/3, empty/2, seen/1, location/2.
 
-:- discontiguous dirt/2, agent/3, wall/2,
-                 empty_location/1, perceived/2, seen/1.
+:- discontiguous dirt/3, agent/4, wall/3,
+                 empty/2, perceived/2, seen/1.
 
 
 %% ---- Section A: Translation (LLM fills) ------------------------------------
 %% Emit ground facts from the deduplicated percept log:
-%%   grid_size(N). grid(loc(X,Y)). dirt(loc(X,Y), Colour).
-%%   agent(Id, loc(X,Y), Colour). empty_location(loc(X,Y)).
+%%   grid_size(N). grid(X,Y). dirt(X,Y, Colour).
+%%   agent(Id, X,Y, Colour). empty(X,Y).
 
 %% >>> BEGIN translation facts
 
@@ -26,7 +26,7 @@
 
 
 %% ---- Section B: Wall Rules (LLM fills) -------------------------------------
-%% Define wall(loc(X, Y), Dir) for the four boundary directions.
+%% Define wall(X, Y, Dir) for the four boundary directions.
 %% Rules must generalise over grid_size(N), not enumerate specific walls.
 
 %% >>> BEGIN wall rules

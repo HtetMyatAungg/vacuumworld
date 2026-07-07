@@ -46,15 +46,15 @@ Produce ONLY valid Prolog — no markdown, no comments, no explanation.
 Section A — Translation facts:
 Assert the following ground facts from the percept log:
 - grid_size(N) where N is the side length of the grid.
-- grid(loc(X,Y)) are facts with the entire grid coordinates.
-- seen(dirt(loc(X,Y), Colour)) for each cell containing dirt.
-- seen(agent(Id, loc(X,Y), Colour)) for each cell containing an agent.
-- empty_location(loc(X,Y)) for each cell that has neither dirt nor an agent.
+- grid(X,Y) are facts with the entire grid coordinates.
+- dirt(X,Y, Colour) for each cell containing dirt.
+- agent(Id, X,Y, Colour) for each cell containing an agent.
+- empty(X,Y) for each cell that has neither dirt nor an agent.
 
 Section B — Wall rules:
-Define wall(loc(X,Y), Dir) rules for boundary walls.
+Define wall(X,Y, Dir) rules for boundary walls.
 Your rules must generalise — they should work for any grid size, not just the one observed.
-Do not enumerate wall(loc(X,Y), Dir) as facts.
+Do not enumerate wall(X,Y, Dir) as facts.
 Output the Prolog code only. Do not include any explanation, comments, or markdown.
 Start your response with the first Prolog fact and end with the last.
 
@@ -87,26 +87,26 @@ Example percept log:
 Example Prolog output:
 grid_size(3).
 
-grid(loc(0,0)).
-grid(loc(1,0)).
-grid(loc(2,0)).
-grid(loc(0,1)).
-grid(loc(1,1)).
-grid(loc(2,1)).
-grid(loc(0,2)).
-grid(loc(1,2)).
-grid(loc(2,2)).
+grid(0,0).
+grid(1,0).
+grid(2,0).
+grid(0,1).
+grid(1,1).
+grid(2,1).
+grid(0,2).
+grid(1,2).
+grid(2,2).
 
-seen(dirt(loc(1,1), green)).
-seen(agent('agent-1', loc(2,0), white)).
+dirt(1,1, green).
+agent('agent-1', 2,0, white).
 
-empty_location(loc(0,0)).
-empty_location(loc(1,0)).
-empty_location(loc(0,1)).
-empty_location(loc(2,1)).
-empty_location(loc(0,2)).
-empty_location(loc(1,2)).
-empty_location(loc(2,2)).
+empty(0,0).
+empty(1,0).
+empty(0,1).
+empty(2,1).
+empty(0,2).
+empty(1,2).
+empty(2,2).
 
 (The example stops here. Boundary wall rules are not shown — you must derive
 them yourself for the percept log below, generalised to work for any grid size.)
@@ -119,15 +119,15 @@ Produce ONLY valid Prolog — no markdown, no comments, no explanation.
 Section A — Translation facts:
 Assert the following ground facts from the percept log:
 - grid_size(N) where N is the side length of the grid.
-- grid(loc(X,Y)) are facts with the entire grid coordinates.
-- seen(dirt(loc(X,Y), Colour)) for each cell containing dirt.
-- seen(agent(Id, loc(X,Y), Colour)) for each cell containing an agent.
-- empty_location(loc(X,Y)) for each cell that has neither dirt nor an agent.
+- grid(X,Y) are facts with the entire grid coordinates.
+- dirt(X,Y, Colour) for each cell containing dirt.
+- agent(Id, X,Y, Colour) for each cell containing an agent.
+- empty(X,Y) for each cell that has neither dirt nor an agent.
 
 Section B — Wall rules:
-Define wall(loc(X,Y), Dir) rules for boundary walls.
+Define wall(X,Y, Dir) rules for boundary walls.
 Your rules must generalise — they should work for any grid size, not just the one observed.
-Do not enumerate wall(loc(X,Y), Dir) as facts.
+Do not enumerate wall(X,Y, Dir) as facts.
 Output the Prolog code only. Do not include any explanation, comments, or markdown.
 Start your response with the first Prolog fact and end with the last.
 

@@ -24,44 +24,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -91,44 +75,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -158,44 +126,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -225,44 +177,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -292,44 +228,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -361,44 +281,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -428,44 +332,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -495,44 +383,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -562,44 +434,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -611,7 +467,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  FAIL  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -622,51 +478,37 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
+--- Summary: 7/8 passed, 1 failed ---
+
+Violations:
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -680,7 +522,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  FAIL  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -691,51 +533,38 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
+--- Summary: 7/8 passed, 1 failed ---
+
+Violations:
+    dual_category: [loc(0,3),loc(5,1)]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -765,44 +594,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -814,7 +627,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  FAIL  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -825,51 +638,38 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
+--- Summary: 7/8 passed, 1 failed ---
+
+Violations:
+    dual_category: [loc(0,3),loc(5,1)]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -899,44 +699,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -948,7 +732,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  FAIL  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
@@ -959,51 +743,38 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   PASS  cell_wall_counts
   PASS  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
+--- Summary: 7/8 passed, 1 failed ---
+
+Violations:
+    dual_category: [loc(0,3),loc(5,1)]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1011,68 +782,52 @@ Please run ?- license. for legal details.
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-=== deepseek-2.5-flash ===
+=== deepseek-V3 ===
 
 --- sample 1 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  PASS  partition
+  FAIL  partition
   PASS  bounds
   PASS  coverage
   PASS  implies_grid
 
 --- Section B (walls) ---
-  PASS  wall_count
-  PASS  no_interior_walls
-  PASS  cell_wall_counts
-  PASS  all_directions
+  ERROR wall_count: error(instantiation_error,context(system:(=:=)/2,_6278))
+  FAIL  wall_count
+  ERROR no_interior_walls: error(instantiation_error,context(system:(=:=)/2,_6422))
+  FAIL  no_interior_walls
+  ERROR cell_wall_counts: error(instantiation_error,context(system:(=:=)/2,_6606))
+  FAIL  cell_wall_counts
+  ERROR all_directions: error(instantiation_error,context(system:(=:=)/2,_6810))
+  FAIL  all_directions
 
---- Summary: 8/8 passed, 0 failed ---
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
+--- Summary: 3/8 passed, 5 failed ---
 
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=4  FP=1  FN=1
-  Precision=0.8000  Recall=0.8000  F1=0.8000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=30  FP=27  FN=1
-  Precision=0.5263  Recall=0.9677  F1=0.6818
+Violations:
+ERROR: [Thread main] -g check_all: =:=/2: Arguments are not sufficiently instantiatedN=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1098,51 +853,35 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 7/8 passed, 1 failed ---
 
 Violations:
-    dual_category: [loc(0,3),loc(6,4)]
+    dual_category: [loc(4,0)]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=4  FP=1  FN=1
-  Precision=0.8000  Recall=0.8000  F1=0.8000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=29  FP=29  FN=2
-  Precision=0.5000  Recall=0.9355  F1=0.6517
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1172,44 +911,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1235,50 +958,35 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 --- Summary: 7/8 passed, 1 failed ---
 
 Violations:
+    dual_category: [loc(4,6),loc(6,4)]
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=25  FN=0
-  Precision=0.5536  Recall=1.0000  F1=0.7126
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1308,44 +1016,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1377,44 +1069,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1444,44 +1120,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1511,44 +1171,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1578,44 +1222,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.
@@ -1645,44 +1273,28 @@ Please run ?- license. for legal details.
 
 For online help and background, visit https://www.swi-prolog.org
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
-N=3  TP=12  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=4  TP=16  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=5  TP=20  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=6  TP=24  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=7  TP=28  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=8  TP=32  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=9  TP=36  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=10  TP=40  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=11  TP=44  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=12  TP=48  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-N=13  TP=52  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
-SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
-Please run ?- license. for legal details.
-
-For online help and background, visit https://www.swi-prolog.org
-For built-in help, use ?- help(Topic). or ?- apropos(Word).
-=== Content F1 Evaluation ===
-
-dirt  TP=5  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-agent  TP=2  FP=0  FN=0
-  Precision=1.0000  Recall=1.0000  F1=1.0000
-
-empty  TP=31  FP=26  FN=0
-  Precision=0.5439  Recall=1.0000  F1=0.7045
+N=3  TP=0  FP=0  FN=12
+  F1=0.0000 (no true positives)
+N=4  TP=0  FP=0  FN=16
+  F1=0.0000 (no true positives)
+N=5  TP=0  FP=0  FN=20
+  F1=0.0000 (no true positives)
+N=6  TP=0  FP=0  FN=24
+  F1=0.0000 (no true positives)
+N=7  TP=0  FP=0  FN=28
+  F1=0.0000 (no true positives)
+N=8  TP=0  FP=0  FN=32
+  F1=0.0000 (no true positives)
+N=9  TP=0  FP=0  FN=36
+  F1=0.0000 (no true positives)
+N=10  TP=0  FP=0  FN=40
+  F1=0.0000 (no true positives)
+N=11  TP=0  FP=0  FN=44
+  F1=0.0000 (no true positives)
+N=12  TP=0  FP=0  FN=48
+  F1=0.0000 (no true positives)
+N=13  TP=0  FP=0  FN=52
+  F1=0.0000 (no true positives)
 Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
 Please run ?- license. for legal details.

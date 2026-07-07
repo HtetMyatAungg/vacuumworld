@@ -1,0 +1,6 @@
+gemini-3.1-flash-lite [schema-based] sample 1: 1 attempt(s), SUCCESS
+gemini-3.1-flash-lite [schema-based] sample 2: 1 attempt(s), SUCCESS
+gemini-3.1-flash-lite [schema-based] sample 3: 1 attempt(s), SUCCESS
+gemini-3.1-flash-lite [schema-based] sample 4: 1 attempt(s), SUCCESS
+gemini-3.1-flash-lite [schema-based] sample 5: 1 attempt(s), SUCCESS
+gemini-3.1-flash-lite [schema-based] sample 5: 1 attempt(s), SUCCESS

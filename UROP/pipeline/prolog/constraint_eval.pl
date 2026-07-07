@@ -1,29 +1,29 @@
 %% Constraint-based evaluation for VacuumWorld autoformalisation
 %% Query check_all/0 for a full report, or individual checks.
 
-:- discontiguous grid/1, dirt/2, agent/3, empty_location/1, wall/2.
+:- discontiguous grid/2, dirt/3, agent/4, empty/2, wall/3.
 
-%% grid/1 is expected to come from the LLM translation file as ground facts.
-%% Do NOT define it here — defining it as a rule that calls empty_location/1
-%% causes infinite mutual recursion when the LLM defines empty_location/1
-%% in terms of grid/1.
+%% grid/2 is expected to come from the LLM translation file as ground facts.
+%% Do NOT define it here — defining it as a rule that calls empty/2
+%% causes infinite mutual recursion when the LLM defines empty/2
+%% in terms of grid/2.
 
 %% ---- Section A: Translation Constraints ------------------------------------
 
-%% A.1 Partition: every grid cell is exactly one of dirt, agent, or empty_location.
+%% A.1 Partition: every grid cell is exactly one of dirt, agent, or empty.
 
 not_in_grid(loc(X,Y)) :-
-    grid(loc(X,Y)),
-    \+ seen(dirt(loc(X,Y), _)),
-    \+ seen(agent(_, loc(X,Y), _)),
-    \+ empty_location(loc(X,Y)).
+    grid(X,Y),
+    \+ dirt(X, Y, _),
+    \+ agent(_, X, Y, _),
+    \+ empty(X,Y).
 
 dual_category(loc(X,Y), dirt_and_empty) :-
-    seen(dirt(loc(X,Y), _)), empty_location(loc(X,Y)).
+    dirt(X, Y, _), empty(X,Y).
 dual_category(loc(X,Y), agent_and_empty) :-
-    seen(agent(_, loc(X,Y), _)), empty_location(loc(X,Y)).
+    agent(_, X, Y, _), empty(X,Y).
 dual_category(loc(X,Y), dirt_and_agent) :-
-    seen(dirt(loc(X,Y), _)), seen(agent(_, loc(X,Y), _)).
+    dirt(X, Y, _), agent(_, X, Y, _).
 
 partition_ok :-
     \+ not_in_grid(_),
@@ -32,7 +32,7 @@ partition_ok :-
 %% A.2 Bounds: all coordinates within 0..N-1.
 
 out_of_bounds(loc(X,Y)) :-
-    grid(loc(X,Y)),
+    grid(X,Y),
     grid_size(N), N1 is N - 1,
     ( X < 0 ; X > N1 ; Y < 0 ; Y > N1 ).
 
@@ -43,16 +43,16 @@ bounds_ok :- \+ out_of_bounds(_).
 coverage_ok :-
     grid_size(N),
     Expected is N * N,
-    findall(loc(X,Y), grid(loc(X,Y)), Cells),
+    findall(loc(X,Y), grid(X,Y), Cells),
     sort(Cells, Unique),
     length(Unique, Expected).
 
 %% A.4 Dirt/agent implies grid.
 
 dirt_without_grid(loc(X,Y)) :-
-    seen(dirt(loc(X,Y), _)), \+ grid(loc(X,Y)).
+    dirt(X, Y, _), \+ grid(X,Y).
 agent_without_grid(loc(X,Y)) :-
-    seen(agent(_, loc(X,Y), _)), \+ grid(loc(X,Y)).
+    agent(_, X, Y, _), \+ grid(X,Y).
 
 implies_grid_ok :-
     \+ dirt_without_grid(_),
@@ -66,7 +66,7 @@ wall_count_ok :-
     grid_size(N),
     Expected is 4 * N,
     N1 is N - 1,
-    findall(loc(X,Y)-D, (between(0,N1,X), between(0,N1,Y), wall(loc(X,Y),D)), Ws),
+    findall(X-Y-D, (between(0,N1,X), between(0,N1,Y), wall(X,Y,D)), Ws),
     sort(Ws, Unique),
     length(Unique, Expected).
 
@@ -76,14 +76,14 @@ interior_wall(loc(X,Y), D) :-
     grid_size(N), N1 is N - 1, N2 is N1 - 1,
     between(1, N2, X),
     between(1, N2, Y),
-    wall(loc(X,Y), D).
+    wall(X,Y, D).
 
 no_interior_walls_ok :- \+ interior_wall(_, _).
 
 %% B.3 Correct wall count per cell: corners=2, edges=1, interior=0.
 
-wall_count_at(loc(X,Y), Count) :-
-    findall(D, wall(loc(X,Y), D), Ds),
+wall_count_at(X,Y, Count) :-
+    findall(D, wall(X,Y, D), Ds),
     length(Ds, Count).
 
 wrong_cell_wall_count(loc(X,Y), Expected, Actual) :-
@@ -95,7 +95,7 @@ wrong_cell_wall_count(loc(X,Y), Expected, Actual) :-
       -> Expected = 1
     ; Expected = 0
     ),
-    wall_count_at(loc(X,Y), Actual),
+    wall_count_at(X,Y, Actual),
     Actual \= Expected.
 
 cell_wall_counts_ok :- \+ wrong_cell_wall_count(_, _, _).
@@ -104,7 +104,7 @@ cell_wall_counts_ok :- \+ wrong_cell_wall_count(_, _, _).
 
 all_directions_ok :-
     grid_size(N), N1 is N - 1,
-    findall(D, (between(0,N1,X), between(0,N1,Y), wall(loc(X,Y),D)), Ds),
+    findall(D, (between(0,N1,X), between(0,N1,Y), wall(X,Y,D)), Ds),
     memberchk(north, Ds),
     memberchk(south, Ds),
     memberchk(east, Ds),

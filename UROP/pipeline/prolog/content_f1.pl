@@ -3,7 +3,7 @@
 
 :- consult('UROP/pipeline/prolog/f1_eval.pl').
 
-:- dynamic seen/1, empty_location/1.
+:- dynamic dirt/3, agent/4, empty/2.
 
 f1_score(Label, Pred, Oracle) :-
     intersection(Pred, Oracle, TPList),
@@ -23,22 +23,22 @@ f1_score(Label, Pred, Oracle) :-
     ).
 
 dirt_f1 :-
-    findall(seen(dirt(L,C)), oracle_seen(dirt(L,C)), Oracle),
-    findall(seen(dirt(L,C)), (seen(dirt(L,C)), ground(L), ground(C)), PredRaw),
+    findall(dirt(X,Y,C), oracle_dirt(X,Y,C), Oracle),
+    findall(dirt(X,Y,C), (dirt(X,Y,C), ground(X), ground(Y), ground(C)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score(dirt, Pred, OracleSorted).
 
 agent_f1 :-
-    findall(seen(agent(Id,L,C)), oracle_seen(agent(Id,L,C)), Oracle),
-    findall(seen(agent(Id,L,C)), (seen(agent(Id,L,C)), ground(Id), ground(L), ground(C)), PredRaw),
+    findall(agent(Id,X,Y,C), oracle_agent(Id,X,Y,C), Oracle),
+    findall(agent(Id,X,Y,C), (agent(Id,X,Y,C), ground(Id), ground(X), ground(Y), ground(C)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score(agent, Pred, OracleSorted).
 
 empty_f1 :-
-    findall(L, oracle_empty(L), Oracle),
-    findall(L, (empty_location(L), ground(L)), PredRaw),
+    findall(loc(X,Y), oracle_empty(X,Y), Oracle),
+    findall(loc(X,Y), (empty(X,Y), ground(X), ground(Y)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score(empty, Pred, OracleSorted).
@@ -70,22 +70,22 @@ f1_score_row(Pred, Oracle, row(TP, FP, FN, Precision, Recall, F1)) :-
     ).
 
 dirt_f1_row(Row) :-
-    findall(seen(dirt(L,C)), oracle_seen(dirt(L,C)), Oracle),
-    findall(seen(dirt(L,C)), (seen(dirt(L,C)), ground(L), ground(C)), PredRaw),
+    findall(dirt(X,Y,C), oracle_dirt(X,Y,C), Oracle),
+    findall(dirt(X,Y,C), (dirt(X,Y,C), ground(X), ground(Y), ground(C)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score_row(Pred, OracleSorted, Row).
 
 agent_f1_row(Row) :-
-    findall(seen(agent(Id,L,C)), oracle_seen(agent(Id,L,C)), Oracle),
-    findall(seen(agent(Id,L,C)), (seen(agent(Id,L,C)), ground(Id), ground(L), ground(C)), PredRaw),
+    findall(agent(Id,X,Y,C), oracle_agent(Id,X,Y,C), Oracle),
+    findall(agent(Id,X,Y,C), (agent(Id,X,Y,C), ground(Id), ground(X), ground(Y), ground(C)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score_row(Pred, OracleSorted, Row).
 
 empty_f1_row(Row) :-
-    findall(L, oracle_empty(L), Oracle),
-    findall(L, (empty_location(L), ground(L)), PredRaw),
+    findall(loc(X,Y), oracle_empty(X,Y), Oracle),
+    findall(loc(X,Y), (empty(X,Y), ground(X), ground(Y)), PredRaw),
     sort(Oracle, OracleSorted),
     sort(PredRaw, Pred),
     f1_score_row(Pred, OracleSorted, Row).

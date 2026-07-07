@@ -6,31 +6,26 @@
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(instantiation_error,context(system:(>=)/2,_8716))
-  FAIL  partition
-  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_8856))
-  FAIL  bounds
+  PASS  partition
+  PASS  bounds
   ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_108))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_272))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_432))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_342))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_586))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_496))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_740))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_650))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_888))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_798))
   FAIL  all_directions
 
---- Summary: 0/8 passed, 8 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -63,30 +58,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -119,33 +110,29 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:1:9: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:2:18: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_3.pl:13:26: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -181,62 +168,54 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_4.pl:25:55: Syntax error: Operator expected
 ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `loc(0,0)' (a compound)
 --- sample 5 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:10:6: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_5.pl:28:17: Syntax error: Unexpected end of file
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -271,30 +250,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -327,30 +302,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -383,25 +354,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_9828))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_10050))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_9960))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_10214))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_10374))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_10194))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_10528))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_10348))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_10682))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_10502))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_10830))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_10650))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:3:7: Syntax error: Operator expected
@@ -410,9 +379,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:30:1: Syntax error: Unbalanced operator
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:33:8: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_8.pl:39:8: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -451,34 +418,30 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_686))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_908))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_810))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_1072))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1232))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1044))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1386))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1198))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1540))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1352))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1688))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1500))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:2:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:12:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:16:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_9.pl:37:59: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -515,12 +478,10 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8112))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8366))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
   FAIL  wall_count
@@ -528,15 +489,20 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
   FAIL  cell_wall_counts
   FAIL  all_directions
 
---- Summary: 2/8 passed, 6 failed ---
+--- Summary: 4/8 passed, 4 failed ---
 
 Violations:
+    wrong_wall_counts: [loc(0,0)-2-0,loc(0,1)-1-0,loc(0,2)-1-0,loc(0,3)-1-0,loc(0,4)-1-0,loc(0,5)-1-0,loc(0,6)-1-0,loc(0,7)-2-0,loc(1,0)-1-0,loc(1,7)-1-0,loc(2,0)-1-0,loc(2,7)-1-0,loc(3,0)-1-0,loc(3,7)-1-0,loc(4,0)-1-0,loc(4,7)-1-0,loc(5,0)-1-0,loc(5,7)-1-0,loc(6,0)-1-0,loc(6,7)-1-0,loc(7,0)-2-0,loc(7,1)-1-0,loc(7,2)-1-0,loc(7,3)-1-0,loc(7,4)-1-0,loc(7,5)-1-0,loc(7,6)-1-0,loc(7,7)-2-0]
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:13:
 ERROR:    Type error: `callable' expected, found `findall((_5754,_5760,_5766,_5772,_5774),(cell(_5754,_5760),wall_present(_5754,_5760,_5766),dirt_value(_5754,_5760,_5772),agent_value(_5754,_5760,_5774)),_5750);[]' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_10.pl:29:17: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -572,26 +538,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(instantiation_error,context(system:(>)/2,_84))
-  FAIL  partition
-  ERROR bounds: error(instantiation_error,context(system:(>)/2,_224))
-  FAIL  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_7624))
+  PASS  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_804))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_7788))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_7948))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1038))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8102))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1192))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8256))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1346))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8404))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1494))
   FAIL  all_directions
 
---- Summary: 0/8 passed, 8 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:10:48: Syntax error: Operator expected
@@ -599,9 +562,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/ge
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:12:43: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:13:47: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_11.pl:16:20: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -639,30 +600,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_434))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_656))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_598))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_820))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_980))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_832))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1134))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_986))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1288))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1140))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1436))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1288))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -695,30 +652,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -751,33 +704,29 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
   FAIL  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_274))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_428))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_582))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_730))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 2/8 passed, 6 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:4:18: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:5:12: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_14.pl:14:64: Syntax error: Unexpected end of file
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -813,61 +762,52 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(instantiation_error,context(system:(>=)/2,_4940))
-  FAIL  partition
-  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_5080))
-  FAIL  bounds
+  PASS  partition
+  PASS  bounds
   ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_262))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_422))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_576))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_730))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_878))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 0/8 passed, 8 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `_48-1' (a compound)
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Type error: `integer' expected, found `_48-1' (a compound)
 --- sample 16 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:1:8: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_16.pl:4:30: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -902,61 +842,53 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_1830))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_2052))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1934))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_2216))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2376))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2168))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2530))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2322))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2684))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2476))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2832))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2624))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Arguments are not sufficiently instantiated
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): between/3: Arguments are not sufficiently instantiated
 --- sample 18 ---
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_1378))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1600))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1448))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_1764))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1924))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1682))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2078))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1836))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2232))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1990))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2380))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2138))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:8:36: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:9:35: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_18.pl:39:34: Syntax error: Unexpected end of file
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -992,31 +924,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(instantiation_error,context(system:(>=)/2,_102))
-  FAIL  partition
-  ERROR bounds: error(instantiation_error,context(system:(>=)/2,_242))
-  FAIL  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_7642))
+  PASS  partition
+  PASS  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_1876))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_7806))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_7966))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_2110))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8120))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_2264))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8274))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_2418))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8422))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_2566))
   FAIL  all_directions
 
---- Summary: 0/8 passed, 8 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1049,34 +976,30 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_434))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_656))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_598))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_820))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_980))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_832))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1134))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_986))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1288))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1140))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1436))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1288))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:4:16: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:7:27: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:28:42: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/gemma3-4b/zero-shot/zero_shot_sample_20.pl:33:38: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1115,25 +1038,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8230))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8464))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8618))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8772))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8920))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:1:21: Syntax error: Operator expected
@@ -1142,9 +1063,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:12:141: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:13:136: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_1.pl:14:104: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1183,30 +1102,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1239,31 +1154,27 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8230))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8464))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8618))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8772))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8920))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_3.pl:18:20: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1297,32 +1208,28 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8230))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8464))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8618))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8772))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8920))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:12:3: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_4.pl:23:3: Syntax error: Illegal start of term
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1357,22 +1264,21 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8110))
   FAIL  partition
-  PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8332))
+  ERROR bounds: error(existence_error(procedure,grid_size/1),context(out_of_bounds/1,_8126))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8274))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8496))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8656))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8508))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8810))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8662))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8964))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8816))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9112))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8964))
   FAIL  all_directions
 
 --- Summary: 1/8 passed, 7 failed ---
@@ -1384,9 +1290,7 @@ ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
+ERROR: [Thread main] -g check_all: out_of_bounds/1: Unknown procedure: grid_size/1ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
@@ -1397,25 +1301,23 @@ ERROR: [Thread main] -g wall_f1_sweep([3,4,5,6,7,8,9,10,11,12,13]): false
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:1:
@@ -1426,9 +1328,7 @@ ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_6.pl:37:
 ERROR:    No permission to modify static procedure `(;)/2'
 ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1469,34 +1369,30 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:7:21: Syntax error: Operator priority clash
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:32:28: Syntax error: Illegal start of term
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_7.pl:39:
 ERROR:    Type error: `module' expected, found `list_domain(domains([],_10810,[_10820],[_10826],[_10832]),domains([_10844,_10850],[_10856]),[],[],_10804)' (a compound)
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1533,25 +1429,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8230))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8464))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8618))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8772))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8920))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:1:20: Syntax error: Operator expected
@@ -1559,9 +1453,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:40:77: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:46:78: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_8.pl:54:77: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1599,33 +1491,29 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:5:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:11:5: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_9.pl:52:21: Syntax error: end_of_file_in_quasi_quotation
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1661,25 +1549,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8230))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8464))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8618))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8772))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8920))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:1:
@@ -1688,9 +1574,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:18:33: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:30:31: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_10.pl:38:22: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1729,31 +1613,27 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_11.pl:1:1: Syntax error: End of file in /* ... */ comment
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1787,30 +1667,26 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_562))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_784))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_4966))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_948))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_1108))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_5200))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_1262))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_5354))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_1416))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_5508))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1564))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_5656))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1843,25 +1719,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_13142))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_13364))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_13274))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_100))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_260))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_102))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_414))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_256))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_568))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_410))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_716))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_558))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:1:197: Syntax error: Illegal start of term
@@ -1880,9 +1754,7 @@ ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_13.pl:21:
 ERROR:    No permission to modify static procedure `(;)/2'
 ERROR:    Defined at /usr/lib/swi-prolog/boot/init.pl:398
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -1931,25 +1803,23 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8342))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8564))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8474))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8728))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8888))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8708))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_9042))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8862))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_9196))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_9016))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9344))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9164))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:1:249: Syntax error: Illegal start of term
@@ -1962,9 +1832,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:19:33: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:21:41: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_14.pl:23:41: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2007,31 +1875,27 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_15.pl:22:14: Syntax error: Unexpected end of file
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2065,22 +1929,21 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8098))
   FAIL  partition
-  PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8320))
+  ERROR bounds: error(existence_error(procedure,grid_size/1),context(out_of_bounds/1,_8104))
+  FAIL  bounds
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8252))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8484))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8644))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8486))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8798))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8640))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8952))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8794))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9100))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8942))
   FAIL  all_directions
 
 --- Summary: 1/8 passed, 7 failed ---
@@ -2090,9 +1953,7 @@ ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qw
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:8:
 ERROR:    Type error: `callable' expected, found `grid(_7948,_7950),(_7972\=north->(_7972\=south;_7990=0);_7972\=west;_8014=0;_8010),neighbor_bounds(_8026,_7990),append(_7950,[_8026|_8042],_7972)' (a compound)
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_16.pl:30:32: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: out_of_bounds/1: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2129,33 +1990,29 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_124))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_346))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_128))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_510))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_670))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_362))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_824))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_516))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_978))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_670))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1126))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_818))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:31:82: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:36:21: Syntax error: Operator expected
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_17.pl:40:56: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2191,34 +2048,30 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:26:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
 ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_18.pl:29:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2255,31 +2108,27 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_94))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_316))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_98))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_480))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_640))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_332))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_794))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_486))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_948))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_640))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_1096))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_788))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_19.pl:1:1: Syntax error: End of file in quoted atom
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)
@@ -2313,32 +2162,28 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 === Constraint Evaluation ===
 
 --- Section A (translation) ---
-  ERROR partition: error(existence_error(procedure,seen/1),context(dual_category/2,_8168))
-  FAIL  partition
+  PASS  partition
   PASS  bounds
-  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8390))
+  ERROR coverage: error(existence_error(procedure,grid_size/1),context(coverage_ok/0,_8300))
   FAIL  coverage
-  ERROR implies_grid: error(existence_error(procedure,seen/1),context(dirt_without_grid/1,_8554))
-  FAIL  implies_grid
+  PASS  implies_grid
 
 --- Section B (walls) ---
-  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8714))
+  ERROR wall_count: error(existence_error(procedure,grid_size/1),context(wall_count_ok/0,_8534))
   FAIL  wall_count
-  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8868))
+  ERROR no_interior_walls: error(existence_error(procedure,grid_size/1),context(interior_wall/2,_8688))
   FAIL  no_interior_walls
-  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_9022))
+  ERROR cell_wall_counts: error(existence_error(procedure,grid_size/1),context(wrong_cell_wall_count/3,_8842))
   FAIL  cell_wall_counts
-  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_9170))
+  ERROR all_directions: error(existence_error(procedure,grid_size/1),context(all_directions_ok/0,_8990))
   FAIL  all_directions
 
---- Summary: 1/8 passed, 7 failed ---
+--- Summary: 3/8 passed, 5 failed ---
 
 Violations:
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:18:34: Syntax error: Illegal start of term
 ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_20.pl:22:5: Syntax error: Operator expected
-ERROR: [Thread main] -g check_all: dual_category/2: Unknown procedure: seen/1
-ERROR: [Thread main]   However, there are definitions for:
-ERROR: [Thread main]         seen/0N=3  TP=0  FP=0  FN=12
+ERROR: [Thread main] -g check_all: interior_wall/2: Unknown procedure: grid_size/1N=3  TP=0  FP=0  FN=12
   F1=0.0000 (no true positives)
 N=4  TP=0  FP=0  FN=16
   F1=0.0000 (no true positives)

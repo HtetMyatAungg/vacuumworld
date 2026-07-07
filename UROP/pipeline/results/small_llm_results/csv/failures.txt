@@ -1,18 +1,15 @@
-f1 zero-shot qwen2.5-3b sample 5: ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
+f1 zero-shot qwen2.5-3b sample 5: ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:10:31: Syntax error: Operator expected
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:14:
 Warning:    Singleton variables: [X]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:18:
 Warning:    Singleton variable in branch: X
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:21:
 Warning:    Singleton variables: [X]
-ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
+ERROR: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:25:
 ERROR:    Full stop in clause-body?  Cannot redefine ,/2
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
+Warning: /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:30:
 Warning:    Singleton variables: [X0,X,Y]
-ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
-ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
-ERROR: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
-ERROR: -g wall_f1_to_csv([3,4,5,6,7,8,9,10,11,12,13], 'UROP/pipeline/results/small_llm_results/csv/f1_N/zero-shot-qwen2.5-3b-sample_5.csv'): false
-checks schema-based qwen2.5-3b sample 9: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 schema-based qwen2.5-3b sample 9: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 one-shot qwen2.5-3b sample 7: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:35:99: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:45:44: Syntax error: Operator expected
+ERROR: [Thread main] /home/henryjiang/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/zero-shot/zero_shot_sample_5.pl:58:6: Syntax error: Operator expected
+ERROR: [Thread main] -g wall_f1_to_csv([3,4,5,6,7,8,9,10,11,12,13], 'UROP/pipeline/results/small_llm_results/csv/f1_N/zero-shot-qwen2.5-3b-sample_5.csv'): false

@@ -2,7 +2,7 @@ import subprocess
 import os
 
 
-large_models = ["claude-sonnet-4.6", "gemini-2.5-flash", "gemini-3.1-flash-lite", "deepseek-2.5-flash", "gemma-4-31b"]
+large_models = ["claude-sonnet-4.6", "gemini-2.5-flash", "gemini-3.1-flash-lite", "deepseek-V3", "gemma-4-31b"]
 
 small_models = ["gemma3-4b", "qwen2.5-3b"]
 

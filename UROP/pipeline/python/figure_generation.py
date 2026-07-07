@@ -22,7 +22,7 @@ DATASETS = {
             "claude-sonnet-4.6":     "#2a78d6",  # blue
             "gemini-2.5-flash":      "#1baf7a",  # aqua
             "gemini-3.1-flash-lite": "#eda100",  # yellow
-            "deepseek-2.5-flash":    "#008300",  # green
+            "deepseek-V3":    "#008300",  # green
             "gemma-4-31b":           "#4a3aa7",  # violet
         },
         samples=range(1, 6),

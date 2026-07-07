@@ -1,11 +1,11 @@
-:- dynamic grid/1, grid_size/1, wall/2.
+:- dynamic grid/2, grid_size/1, wall/3.
 
 direction(north).
 direction(south).
 direction(east).
 direction(west).
 
-model_seen(loc(X, Y)) :- grid(loc(X, Y)).
+model_seen(loc(X, Y)) :- grid(X, Y).
 
 sound    :- forall(model_seen(F), oracle(F)).
 complete :- forall(oracle(F), model_seen(F)).
@@ -14,23 +14,23 @@ exact    :- sound, complete.
 setup_grid(N) :-
     retractall(grid_size(_)),
     assertz(grid_size(N)),
-    retractall(grid(_)),
+    retractall(grid(_, _)),
     N1 is N - 1,
     forall( ( between(0, N1, X), between(0, N1, Y) ),
-            assertz(grid(loc(X, Y))) ).
+            assertz(grid(X, Y)) ).
 
 predicted_walls(N, Walls) :-
     N1 is N - 1,
-    findall(wall(loc(X, Y), D), (
+    findall(wall(X, Y, D), (
         between(0, N1, X), between(0, N1, Y),
         direction(D),
-        wall(loc(X, Y), D)
+        wall(X, Y, D)
     ), Ws),
     sort(Ws, Walls).
 
 oracle_walls(N, Walls) :-
     N1 is N - 1,
-    findall(wall(loc(X, Y), D), (
+    findall(wall(X, Y, D), (
         between(0, N1, X), between(0, N1, Y),
         direction(D),
         (D = north, Y =:= 0 ;
