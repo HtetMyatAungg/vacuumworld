@@ -25,7 +25,7 @@ Coordinate system:
 Percept log:
 {percepts}
 
-Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents, and boundary wall rules.
+Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents, and boundary wall rules. Retain any location along with the type of content observed there, whenever that content is non-empty.
 No markdown, no comments, no explanation.
 """
 
