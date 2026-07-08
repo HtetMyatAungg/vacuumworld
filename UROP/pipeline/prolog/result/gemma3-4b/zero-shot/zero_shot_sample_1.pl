@@ -1,41 +1,34 @@
-edge(X, Y) :-
-    X is in_range(0, N),
-    Y is in_range(0, N).
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    [Dir].
 
-in_range(a, b) :- a < b .
-in_range(a, b) :- a > b .
+boundary(X, Y, North) :-
+    X >= 0,
+    X < N,
+    Y = 0.
 
+boundary(X, Y, South) :-
+    X >= 0,
+    X < N,
+    Y = N - 1.
+
+boundary(X, Y, West) :-
+    X = 0,
+    Y >= 0,
+    Y < N.
+
+boundary(X, Y, East) :-
+    X = N - 1,
+    Y >= 0,
+    Y < N.
+
+/*
 grid(N) :-
-    N >= 0.
-
-cell(X, Y) :-
-    edge(X, Y).
-
-wall(X, Y, Direction) :-
-    edge(X, Y),
-    (   Direction = west, X = 0
-    ;   Direction = east, X = N
-    ;   Direction = north, Y = 0
-    ;   Direction = south, Y = N
-    ).
-
-dirt(X, Y) :-
-  edge(X, Y),
-  (Y == 6 , X == 3);
-  (Y==4 , X==3);
-  (Y==7, X==1);         
-  (X == 0, Y==2);      
-  (X == 2, Y== 2);
-  (X == 1, Y== 2 );
-  (X ==0, Y ==7);
-  dirt_cell(X,Y).
-
-dirt_cell(X,Y) :- X is in_range(0,4), Y is in_range(0,5).
-
-agent(X, Y, id) :-
-    edge(X, Y),
-    (   X = 3, Y = 3, id = '9af04778-08d6-4e40-8c6f-ba123d292a22'
-    ;   X = 4, Y = 0, id = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'
-    ).
-
-/* The following defines valid edges of the grid for which coordinate pairs exist */
+    N > 0,
+    N1 is N + 1,
+    findall(Edge, edge(X, Y, Dir), (X in [0..N1-1], Y in [0..N1-1], Dir in ['north', 'south', 'east', 'west'])),
+    sort(Edge).
+*/

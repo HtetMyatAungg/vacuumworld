@@ -1,39 +1,31 @@
-n(8).
-type(Cell) :- between(0, 7, X), between(0, 7, Y).
-wall(West) :- X = 0.
-wall(South) :- Y = 0.
-wall(East) :- X = 7.
-wall(North) :- Y = 7.
+edge(X, Y, 'north') :- X > 1, Y = 0.
+edge(X, Y, 'south') :- X < 7, Y = 7.
+edge(X, Y, 'east') :- X = 7, Y > 0.
+edge(X, Y, 'west') :- X = 0, Y < 7.
+edge(X, Y, Dir) :- X in [0..7], Y in [0..7], X==0, Y==0, Dir = 'west'.
+edge(0, 0, 'west') :- !.
+edge(0, 1, 'west') :- !.
+edge(0, 2, 'west') :- !.
+edge(0, 3, 'west') :- !.
+edge(0, 4, 'west') :- !.
+edge(0, 5, 'west') :- !.
+edge(0, 6, 'west') :- !.
+edge(0, 7, 'west') :- !.
+edge(1, 0, 'north') :- !.
+edge(2, 0, 'north') :- !.
+edge(3, 0, 'north') :- !.
+edge(4, 0, 'north') :- !.
+edge(5, 0, 'north') :- !.
+edge(6, 0, 'north') :- !.
+edge(7, 0, 'north') :- !.
 
-dirt(Orange) :- between(0, 2, X), Y in [0..7].
-dirt(Green) :- between(5, 7, X), Y in [0..7].
-dirt(None) :- true.
+grid(8) :-
+    forall(X in [0..7],
+        forall(Y in [0..7],
+            (edge(X, Y, _) | Y = 0)
+        )
+    ).
 
-agent(Id, Colour) :-
-    between(0, 2, X), between(0, 2, Y).
-
-percept({X, Y} | walls | dirt | agent) :-
-    type({X, Y}),
-    wall_present({X, Y}, walls),
-    dirt_present({X, Y}, dirt),
-    agent_present({X, Y}, agent).
-
-wall_present({X, Y}, []) :-
-    (   X = 0 -> wall(West);
-        Y = 0 -> wall(South);
-        X = 7 -> wall(East);
-        Y = 7 -> wall(North);
-        true).
-
-
-wall_present({X, Y}, [Wall]) :-
-    (   X = 0 -> Wall == West ;
-        Y = 0 -> Wall == South;
-        X = 7 -> Wall == East;
-        Y = 7 -> Wall == North;
-        true).
-
-dirt_present({X, Y}, []) :- true.
-
-dirt_present({X, Y}, [Dirt]) :-
-    (   X in [0, 1, 2] , Y in [0..7
+boundary(X, Y) :-
+    X in [0..7],
+    Y in [0..7].

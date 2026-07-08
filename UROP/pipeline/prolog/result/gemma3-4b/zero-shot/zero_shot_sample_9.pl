@@ -1,42 +1,56 @@
-edge(X, Y, X_next, Y_next) :-
-    X in [0..7],
-    Y in [0..7],
-    adjacent(X, X_next),
-    adjacent(Y, Y_next).
+edge(X, Y, 'north') :-
+    Y = 0,
+    X >= 0,
+    X < N.
+edge(X, Y, 'south') :-
+    Y = N - 1,
+    X >= 0,
+    X < N.
+edge(X, Y, 'east') :-
+    X = N - 1,
+    Y >= 0,
+    Y < N.
+edge(X, Y, 'west') :-
+    X = 0,
+    Y >= 0,
+    Y < N.
 
-grid(8) :-
-    N >= 0,
-    N is 8.
+boundary(X, Y, 'north') :-
+    X == 0,
+    Y >= 0,
+    Y < N.
+boundary(X, Y, 'south') :-
+    X == N - 1,
+    Y >= 0,
+    Y < N.
+boundary(X, Y, 'east') :-
+    X == N - 1,
+    Y >= 0,
+    Y < N.
+boundary(X, Y, 'west') :-
+    X == 0,
+    Y >= 0,
+    Y < N.
+
+grid(N) :-
+    N > 0,
+    N >= 1.
 
 cell(X, Y) :-
-    X in [0..7],
-    Y in [0..7].
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N.
 
-wall(X, Y, Direction) :-
-    X in [0..7],
-    Y in [0..7],
-    (   X == 0,
-        Y in [0..7],
-        Direction = north
-    );
-    (   X == 7,
-        Y in [0..7],
-        Direction = south
-    );
-    (   Y == 0,
-        X in [0..7],
-        Direction = west
-    );
-    (   Y == 7,
-        X in [0..7],
-        Direction = east
-    ).
+wall(X, Y, Dir) :-
+    edge(X, Y, Dir).
 
-agent_found(X, Y) :- cell(X, Y), length(walls(X, Y), WallCount) > 0.
+agent_id(ID) :-
+    str(ID) = '9af04778-08d6-4e40-8c6f-ba123d292a22'.
+agent_id(ID) :-
+    str(ID) = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'.
 
-dirt_present(X, Y) :- cell(X, Y), (length(walls(X,Y)) == 0 and dirt(X,Y) =="orange" or dirt(X,Y) =="green").
-
-room(X, Y) :-
-    cell(X, Y),
-    \+ agent_found(X, Y),
-    \+ dirt_present(X, Y).
+colour(Colour) :-
+    str(Colour) = 'orange'.
+colour(Colour) :-
+    str(Colour) = 'green'.

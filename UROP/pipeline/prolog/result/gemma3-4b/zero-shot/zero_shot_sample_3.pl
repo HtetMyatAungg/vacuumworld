@@ -1,13 +1,69 @@
-domain([0..7]).
-segret(X, Y) :- X in [0..7], Y in [0..7].
-wall(N, S, E, W) :- N > 0, W > 0, N < 8, W < 8.
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    (
+        (Dir == 'north') -> Y > 0
+    ),
+    (
+        (Dir == 'south') -> Y < N - 1
+    ),
+    (
+        (Dir == 'east') -> X < N - 1
+    ),
+    (
+        (Dir == 'west') -> X > 0
+    ).
 
-agent(ID, Colour) :- ID = '9af04778-08d6-4e40-8c6f-ba123d292a22', Colour = orange;
-                       ID = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', Colour = green.
+edge(X, Y, 'north') :-
+    X >= 0,
+    X < N,
+    Y > 0.
 
-dirt(orange) :- true.
-dirt(green) :- true.
+edge(X, Y, 'south') :-
+    X >= 0,
+    X < N,
+    Y < N - 1.
 
-grid(N) :-
-    findall((X, Y), (segret(X, Y)), Cells),
-    maplist(function(Cell) [wall(Cell.X, Cell.Y)], Cells).
+edge(X, Y, 'east') :-
+    X < N,
+    Y >= 0,
+    X < N - 1.
+
+edge(X, Y, 'west') :-
+    X > 0,
+    Y >= 0,
+    X > 0.
+
+edge(X, Y, 'north') :- X >= 0, X < N, Y > 0.
+edge(X, Y, 'south') :- X >= 0, X < N, Y < N - 1.
+edge(X, Y, 'east') :- X < N, Y >= 0, X < N - 1.
+edge(X, Y, 'west') :- X > 0, Y >= 0, X > 0.
+
+edge(0, 0, 'north') :- true.
+edge(0, 0, 'west') :- true.
+edge(N-1, N-1, 'east') :- true.
+edge(N-1, N-1, 'south') :- true.
+
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    Dir = north | south | east | west,
+    (
+        X > 0
+    ), 
+    (
+        X < N - 1
+    ),
+    (
+        Y > 0
+    ),
+    (
+        Y < N - 1
+    ),
+    (
+        edge(X, Y, Dir)
+    ).

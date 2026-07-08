@@ -1,24 +1,73 @@
-edge(Cell1, Cell2) :- adjacent(Cell1, Cell2), label(wall).
-edge(Cell1, Cell2) :- not(adjacent(Cell1, Cell2)), label(clear).
-edge(Cell1, Cell2) :- label(dirt), (Cell2 = Cell1+1).
-edge(Cell1, Cell2) :- label(agent), (Cell2 = Cell1+1).
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < 8,
+    Y >= 0,
+    Y < 8,
+    Dir = north,
+    (X = 0, Y >= 0, Y < 8).
 
-grid(N) :- N > 0.
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < 8,
+    Y >= 0,
+    Y < 8,
+    Dir = west,
+    (X = 0, Y >= 0, Y < 8).
 
-boundary_walls(N) :- N >= 0, N < 10.
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < 8,
+    Y >= 0,
+    Y < 8,
+    Dir = south,
+    (Y = 7, X >= 0, X < 8).
 
-wall_definition(North, X, Y, N) :- X = N - 1, Y between(0, N - 1).
-wall_definition(South, X, Y, N) :- X = 0, Y between(0, N - 1).
-wall_definition(West, X, Y, N) :- Y = 0, X between(0, N - 1).
-wall_definition(East, X, Y, N) :- Y = N - 1, X between(0, N - 1).
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < 8,
+    Y >= 0,
+    Y < 8,
+    Dir = east,
+    (X = 7, Y >= 0, Y < 8).
 
-grid_representation(N) :-
-    findall((X,Y), X in [0..N-1], Y in [0..N-1], (
-        (adjacent(X, Y), label(wall)) ;
-        (X == 0, label(North)) ;
-        (X == N - 1, label(South)) ;
-        (Y == 0, label(West)) ;
-        (Y == N - 1, label(East)) ;
-        label(clear)
-    )),
-    boundary_walls(N).
+boundary(X, Y, West) :-
+    X = 0,
+    Y >= 0,
+    Y < 8.
+
+boundary(X, Y, South) :-
+    Y = 7,
+    X >= 0,
+    X < 8.
+
+boundary(X, Y, East) :-
+    X = 7,
+    Y >= 0,
+    Y < 8.
+
+boundary(X, Y, North) :-
+    Y = 0,
+    X >= 0,
+    X < 8.
+
+grid(N) :-
+    N > 0.
+
+agent_id(Id) :-
+    atom_number(Id, _, Num), Num > 0.
+
+dirt_present(X, Y, Color) :-
+    X >= 0,
+    X < 8,
+    Y >= 0,
+    Y < 8,
+    (Color = black).
+
+walls_present(X, Y) :-
+    edge(X, Y, West).
+walls_present(X, Y) :-
+    edge(X, Y, South).
+walls_present(X, Y) :-
+    edge(X, Y, East).
+walls_present(X, Y) :-
+    edge(X, Y, North).

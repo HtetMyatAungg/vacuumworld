@@ -1,29 +1,69 @@
-n(8).
-wall('north').
-wall('south').
-wall('east').
-wall('west').
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    (
+        (Dir == 'north') -> Y > 0
+    ),
+    (
+        (Dir == 'south') -> Y < N - 1
+    ),
+    (
+        (Dir == 'east') -> X < N - 1
+    ),
+    (
+        (Dir == 'west') -> X > 0
+    ).
 
-cell(X, Y) :- X > 0, X =< n(8), Y > 0, Y =< n(8).
-dirt(X, Y) :- X >= 1, X =< n(8), Y >= 1, Y =< n(8).
-agent(X, Y) :- X >= 1, X =< n(8), Y >= 1, Y =< n(8).
+boundary(X, Y) :-
+    X = 0,
+    Y = 0;
+    X = 0,
+    Y = N - 1;
+    X = N - 1,
+    Y = 0;
+    X = N - 1,
+    Y = N - 1.
 
-grid_size(N) :- n(N).
+agent_id(Id) :-
+    sub_string(Id, '_', _, _, Num),
+    integer(Num, _, NumInt),
+    NumInt > 0.
 
-build_grid(N) :-
-    findall((X, Y, Walls, Dirt, Agent), (cell(X, Y), wall_present(X, Y, Walls), dirt_value(X, Y, Dirt), agent_value(X, Y, Agent)), Grid);
-    [].
+colour(Colour) :-
+    sub_string(Colour, ':', _, _, Value),
+    sub_string(Value, '#', _, _, Hex),
+    hex_to_atom(Hex, ColourAttrib),
+    ColourAttrib = orange;
+    ColourAttrib = green.
 
-wall_present(X, Y, Walls) :- member(Wall, Walls).
+/*
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    (
+        (Dir == 'north') -> Y > 0
+    ),
+    (
+        (Dir == 'south') -> Y < N - 1
+    ),
+    (
+        (Dir == 'east') -> X < N - 1
+    ),
+    (
+        (Dir == 'west') -> X > 0
+    ).
 
-dirt_value(X, Y, Dirt) :- (Dirt == null -> fail; true).
-
-agent_value(X, Y, Agent) :- (Agent == null -> fail; true).
-
-grid_data(N) :-
-    grid_size(N),
-    findall((X, Y, Walls, Dirt, Agent), (cell(X, Y), wall_present(X, Y, Walls), dirt_value(X, Y, Dirt), agent_value(X, Y, Agent)), Grid).
-
-create_grid(N) :-
-  findall((X,Y,Walls,Dirt,Agent), (cell(X,Y), wall_present(X,Y,Walls), dirt_value(X,Y,Dirt), agent_value(X,Y,Agent)), Grid),
-  maplist(\p -> (p[0], p[1], p[2]), Grid, Grid).
+boundary(X, Y) :-
+    X = 0,
+    Y = 0;
+    X = 0,
+    Y = N - 1;
+    X = N - 1,
+    Y = 0;
+    X = N - 1,
+    Y = N - 1.
+*/

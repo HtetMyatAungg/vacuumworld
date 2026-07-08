@@ -1,27 +1,56 @@
-edge(X, Y, X2, Y2) :-
-    between(0, 7, X),
-    between(0, 7, Y),
-    (   X < X2, Y = Y, Y2 = Y + 1
-    ,   X > X2, Y = Y, Y2 = Y + 1
-    ,   X = X, Y < Y2, X2 = X + 1
-    ,   X = X, Y > Y2, X2 = X + 1
+edge(X, Y, Dir) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N,
+    between(X, X, N),
+    between(Y, Y, N),
+    between(Dir, ['north', 'south', 'east', 'west'], Dir).
+
+boundary(X, Y, Dir) :-
+    X = 0,
+    Y >= 0,
+    Y < N,
+    between(Dir, ['north', 'west'], Dir).
+
+boundary(X, Y, Dir) :-
+    X = N - 1,
+    Y >= 0,
+    Y < N,
+    between(Dir, ['south', 'east'], Dir).
+
+boundary(X, Y, Dir) :-
+    Y = 0,
+    X >= 0,
+    X < N,
+    between(Dir, ['west', 'north'], Dir).
+
+boundary(X, Y, Dir) :-
+    Y = N - 1,
+    X >= 0,
+    X < N,
+    between(Dir, ['east', 'south'], Dir).
+
+grid(N) :-
+    N > 0,
+    integer(N).
+
+agent(Id, Colour) :-
+    member(Id, ['9af04778-08d6-4e40-8c6f-ba123d292a22', '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c']),
+    member(Colour, ['orange', 'green']).
+
+dirt(Coord, Colour) :-
+    edge(CoordX, CoordY, Dir),
+    dirt_color(CoordX, CoordY, Colour).
+
+dirt_color(X, Y, Colour) :-
+    (   X = 0,   Y = 0
+    ->  Colour = 'orange'
+    ;   X = 3,   Y = 7
+    ->  Colour = 'orange'
+    ;   X = 6,   Y = 5
+    ->   Colour = 'orange'
+    ;   X = 7,   Y = 0
+    ->   Colour = 'orange'
+    ; true
     ).
-
-boundary(X, Y) :-
-    edge(X, Y, X, Y+1),
-    edge(X, Y, X+1, Y),
-    edge(X, Y, X, Y-1),
-    edge(X, Y, X-1, Y).
-
-wall(X, Y) :-
-    boundary(X, Y).
-
-dirt(X, Y) :- not(wall(X, Y)).
-
-agent(X, Y) :- not(wall(X, Y)), not(dirt(X, Y)).
-
-grid_representation :-
-    N is 7,
-    findall((X1, Y1, X2, Y2), edge(X1, Y1, X2, Y2), (X1 in [0..N], Y1 in [0..N])),
-    forall((wall(X1, Y1) -> true) | (X1, Y1 in [0..N])),
-    forall((dirt(X1, Y1) -> true) | (X1, Y1 in [0..N])).

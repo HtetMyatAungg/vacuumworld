@@ -18,3 +18,7 @@ gemma3:4b [schema-based] sample 17: 5 attempt(s), FAIL
 gemma3:4b [schema-based] sample 18: 2 attempt(s), PASS
 gemma3:4b [schema-based] sample 19: 2 attempt(s), PASS
 gemma3:4b [schema-based] sample 20: 2 attempt(s), PASS
+gemma3:4b [schema-based] sample 1: 5 attempt(s), FAIL
+gemma3:4b [schema-based] sample 2: 5 attempt(s), FAIL
+gemma3:4b [schema-based] sample 3: 1 attempt(s), PASS
+gemma3:4b [schema-based] sample 4: 5 attempt(s), FAIL
