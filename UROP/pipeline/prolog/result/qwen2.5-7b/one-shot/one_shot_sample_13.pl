@@ -1,4 +1,5 @@
 grid_size(8).
+
 grid(0,0).
 grid(1,0).
 grid(2,0).
@@ -63,12 +64,14 @@ grid(4,7).
 grid(5,7).
 grid(6,7).
 grid(7,7).
-dirt(6,3,'orange'). 
-dirt(4,9,'orange').
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c',4,0,'green').
-agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 0,3,'orange').
 
-wall(0,Y,_):- !, true.
-wall(_,0,_):- !, true.
-wall(X, _, east):-  grid_size(N), X =\= N.
+dirt(1,3, orange).
+agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 2,3, orange).
+dirt(2,5, orange).
+agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4,5, green).
+dirt(1,7, orange).
 
+wall(X,Y, north) :- Y =< 0; Y > 0, Y mod 2 == 0.
+wall(X,Y, east)  :- X >= grid_size-1; X < grid_size-1, X mod 2 == 1.
+wall(X,Y, south) :- Y >= grid_size-1; Y < grid_size-1, Y mod 2 == 0.
+wall(X,Y, west)  :- X =< 0; X > 0, X mod 2 == 1.

@@ -18,3 +18,7 @@ qwen2.5:7b [zero-shot] sample 17: 1 attempt(s), PASS
 qwen2.5:7b [zero-shot] sample 18: 1 attempt(s), PASS
 qwen2.5:7b [zero-shot] sample 19: 5 attempt(s), PASS
 qwen2.5:7b [zero-shot] sample 20: 1 attempt(s), PASS
+qwen2.5:7b [zero-shot] sample 2: 1 attempt(s), PASS
+qwen2.5:7b [zero-shot] sample 10: 5 attempt(s), FAIL
+qwen2.5:7b [zero-shot] sample 13: 5 attempt(s), FAIL
+qwen2.5:7b [zero-shot] sample 15: 1 attempt(s), PASS

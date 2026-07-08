@@ -14,7 +14,7 @@ grid(3,1).
 grid(4,1).
 grid(5,1).
 grid(6,1).
-grid(7,1).    
+grid(7,1).
 grid(0,2).
 grid(1,2).
 grid(2,2).
@@ -39,40 +39,38 @@ grid(4,4).
 grid(5,4).
 grid(6,4).
 grid(7,4).
-grid(0,5).
-grid(1,5).
-grid(2,5).
-grid(3,5).
-grid(4,5).
-grid(5,5).
-grid(6,5).
-grid(7,5).
-grid(0,6).
-grid(1,6).
-grid(2,6).
-grid(3,6).
-grid(4,6).
-grid(5,6).
-grid(6,6).
-grid(7,6).
-grid(0,7).
-grid(1,7).
-grid(2,7).
-grid(3,7).
-grid(4,7).
-grid(5,7).
-grid(6,7).
-grid(7,7).
 
-dirt(0,5,'green').
-dirt(1,5,'orange').
-agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c,4,0,'green').
-agent(9a11a1a0-a61a-45e9-9d78-fdd562efb57e,2,1,'orange').
+dirt(6,4,'orange'). 
+
+
+agent('9af04778-08d6-4e40-8c6f-ba123d292a22',3,3,'orange'). 
+agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c',4,0,'green').
+
+
+empty(0,6).
+empty(1,6). 
+empty(2,6).
+
+ empty(0,7).
+  empty(1,7). 
+  empty(2,7).
 
 
 
-wall(X, 0, north).
-wall(X, 7, south).  
-wall(0, Y, west).  
-wall(7, Y, east).   
+wall(0,Y,north).
+wall(1,Y,north).
+wall(2,Y,north).
+wall(3,Y,north).
+wall(4,Y,north).
+wall(5,Y,north).
+wall(6,Y,north).
+wall(7,Y,north).
 
+wall(X,0,west).
+wall(X,1,west).
+wall(X,2,west).
+wall(X,3,west).
+wall(X,4,west).
+wall(X,5,west).
+ wall(X,6,west). 
+wall(X,7,west).

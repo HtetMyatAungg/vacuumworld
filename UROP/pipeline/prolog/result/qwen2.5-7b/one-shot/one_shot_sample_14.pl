@@ -63,73 +63,84 @@ grid(3,7).
 grid(4,7).
 grid(5,7).
 grid(6,7).
+grid(7,7).
 
 dirt(1,3, orange).
-agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 2,3, orange).
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4,7, green).
+dirt(2,0, orange).
+dirt(4,5, orange).
+dirt(6,1, green).
 
-empty(0,1).
-empty(0,2).
-empty(0,3).
-empty(0,4).
-empty(0,5).
-empty(0,7).
-empty(1,0).
-empty(1,1).
+empty(0,6).
 empty(1,6).
-empty(2,0).
-empty(2,1).
-empty(2,2).
-empty(2,3).
-empty(2,4).
 empty(2,6).
+empty(0,7).
+empty(1,7).
+empty(2,7).
 empty(3,0).
 empty(3,1).
 empty(3,2).
+empty(3,4).
 empty(3,5).
 empty(3,6).
 empty(3,7).
-empty(4,1).
+empty(4,0).
 empty(4,2).
 empty(4,3).
 empty(4,4).
-empty(4,5).
-empty(4,0).
 empty(4,6).
+empty(4,7).
 empty(5,0).
 empty(5,1).
 empty(5,2).
 empty(5,3).
 empty(5,4).
 empty(5,5).
+empty(5,6).
+empty(5,7).
 empty(6,0).
 empty(6,1).
 empty(6,2).
 empty(6,3).
 empty(6,4).
+empty(6,5).
+empty(6,6).
+empty(6,7).
 empty(7,0).
 empty(7,1).
 empty(7,2).
 empty(7,3).
 empty(7,4).
+empty(7,5).
+empty(7,6).
+empty(7,7).
 
-wall(X, Y, north) :- \+ succ(Y, NY), \+ empty(X, NY).
-wall(X, Y, south) :- \+ pred(Y, PY), \+ empty(X, PY).
-wall(X, Y, west) :- \+ succ(X, NX), \+ empty(NX, Y).
-wall(X, Y, east) :- \+ pred(X, PX), \+ empty(PX, Y).
+wall(X,Y, north) :- Y > 0, \+ grid(X,Y-1), Y1 is Y-1, wall(X,Y1, south).
+wall(X,Y, east) :- X < 7, \+ grid(X+1,Y), X1 is X+1, wall(X1,Y, west).
+wall(X,Y, south) :- Y < 7, \+ grid(X,Y+1), Y1 is Y+1, wall(X,Y1, north).
+wall(X,Y, west) :- X > 0, \+ grid(X-1,Y), X1 is X-1, wall(X1,Y, east).
 
-succ(0, 1).
-succ(1, 2).
-succ(2, 3).
-succ(3, 4).
-succ(4, 5).
-succ(5, 6).
-succ(6, 7).
-
-pred(1, 0).
-pred(2, 1).
-pred(3, 2).
-pred(4, 3).
-pred(5, 4).
-pred(6, 5).
-pred(7, 6).
+wall(0,6,south).
+wall(1,6,east).
+wall(2,6,east).
+wall(3,0,north).
+wall(4,0,north).
+wall(5,0,north).
+wall(6,0,north).
+wall(7,0,east).
+wall(3,1,east).
+wall(4,1,east).
+wall(5,1,east).
+wall(0,2,south).
+wall(1,2,south).
+wall(2,2,south).
+wall(3,3,south).
+wall(4,3,south).
+wall(6,3,east).
+wall(7,3,east).
+wall(4,5,east).
+wall(5,5,east).
+wall(6,1,south).
+wall(0,6,west).
+wall(1,6,west).
+wall(2,6,west).
+wall(0,7,south).

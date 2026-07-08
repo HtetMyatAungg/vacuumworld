@@ -1,16 +1,22 @@
-grid_size(7).
-grid(X,Y) :- between(0,6,X), between(0,6,Y).
-dirt(6,4,'orange').
-dirt(5,1,'green').
-dirt(6,5,'green').
-agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c,4,0,'green').
-agent(90a19ba0-5474-479f-a9ad-df5232bbce5b,5,1,'green').  
-agent(9fc869e7-895c-45cb-b24d-9bf8b30a8ecf,3,5,'green'). 
+grid_size(8).
+grid(X,Y) :- 0 =< X, X =< 7, 0 =< Y, Y =< 7.
+dirt(X,Y, Colour) :-  exists_in_percept_log(X, Y, 'dirt',Colour). %Dirt at a coordinate in the percept log.
+agent(Id, X, Y, Colour) :- exists_in_percept_log(X, Y, 'agent', Id, Colour).   %Agent at a coordinate.
+
+empty(X,Y) :-  not(exists_dirt(X, Y)), not(exists_agent(X, Y)).
+
+exists_in_percept_log(Row, Col, dirt, _Colour) :- member({coord:[Row,Col],dirt: Colour} , Percepts).
+exists_in_percept_log(Row, Col, agent, Id, Colour) :- member({coord:[Row,Col],agent:{id:Id, colour:Colour}} , Percepts).
+
+exists_dirt(X, Y) :-  exists_in_percept_log(X,Y, 'dirt', _Color).
+exists_agent(X, Y) :-  exists_in_percept_log(X,Y, 'agent', _Id, _Colour).
 
 
-wall(X,7,'south'). 
-wall(X,0,'north'). 
-wall(0,Y,'west').  
-wall(6,Y,'east'). 
+
+wall(0,Y, 'north').
+wall(7,Y, 'south').
+wall(X,0, 'west').
+wall(X,7, 'east').
+
 
 
