@@ -1,5 +1,7 @@
 import csv
 import os
+import re
+import subprocess
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
@@ -14,6 +16,8 @@ TICK_INK = "#898781"
 SECONDARY_INK = "#52514e"
 PRIMARY_INK = "#0b0b0b"
 
+PROLOG_RESULT_DIR = "UROP/pipeline/prolog/result"
+
 DATASETS = {
     "large": dict(
         csv_dir="UROP/pipeline/results/large_llm_results/csv",
@@ -25,6 +29,15 @@ DATASETS = {
             "deepseek-V3":    "#008300",  # green
             "gemma-4-31b":           "#4a3aa7",  # violet
         },
+        # repair logs are written under the raw model string passed to the API,
+        # which doesn't always match the name used elsewhere (e.g. deepseek-V3)
+        repair_names={
+            "claude-sonnet-4.6":     "claude-sonnet-4.6",
+            "gemini-2.5-flash":      "gemini-2.5-flash",
+            "gemini-3.1-flash-lite": "gemini-3.1-flash-lite",
+            "deepseek-V3":           "deepseek-chat",
+            "gemma-4-31b":           "gemma-4-31b",
+        },
         samples=range(1, 6),
         label="Large Models",
     ),
@@ -34,6 +47,15 @@ DATASETS = {
         model_colors={
             "gemma2-9b":   "#2a78d6",  # blue
             "qwen2.5-7b":  "#1baf7a",  # aqua
+            "gemma3-4b":   "#eda100",  # yellow
+            "qwen2.5-3b":   "#008300",  # green
+        },
+        # repair logs use the raw ollama tag (colon, not hyphen)
+        repair_names={
+            "gemma2-9b":  "gemma2:9b",
+            "qwen2.5-7b": "qwen2.5:7b",
+            "gemma3-4b":  "gemma3:4b",
+            "qwen2.5-3b": "qwen2.5:3b",
         },
         samples=range(1, 21),
         label="Small Models",
@@ -234,6 +256,113 @@ def plot_checks_heatmap(csv_dir, fig_dir, model_colors, samples, label):
     print(f"Saved: {out_path}")
 
 
+# ---- Figure 4: final Prolog validity per model (live swipl check) -----------
+
+def validate_with_swipl(path):
+    result = subprocess.run(
+        ["swipl", "--on-error=halt", "-l", path, "-g", "halt"],
+        capture_output=True, text=True,
+    )
+    return result.returncode == 0
+
+
+def load_validation_failures(result_dir, model, prompt_type, samples):
+    prefix = prompt_type.replace("-", "_")
+    fails = 0
+    for n in samples:
+        path = f"{result_dir}/{model}/{prompt_type}/{prefix}_sample_{n}.pl"
+        if not validate_with_swipl(path):
+            fails += 1
+    return fails
+
+
+def plot_validation_failures(result_dir, fig_dir, model_colors, samples, label):
+    models = list(model_colors)
+    total = len(samples)
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+
+    for ax, prompt_type in zip(axes, PROMPT_TYPES):
+        fail_counts = [load_validation_failures(result_dir, model, prompt_type, samples) for model in models]
+
+        bars = ax.bar(range(len(models)), fail_counts, color=[model_colors[m] for m in models], zorder=3)
+        for bar, fails in zip(bars, fail_counts):
+            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
+                     f"{fails}/{total}", ha="center", va="bottom",
+                     fontsize=8, color=SECONDARY_INK)
+
+        ax.set_title(prompt_type, fontsize=12, fontweight="semibold", color=PRIMARY_INK)
+        ax.set_xticks(range(len(models)))
+        ax.set_xticklabels(models, rotation=45, ha="right", fontsize=9, color=SECONDARY_INK)
+        ax.set_ylim(0, total)
+        style_axis(ax)
+
+    axes[0].set_ylabel(f"Samples failing SWI-Prolog validation (of {total})", color=SECONDARY_INK)
+    fig.suptitle(f"Final Prolog Validity per Model ({label})", fontsize=14, fontweight="bold")
+    fig.tight_layout(rect=[0, 0.02, 1, 0.95])
+
+    out_path = f"{fig_dir}/validation_failures.png"
+    fig.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Saved: {out_path}")
+
+
+# ---- Figure 5: repair attempts needed per model (from repair logs) ----------
+
+REPAIR_DIR = "UROP/pipeline/results/repair"
+REPAIR_LINE = re.compile(r"sample (\d+): (\d+) attempt\(s\), (\w+)")
+
+
+def load_repair_stats(repair_dir, samples, prompt_type, repair_name):
+    path = f"{repair_dir}/{repair_name}_{prompt_type}_repair.txt"
+    latest = {}
+    with open(path) as f:
+        for line in f:
+            match = REPAIR_LINE.search(line)
+            if not match:
+                continue
+            n, attempts, status = int(match[1]), int(match[2]), match[3]
+            latest[n] = (attempts, status)  # last write wins if a sample was rerun
+
+    samples = set(samples)
+    repairs = [attempts - 1 for n, (attempts, status) in latest.items() if n in samples]
+    fail_count = sum(1 for n, (_, status) in latest.items() if n in samples and status == "FAIL")
+    mean_repairs = sum(repairs) / len(repairs) if repairs else 0.0
+    return mean_repairs, fail_count
+
+
+def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples, label):
+    models = list(model_colors)
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+
+    for ax, prompt_type in zip(axes, PROMPT_TYPES):
+        means, fail_counts = [], []
+        for model in models:
+            mean_repairs, fail_count = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
+            means.append(mean_repairs)
+            fail_counts.append(fail_count)
+
+        bars = ax.bar(range(len(models)), means, color=[model_colors[m] for m in models], zorder=3)
+        for bar, fail_count in zip(bars, fail_counts):
+            if fail_count:
+                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
+                         f"{fail_count} FAIL", ha="center", va="bottom",
+                         fontsize=8, color="#b3261e")
+
+        ax.set_title(prompt_type, fontsize=12, fontweight="semibold", color=PRIMARY_INK)
+        ax.set_xticks(range(len(models)))
+        ax.set_xticklabels(models, rotation=45, ha="right", fontsize=9, color=SECONDARY_INK)
+        style_axis(ax)
+
+    axes[0].set_ylabel(f"Mean repair attempts per sample (of {len(samples)} samples)", color=SECONDARY_INK)
+    fig.suptitle(f"Prolog Repair Attempts Needed per Model ({label})", fontsize=14, fontweight="bold")
+    fig.tight_layout(rect=[0, 0.02, 1, 0.95])
+
+    out_path = f"{fig_dir}/repair_counts.png"
+    fig.savefig(out_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Saved: {out_path}")
+
+
 if __name__ == "__main__":
     for dataset in DATASETS.values():
         os.makedirs(dataset["fig_dir"], exist_ok=True)
@@ -242,3 +371,7 @@ if __name__ == "__main__":
         plot_wall_f1_vs_grid_size(*args)
         plot_content_f1(*args)
         plot_checks_heatmap(*args)
+        plot_validation_failures(PROLOG_RESULT_DIR, dataset["fig_dir"], dataset["model_colors"],
+                                  dataset["samples"], dataset["label"])
+        plot_repair_counts(REPAIR_DIR, dataset["fig_dir"], dataset["model_colors"],
+                            dataset["repair_names"], dataset["samples"], dataset["label"])

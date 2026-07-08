@@ -13,7 +13,7 @@ PRIMARY_INK = "#0b0b0b"
 BAR_COLOR = "#2a78d6"
 TRUE_COLOR = "#0ca30c"
 
-SMALL_MODELS = ["gemma2-9b", "qwen2.5-7b"]
+SMALL_MODELS = ["gemma3-4b", "qwen2.5-3b"]
 LARGE_MODELS = ["claude-sonnet-4.6", "deepseek-V3", "gemini-2.5-flash", "gemini-3.1-flash-lite", "gemma-4-31b"]
 MODELS = SMALL_MODELS + LARGE_MODELS
 
