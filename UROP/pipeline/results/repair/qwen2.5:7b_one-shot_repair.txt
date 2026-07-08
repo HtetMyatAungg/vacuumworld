@@ -1,0 +1,8 @@
+qwen2.5:7b [one-shot] sample 1: 1 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 2: 4 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 3: 2 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 4: 1 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 5: 1 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 6: 1 attempt(s), PASS
+qwen2.5:7b [one-shot] sample 7: 5 attempt(s), FAIL
+qwen2.5:7b [one-shot] sample 8: 1 attempt(s), PASS
