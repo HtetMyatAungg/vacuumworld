@@ -32,8 +32,8 @@ DATASETS = {
         csv_dir="UROP/pipeline/results/small_llm_results/csv",
         fig_dir="UROP/pipeline/results/small_llm_results/figures",
         model_colors={
-            "gemma3-4b":   "#2a78d6",  # blue
-            "qwen2.5-3b":  "#1baf7a",  # aqua
+            "gemma2-9b":   "#2a78d6",  # blue
+            "qwen2.5-7b":  "#1baf7a",  # aqua
         },
         samples=range(1, 21),
         label="Small Models",

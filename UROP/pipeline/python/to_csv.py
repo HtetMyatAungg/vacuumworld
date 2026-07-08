@@ -4,7 +4,7 @@ import os
 
 large_models = ["claude-sonnet-4.6", "gemini-2.5-flash", "gemini-3.1-flash-lite", "deepseek-V3", "gemma-4-31b"]
 
-small_models = ["gemma3-4b", "qwen2.5-3b"]
+small_models = ["gemma2-9b", "qwen2.5-7b"]
 
 PROMPT_TYPES = {
     "zero-shot":    "zero_shot",
@@ -73,5 +73,5 @@ def export_all(models, sample_range, csv_dir):
                 )
 
 
-export_all(large_models, range(1, 6), "UROP/pipeline/results/large_llm_results/csv")
+# export_all(large_models, range(1, 6), "UROP/pipeline/results/large_llm_results/csv")
 export_all(small_models, range(1, 21), "UROP/pipeline/results/small_llm_results/csv")
