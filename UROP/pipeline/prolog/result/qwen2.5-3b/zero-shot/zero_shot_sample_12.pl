@@ -1,0 +1,16 @@
+grid(
+    0..7#west@north,
+    0..6#east,
+    1..7#south,
+    1..6#north,
+    walls((0;6#west),(1;6#),(2;6#),(0;7#south;west),(1;7#south),(2;7#south),(0;5#west),(1;5#),(2;5#),(0;4#west),(1;4#),(2;4#),(0;3#west),(1;3#),(2;3#),(0;1#west),(1;1#),(2;1#south),(0;0#north;west),(1;0#north),(2;0#north),(3;0#north),(3;1#),(3;2#),(3;3#),(3;4#orange),(3;5#),(3;6#),(3;7#south),(4;5#),(4;6#orange),(4;7#south),(4;4#),(4;3#),(4;2#),(4;1#),(4;0#north),(5;0#north),(5;1#green),(5;2#),(5;3#),(5;4#),(5;5#),(5;6#),(5;7#south),(6;5#),(6;6#),(6;7#south),(6;4#orange),(6;3#green),(6;2#orange),(6;1#agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c))),(2;1#agent(9af04778-08d6-4e40-8c6f-ba123d292a22)),
+    (0;5#green),(1;5#),(2;5#),(0;4#orange),
+    ,(1;4#agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c))),(4;5#green),wall@(0;4;west),
+    (6;5#),(6;6#),(6;7#),(6;4#orange),(6;3#green),(6;2#agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c)),
+    (6;4#),
+    (7;0#girne),
+    (4;1#agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c)),
+    (4;5#green),(7;1#agent(9af04778-08d6-4e40-8c6f-ba123d292a22)),(7;2#girne),
+    (7;3#orange),(7;4#agent(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c)),
+    (7;5#wall(02a6d9ea-8b8e-4750-8000-c3a74a63fd9c))),(7;6#girne)
+).

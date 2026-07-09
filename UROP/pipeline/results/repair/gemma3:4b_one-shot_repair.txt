@@ -5,3 +5,17 @@ gemma3:4b [one-shot] sample 4: 5 attempt(s), FAIL
 gemma3:4b [one-shot] sample 5: 5 attempt(s), FAIL
 gemma3:4b [one-shot] sample 6: 5 attempt(s), FAIL
 gemma3:4b [one-shot] sample 7: 5 attempt(s), FAIL
+gemma3:4b [one-shot] sample 2: 3 attempt(s), PASS
+gemma3:4b [one-shot] sample 8: 5 attempt(s), FAIL
+gemma3:4b [one-shot] sample 9: 1 attempt(s), PASS
+gemma3:4b [one-shot] sample 10: 1 attempt(s), PASS
+gemma3:4b [one-shot] sample 11: 3 attempt(s), PASS
+gemma3:4b [one-shot] sample 12: 5 attempt(s), FAIL
+gemma3:4b [one-shot] sample 13: 4 attempt(s), PASS
+gemma3:4b [one-shot] sample 14: 5 attempt(s), FAIL
+gemma3:4b [one-shot] sample 15: 5 attempt(s), FAIL
+gemma3:4b [one-shot] sample 16: 1 attempt(s), PASS
+gemma3:4b [one-shot] sample 17: 2 attempt(s), PASS
+gemma3:4b [one-shot] sample 18: 1 attempt(s), PASS
+gemma3:4b [one-shot] sample 19: 1 attempt(s), PASS
+gemma3:4b [one-shot] sample 20: 5 attempt(s), FAIL

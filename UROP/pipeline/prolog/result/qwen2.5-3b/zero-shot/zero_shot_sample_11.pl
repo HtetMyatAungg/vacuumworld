@@ -1,0 +1,1 @@
+grid(grid(0:grid([0:wall(west)],grid([1:wall(outh)],grid([2:wall(),3:wall(),4:wall(),5:wall()],grid([6:dirt(nil),7:dirt(nil:true),8:dirt(false),9:dirt(false:nil),nil:dirt(nil),21:nill:true,nil:agent(rectangle(color(green))),30:nill:false,31:dirt(true)],grid([40:nill:orange,nil:wall(no_wall())],grid([],[],[])),[]))))))))).
