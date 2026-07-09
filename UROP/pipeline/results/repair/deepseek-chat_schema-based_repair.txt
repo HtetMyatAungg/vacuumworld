@@ -1,6 +1,0 @@
-deepseek-chat [schema-based] sample 1: 1 attempt(s), SUCCESS
-deepseek-chat [schema-based] sample 2: 1 attempt(s), SUCCESS
-deepseek-chat [schema-based] sample 3: 1 attempt(s), SUCCESS
-deepseek-chat [schema-based] sample 4: 1 attempt(s), SUCCESS
-deepseek-chat [schema-based] sample 5: 1 attempt(s), SUCCESS
-deepseek-chat [schema-based] sample 5: 1 attempt(s), SUCCESS

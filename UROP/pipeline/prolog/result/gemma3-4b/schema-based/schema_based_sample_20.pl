@@ -1,42 +1,12 @@
-grid_size(N).
-grid(X, Y) :- X > 0, X =< N, Y > 0, Y =< N.
+grid_size(9).
+grid(x,y) :- x >= 0, x < 9, y >= 0, y < 9.
+dirt(x, y, orange) :- x >= 0, x < 9, y >= 0, y < 9.
+dirt(x, y, green) :- x >= 0, x < 9, y >= 0, y < 9.
+agent(id, x, y, orange) :- x >= 0, x < 9, y >= 0, y < 9.
+agent(id, x, y, green) :- x >= 0, x < 9, y >= 0, y < 9.
+empty(x,y) :- x >= 0, x < 9, y >= 0, y < 9.
 
-dirt(X, Y, Colour) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    Colour ins 'orange'.
-
-dirt(X, Y, Colour) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    Colour ins 'green'.
-
-
-agent(Id, X, Y, Colour) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    Id in ['02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', '9af04778-08d6-4e40-8c6f-ba123d292a22'].
-
-empty(X, Y) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N.
-
-wall(X, Y, west) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    X = 0.
-
-wall(X, Y, south) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    Y = N.
-
-wall(X, Y, east) :-
-    X > 0, X =< N,
-    Y > 0, Y =< N,
-    X = N.
-
-wall(X, Y, north) :-
-   X > 0, X =< N,
-   Y > 0, Y =< N,
-   Y = 0.
+wall(x, y, west) :- x > 0, x < 9, y >= 0, y < 9.
+wall(x, y, east) :- x < 8, x >= 0, y >= 0, y < 9.
+wall(x, y, north) :- y < 8, y >= 0, x >= 0, x < 9.
+wall(x, y, south) :- y > 0, y >= 0, x >= 0, x < 9.

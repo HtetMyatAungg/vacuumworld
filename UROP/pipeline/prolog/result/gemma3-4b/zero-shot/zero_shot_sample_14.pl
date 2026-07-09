@@ -1,60 +1,38 @@
-% Define the size of the square grid (N x N)
-n(8).
+edge(X, Y) :- between(0, N), X == Y.
+edge(X, Y) :- between(0, N), X \= Y.
 
-% Represent the grid as a list of lists
-grid(Grid) :-
-    n(N),
-    Grid = [[[] for _ in 0..N-1] for _ in 0..N-1],  % Initialize empty grid
-    create_grid(Grid, N).
+grid(N) :-
+    integer(N),
+    N > 0.
 
-% Helper predicate to populate the initial grid state.
-create_grid(Grid, N) :-
-    length(Grid, N), % Check grid dimensions
-    forall(i <- 0..(N-1), forall(j <- 0..(N-1), Grid !! i !! j = [])).
+cell(X, Y) :-
+    between(0, N),
+    X >= 0, X < N+1,
+    Y >= 0, Y < N+1.
 
-% Represent agents as records with ID and color.
-agent(Id, Colour) :-
-    Id = '9af04778-08d6-4e40-8c6f-ba123d292a22',
-    Colour = 'orange'.
+wall(X, Y, Direction) :-
+    between(0, N),
+    X >= 0, X < N+1,
+    Y >= 0, Y < N+1,
+    Direction ins [north, south, east, west].
 
-agent(Id, Colour) :-
-    Id = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c',
-    Colour = 'green'.
+agent_data(Id, Colour) :- member([Coord], PerceptLog),
+    (   atom(Id), Id == '9af04778-08d6-4e40-8c6f-ba123d292a22', Colour == 'orange' )
+        or
+    (   atom(Id), Id == '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', Colour == 'green').
 
+dirt_data(Coord, DirtType) :- member([Coord], PerceptLog),
+    DirtType == null or DirtType == "orange" or DirtType == "green".
 
-% Define wall directions
-wall('north').
-wall('south').
-wall('east').
-wall('west').
-
-% Represents the percept log as a list of observations.
-observation(Coord, Walls, Dirt, Agent) :-
-    (   Dirt = null
-    ->  Walls = Walls
-    ;   Dirt \= null
-    );
-    Dirt = 0,
-    Walls = Walls .
-
-% Predicate to create the Knowledge Base from the percept log.
-build_kb :-
-    forall(i <- 0..7,
-        forall(j <- 0..7,
-            (observation(coord(i,j), walls(walls), dirt(dirt), agent(agent))
-            )
-        )
+grid_state(X, Y, Walls, Agent, Dirt) :-
+    cell(X, Y),
+    wall(X, Y, Walls),
+    case Agent of
+        null -> ();
+        atom(AgentId) : agent_data(AgentId, Colour),
+            DirtType == null
+    ,
+    case Dirt of
+        null -> ();
+        _ -> dirt_data(X, Dirt)
     ).
-
-% Helper predicates for coordinates and wall directions.
-coord(X, Y) :- X >= 0, X < n(8), Y >= 0, Y < n(8).
-walls([]).
-walls([W]) :- wall(W).
-walls([W1, W2]) :- wall(W1), wall(W2).
-walls([W1, W2, W3]) :- wall(W1), wall(W2), wall(W3).
-
-dirt(null).
-dirt('orange').
-dirt('green').
-
-% To execute the KB: build_kb.

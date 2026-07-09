@@ -1,14 +1,11 @@
-grid_size(8).
-grid(X, Y) :- X in [0..7], Y in [0..7].
-dirt(X, Y, orange) :- X in [0..7], Y in [0..7], (X >= 0 and X <= 7 and Y >= 0 and Y <= 7).
-dirt(X, Y, green) :- X in [5..7], Y in [1..7], (X >= 0 and X <= 7 and Y >= 0 and Y <= 7).
-dirt(X, Y, null) :- X in [0..7], Y in [0..7].
-
-agent(id, X, Y, orange) :- X in [3..7], Y in [0..7], (X >= 0 and X <= 7 and Y >= 0 and Y <= 7).
-agent(id2, X, Y, green) :- X in [4..7], Y in [0..7], (X >= 0 and X <= 7 and Y >= 0 and Y <= 7).
-agent(null, X, Y, null) :- X in [0..7], Y in [0..7].
-
-wall(x, y, west) :- x < 0.
-wall(x, y, east) :- x > 7.
-wall(x, y, north) :- y < 0.
-wall(x, y, south) :- y > 7.
+grid_size(9).
+grid(X,Y) :- between(0, 8, X), between(0, 8, Y).
+dirt(X,Y,orange) :- X mod 2 == 1, between(0, 8, Y).
+dirt(X,Y,green) :- X mod 2 == 0, between(0, 8, Y).
+agent(Id,X,Y,Colour) :- Id = '9af04778-08d6-4e40-8c6f-ba123d292a22', Colour = 'orange', X in [0..8], Y in [0..8].
+agent(Id,X,Y,Colour) :- Id = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', Colour = 'green', X in [0..8], Y in [0..8].
+empty(X,Y) :- X in [0..8], Y in [0..8].
+wall(west, _, _) :- X == 0, Y in [0..8].
+wall(east, _, _) :- X == 8, Y in [0..8].
+wall(north, _, _) :- Y == 0, X in [0..8].
+wall(south, _, _) :- Y == 8, X in [0..8].

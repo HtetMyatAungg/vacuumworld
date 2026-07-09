@@ -1,21 +1,12 @@
-grid_size(8).
-grid(X, Y) :- X >= 0, X < 8, Y >= 0, Y < 8.
-dirt(X, Y, 'orange') :- X >= 0, X < 8, Y >= 0, Y < 8, X = 3, Y = 3.
-dirt(X, Y, 'green') :- X >= 0, X < 8, Y >= 0, Y < 8, X = 5, Y = 1.
-dirt(X, Y, 'orange') :- X >= 0, X < 8, Y >= 0, Y < 8, X = 6, Y = 4.
-empty(X, Y) :- X >= 0, X < 8, Y >= 0, Y < 8.
+grid_size(5).
+grid(x, y) :- x > 0, x < 5, y > 0, y < 5, between(0,4, x), between(0,4,y).
+dirt(x, y, orange) :- x >= 0, x < 5, y >= 0, y < 5, between(0,4, x), between(0,4,y), x = 3, y = 3.
+dirt(x, y, green) :- x >= 0, x < 5, y >= 0, y < 5, between(0,4, x), between(0,4,y), x = 5, y = 1.
+dirt(x, y, orange) :- x >= 0, x < 5, y >= 0, y < 5, between(0,4, x), between(0,4,y), x = 6, y = 4.
+agent(id, x, y, orange) :- x >= 0, x < 5, y >= 0, y < 5, between(0,4, x), between(0,4,y), x = 4, y = 0.
+agent(id, x, y, green) :- x >= 0, x < 5, y >= 0, y < 5, between(0,4, x), between(0,4,y), x = 5, y = 7.
 
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 0, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 1, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 2, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 3, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 4, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 5, Y >= 3.
-wall(X, Y, west) :- X > 0, X < 8, Y >= 0, Y < 8, X = 6, Y >= 3.
-wall(X, Y, south) :- X >= 0, X < 8, Y > 0, Y < 8, X = 7, Y = 0.
-wall(X, Y, south) :- X >= 0, X < 8, Y > 0, Y < 8, X = 7, Y = 1.
-wall(X, Y, south) :- X >= 0, X < 8, Y > 0, Y < 8, X = 7, Y = 2.
-wall(X, Y, south) :- X >= 0, X < 8, Y > 0, Y < 8, X = 7, Y = 3.
-wall(X, Y, south) :- X >= 0, X < 8, Y > 0, Y < 8, X = 7, Y = 4.
-wall(X, Y, east) :- X < 7, X >= 0, Y >= 0, Y < 8, X = 7, Y >= 3.
-wall(X, Y, north) :- X >= 0, X < 8, Y < 7, Y >= 0, X = 7 ,Y= 0.
+wall(x, y, west) :- x > 0, x < 5, y >= 0, y < 5 , between(0,4,x).
+wall(x, y, north) :- x >= 0, x < 5, y > 0, y < 5 , between(0,4,y).
+wall(x, y, east) :- x > 0, x < 5, y >= 0, y < 5 , between(0,4,x).
+wall(x, y, south) :- x >= 0, x < 5, y > 0, y < 5 , between(0,4,y).

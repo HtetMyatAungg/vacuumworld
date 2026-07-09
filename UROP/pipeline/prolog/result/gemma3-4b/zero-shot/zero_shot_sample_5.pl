@@ -1,41 +1,12 @@
-edge(X, Y) :-
-    between(0, N, X),
-    between(0, N, Y);
+domains
+    grid_cell(X, Y, Walls, Dirt, Agent) :-
+      X > 0, X =< 8,
+      Y > 0, Y =< 8,
+      all_walls(Walls, X, Y),
+      Dirt == null | Dirt != null,
+      Agent == null | Agent != null.
 
-wall(X, Y, Direction) :-
-    X >= 0,
-    X < N,
-    Y >= 0,
-    Y < N,
-    Direction = west ;
-wall(X, Y, Direction) :-
-    X >= 0,
-    X < N,
-    Y >= 0,
-    Y < N,
-    Direction = east;
-wall(X, Y, Direction) :-
-    X >= 0,
-    X < N,
-    Y >= 0,
-    Y < N,
-    Direction = north;
-
-wall(X, Y, Direction) :-
-    X >= 0,
-    X < N,
-    Y >= 0,
-    Y < N,
-    Direction = south;
-
-agent(X, Y) :-
-  X >= 0,
-  X < N,
-  Y >= 0,
-  Y < N ;
-
-dirt(X, Y) :-
-  X >= 0,
-  X < N,
-  Y >= 0,
-  Y < N;
+    agent_cell(X, Y, ID) :-
+      X > 0, X =< 8,
+      Y > 0, Y =< 8,
+      X == 4, Y == 0, ID =\

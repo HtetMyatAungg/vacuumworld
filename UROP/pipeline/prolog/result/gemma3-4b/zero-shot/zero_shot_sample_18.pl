@@ -1,59 +1,29 @@
-% Define the size of the square grid (N x N) - Assuming a 7x7 grid for this example.  This needs to be configurable in a real implementation.
-grid_size := 7.
+domain(8). % Grid size: 8x8
 
-% Representation:  A grid is represented as a list of lists,
-% where each inner list represents a row.
+edge(X, Y) :- X in [0..7], Y in [0..7]. % Define grid edges
 
-% Facts:
-%   agent(Id, Colour) - Indicates an agent at a particular location with a specific ID and colour.
-%   dirt(Coord, Colour) - Indicates dirt at a particular location with a specific colour.
-%   wall(Coord, Direction) - Indicates a wall at a particular location in a specific direction.
+wall([[X, Y]]) :-
+    X == 0, Y == 0;
+    X == 7, Y == 0;
+    X == 7, Y == 7;
+    X == 0, Y == 7;
+    Y in [0..7], X in [0..7], not(wall([[X, Y]]));
 
-% Define the grid as a predicate to easily access its contents. The initial state is all empty.
-grid(X, Y, []) :-
-    X = 0, Y = 0;
-    X > 0, Y > 0, X < grid_size + 1 , Y < grid_size+1,
-    Y= 0,
-   true.
+dirt([[X, Y]]) :-
+    X in [0..7], Y in [0..7], not(wall([[X, Y]]));
 
-grid(X, Y, Row) :-
-  Row = [[]] ;
-  length(Row, GridSize).
+agent([[X, Y]], ID, COLOR) :-
+    X in [0..7], Y in [0..7], not(wall([[X, Y]])),
+    (ID = '9af04778-08d6-4e40-8c6f-ba123d292a22', COLOR = 'orange') ;
+    (ID = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', COLOR = 'green').
 
+grid([[X, Y], WALLS]) :-
+    edge([X, Y]),
+    (WALLS == [] -> dirt([[X, Y]]) ;
+     WALLS = ["north", "west"] -> wall([[X, Y]]) ;
+     WALLS = ["south", "east"] -> wall([[X, Y]]);
+     WALLS = ["west"]-> wall([[X, Y]]));
 
-% Rules for constructing the knowledge base:
-walls(Coord, Direction) :-
-    Coord = [X, Y],
-    X >= 0, X < grid_size + 1,
-    Y>= 0, Y < grid_size + 1,
-    Direction = west | south | east | north.
-
-agent(Id, Colour) :-
-    Id = "9af04778-08d6-4e40-8c6f-ba123d292a22",
-    Colour = orange.
-
-agent(Id, Colour) :-
-  Id = "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c",
-    Colour = green.
-
-
-dirt(Coord, Colour) :-
-    Coord = [X, Y],
-    X >= 0, X < grid_size + 1,
-    Y>= 0, Y < grid_size + 1,
-    Colour = orange | green .
-
-% Example instances:
-/*
-  [
-   {
-      "coord": [
-       0,
-        6
-     ],
-     "walls": [],
-     "dirt": null,
-     "agent": null
-   },
-   ...
- */
+grid([[X, Y], ID, COLOR]) :-
+    edge([X, Y]),
+    agent([[X, Y]], ID, COLOR);

@@ -1,51 +1,39 @@
-% Define the size of the square grid (N x N).
-grid_size := 8.
+edge(X, Y) :- between(0, N), X =:= Y.
+edge(X, Y) :- between(0, N), X \= Y.
 
-% Represent the grid as a list of lists.
-% Each element in the list represents a cell.
-% The cells are represented as tuples: (X, Y, walls, content)
-% where X and Y are coordinates (0 to N-1),
-% walls is a list of wall directions ("north", "south", "east", "west"),
-% and content is either null or a string representing the object in that cell.
+grid_size(N) :-
+    N > 0,
+    integer(N).
 
-% Initialize the grid with empty cells.
-grid(X, Y, [], null) :-
-    X >= 0, X < grid_size,
-    Y >= 0, Y < grid_size.
+cell(X, Y) :-
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N.
 
-% Define the structure of a single cell within the grid
-cell(X, Y, Walls, Content) :-
-    grid_size = N,
-    X in [0..N-1],
-    Y in [0..N-1],
-    Walls is [],
-    Content is null.
+wall(X, Y) :-
+    cell(X, Y),
+    not (edge(X, Y)).
 
-% Define rules for creating cells with walls.
-wall_cell(X, Y, Walls, Content) :-
-    X in [0..N-1],
-    Y in [0..N-1],
-    Walls is Walls,
-    Content is null.
-
-% Define the structure of a cell that contains an agent.
-agent_cell(X, Y, Walls, Agent) :-
-    X in [0..N-1],
-    Y in [0..N-1],
-    Walls is Walls,
-    Agent = {id: AgentId, colour: AgentColour}.
-
-% Define the structure of a cell that contains dirt.
-dirt_cell(X, Y, Walls, Dirt) :-
-    X in [0..N-1],
-    Y in [0..N-1],
-    Walls is Walls,
-    Dirt is Dirt.
-
-% Initial grid configuration (This could be extended based on the percept log)
-initial_grid(N) :-
-    N = grid_size,
-    forall(
-      (X <- [0..(N-1)], Y <- [0..(N-1)] ,
-        cell(X, Y, [], null))
+dirt(X, Y) :-
+    cell(X, Y),
+    not (wall(X, Y)),
+    (   atom('orange', dirt_type)
+    ->  dirt_type == 'orange'
+    ;   dirt_type == null
     ).
+
+agent(X, Y) :-
+    cell(X, Y),
+    not (wall(X, Y)),
+    (   atom('9af04778-08d6-4e40-8c6f-ba123d292a22', agent_id)
+    ->  agent_id == '9af04778-08d6-4e40-8c6f-ba123d292a22'
+    ;   atom('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', agent_id)
+        == '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'
+    ).
+
+boundary(X, Y) :-
+    (X == 0) ;
+    (X == N - 1) ;
+    (Y == 0) ;
+    (Y == N - 1).

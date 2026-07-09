@@ -1,41 +1,37 @@
-% Define the size of the grid (N x N)
-n(8).
+% Define the size of the grid
+grid_size(8).
 
-% Represent the grid as a list of lists. Each element represents a cell.
-% 'empty' indicates an empty cell, 'wall' indicates a wall, and 'agent' holds agent data.
-grid(Grid) :-
-    findall(Cell, 0..n(1)-1, (
-        Cell = [Row, Col]
-    ), Grid).
+% Create an empty grid
+create_grid(N) :-
+    findall((X, Y), 0..N-1, CoordList),
+    forall(member((X, Y), CoordList), \+ (is_empty_coord((X, Y)))).
 
-% Define the walls for each cell.  Walls are represented as a list of strings ("north", "south", "east", "west").
-walls(Grid) :-
-    findall(WallList, 0..n(1)-1, (
-        Cell = [Row, Col],
-          WallList = calculate_walls(Row, Col, Grid)
+% Define a helper predicate to check if a coordinate is empty.
+is_empty_coord((X, Y)) :-
+    not(grid_contains_something((X, Y))).
 
-    ), WallList).
+% Defines a predicate that checks whether the grid contains something at a given coord.
+grid_contains_something((X,Y)) :-
+    exists(cell,(member((X,Y), cell) )).
 
 
-% Helper predicate to actually calculates the walls based on neighborhood
-calculate_walls(Row,Col,Grid) :-
-  adjacent_cells(Row,Col,Neighbours),
-  wall_list(Neighbours,WallList).
+% Initialize the grid with walls
+init_grid([]).
 
-% Function that returns a list of adjacent cells for coordinate (Row, Col).
-adjacent_cells(Row,Col,Neighbours) :-
-    findall([r,c], (abs(r-Row)<n(1), abs(c-Col)<n(1)), Neighbours).
+init_grid([[[wall],[nil]]]) :-
+    grid_size(3).
 
-% Helper predicate for checking walls based on neighbor coordinates
-wall_list([],[]).
-wall_list([Cell|Rest],Walls) :-
-  get_walls(Cell, Walls),
-  wall_list(Rest,Walls).
+init_grid([[[nil]], [[wall]]]) :-
+    grid_size(3).
 
+% Define the actual grid based on the percept log and grid size.
+make_grid(N) :-
+    create_grid(N),
+    init_grid([]).
 
-% Get the wall data of a grid, returns a list of cells and surrounding walls.
-get_walls([Row,Col], WallList) :-
-  findall(Wall, ( (Wall in ["north", "south", "east", "west"]), adjacent_cells(Row, Col, Neighbours)), WallList).
+% Represent the grid as a list of lists, where each inner list represents a row.
+representation(Grid, N) :-
+    findall([((X, Y), CellType) | (X, Y) -> CellType), 0..N-1, Grid).
 
-% Example usage:
-% ?- grid(Grid), walls(Grid).
+% Example use:
+% representation(MyGrid, 8).

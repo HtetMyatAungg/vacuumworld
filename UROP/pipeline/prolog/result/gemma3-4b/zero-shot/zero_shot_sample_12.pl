@@ -1,43 +1,53 @@
-% Define the size of the grid (N x N)
-n(8).
+edge(X, Y) :- between(0, N), X == Y.
+edge(X, Y) :- between(0, N), X \= Y.
 
-% Represent the grid as a list of lists
-grid([X | Y]...) :-
-    findall(Row, length(Row, X), [Row]),
-    append(Y, [], grid).
+grid(N) :-
+    N > 0,
+    integer(N).
 
+cell(X, Y) :-
+    between(0, N),
+    X >= 0,
+    X < N,
+    Y >= 0,
+    Y < N.
 
-% Representation for a cell in the grid
-cell((X, Y), Wall, Dirt, Agent) :-
-    X >= 0, X < n(8),
-    Y >= 0, Y < n(8),
+wall(X, Y) :-
+    cell(X, Y),
+    (X == 0, wall_north(X, Y)).
+wall(X, Y) :-
+    cell(X, Y),
+    (X == N, wall_south(X, Y)).
+wall(X, Y) :-
+    cell(X, Y),
+    (Y == 0, wall_west(X, Y)).
+wall(X, Y) :-
+    cell(X, Y),
+    (Y == N, wall_east(X, Y)).
 
-    % Walls
-    (   Wall = "north"      if Y = 0;
-        Wall = "south"      if Y = n(8)-1;
-        Wall = "west"        if X = 0;
-        Wall = "east"        if X = n(8)-1;
-        true
-    ),
+dirt(X, Y) :-
+    cell(X, Y),
+    (X == 2, Y == 7, dirt('orange')).
+dirt(X, Y) :-
+    cell(X, Y),
+    (X == 3, Y == 4, dirt('orange')).
+dirt(X, Y) :-
+    cell(X, Y),
+    (X == 5, Y == 1, dirt('green')).
 
-    % Dirt
-    Dirt = null  % No dirt unless explicitly stated, otherwise represent as null.
-    % Agent - optional
-    Agent = null % Default: no agent.
+agent(X, Y) :-
+    cell(X, Y),
+    (X == 3, Y == 3, agent_id('9af04778-08d6-4e40-8c6f-ba123d292a22', 'orange')).
+agent(X, Y) :-
+    cell(X, Y),
+    (X == 4, Y == 0, agent_id('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 'green')).
 
+wall_north(X, Y) :- X == 0.
+wall_south(X, Y) :- X == N.
+wall_west(X, Y) :- Y == 0.
+wall_east(X, Y) :- Y == N.
 
-% Define a predicate to find cells with dirt
-dirt_cells(Grid) :-
-    findall((X, Y), cell((X, Y), DirtList, Dirt, _),DirtList,DirtCells).
-
-% Define a predicate to find cells with agents
-agent_cells(Grid) :-
-    findall((X, Y), cell((X, Y), _, _, AgentList),AgentList,AgentCells).
-
-
-
-% Example usage:  Query for all dirt cells.
-% dirt_cells(Grid).
-
-% Example query : Get grid representation as a list of lists in nested format
-%grid([0..7]).
+agent_id(ID, Colour) :-
+    ID = '9af04778-08d6-4e40-8c6f-ba123d292a22', Colour = 'orange'.
+agent_id(ID, Colour) :-
+    ID = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', Colour = 'green'.

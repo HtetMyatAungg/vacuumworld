@@ -1,12 +1,10 @@
-grid_size(8).
-grid(x, y) :- x >= 0, x < 8, y >= 0, y < 8.
-dirt(x, y, colour) :- x >= 0, x < 8, y >= 0, y < 8, colour = 'orange' ;
-                       x >= 0, x < 8, y >= 0, y < 8, colour = 'green'.
-agent(id, x, y, colour) :- x >= 0, x < 8, y >= 0, y < 8, colour = 'orange' ;
-                           x >= 0, x < 8, y >= 0, y < 8, colour = 'green'.
-empty(x, y) :- x >= 0, x < 8, y >= 0, y < 8.
+grid_size(5).
+grid(X,Y) :- between(0,4,X), between(0,4,Y).
+dirt(X,Y, colour) :- X in [0..4], Y in [0..4], colour ins ['orange', 'green'].
+agent(Id, X, Y, colour) :- X in [0..4], Y in [0..4], Id = 'uuid', colour ins ['orange', 'green'].
+empty(X,Y) :- X in [0..4], Y in [0..4].
 
-wall(x, y, west) :- x > 0, x < 8, y >= 0, y < 8.
-wall(x, y, north) :- x >= 0, x < 8, y > 0, y < 8.
-wall(x, y, east) :- x == 7, x >= 0, y >= 0, y < 8.
-wall(x, y, south) :- x >= 0, x < 8, y == 7, y >= 0.
+wall(X, Y, west) :- X == 0, Y in [0..4].
+wall(X, Y, east) :- X == 4, Y in [0..4].
+wall(X, Y, north) :- Y == 0, X in [0..4].
+wall(X, Y, south) :- Y == 4, X in [0..4].

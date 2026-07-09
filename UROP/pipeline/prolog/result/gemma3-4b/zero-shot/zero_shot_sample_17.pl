@@ -1,35 +1,36 @@
-% Define the size of the grid (N x N)
-grid_size(8).
+edge(X, Y) :- between(0, N), X = Y.
+grid(N) :-
+    N > 0,
+    between(0, N).
 
-% Represent the grid as a table of facts.
-% Each fact represents a cell in the grid.
-% The fact name is the coordinate (X, Y).
-% The value of the fact is a list of wall types and contents present in that cell.
+cell(X, Y, dirt) :-
+    X >= 0, X #< N,
+    Y >= 0, Y #< N,
+    edge(X, Y),
+    !.
 
-% Example:
-% coord(0, 0) :- wall('north', 'west').
-% coord(1, 0) :- wall('north').
-% coord(2, 0) :- empty.
+cell(X, Y, agent) :-
+    X >= 0, X #< N,
+    Y >= 0, Y #< N,
+    edge(X, Y),
+    agent_id = id(agent).
 
-% Define a predicate to add a coordinate's data to the grid table.
-coord(X, Y) :-
-    Y = 0..grid_size(1)-1,  % Ensure Y is within the grid bounds
-    integer(X),
-    integer(Y),
-    wall(Walls, Content), % Define Walls and Content,
-    (   Walls = [] ->
-        Content = null % Indicates empty cell (no walls & no content)
-    );
-    (   Walls = ['north', 'west'] ->
-        Content = {id: "9af04778-08d6-4e40-8c6f-ba123d292a22", colour: "orange"} % Agent in cell
-    );
-   (  Walls = [] -> Content = null );% default empty if no walls and agent is null
+agent_id(agent) :- member(agent_data, agents), agent_data = id(agent).
 
-% Define wall types.
-wall('north', _).
-wall('south', _).
-wall('east', _).
-wall('west', _).
+walls(X, Y) :-
+    X >= 0, X #< N,
+    Y >= 0, Y #< N,
+    edge(X, Y).
 
-% Define empty cell, which means there's nothing in the grid cell.
-empty().
+boundary_wall(X, Y) :-
+    X = 0, Y >= 0, Y #< N, edge(X, Y).
+boundary_wall(X, Y) :-
+    X = N, Y >= 0, Y #< N, edge(X, Y).
+boundary_wall(X, Y) :-
+    Y = 0, X >= 0, X #< N, edge(X, Y).
+boundary_wall(X, Y) :-
+    Y = N, X >= 0, X #< N, edge(X, Y).
+
+agents := [
+  {id: "9af04778-08d6-4e40-8c6f-ba123d292a22", colour: orange},
+  {id: "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c

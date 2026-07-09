@@ -156,10 +156,6 @@ def validate_prolog(file_path):
     return subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
 
 
-def already_valid(file_path):
-    return os.path.exists(file_path) and validate_prolog(file_path).returncode == 0
-
-
 def prolog_error_message(result):
     output = result.stderr or result.stdout or "SWI-Prolog validation failed without output."
     lines = [line for line in output.splitlines() if not line.startswith("Warning:")]
@@ -190,8 +186,8 @@ def call_qwen(prompt, n, prompt_type="zero-shot", model="qwen2.5:3b"):
     model_dir = model.replace(":", "-")
     file_path = f"UROP/pipeline/prolog/result/{model_dir}/{prompt_type}/{prefix}_sample_{n}.pl"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    if already_valid(file_path):
-        print(f"{model} [{prompt_type}] sample {n}: already valid, skipping")
+    if os.path.exists(file_path):
+        print(f"{model} [{prompt_type}] sample {n}: file already exists, skipping")
         return
     result = None
     for attempt in range(5):
@@ -229,8 +225,8 @@ def call_gemma(prompt, n, prompt_type="zero-shot", model="gemma3:4b"):
     model_dir = model.replace(":", "-")
     file_path = f"UROP/pipeline/prolog/result/{model_dir}/{prompt_type}/{prefix}_sample_{n}.pl"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    if already_valid(file_path):
-        print(f"{model} [{prompt_type}] sample {n}: already valid, skipping")
+    if os.path.exists(file_path):
+        print(f"{model} [{prompt_type}] sample {n}: file already exists, skipping")
         return
     result = None
     for attempt in range(5):
@@ -285,5 +281,3 @@ def run_model(call_fn, model, available):
 available = local_models()
 run_model(call_gemma, "gemma3:4b", available)
 run_model(call_qwen, "qwen2.5:3b", available)
-run_model(call_gemma, "qwen2.5:7b", available)
-run_model(call_gemma, "gemma2:9b", available)

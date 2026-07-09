@@ -1,58 +1,65 @@
-% Define the size of the grid (N x N) - Assuming it's 8x8 for this example
-grid_size := 8.
+grid(N) :-
+    N is 8.
 
-% Representation:  grid(X, Y, wall_type, dirt_type, agent_id)
-% X and Y are coordinates within the grid (0 to N-1)
-% wall_type can be 'north', 'south', 'east', 'west', or [] if no walls.
-% dirt_type can be null, 'orange', or 'green'.
-% agent_id is a string representing the unique agent ID, or null if no agent.
+walls([north, south, east, west]).
 
-grid(0, 0, [north, west], null, "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c").
-grid(1, 0, [], [], null).
-grid(2, 0, [], [], null).
-grid(0, 1, [south, west], null, null).
-grid(1, 1, [], [], null).
-grid(2, 1, [], [], null).
-grid(0, 2, [south, west], null, null).
-grid(1, 2, [], [], null).
-grid(2, 2, [], [], null).
-grid(0, 3, [south, west], "9af04778-08d6-4e40-8c6f-ba123d292a22", null).
-grid(1, 3, [], [], null).
-grid(2, 3, [], [], null).
-grid(0, 4, [south, west], null, null).
-grid(1, 4, [], [], null).
-grid(2, 4, [], [], null).
-grid(0, 5, [south, west], null, null).
-grid(1, 5, [], [], null).
-grid(2, 5, [], [], null).
-grid(0, 6, [south, west], null, null).
-grid(1, 6, [], [], null).
-grid(2, 6, [], [], null).
-grid(0, 7, [south, west], null, null).
-grid(1, 7, [south], null, null).
-grid(2, 7, [south], null, null).
-grid(3, 0, [north], null, null).
-grid(3, 1, [], [], null).
-grid(3, 2, [], [], null).
-grid(3, 3, [], [], null).
-grid(3, 4, [south], null, null).
-grid(3, 5, [], [], null).
-grid(3, 6, [], [], null).
-grid(3, 7, [south], null, null).
-grid(4, 0, [north], "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", null).
-grid(5, 0, [north], null, null).
-grid(5, 1, [green], null, null).
-grid(5, 2, [], [], null).
-grid(5, 3, [], [], null).
-grid(5, 4, [], [], null).
-grid(5, 5, [], [], null).
-grid(5, 6, [], [], null).
-grid(5, 7, [south], null, null).
-grid(6, 0, [north], "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", null).
-grid(7, 0, [east, north], null, null).
-grid(7, 1, [east], null, null).
-grid(7, 2, [east], null, null).
-grid(7, 3, [east], null, null).
-grid(7, 4, [east], null, null).
-grid(7, 5, [east], null, null).
-grid(7, 6, [east], null
+dirt([orange, green]).
+
+agent(id1) :- id1 = '9af04778-08d6-4e40-8c6f-ba123d292a22'.
+
+agent(id2) :- id2 = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'.
+
+observe(X, Y, Wall, Dirt, Agent) :-
+    X >= 0, X < N,
+    Y >= 0, Y < N,
+    wall_present(X, Y, Wall),
+    dirt_present(X, Y, Dirt),
+    agent_present(X, Y, Agent).
+
+wall_present(X, Y, north) :-
+    Y = 0, X < N.
+
+wall_present(X, Y, south) :-
+    Y = N - 1, X < N.
+
+wall_present(X, Y, east) :-
+    X = N - 1, Y < N.
+
+wall_present(X, Y, west) :-
+    X = 0, Y < N.
+
+dirt_present(X, Y, orange) :-
+    X >= 0, X < N, Y >= 0, Y < N,
+    ((X == 3), (Y == 0)), true.
+
+dirt_present(X, Y, orange) :-
+    X >= 0, X < N, Y >= 0, Y < N,
+    ((X == 6), (Y == 4)).
+
+dirt_present(X, Y, green) :-
+    X >= 0, X < N, Y >= 0, Y < N,
+    ((X == 5), (Y == 1)).
+
+agent_present(X, Y, id) :-
+    X >= 0, X < N, Y >= 0, Y < N,
+    (id = '9af04778-08d6-4e40-8c6f-ba123d292a22'),
+    (X == 0), (Y == 0).
+
+agent_present(X, Y, id) :-
+    X >= 0, X < N, Y >= 0, Y < N,
+    (id = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c'),
+    (X == 1), (Y == 0).
+
+% Define the grid as a set of observations
+observe_all :-
+    [
+        observe(0, 0, [north, west], null, fail),
+        observe(1, 0, [], null, fail),
+        observe(2, 0, [], null, fail),
+        observe(0, 1, [south, west], null, fail),
+        observe(1, 1, [south], null, fail),
+        observe(2, 1, [south], null, fail),
+        observe(0, 2, [west], null, fail),
+        observe(1, 2, [], null, fail),
+        observe(2, 2, [], null, fail),
+        observe(0, 3, [west], {'agent': '9af04778-08d6-4e40-8c6f-ba123

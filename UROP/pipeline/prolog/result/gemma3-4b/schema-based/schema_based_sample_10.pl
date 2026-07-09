@@ -1,10 +1,10 @@
-grid_size(N).
-grid(X, Y) :- X >= 0, X < N, Y >= 0, Y < N.
-dirt(X, Y, Colour) :- X >= 0, X < N, Y >= 0, Y < N, Colour = 'orange' | Colour = 'green'.
-agent(Id, X, Y, Colour) :- X >= 0, X < N, Y >= 0, Y < N, Colour = 'orange' | Colour = 'green'.
-empty(X,Y) :- X>=0, X<N, Y>=0, Y<N.
+grid_size(5).
+grid(x, y) :- x >= 0, x < 5, y >= 0, y < 5.
+dirt(x, y, colour) :- x >= 0, x < 5, y >= 0, y < 5, colour = orange | colour = green.
+agent(id, x, y, colour) :- x >= 0, x < 5, y >= 0, y < 5, id = '9af04778-08d6-4e40-8c6f-ba123d292a22' | id = '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', colour = orange | colour = green.
+empty(x, y) :- x >= 0, x < 5, y >= 0, y < 5.
 
-wall(X, Y, west) :- X > 0, X < N, Y = 0.
-wall(X, Y, south) :- Y > 0, Y < N, X = 0.
-wall(X, Y, east) :- X > 0, X < N, Y = N - 1.
-wall(X, Y, north) :- Y > 0, Y < N, X = N - 1.
+wall(x, y, west) :- x > 0, x < 5, y >= 0, y < 5.
+wall(x, y, north) :- y > 0, y < 5, x >= 0, x < 5.
+wall(x, y, east) :- x < 4, x >= 0, y >= 0, y < 5.
+wall(x, y, south) :- y < 4, y >= 0, x >= 0, x < 5.
