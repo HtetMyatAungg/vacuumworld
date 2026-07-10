@@ -165,6 +165,10 @@ def call_anthropic(prompt, n, prompt_type="zero-shot"):
     messages = [{"role": "user", "content": prompt}]
     prefix = PROMPT_TYPES[prompt_type]
     file_path = f"UROP/pipeline/prolog/result/claude-sonnet-4.6/{prompt_type}/{prefix}_sample_{n}.pl"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    if os.path.exists(file_path):
+        print(f"claude-sonnet-4.6 [{prompt_type}] sample {n}: file already exists, skipping")
+        return
     for attempt in range(5):
         response = client.messages.create(
             model="claude-sonnet-4-6",
@@ -190,6 +194,10 @@ def call_gemini(prompt, n, prompt_type="zero-shot"):
     contents = [types.Content(role="user", parts=[types.Part.from_text(text=prompt)])]
     prefix = PROMPT_TYPES[prompt_type]
     file_path = f"UROP/pipeline/prolog/result/gemini-2.5-flash/{prompt_type}/{prefix}_sample_{n}.pl"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    if os.path.exists(file_path):
+        print(f"gemini-2.5-flash [{prompt_type}] sample {n}: file already exists, skipping")
+        return
     for attempt in range(5):
         response = client.models.generate_content(
             model="gemini-2.5-flash",
@@ -218,6 +226,10 @@ def call_gemini_small(prompt, n, prompt_type="zero-shot"):
     contents = [types.Content(role="user", parts=[types.Part.from_text(text=prompt)])]
     prefix = PROMPT_TYPES[prompt_type]
     file_path = f"UROP/pipeline/prolog/result/gemini-3.1-flash-lite/{prompt_type}/{prefix}_sample_{n}.pl"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    if os.path.exists(file_path):
+        print(f"gemini-3.1-flash-lite [{prompt_type}] sample {n}: file already exists, skipping")
+        return
     for attempt in range(5):
         response = client.models.generate_content(
             model="gemini-3.1-flash-lite",
@@ -248,6 +260,10 @@ def call_cerebras(prompt, n, prompt_type="zero-shot", model="gemma-4-31b"):
     messages = [{"role": "user", "content": prompt}]
     prefix = PROMPT_TYPES[prompt_type]
     file_path = f"UROP/pipeline/prolog/result/{model}/{prompt_type}/{prefix}_sample_{n}.pl"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    if os.path.exists(file_path):
+        print(f"{model} [{prompt_type}] sample {n}: file already exists, skipping")
+        return
     for attempt in range(5):
         response = client.chat.completions.create(
             model=model,
@@ -275,6 +291,10 @@ def call_deepseek(prompt, n, prompt_type="zero-shot"):
     messages = [{"role": "user", "content": prompt}]
     prefix = PROMPT_TYPES[prompt_type]
     file_path = f"UROP/pipeline/prolog/result/deepseek-V3/{prompt_type}/{prefix}_sample_{n}.pl"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    if os.path.exists(file_path):
+        print(f"deepseek-chat [{prompt_type}] sample {n}: file already exists, skipping")
+        return
     for attempt in range(5):
         response = client.chat.completions.create(
             temperature=1.0,
@@ -302,10 +322,5 @@ prompts = [
 ]
 
 for prompt_type, prompt in prompts:
-    #for n in range(5):
-        n = 5
+    for n in range(1,21):
         call_anthropic(prompt, n, prompt_type)
-        call_gemini(prompt, n, prompt_type)
-        call_gemini_small(prompt, n, prompt_type)
-        call_deepseek(prompt, n, prompt_type)
-        call_cerebras(prompt, n, prompt_type)

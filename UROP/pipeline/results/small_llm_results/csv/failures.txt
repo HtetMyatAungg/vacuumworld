@@ -1,52 +1,13 @@
 content_f1 schema-based gemma2-9b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-checks schema-based qwen2.5-3b sample 8: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-f1 schema-based qwen2.5-3b sample 9: Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:10:
-Warning:    Singleton variables: [Colour]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:19:
-Warning:    Singleton variables: [SuperX,SuperY,WestSuperY,East,NWEastSupersides]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:24:
-Warning:    Singleton variables: [SuperX,SuperY,NE,West,NWWestSupersides]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:29:
-Warning:    Singleton variables: [SuperX,SuperY,NE,SW,NorthSuperX,WestSuperY,SoutheastSuperX,East,NWSuperEastsides]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:34:
-Warning:    Singleton variables: [SuperY,NE,SW,SoutheastSuperX,NorthSuperX,East,NWSuperEwsides]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:39:
-Warning:    Singleton variables: [SuperY,SoutheastSuperX,Y]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:43:
-Warning:    Singleton variables: [X,Y]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:44:
-Warning:    Singleton variables: [SuperAboveX,SuperAboveY,East,E,W,AboveSuperY,AboveSuperX]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:47:
-Warning:    Singleton variables: [X2,Y2]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:53:
-Warning:    Singleton variables: [SuperX,SuperY]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:53:
-Warning:    Clauses of wall_neighbor/3 are not together in the source-file
-Warning:    Earlier definition at /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:39
-Warning:    Current predicate: member/2
-Warning:    Use :- discontiguous wall_neighbor/3. to suppress this message
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:54:
-Warning:    Singleton variables: [SuperY,SuperX]
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:54:
-Warning:    Clauses of above_neighboring_walls/3 are not together in the source-file
-Warning:    Earlier definition at /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:43
-Warning:    Current predicate: wall_neighbor/3
-Warning:    Use :- discontiguous above_neighboring_walls/3. to suppress this message
-Warning: /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:58:
-Warning:    Clauses of member/2 are not together in the source-file
-Warning:    Earlier definition at /home/asus/vacuumworld/UROP/pipeline/prolog/result/qwen2.5-3b/schema-based/schema_based_sample_9.pl:51
-Warning:    Current predicate: above_neighboring_walls/3
-Warning:    Use :- discontiguous member/2. to suppress this message
-ERROR: -g wall_f1_to_csv([3,4,5,6,7,8,9,10,11,12,13], 'UROP/pipeline/results/small_llm_results/csv/f1_N/schema-based-qwen2.5-3b-sample_9.csv'): Stack limit (1.0Gb) exceeded
-ERROR:   Stack sizes: local: 0.8Gb, global: 0.1Gb, trail: 41.0Mb
-ERROR:   Stack depth: 5,368,148, last-call: 0%, Choice points: 5,368,141
-ERROR:   Possible non-terminating recursion:
-ERROR:     [5,368,148] user:member(_110, _112)
-ERROR:     [5,368,147] user:member(<compound ('|')/2>, _132)
-content_f1 schema-based qwen2.5-3b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-f1 schema-based qwen2.5-3b sample 15: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+f1 schema-based qwen2.5-3b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks schema-based qwen2.5-3b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+content_f1 schema-based qwen2.5-3b sample 7: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks schema-based qwen2.5-3b sample 15: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 content_f1 schema-based qwen2.5-3b sample 15: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-checks schema-based qwen2.5-3b sample 17: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks schema-based qwen2.5-3b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+content_f1 schema-based qwen2.5-3b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 f1 one-shot qwen2.5-7b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 checks one-shot qwen2.5-7b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 one-shot qwen2.5-3b sample 12: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks one-shot qwen2.5-3b sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+content_f1 one-shot qwen2.5-3b sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks one-shot qwen2.5-3b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)

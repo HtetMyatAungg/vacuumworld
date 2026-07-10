@@ -62,6 +62,7 @@ cell(4, 7).
 cell(5, 7).
 cell(6, 7).
 cell(7, 7).
+
 wall(0, 6, west).
 wall(0, 7, south).
 wall(0, 7, west).
@@ -94,8 +95,10 @@ wall(7, 5, east).
 wall(7, 6, east).
 wall(7, 7, east).
 wall(7, 7, south).
+
 agent(0, 3, '9af04778-08d6-4e40-8c6f-ba123d292a22', orange).
 agent(4, 0, '02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', green).
+
 dirt(2, 1, orange).
 dirt(3, 4, orange).
 dirt(4, 6, orange).

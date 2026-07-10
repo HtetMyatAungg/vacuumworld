@@ -2,8 +2,8 @@ check,result
 partition,fail
 bounds,fail
 coverage,fail
-implies_grid,pass
+implies_grid,fail
 wall_count,fail
 no_interior_walls,fail
 cell_wall_counts,fail
-all_directions,pass
+all_directions,fail

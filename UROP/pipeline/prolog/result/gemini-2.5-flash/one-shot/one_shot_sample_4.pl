@@ -95,6 +95,7 @@ empty(4,2).
 empty(5,2).
 empty(6,2).
 empty(7,2).
+empty(0,3).
 empty(1,3).
 empty(2,3).
 empty(3,3).
@@ -132,7 +133,7 @@ empty(5,7).
 empty(6,7).
 empty(7,7).
 
-wall(X,0,north) :- grid(X,0).
-wall(X,Y,south) :- grid_size(N), Y is N-1, grid(X,Y).
-wall(0,Y,west) :- grid(0,Y).
-wall(X,Y,east) :- grid_size(N), X is N-1, grid(X,Y).
+wall(X, Y, north) :- grid_size(N), Y = 0, X >= 0, X < N.
+wall(X, Y, south) :- grid_size(N), Y is N - 1, X >= 0, X < N.
+wall(X, Y, west) :- grid_size(N), X = 0, Y >= 0, Y < N.
+wall(X, Y, east) :- grid_size(N), X is N - 1, Y >= 0, Y < N.

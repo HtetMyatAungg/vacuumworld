@@ -3,7 +3,7 @@ partition,pass
 bounds,pass
 coverage,pass
 implies_grid,pass
-wall_count,fail
-no_interior_walls,fail
-cell_wall_counts,fail
+wall_count,pass
+no_interior_walls,pass
+cell_wall_counts,pass
 all_directions,pass

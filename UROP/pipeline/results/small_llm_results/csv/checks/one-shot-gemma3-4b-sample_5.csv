@@ -1,7 +1,7 @@
 check,result
-partition,fail
+partition,pass
 bounds,pass
-coverage,pass
+coverage,fail
 implies_grid,fail
 wall_count,fail
 no_interior_walls,pass

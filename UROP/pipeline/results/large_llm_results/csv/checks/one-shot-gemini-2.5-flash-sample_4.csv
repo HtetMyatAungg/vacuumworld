@@ -1,5 +1,5 @@
 check,result
-partition,pass
+partition,fail
 bounds,pass
 coverage,pass
 implies_grid,pass

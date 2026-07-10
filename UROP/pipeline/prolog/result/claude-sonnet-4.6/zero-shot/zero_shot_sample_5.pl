@@ -1,9 +1,71 @@
-:- discontiguous wall/3.
-:- discontiguous dirt/3.
-:- discontiguous agent/4.
-:- discontiguous empty/2.
+:- dynamic cell/2, dirt/2, agent/3, wall/3.
 
 grid_size(8, 8).
+
+cell(0, 0).
+cell(1, 0).
+cell(2, 0).
+cell(3, 0).
+cell(4, 0).
+cell(5, 0).
+cell(6, 0).
+cell(7, 0).
+cell(0, 1).
+cell(1, 1).
+cell(2, 1).
+cell(3, 1).
+cell(4, 1).
+cell(5, 1).
+cell(6, 1).
+cell(7, 1).
+cell(0, 2).
+cell(1, 2).
+cell(2, 2).
+cell(3, 2).
+cell(4, 2).
+cell(5, 2).
+cell(6, 2).
+cell(7, 2).
+cell(0, 3).
+cell(1, 3).
+cell(2, 3).
+cell(3, 3).
+cell(4, 3).
+cell(5, 3).
+cell(6, 3).
+cell(7, 3).
+cell(0, 4).
+cell(1, 4).
+cell(2, 4).
+cell(3, 4).
+cell(4, 4).
+cell(5, 4).
+cell(6, 4).
+cell(7, 4).
+cell(0, 5).
+cell(1, 5).
+cell(2, 5).
+cell(3, 5).
+cell(4, 5).
+cell(5, 5).
+cell(6, 5).
+cell(7, 5).
+cell(0, 6).
+cell(1, 6).
+cell(2, 6).
+cell(3, 6).
+cell(4, 6).
+cell(5, 6).
+cell(6, 6).
+cell(7, 6).
+cell(0, 7).
+cell(1, 7).
+cell(2, 7).
+cell(3, 7).
+cell(4, 7).
+cell(5, 7).
+cell(6, 7).
+cell(7, 7).
 
 wall(0, 6, west).
 wall(0, 7, south).
@@ -44,63 +106,14 @@ dirt(4, 6, orange).
 dirt(5, 1, green).
 dirt(6, 4, orange).
 
-agent(0, 3, "9af04778-08d6-4e40-8c6f-ba123d292a22", orange).
-agent(4, 0, "02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", green).
+agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 0, 3).
+agent_colour('9af04778-08d6-4e40-8c6f-ba123d292a22', orange).
+agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4, 0).
+agent_colour('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', green).
 
-empty(0, 6).
-empty(1, 6).
-empty(2, 6).
-empty(1, 7).
-empty(2, 7).
-empty(0, 7).
-empty(1, 5).
-empty(2, 5).
-empty(0, 5).
-empty(1, 4).
-empty(2, 4).
-empty(0, 4).
-empty(1, 3).
-empty(2, 3).
-empty(1, 2).
-empty(2, 2).
-empty(0, 2).
-empty(1, 1).
-empty(0, 1).
-empty(1, 0).
-empty(2, 0).
-empty(0, 0).
-empty(3, 0).
-empty(3, 1).
-empty(3, 2).
-empty(3, 3).
-empty(3, 5).
-empty(3, 6).
-empty(3, 7).
-empty(4, 5).
-empty(4, 7).
-empty(4, 4).
-empty(4, 3).
-empty(4, 2).
-empty(4, 1).
-empty(5, 0).
-empty(5, 2).
-empty(5, 3).
-empty(5, 4).
-empty(5, 5).
-empty(5, 6).
-empty(5, 7).
-empty(6, 5).
-empty(6, 6).
-empty(6, 7).
-empty(6, 3).
-empty(6, 2).
-empty(6, 1).
-empty(6, 0).
-empty(7, 0).
-empty(7, 1).
-empty(7, 2).
-empty(7, 3).
-empty(7, 4).
-empty(7, 5).
-empty(7, 6).
-empty(7, 7).
+has_wall(X, Y, Dir) :- wall(X, Y, Dir).
+
+adjacent(X, Y, X1, Y) :- X1 is X + 1, cell(X1, Y), \+ wall(X, Y, east), \+ wall(X1, Y, west).
+adjacent(X, Y, X1, Y) :- X1 is X - 1, cell(X1, Y), \+ wall(X, Y, west), \+ wall(X1, Y, east).
+adjacent(X, Y, X, Y1) :- Y1 is Y + 1, cell(X, Y1), \+ wall(X, Y, south), \+ wall(X, Y1, north).
+adjacent(X, Y, X, Y1) :- Y1 is Y - 1, cell(X, Y1), \+ wall(X, Y, north), \+ wall(X, Y1, south).

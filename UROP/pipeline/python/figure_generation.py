@@ -35,10 +35,10 @@ DATASETS = {
             "claude-sonnet-4.6":     "claude-sonnet-4.6",
             "gemini-2.5-flash":      "gemini-2.5-flash",
             "gemini-3.1-flash-lite": "gemini-3.1-flash-lite",
-            "deepseek-V3":           "deepseek-chat",
+            "deepseek-V3":           "deepseek-V3",
             "gemma-4-31b":           "gemma-4-31b",
         },
-        samples=range(1, 6),
+        samples=range(1, 21),
         label="Large Models",
     ),
     "small": dict(

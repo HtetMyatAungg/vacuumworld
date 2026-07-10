@@ -28,6 +28,6 @@ empty(0,6). empty(1,6). empty(2,6). empty(3,6). empty(5,6). empty(6,6). empty(7,
 empty(0,7). empty(1,7). empty(2,7). empty(3,7). empty(4,7). empty(5,7). empty(6,7). empty(7,7).
 
 wall(X,Y,north) :- grid(X,Y), Y =:= 0.
-wall(X,Y,south) :- grid(X,Y), grid_size(N), Y =:= N-1.
+wall(X,Y,south) :- grid(X,Y), grid_size(N), Y =:= N - 1.
 wall(X,Y,west) :- grid(X,Y), X =:= 0.
-wall(X,Y,east) :- grid(X,Y), grid_size(N), X =:= N-1.
+wall(X,Y,east) :- grid(X,Y), grid_size(N), X =:= N - 1.

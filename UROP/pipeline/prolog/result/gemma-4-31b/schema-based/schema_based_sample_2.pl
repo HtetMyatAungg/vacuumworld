@@ -9,14 +9,14 @@ grid(0,5). grid(1,5). grid(2,5). grid(3,5). grid(4,5). grid(5,5). grid(6,5). gri
 grid(0,6). grid(1,6). grid(2,6). grid(3,6). grid(4,6). grid(5,6). grid(6,6). grid(7,6).
 grid(0,7). grid(1,7). grid(2,7). grid(3,7). grid(4,7). grid(5,7). grid(6,7). grid(7,7).
 
-dirt(2,1,orange).
-dirt(3,4,orange).
-dirt(4,6,orange).
-dirt(6,4,orange).
-dirt(5,1,green).
+dirt(2, 1, orange).
+dirt(3, 4, orange).
+dirt(4, 6, orange).
+dirt(6, 4, orange).
+dirt(5, 1, green).
 
-agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 0, 3, orange).
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4, 0, green).
+agent("9af04778-08d6-4e40-8c6f-ba123d292a22", 0, 3, orange).
+agent("02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", 4, 0, green).
 
 empty(0,0). empty(1,0). empty(2,0). empty(3,0). empty(5,0). empty(6,0). empty(7,0).
 empty(0,1). empty(1,1). empty(3,1). empty(4,1). empty(6,1). empty(7,1).

@@ -1,4 +1,5 @@
 grid_size(8).
+
 grid(0,0). grid(1,0). grid(2,0). grid(3,0). grid(4,0). grid(5,0). grid(6,0). grid(7,0).
 grid(0,1). grid(1,1). grid(2,1). grid(3,1). grid(4,1). grid(5,1). grid(6,1). grid(7,1).
 grid(0,2). grid(1,2). grid(2,2). grid(3,2). grid(4,2). grid(5,2). grid(6,2). grid(7,2).
@@ -14,8 +15,8 @@ dirt(4,6,orange).
 dirt(6,4,orange).
 dirt(5,1,green).
 
-agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 0, 3, orange).
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4, 0, green).
+agent("9af04778-08d6-4e40-8c6f-ba123d292a22",0,3,orange).
+agent("02a6d9ea-8b8e-4750-8000-c3a74a63fd9c",4,0,green).
 
 empty(0,0). empty(1,0). empty(2,0). empty(3,0). empty(5,0). empty(6,0). empty(7,0).
 empty(0,1). empty(1,1). empty(3,1). empty(4,1). empty(6,1). empty(7,1).
@@ -26,7 +27,7 @@ empty(0,5). empty(1,5). empty(2,5). empty(3,5). empty(4,5). empty(5,5). empty(6,
 empty(0,6). empty(1,6). empty(2,6). empty(3,6). empty(5,6). empty(6,6). empty(7,6).
 empty(0,7). empty(1,7). empty(2,7). empty(3,7). empty(4,7). empty(5,7). empty(6,7). empty(7,7).
 
-wall(X, _, west) :- grid_size(N), X = 0.
+wall(X, _, west) :- X = 0.
 wall(X, _, east) :- grid_size(N), X is N - 1.
-wall(_, Y, north) :- grid_size(N), Y = 0.
+wall(_, Y, north) :- Y = 0.
 wall(_, Y, south) :- grid_size(N), Y is N - 1.

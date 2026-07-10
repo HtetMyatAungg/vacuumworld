@@ -1,41 +1,64 @@
-cell(0,7,south).
-cell(0,7,west).
-cell(0,6,west).
-cell(0,5,west).
-cell(0,4,west).
-cell(0,3,west).
-cell(0,2,west).
-cell(0,1,west).
-cell(0,0,north).
-cell(0,0,west).
-cell(1,7,south).
-cell(1,0,north).
-cell(2,7,south).
-cell(2,0,north).
-cell(3,0,north).
-cell(3,7,south).
-cell(4,7,south).
-cell(4,0,north).
-cell(5,0,north).
-cell(5,7,south).
-cell(6,7,south).
-cell(6,0,north).
-cell(7,0,east).
-cell(7,0,north).
-cell(7,1,east).
-cell(7,2,east).
-cell(7,3,east).
-cell(7,4,east).
-cell(7,5,east).
-cell(7,6,east).
-cell(7,7,east).
-cell(7,7,south).
-
-dirt(2,1,orange).
-dirt(3,4,orange).
-dirt(4,6,orange).
-dirt(6,4,orange).
-dirt(5,1,green).
-
-agent(0,3,9af04778-08d6-4e40-8c6f-ba123d292a22,orange).
-agent(4,0,02a6d9ea-8b8e-4750-8000-c3a74a63fd9c,green).
+cell(0, 6, walls: [west], dirt: none, agent: none).
+cell(1, 6, walls: [], dirt: none, agent: none).
+cell(2, 6, walls: [], dirt: none, agent: none).
+cell(0, 7, walls: [south, west], dirt: none, agent: none).
+cell(1, 7, walls: [south], dirt: none, agent: none).
+cell(2, 7, walls: [south], dirt: none, agent: none).
+cell(0, 5, walls: [west], dirt: none, agent: none).
+cell(1, 5, walls: [], dirt: none, agent: none).
+cell(2, 5, walls: [], dirt: none, agent: none).
+cell(0, 4, walls: [west], dirt: none, agent: none).
+cell(1, 4, walls: [], dirt: none, agent: none).
+cell(2, 4, walls: [], dirt: none, agent: none).
+cell(0, 3, walls: [west], dirt: none, agent: agent('9af04778-08d6-4e40-8c6f-ba123d292a22', orange)).
+cell(1, 3, walls: [], dirt: none, agent: none).
+cell(2, 3, walls: [], dirt: none, agent: none).
+cell(0, 2, walls: [west], dirt: none, agent: none).
+cell(1, 2, walls: [], dirt: none, agent: none).
+cell(2, 2, walls: [], dirt: none, agent: none).
+cell(0, 1, walls: [west], dirt: none, agent: none).
+cell(1, 1, walls: [], dirt: none, agent: none).
+cell(2, 1, walls: [], dirt: orange, agent: none).
+cell(0, 0, walls: [north, west], dirt: none, agent: none).
+cell(1, 0, walls: [north], dirt: none, agent: none).
+cell(2, 0, walls: [north], dirt: none, agent: none).
+cell(3, 0, walls: [north], dirt: none, agent: none).
+cell(3, 1, walls: [], dirt: none, agent: none).
+cell(3, 2, walls: [], dirt: none, agent: none).
+cell(3, 3, walls: [], dirt: none, agent: none).
+cell(3, 4, walls: [], dirt: orange, agent: none).
+cell(3, 5, walls: [], dirt: none, agent: none).
+cell(3, 6, walls: [], dirt: none, agent: none).
+cell(3, 7, walls: [south], dirt: none, agent: none).
+cell(4, 5, walls: [], dirt: none, agent: none).
+cell(4, 6, walls: [], dirt: orange, agent: none).
+cell(4, 7, walls: [south], dirt: none, agent: none).
+cell(4, 4, walls: [], dirt: none, agent: none).
+cell(4, 3, walls: [], dirt: none, agent: none).
+cell(4, 2, walls: [], dirt: none, agent: none).
+cell(4, 1, walls: [], dirt: none, agent: none).
+cell(4, 0, walls: [north], dirt: none, agent: agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', green)).
+cell(5, 0, walls: [north], dirt: none, agent: none).
+cell(5, 1, walls: [], dirt: green, agent: none).
+cell(5, 2, walls: [], dirt: none, agent: none).
+cell(5, 3, walls: [], dirt: none, agent: none).
+cell(5, 4, walls: [], dirt: none, agent: none).
+cell(5, 5, walls: [], dirt: none, agent: none).
+cell(5, 6, walls: [], dirt: none, agent: none).
+cell(5, 7, walls: [south], dirt: none, agent: none).
+cell(6, 5, walls: [], dirt: none, agent: none).
+cell(6, 6, walls: [], dirt: none, agent: none).
+cell(6, 7, walls: [south], dirt: none, agent: none).
+cell(6, 4, walls: [], dirt: orange, agent: none).
+cell(6, 3, walls: [], dirt: none, agent: none).
+cell(6, 2, walls: [], dirt: none, agent: none).
+cell(6, 1, walls: [], dirt: none, agent: none).
+cell(6, 0, walls: [north], dirt: none, agent: none).
+cell(7, 0, walls: [east, north], dirt: none, agent: none).
+cell(7, 1, walls: [east], dirt: none, agent: none).
+cell(7, 2, walls: [east], dirt: none, agent: none).
+cell(7, 3, walls: [east], dirt: none, agent: none).
+cell(7, 4, walls: [east], dirt: none, agent: none).
+cell(7, 5, walls: [east], dirt: none, agent: none).
+cell(7, 6, walls: [east], dirt: none, agent: none).
+cell(7, 7, walls: [east, south], dirt: none, agent: none).

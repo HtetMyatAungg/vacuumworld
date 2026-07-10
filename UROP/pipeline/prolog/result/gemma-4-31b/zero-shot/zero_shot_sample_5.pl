@@ -2,7 +2,7 @@ cell(0, 0, empty).
 cell(1, 0, empty).
 cell(2, 0, empty).
 cell(3, 0, empty).
-cell(4, 0, agent(green)).
+cell(4, 0, agent("02a6d9ea-8b8e-4750-8000-c3a74a63fd9c", green)).
 cell(5, 0, empty).
 cell(6, 0, empty).
 cell(7, 0, empty).
@@ -22,7 +22,7 @@ cell(4, 2, empty).
 cell(5, 2, empty).
 cell(6, 2, empty).
 cell(7, 2, empty).
-cell(0, 3, agent(orange)).
+cell(0, 3, agent("9af04778-08d6-4e40-8c6f-ba123d292a22", orange)).
 cell(1, 3, empty).
 cell(2, 3, empty).
 cell(3, 3, empty).

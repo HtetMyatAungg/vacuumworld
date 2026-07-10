@@ -132,7 +132,7 @@ empty(5,7).
 empty(6,7).
 empty(7,7).
 
-wall(X,Y, north) :- grid_size(N), Y =:= 0, X >= 0, X < N.
-wall(X,Y, south) :- grid_size(N), Y =:= N - 1, X >= 0, X < N.
-wall(X,Y, west) :- grid_size(N), X =:= 0, Y >= 0, Y < N.
-wall(X,Y, east) :- grid_size(N), X =:= N - 1, Y >= 0, Y < N.
+wall(X, Y, north) :- grid_size(N), Y =:= 0, X >= 0, X < N.
+wall(X, Y, south) :- grid_size(N), Y =:= N - 1, X >= 0, X < N.
+wall(X, Y, west) :- grid_size(N), X =:= 0, Y >= 0, Y < N.
+wall(X, Y, east) :- grid_size(N), X =:= N - 1, Y >= 0, Y < N.

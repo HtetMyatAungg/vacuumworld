@@ -68,66 +68,67 @@ dirt(3,4, orange).
 dirt(4,6, orange).
 dirt(6,4, orange).
 dirt(5,1, green).
-agent('9af04778-08d6-4e40-8c6f-ba123d292a22', 0,3, orange).
-agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c', 4,0, green).
-empty(0,6).
-empty(1,6).
-empty(2,6).
-empty(0,7).
-empty(1,7).
-empty(2,7).
-empty(0,5).
-empty(1,5).
-empty(2,5).
-empty(0,4).
-empty(1,4).
-empty(2,4).
-empty(1,3).
-empty(2,3).
-empty(0,2).
-empty(1,2).
-empty(2,2).
-empty(0,1).
-empty(1,1).
+agent('9af04778-08d6-4e40-8c6f-ba123d292a22',0,3, orange).
+agent('02a6d9ea-8b8e-4750-8000-c3a74a63fd9c',4,0, green).
 empty(0,0).
 empty(1,0).
 empty(2,0).
 empty(3,0).
-empty(3,1).
-empty(3,2).
-empty(3,3).
-empty(3,5).
-empty(3,6).
-empty(3,7).
-empty(4,5).
-empty(4,7).
-empty(4,4).
-empty(4,3).
-empty(4,2).
-empty(4,1).
 empty(5,0).
-empty(5,2).
-empty(5,3).
-empty(5,4).
-empty(5,5).
-empty(5,6).
-empty(5,7).
-empty(6,5).
-empty(6,6).
-empty(6,7).
-empty(6,3).
-empty(6,2).
-empty(6,1).
 empty(6,0).
 empty(7,0).
+empty(0,1).
+empty(1,1).
+empty(3,1).
+empty(4,1).
+empty(6,1).
 empty(7,1).
+empty(0,2).
+empty(1,2).
+empty(2,2).
+empty(3,2).
+empty(4,2).
+empty(5,2).
+empty(6,2).
 empty(7,2).
+empty(0,3).
+empty(1,3).
+empty(2,3).
+empty(3,3).
+empty(4,3).
+empty(5,3).
+empty(6,3).
 empty(7,3).
+empty(0,4).
+empty(1,4).
+empty(2,4).
+empty(4,4).
+empty(5,4).
 empty(7,4).
+empty(0,5).
+empty(1,5).
+empty(2,5).
+empty(3,5).
+empty(4,5).
+empty(5,5).
+empty(6,5).
 empty(7,5).
+empty(0,6).
+empty(1,6).
+empty(2,6).
+empty(3,6).
+empty(5,6).
+empty(6,6).
 empty(7,6).
+empty(0,7).
+empty(1,7).
+empty(2,7).
+empty(3,7).
+empty(4,7).
+empty(5,7).
+empty(6,7).
 empty(7,7).
-wall(X,Y, north) :- grid(X,Y), Y =:= 0.
-wall(X,Y, south) :- grid(X,Y), grid_size(N), Y =:= N-1.
-wall(X,Y, west) :- grid(X,Y), X =:= 0.
-wall(X,Y, east) :- grid(X,Y), grid_size(N), X =:= N-1.
+wall(X,Y,north) :- X>=0, Y=0, X<8.
+wall(X,Y,south) :- X>=0, Y=7, X<8.
+wall(X,Y,west) :- Y>=0, X=0, Y<8.
+wall(X,Y,east) :- Y>=0, X=7, Y<8.

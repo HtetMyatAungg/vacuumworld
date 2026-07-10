@@ -1,7 +1,7 @@
-:- dynamic cell/2.
-:- dynamic wall/3.
-:- dynamic dirt/3.
-:- dynamic agent/4.
+:- discontiguous wall/3.
+:- discontiguous dirt/3.
+:- discontiguous agent/4.
+:- discontiguous cell/2.
 
 cell(0,6).
 cell(1,6).
@@ -109,10 +109,3 @@ dirt(6,4,orange).
 
 agent(0,3,'9af04778-08d6-4e40-8c6f-ba123d292a22',orange).
 agent(4,0,'02a6d9ea-8b8e-4750-8000-c3a74a63fd9c',green).
-
-grid_size(8,8).
-
-adjacent(X,Y,east,X1,Y) :- X1 is X+1, cell(X1,Y), \+ wall(X,Y,east), \+ wall(X1,Y,west).
-adjacent(X,Y,west,X1,Y) :- X1 is X-1, cell(X1,Y), \+ wall(X,Y,west), \+ wall(X1,Y,east).
-adjacent(X,Y,south,X,Y1) :- Y1 is Y+1, cell(X,Y1), \+ wall(X,Y,south), \+ wall(X,Y1,north).
-adjacent(X,Y,north,X,Y1) :- Y1 is Y-1, cell(X,Y1), \+ wall(X,Y,north), \+ wall(X,Y1,south).

@@ -73,5 +73,5 @@ def export_all(models, sample_range, csv_dir):
                 )
 
 
-# export_all(large_models, range(1, 6), "UROP/pipeline/results/large_llm_results/csv")
+export_all(large_models, range(1, 21), "UROP/pipeline/results/large_llm_results/csv")
 export_all(small_models, range(1, 21), "UROP/pipeline/results/small_llm_results/csv")

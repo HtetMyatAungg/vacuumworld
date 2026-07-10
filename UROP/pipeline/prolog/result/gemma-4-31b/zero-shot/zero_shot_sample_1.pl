@@ -1,42 +1,15 @@
-wall(0,0,north).
-wall(0,0,west).
-wall(1,0,north).
-wall(2,0,north).
-wall(3,0,north).
-wall(4,0,north).
-wall(5,0,north).
-wall(6,0,north).
-wall(7,0,north).
-wall(7,0,east).
-wall(7,1,east).
-wall(7,2,east).
-wall(7,3,east).
-wall(7,4,east).
-wall(7,5,east).
-wall(7,6,east).
-wall(7,7,east).
-wall(7,7,south).
-wall(6,7,south).
-wall(5,7,south).
-wall(4,7,south).
-wall(3,7,south).
-wall(2,7,south).
-wall(1,7,south).
-wall(0,7,south).
-wall(0,7,west).
-wall(0,6,west).
-wall(0,5,west).
-wall(0,4,west).
-wall(0,3,west).
-wall(0,2,west).
-wall(0,1,west).
-wall(0,0,west).
+grid_size(8, 8).
 
-dirt(2,1,orange).
-dirt(3,4,orange).
-dirt(4,6,orange).
-dirt(6,4,orange).
-dirt(5,1,green).
+dirt(2, 1, orange).
+dirt(3, 4, orange).
+dirt(4, 6, orange).
+dirt(6, 4, orange).
+dirt(5, 1, green).
 
-agent(0,3,orange).
-agent(4,0,green).
+agent(0, 3, orange).
+agent(4, 0, green).
+
+wall(X, 0, north) :- member(X, [0, 1, 2, 3, 4, 5, 6, 7]).
+wall(X, 7, south) :- member(X, [0, 1, 2, 3, 4, 5, 6, 7]).
+wall(0, Y, west) :- member(Y, [0, 1, 2, 3, 4, 5, 6, 7]).
+wall(7, Y, east) :- member(Y, [0, 1, 2, 3, 4, 5, 6, 7]).
