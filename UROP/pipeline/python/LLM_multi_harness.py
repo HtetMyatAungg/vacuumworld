@@ -15,7 +15,7 @@ zero_shot_prompt = f"""
 You are translating observations from a square grid environment into Prolog.
 
 Below is a deduplicated percept log from an agent that swept every cell of an N×N grid.
-Each entry records a coordinate, any walls detected, and whether dirt or an agent was present.
+Each entry records a coordinate, whether dirt or an agent was present.
 
 Coordinate system:
 - (X, Y) where X = column (east increases), Y = row (south increases)
@@ -24,6 +24,24 @@ Coordinate system:
 Percept log:
 {percepts}
 
+Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents (dirt, agents, empty location), and boundary wall rules. Retain any location along with the type of content observed there, whenever that content is non-empty.
+No markdown, no comments, no explanation.
+"""
+
+zero_shot_instruction_prompt = f"""
+You are translating observations from a square grid environment into Prolog.
+
+Below is a deduplicated percept log from an agent that swept every cell of an N×N grid.
+Each entry records a coordinate, whether dirt or an agent was present.
+
+Coordinate system:
+- (X, Y) where X = column (east increases), Y = row (south increases)
+- (0, 0) is the north-west corner
+
+Percept log:
+{percepts}
+
+(Boundary wall rules are not shown — you must derive them yourself for the percept log above, generalised to work for any grid size.)
 Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents (dirt, agents, empty location), and boundary wall rules. Retain any location along with the type of content observed there, whenever that content is non-empty.
 No markdown, no comments, no explanation.
 """
@@ -133,9 +151,8 @@ Start your response with the first Prolog fact and end with the last.
 """
 
 PROMPT_TYPES = {
-    "zero-shot":    "zero_shot",
-    "schema-based": "schema_based",
-    "one-shot":     "one_shot",
+    "zero-shot":             "zero_shot",
+    "zero-shot-instruction": "zero_shot_instruction",
 }
 
 def write_repair_log(model, prompt_type, n, attempt, status):
@@ -343,9 +360,8 @@ def call_openai(prompt, n, prompt_type="zero-shot"):
     print(f"gpt-5.1 [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
 prompts = [
-    ("zero-shot",    zero_shot_prompt),
-    ("schema-based", schema_prompt),
-    ("one-shot",     one_shot_prompt),
+    ("zero-shot",             zero_shot_prompt),
+    ("zero-shot-instruction", zero_shot_instruction_prompt),
 ]
 
 runners = [
