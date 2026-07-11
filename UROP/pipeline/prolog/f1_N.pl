@@ -5,6 +5,13 @@ direction(south).
 direction(east).
 direction(west).
 
+% Under the fixed (0,0)=NW-corner convention, north (Y=0) and west (X=0)
+% facts are identical at every grid size, so crediting them at N != true_N
+% rewards coordinate coincidence rather than a generalizing rule. Only
+% south/east move with N, so only they carry generalization signal.
+scored_direction(south).
+scored_direction(east).
+
 model_seen(loc(X, Y)) :- grid(X, Y).
 
 sound    :- forall(model_seen(F), oracle(F)).
@@ -23,7 +30,7 @@ predicted_walls(N, Walls) :-
     N1 is N - 1,
     findall(wall(X, Y, D), (
         between(0, N1, X), between(0, N1, Y),
-        direction(D),
+        scored_direction(D),
         wall(X, Y, D)
     ), Ws),
     sort(Ws, Walls).
@@ -32,10 +39,8 @@ oracle_walls(N, Walls) :-
     N1 is N - 1,
     findall(wall(X, Y, D), (
         between(0, N1, X), between(0, N1, Y),
-        direction(D),
-        (D = north, Y =:= 0 ;
-         D = south, Y =:= N1 ;
-         D = west,  X =:= 0 ;
+        scored_direction(D),
+        (D = south, Y =:= N1 ;
          D = east,  X =:= N1)
     ), Ws),
     sort(Ws, Walls).

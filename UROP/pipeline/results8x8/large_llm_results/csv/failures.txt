@@ -1,1 +1,4 @@
+checks zero-shot claude-sonnet-4.6 sample 6: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks zero-shot claude-sonnet-4.6 sample 13: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+content_f1 zero-shot claude-sonnet-4.6 sample 13: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 f1 zero-shot gpt-5.1 sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
