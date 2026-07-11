@@ -1,7 +1,7 @@
 % Content F1 evaluation against oracle from 8x8 sweep.
 % Load alongside LLM output: swipl -l content_f1.pl -l <llm_file> -g content_f1_report -t halt
 
-:- consult('UROP/pipeline/prolog/f1_eval.pl').
+:- consult('UROP/pipeline/prolog/f1_eval5x5.pl').
 
 :- dynamic dirt/3, agent/4, empty/2.
 

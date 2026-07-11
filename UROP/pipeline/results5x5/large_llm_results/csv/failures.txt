@@ -1,0 +1,4 @@
+f1 schema-based gemma-4-31b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks schema-based gemma-4-31b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+f1 schema-based gemma-4-31b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
+checks schema-based gemma-4-31b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)

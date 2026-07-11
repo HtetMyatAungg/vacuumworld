@@ -63,7 +63,7 @@ class MyMind(VWActorMindSurrogate):
             "grid": {s: cell_info(getters[s]()) for s in slots},
         })
 
-        with open("UROP/pipeline/Percepts/event_percepts.json", "w") as f:
+        with open("UROP/pipeline/Percepts/event_percepts5x5.json", "w") as f:
             json.dump(self.percepts, f, indent=2)
 
     @override
