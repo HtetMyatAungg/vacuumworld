@@ -1,0 +1,9 @@
+check,result
+partition,fail
+bounds,fail
+coverage,fail
+implies_grid,fail
+wall_count,pass
+no_interior_walls,pass
+cell_wall_counts,pass
+all_directions,pass

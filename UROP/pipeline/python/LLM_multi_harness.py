@@ -8,7 +8,7 @@ import os
 
 dotenv.load_dotenv()
 
-with open("UROP/pipeline/Percepts/World_Model_percepts5x5.json", "r") as json:
+with open("UROP/pipeline/Percepts/World_Model_percepts11x11.json", "r") as json:
     percepts = json.read()
 
 zero_shot_prompt = f"""
@@ -342,103 +342,6 @@ def call_openai(prompt, n, prompt_type="zero-shot"):
         messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
     print(f"gpt-5.1 [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
 
-
-def call_grok(prompt, n, prompt_type="zero-shot"):
-    client = OpenAI(
-        api_key=os.environ.get('XAI_API_KEY'),
-        base_url="https://api.x.ai/v1"
-    )
-    messages = [{"role": "user", "content": prompt}]
-    prefix = PROMPT_TYPES[prompt_type]
-    file_path = f"UROP/pipeline/prolog/result/grok-4/{prompt_type}/{prefix}_sample_{n}.pl"
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    if os.path.exists(file_path):
-        print(f"grok-4 [{prompt_type}] sample {n}: file already exists, skipping")
-        return
-    for attempt in range(5):
-        response = client.chat.completions.create(
-            temperature=1.0,
-            model="grok-4",
-            max_tokens=4096,
-            messages=messages
-        )
-        code = strip_markdown(response.choices[0].message.content)
-        with open(file_path, "w") as f:
-            f.write(code)
-        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
-        if result.returncode == 0:
-            write_repair_log("grok-4", prompt_type, n, attempt, "SUCCESS")
-            break
-        write_repair_log("grok-4", prompt_type, n, attempt, "FAIL")
-        messages.append({"role": "assistant", "content": code})
-        messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"grok-4 [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
-
-
-def call_mistral(prompt, n, prompt_type="zero-shot"):
-    client = OpenAI(
-        api_key=os.environ.get('MISTRAL_API_KEY'),
-        base_url="https://api.mistral.ai/v1"
-    )
-    messages = [{"role": "user", "content": prompt}]
-    prefix = PROMPT_TYPES[prompt_type]
-    file_path = f"UROP/pipeline/prolog/result/mistral-large/{prompt_type}/{prefix}_sample_{n}.pl"
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    if os.path.exists(file_path):
-        print(f"mistral-large [{prompt_type}] sample {n}: file already exists, skipping")
-        return
-    for attempt in range(5):
-        response = client.chat.completions.create(
-            temperature=1.0,
-            model="mistral-large-latest",
-            max_tokens=4096,
-            messages=messages
-        )
-        code = strip_markdown(response.choices[0].message.content)
-        with open(file_path, "w") as f:
-            f.write(code)
-        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
-        if result.returncode == 0:
-            write_repair_log("mistral-large", prompt_type, n, attempt, "SUCCESS")
-            break
-        write_repair_log("mistral-large", prompt_type, n, attempt, "FAIL")
-        messages.append({"role": "assistant", "content": code})
-        messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"mistral-large [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
-
-
-def call_groq(prompt, n, prompt_type="zero-shot", model="llama-3.3-70b-versatile"):
-    client = OpenAI(
-        api_key=os.environ.get('GROQ_API_KEY'),
-        base_url="https://api.groq.com/openai/v1"
-    )
-    messages = [{"role": "user", "content": prompt}]
-    prefix = PROMPT_TYPES[prompt_type]
-    file_path = f"UROP/pipeline/prolog/result/{model}/{prompt_type}/{prefix}_sample_{n}.pl"
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    if os.path.exists(file_path):
-        print(f"{model} [{prompt_type}] sample {n}: file already exists, skipping")
-        return
-    for attempt in range(5):
-        response = client.chat.completions.create(
-            temperature=1.0,
-            model=model,
-            max_tokens=4096,
-            messages=messages
-        )
-        code = strip_markdown(response.choices[0].message.content)
-        with open(file_path, "w") as f:
-            f.write(code)
-        result = subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
-        if result.returncode == 0:
-            write_repair_log(model, prompt_type, n, attempt, "SUCCESS")
-            break
-        write_repair_log(model, prompt_type, n, attempt, "FAIL")
-        messages.append({"role": "assistant", "content": code})
-        messages.append({"role": "user", "content": f"This Prolog has a syntax error:\n{result.stderr}\nFix it and return the complete corrected Prolog. No markdown, no explanation."})
-    print(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {'PASS' if result.returncode == 0 else 'FAIL'}")
-
-
 prompts = [
     ("zero-shot",    zero_shot_prompt),
     ("schema-based", schema_prompt),
@@ -446,8 +349,12 @@ prompts = [
 ]
 
 runners = [
+    call_anthropic,
+    call_gemini,
+    call_gemini_small,
     call_cerebras,
     call_deepseek,
+    call_openai
 ]
 
 for call in runners:

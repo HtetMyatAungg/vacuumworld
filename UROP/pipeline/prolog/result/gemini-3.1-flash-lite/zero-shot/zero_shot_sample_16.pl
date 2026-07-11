@@ -1,53 +1,53 @@
-cell(0, 3).
-cell(1, 3).
-cell(2, 3).
-cell(0, 4).
-cell(1, 4).
-cell(2, 4).
-cell(0, 2).
-cell(1, 2).
-cell(2, 2).
-cell(0, 1).
-cell(1, 1).
-cell(2, 1).
-cell(0, 0).
-cell(1, 0).
-cell(2, 0).
-cell(3, 0).
-cell(3, 1).
-cell(3, 2).
-cell(3, 3).
-cell(3, 4).
-cell(4, 2).
-cell(4, 3).
-cell(4, 4).
-cell(4, 1).
-cell(4, 0).
-
-wall(0, 3, west).
-wall(0, 4, south).
-wall(0, 4, west).
-wall(1, 4, south).
-wall(2, 4, south).
-wall(0, 2, west).
-wall(0, 1, west).
-wall(0, 0, north).
-wall(0, 0, west).
-wall(1, 0, north).
-wall(2, 0, north).
-wall(3, 0, north).
-wall(3, 4, south).
-wall(4, 2, east).
-wall(4, 3, east).
-wall(4, 4, east).
-wall(4, 4, south).
-wall(4, 1, east).
-wall(4, 0, east).
-wall(4, 0, north).
-
-dirt(2, 3, orange).
-dirt(1, 2, green).
-dirt(3, 1, orange).
-
-agent(2, 0, 'c942b0ce-6c70-4311-a5b7-6b2640fe417c', green).
-agent(4, 2, 'ec1d58f6-6db4-473d-af3e-518ca49c39f9', orange).
+at(0, 9, wall(west)).
+at(0, 10, wall(south)).
+at(0, 10, wall(west)).
+at(1, 10, wall(south)).
+at(2, 10, wall(south)).
+at(0, 8, wall(west)).
+at(0, 7, wall(west)).
+at(0, 6, wall(west)).
+at(0, 5, wall(west)).
+at(0, 4, wall(west)).
+at(1, 4, dirt(orange)).
+at(0, 3, wall(west)).
+at(0, 2, wall(west)).
+at(0, 1, wall(west)).
+at(0, 0, wall(north)).
+at(0, 0, wall(west)).
+at(1, 0, wall(north)).
+at(1, 0, agent(d3af9897-9139-4ffe-8a15-2e9c6f06e71a, orange)).
+at(2, 0, wall(north)).
+at(3, 0, wall(north)).
+at(3, 3, dirt(orange)).
+at(3, 6, dirt(orange)).
+at(3, 10, wall(south)).
+at(4, 10, wall(south)).
+at(4, 0, wall(north)).
+at(5, 0, wall(north)).
+at(5, 0, agent(d6428e63-73b7-40a5-9cc9-ea3b5e61a86d, green)).
+at(5, 7, dirt(orange)).
+at(5, 10, wall(south)).
+at(6, 10, wall(south)).
+at(6, 0, wall(north)).
+at(7, 0, wall(north)).
+at(7, 5, dirt(green)).
+at(7, 10, wall(south)).
+at(8, 10, wall(south)).
+at(8, 0, wall(north)).
+at(9, 0, wall(north)).
+at(9, 2, dirt(green)).
+at(9, 7, dirt(green)).
+at(9, 10, wall(south)).
+at(10, 8, wall(east)).
+at(10, 9, wall(east)).
+at(10, 10, wall(east)).
+at(10, 10, wall(south)).
+at(10, 7, wall(east)).
+at(10, 6, wall(east)).
+at(10, 5, wall(east)).
+at(10, 4, wall(east)).
+at(10, 3, wall(east)).
+at(10, 2, wall(east)).
+at(10, 1, wall(east)).
+at(10, 0, wall(east)).
+at(10, 0, wall(north)).

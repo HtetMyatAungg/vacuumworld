@@ -1,26 +1,249 @@
-grid_size(5).
-wall(0, 3, west).
-wall(0, 4, south).
+wall(0, 9, west).
+wall(1, 9, none).
+wall(2, 9, none).
+wall(0, 10, south).
+wall(0, 10, west).
+wall(1, 10, south).
+wall(2, 10, south).
+wall(0, 8, west).
+wall(1, 8, none).
+wall(2, 8, none).
+wall(0, 7, west).
+wall(1, 7, none).
+wall(2, 7, none).
+wall(0, 6, west).
+wall(1, 6, none).
+wall(2, 6, none).
+wall(0, 5, west).
+wall(1, 5, none).
+wall(2, 5, none).
 wall(0, 4, west).
-wall(1, 4, south).
-wall(2, 4, south).
+wall(1, 4, none).
+wall(2, 4, none).
+wall(0, 3, west).
+wall(1, 3, none).
+wall(2, 3, none).
 wall(0, 2, west).
+wall(1, 2, none).
+wall(2, 2, none).
 wall(0, 1, west).
+wall(1, 1, none).
+wall(2, 1, none).
 wall(0, 0, north).
 wall(0, 0, west).
 wall(1, 0, north).
 wall(2, 0, north).
 wall(3, 0, north).
-wall(3, 4, south).
-wall(4, 2, east).
-wall(4, 3, east).
-wall(4, 4, east).
-wall(4, 4, south).
-wall(4, 1, east).
-wall(4, 0, east).
+wall(3, 1, none).
+wall(3, 2, none).
+wall(3, 3, none).
+wall(3, 4, none).
+wall(3, 5, none).
+wall(3, 6, none).
+wall(3, 7, none).
+wall(3, 8, none).
+wall(3, 9, none).
+wall(3, 10, south).
+wall(4, 8, none).
+wall(4, 9, none).
+wall(4, 10, south).
+wall(4, 7, none).
+wall(4, 6, none).
+wall(4, 5, none).
+wall(4, 4, none).
+wall(4, 3, none).
+wall(4, 2, none).
+wall(4, 1, none).
 wall(4, 0, north).
-dirt(2, 3, orange).
-dirt(1, 2, green).
-dirt(3, 1, orange).
-agent(2, 0, 'c942b0ce-6c70-4311-a5b7-6b2640fe417c', green).
-agent(4, 2, 'ec1d58f6-6db4-473d-af3e-518ca49c39f9', orange).
+wall(5, 0, north).
+wall(5, 1, none).
+wall(5, 2, none).
+wall(5, 3, none).
+wall(5, 4, none).
+wall(5, 5, none).
+wall(5, 6, none).
+wall(5, 7, none).
+wall(5, 8, none).
+wall(5, 9, none).
+wall(5, 10, south).
+wall(6, 8, none).
+wall(6, 9, none).
+wall(6, 10, south).
+wall(6, 7, none).
+wall(6, 6, none).
+wall(6, 5, none).
+wall(6, 4, none).
+wall(6, 3, none).
+wall(6, 2, none).
+wall(6, 1, none).
+wall(6, 0, north).
+wall(7, 0, north).
+wall(7, 1, none).
+wall(7, 2, none).
+wall(7, 3, none).
+wall(7, 4, none).
+wall(7, 5, none).
+wall(7, 6, none).
+wall(7, 7, none).
+wall(7, 8, none).
+wall(7, 9, none).
+wall(7, 10, south).
+wall(8, 8, none).
+wall(8, 9, none).
+wall(8, 10, south).
+wall(8, 7, none).
+wall(8, 6, none).
+wall(8, 5, none).
+wall(8, 4, none).
+wall(8, 3, none).
+wall(8, 2, none).
+wall(8, 1, none).
+wall(8, 0, north).
+wall(9, 0, north).
+wall(9, 1, none).
+wall(9, 2, none).
+wall(9, 3, none).
+wall(9, 4, none).
+wall(9, 5, none).
+wall(9, 6, none).
+wall(9, 7, none).
+wall(9, 8, none).
+wall(9, 9, none).
+wall(9, 10, south).
+wall(10, 8, east).
+wall(10, 9, east).
+wall(10, 10, east).
+wall(10, 10, south).
+wall(10, 7, east).
+wall(10, 6, east).
+wall(10, 5, east).
+wall(10, 4, east).
+wall(10, 3, east).
+wall(10, 2, east).
+wall(10, 1, east).
+wall(10, 0, east).
+wall(10, 0, north).
+
+dirt(1, 4, orange).
+dirt(3, 3, orange).
+dirt(3, 6, orange).
+dirt(5, 7, orange).
+dirt(7, 5, green).
+dirt(9, 2, green).
+dirt(9, 7, green).
+
+agent(1, 0, 'd3af9897-9139-4ffe-8a15-2e9c6f06e71a', orange).
+agent(5, 0, 'd6428e63-73b7-40a5-9cc9-ea3b5e61a86d', green).
+
+empty_cell(0, 0).
+empty_cell(0, 1).
+empty_cell(0, 2).
+empty_cell(0, 3).
+empty_cell(0, 4).
+empty_cell(0, 5).
+empty_cell(0, 6).
+empty_cell(0, 7).
+empty_cell(0, 8).
+empty_cell(0, 9).
+empty_cell(0, 10).
+empty_cell(1, 1).
+empty_cell(1, 2).
+empty_cell(1, 3).
+empty_cell(1, 5).
+empty_cell(1, 6).
+empty_cell(1, 7).
+empty_cell(1, 8).
+empty_cell(1, 9).
+empty_cell(1, 10).
+empty_cell(2, 0).
+empty_cell(2, 1).
+empty_cell(2, 2).
+empty_cell(2, 3).
+empty_cell(2, 4).
+empty_cell(2, 5).
+empty_cell(2, 6).
+empty_cell(2, 7).
+empty_cell(2, 8).
+empty_cell(2, 9).
+empty_cell(2, 10).
+empty_cell(3, 0).
+empty_cell(3, 1).
+empty_cell(3, 2).
+empty_cell(3, 4).
+empty_cell(3, 5).
+empty_cell(3, 7).
+empty_cell(3, 8).
+empty_cell(3, 9).
+empty_cell(3, 10).
+empty_cell(4, 0).
+empty_cell(4, 1).
+empty_cell(4, 2).
+empty_cell(4, 3).
+empty_cell(4, 4).
+empty_cell(4, 5).
+empty_cell(4, 6).
+empty_cell(4, 7).
+empty_cell(4, 8).
+empty_cell(4, 9).
+empty_cell(4, 10).
+empty_cell(5, 1).
+empty_cell(5, 2).
+empty_cell(5, 3).
+empty_cell(5, 4).
+empty_cell(5, 5).
+empty_cell(5, 6).
+empty_cell(5, 8).
+empty_cell(5, 9).
+empty_cell(5, 10).
+empty_cell(6, 0).
+empty_cell(6, 1).
+empty_cell(6, 2).
+empty_cell(6, 3).
+empty_cell(6, 4).
+empty_cell(6, 5).
+empty_cell(6, 6).
+empty_cell(6, 7).
+empty_cell(6, 8).
+empty_cell(6, 9).
+empty_cell(6, 10).
+empty_cell(7, 0).
+empty_cell(7, 1).
+empty_cell(7, 2).
+empty_cell(7, 3).
+empty_cell(7, 4).
+empty_cell(7, 6).
+empty_cell(7, 7).
+empty_cell(7, 8).
+empty_cell(7, 9).
+empty_cell(7, 10).
+empty_cell(8, 0).
+empty_cell(8, 1).
+empty_cell(8, 2).
+empty_cell(8, 3).
+empty_cell(8, 4).
+empty_cell(8, 5).
+empty_cell(8, 6).
+empty_cell(8, 7).
+empty_cell(8, 8).
+empty_cell(8, 9).
+empty_cell(8, 10).
+empty_cell(9, 0).
+empty_cell(9, 1).
+empty_cell(9, 3).
+empty_cell(9, 4).
+empty_cell(9, 5).
+empty_cell(9, 6).
+empty_cell(9, 8).
+empty_cell(9, 9).
+empty_cell(9, 10).
+empty_cell(10, 0).
+empty_cell(10, 1).
+empty_cell(10, 2).
+empty_cell(10, 3).
+empty_cell(10, 4).
+empty_cell(10, 5).
+empty_cell(10, 6).
+empty_cell(10, 7).
+empty_cell(10, 8).
+empty_cell(10, 9).
+empty_cell(10, 10).

@@ -1,26 +1,121 @@
-cell_with_content(2,3,dirt(orange)).
-cell_with_content(2,2,dirt(green)).
-cell_with_content(1,2,dirt(green)).
-cell_with_content(3,1,dirt(orange)).
-cell_with_content(2,0,agent('c942b0ce-6c70-4311-a5b7-6b2640fe417c',green)).
-cell_with_content(4,2,agent('ec1d58f6-6db4-473d-af3e-518ca49c39f9',orange)).
-border_wall(0,3,west).
-border_wall(0,4,south).
-border_wall(0,4,west).
-border_wall(1,4,south).
-border_wall(2,4,south).
-border_wall(0,2,west).
-border_wall(0,1,west).
-border_wall(0,0,north).
-border_wall(0,0,west).
-border_wall(1,0,north).
-border_wall(2,0,north).
-border_wall(3,0,north).
-border_wall(3,4,south).
-border_wall(4,2,east).
-border_wall(4,3,east).
-border_wall(4,4,east).
-border_wall(4,4,south).
-border_wall(4,1,east).
-border_wall(4,0,east).
-border_wall(4,0,north).
+cell(0,0, dirt(null), walls(north,west)).
+cell(0,1, dirt(null), walls(west)).
+cell(0,2, dirt(null), walls(west)).
+cell(0,3, dirt(null), walls(west)).
+cell(0,4, dirt(null), walls(west)).
+cell(0,5, dirt(null), walls(west)).
+cell(0,6, dirt(null), walls(west)).
+cell(0,7, dirt(null), walls(west)).
+cell(0,8, dirt(null), walls(west)).
+cell(0,9, dirt(null), walls(west)).
+cell(0,10, dirt(null), walls(south,west)).
+cell(1,0, dirt(null), walls(north), agent(d3af9897-9139-4ffe-8a15-2e9c6f06e71a,orange)).
+cell(1,1, dirt(null), walls).
+cell(1,2, dirt(null), walls).
+cell(1,3, dirt(null), walls).
+cell(1,4, dirt(orange), walls).
+cell(1,5, dirt(null), walls).
+cell(1,6, dirt(null), walls).
+cell(1,7, dirt(null), walls).
+cell(1,8, dirt(null), walls).
+cell(1,9, dirt(null), walls).
+cell(1,10, dirt(null), walls(south)).
+cell(2,0, dirt(null), walls(north)).
+cell(2,1, dirt(null), walls).
+cell(2,2, dirt(null), walls).
+cell(2,3, dirt(null), walls).
+cell(2,4, dirt(null), walls).
+cell(2,5, dirt(null), walls).
+cell(2,6, dirt(null), walls).
+cell(2,7, dirt(null), walls).
+cell(2,8, dirt(null), walls).
+cell(2,9, dirt(null), walls).
+cell(2,10, dirt(null), walls(south)).
+cell(3,0, dirt(null), walls(north)).
+cell(3,1, dirt(null), walls).
+cell(3,2, dirt(null), walls).
+cell(3,3, dirt(orange), walls).
+cell(3,4, dirt(null), walls).
+cell(3,5, dirt(null), walls).
+cell(3,6, dirt(orange), walls).
+cell(3,7, dirt(null), walls).
+cell(3,8, dirt(null), walls).
+cell(3,9, dirt(null), walls).
+cell(3,10, dirt(null), walls(south)).
+cell(4,0, dirt(null), walls(north)).
+cell(4,1, dirt(null), walls).
+cell(4,2, dirt(null), walls).
+cell(4,3, dirt(null), walls).
+cell(4,4, dirt(null), walls).
+cell(4,5, dirt(null), walls).
+cell(4,6, dirt(null), walls).
+cell(4,7, dirt(null), walls).
+cell(4,8, dirt(null), walls).
+cell(4,9, dirt(null), walls).
+cell(4,10, dirt(null), walls(south)).
+cell(5,0, dirt(null), walls(north), agent(d6428e63-73b7-40a5-9cc9-ea3b5e61a86d,green)).
+cell(5,1, dirt(null), walls).
+cell(5,2, dirt(null), walls).
+cell(5,3, dirt(null), walls).
+cell(5,4, dirt(null), walls).
+cell(5,5, dirt(null), walls).
+cell(5,6, dirt(null), walls).
+cell(5,7, dirt(orange), walls).
+cell(5,8, dirt(null), walls).
+cell(5,9, dirt(null), walls).
+cell(5,10, dirt(null), walls(south)).
+cell(6,0, dirt(null), walls(north)).
+cell(6,1, dirt(null), walls).
+cell(6,2, dirt(null), walls).
+cell(6,3, dirt(null), walls).
+cell(6,4, dirt(null), walls).
+cell(6,5, dirt(null), walls).
+cell(6,6, dirt(null), walls).
+cell(6,7, dirt(null), walls).
+cell(6,8, dirt(null), walls).
+cell(6,9, dirt(null), walls).
+cell(6,10, dirt(null), walls(south)).
+cell(7,0, dirt(null), walls(north)).
+cell(7,1, dirt(null), walls).
+cell(7,2, dirt(null), walls).
+cell(7,3, dirt(null), walls).
+cell(7,4, dirt(null), walls).
+cell(7,5, dirt(green), walls).
+cell(7,6, dirt(null), walls).
+cell(7,7, dirt(null), walls).
+cell(7,8, dirt(null), walls).
+cell(7,9, dirt(null), walls).
+cell(7,10, dirt(null), walls(south)).
+cell(8,0, dirt(null), walls(north)).
+cell(8,1, dirt(null), walls).
+cell(8,2, dirt(null), walls).
+cell(8,3, dirt(null), walls).
+cell(8,4, dirt(null), walls).
+cell(8,5, dirt(null), walls).
+cell(8,6, dirt(null), walls).
+cell(8,7, dirt(null), walls).
+cell(8,8, dirt(null), walls).
+cell(8,9, dirt(null), walls).
+cell(8,10, dirt(null), walls(south)).
+cell(9,0, dirt(null), walls(north)).
+cell(9,1, dirt(null), walls).
+cell(9,2, dirt(green), walls).
+cell(9,3, dirt(null), walls).
+cell(9,4, dirt(null), walls).
+cell(9,5, dirt(null), walls).
+cell(9,6, dirt(null), walls).
+cell(9,7, dirt(green), walls).
+cell(9,8, dirt(null), walls).
+cell(9,9, dirt(null), walls).
+cell(9,10, dirt(null), walls(south)).
+cell(10,0, dirt(null), walls(east,north)).
+cell(10,1, dirt(null), walls(east)).
+cell(10,2, dirt(null), walls(east)).
+cell(10,3, dirt(null), walls(east)).
+cell(10,4, dirt(null), walls(east)).
+cell(10,5, dirt(null), walls(east)).
+cell(10,6, dirt(null), walls(east)).
+cell(10,7, dirt(null), walls(east)).
+cell(10,8, dirt(null), walls(east)).
+cell(10,9, dirt(null), walls(east)).
+cell(10,10, dirt(null), walls(east,south)).

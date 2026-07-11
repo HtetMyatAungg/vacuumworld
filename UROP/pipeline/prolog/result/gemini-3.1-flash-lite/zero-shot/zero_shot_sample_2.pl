@@ -1,25 +1,53 @@
-cell(0, 3, [wall(west)]).
-cell(1, 3, []).
-cell(2, 3, [dirt(orange)]).
-cell(0, 4, [wall(south), wall(west)]).
-cell(1, 4, [wall(south)]).
-cell(2, 4, [wall(south)]).
-cell(0, 2, [wall(west)]).
-cell(1, 2, [dirt(green)]).
-cell(2, 2, []).
-cell(0, 1, [wall(west)]).
-cell(1, 1, []).
-cell(2, 1, []).
-cell(0, 0, [wall(north), wall(west)]).
-cell(1, 0, [wall(north)]).
-cell(2, 0, [wall(north), agent(c942b0ce-6c70-4311-a5b7-6b2640fe417c, green)]).
-cell(3, 0, [wall(north)]).
-cell(3, 1, [dirt(orange)]).
-cell(3, 2, []).
-cell(3, 3, []).
-cell(3, 4, [wall(south)]).
-cell(4, 2, [wall(east), agent(ec1d58f6-6db4-473d-af3e-518ca49c39f9, orange)]).
-cell(4, 3, [wall(east)]).
-cell(4, 4, [wall(east), wall(south)]).
-cell(4, 1, [wall(east)]).
-cell(4, 0, [wall(east), wall(north)]).
+wall(0, 9, west).
+wall(0, 10, south).
+wall(0, 10, west).
+wall(1, 10, south).
+wall(2, 10, south).
+wall(0, 8, west).
+wall(0, 7, west).
+wall(0, 6, west).
+wall(0, 5, west).
+wall(0, 4, west).
+dirt(1, 4, orange).
+wall(0, 3, west).
+wall(0, 2, west).
+wall(0, 1, west).
+wall(0, 0, north).
+wall(0, 0, west).
+wall(1, 0, north).
+agent(1, 0, 'd3af9897-9139-4ffe-8a15-2e9c6f06e71a', orange).
+wall(2, 0, north).
+wall(3, 0, north).
+dirt(3, 3, orange).
+dirt(3, 6, orange).
+wall(3, 10, south).
+wall(4, 10, south).
+wall(4, 0, north).
+wall(5, 0, north).
+agent(5, 0, 'd6428e63-73b7-40a5-9cc9-ea3b5e61a86d', green).
+dirt(5, 7, orange).
+wall(5, 10, south).
+wall(6, 10, south).
+wall(6, 0, north).
+wall(7, 0, north).
+dirt(7, 5, green).
+wall(7, 10, south).
+wall(8, 10, south).
+wall(8, 0, north).
+wall(9, 0, north).
+dirt(9, 2, green).
+dirt(9, 7, green).
+wall(9, 10, south).
+wall(10, 8, east).
+wall(10, 9, east).
+wall(10, 10, east).
+wall(10, 10, south).
+wall(10, 7, east).
+wall(10, 6, east).
+wall(10, 5, east).
+wall(10, 4, east).
+wall(10, 3, east).
+wall(10, 2, east).
+wall(10, 1, east).
+wall(10, 0, east).
+wall(10, 0, north).

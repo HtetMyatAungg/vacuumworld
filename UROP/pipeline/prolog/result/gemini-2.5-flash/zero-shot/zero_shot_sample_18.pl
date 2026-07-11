@@ -1,56 +1,149 @@
-grid_size(5).
+grid_size(11).
 
-% Observed dirt locations
-cell_has_dirt(2, 3, orange).
-cell_has_dirt(1, 2, green).
-cell_has_dirt(3, 1, orange).
-
-% Observed agent locations
-cell_has_agent(2, 0, 'c942b0ce-6c70-4311-a5b7-6b2640fe417c', green).
-cell_has_agent(4, 2, 'ec1d58f6-6db4-473d-af3e-518ca49c39f9', orange).
-
-% Perceived walls from inside a cell
-perceived_wall(0, 3, west).
-perceived_wall(0, 4, south).
-perceived_wall(0, 4, west).
-perceived_wall(1, 4, south).
-perceived_wall(2, 4, south).
-perceived_wall(0, 2, west).
-perceived_wall(0, 1, west).
-perceived_wall(0, 0, north).
-perceived_wall(0, 0, west).
-perceived_wall(1, 0, north).
-perceived_wall(2, 0, north).
-perceived_wall(3, 0, north).
-perceived_wall(3, 4, south).
-perceived_wall(4, 2, east).
-perceived_wall(4, 3, east).
-perceived_wall(4, 4, east).
-perceived_wall(4, 4, south).
-perceived_wall(4, 1, east).
-perceived_wall(4, 0, east).
-perceived_wall(4, 0, north).
-
-% Boundary wall rules
-is_boundary_wall(X, Y, north) :- grid_size(_N), Y = 0.
-is_boundary_wall(X, Y, south) :- grid_size(N), Y = N - 1.
-is_boundary_wall(X, Y, west) :- grid_size(_N), X = 0.
-is_boundary_wall(X, Y, east) :- grid_size(N), X = N - 1.
-
-% A cell has a wall if it was perceived or if it's a boundary wall.
-has_wall(X, Y, Direction) :-
-    perceived_wall(X, Y, Direction)
-    ;
-    is_boundary_wall(X, Y, Direction).
-
-% Helper predicate to check if a cell is within grid bounds
-in_grid(X, Y) :-
+cell(X, Y) :-
     grid_size(N),
-    X >= 0, X < N,
-    Y >= 0, Y < N.
+    between(0, N - 1, X),
+    between(0, N - 1, Y).
 
-% A cell is considered empty if it exists within the grid and has no dirt or agent
-cell_is_empty(X, Y) :-
-    in_grid(X, Y),
-    \+ cell_has_dirt(X, Y, _),
-    \+ cell_has_agent(X, Y, _, _).
+wall(X, Y, north) :-
+    grid_size(N),
+    Y is 0,
+    between(0, N - 1, X).
+
+wall(X, Y, south) :-
+    grid_size(N),
+    Y is N - 1,
+    between(0, N - 1, X).
+
+wall(X, Y, west) :-
+    grid_size(N),
+    X is 0,
+    between(0, N - 1, Y).
+
+wall(X, Y, east) :-
+    grid_size(N),
+    X is N - 1,
+    between(0, N - 1, Y).
+
+dirt(1, 4, orange).
+dirt(3, 3, orange).
+dirt(3, 6, orange).
+dirt(5, 7, orange).
+dirt(7, 5, green).
+dirt(9, 2, green).
+dirt(9, 7, green).
+
+agent(1, 0, 'd3af9897-9139-4ffe-8a15-2e9c6f06e71a', orange).
+agent(5, 0, 'd6428e63-73b7-40a5-9cc9-ea3b5e61a86d', green).
+
+empty(0, 0).
+empty(2, 0).
+empty(3, 0).
+empty(4, 0).
+empty(6, 0).
+empty(7, 0).
+empty(8, 0).
+empty(9, 0).
+empty(10, 0).
+empty(0, 1).
+empty(1, 1).
+empty(2, 1).
+empty(3, 1).
+empty(4, 1).
+empty(5, 1).
+empty(6, 1).
+empty(7, 1).
+empty(8, 1).
+empty(9, 1).
+empty(10, 1).
+empty(0, 2).
+empty(1, 2).
+empty(3, 2).
+empty(4, 2).
+empty(5, 2).
+empty(6, 2).
+empty(7, 2).
+empty(8, 2).
+empty(10, 2).
+empty(0, 3).
+empty(1, 3).
+empty(2, 3).
+empty(4, 3).
+empty(5, 3).
+empty(6, 3).
+empty(7, 3).
+empty(8, 3).
+empty(9, 3).
+empty(10, 3).
+empty(0, 4).
+empty(2, 4).
+empty(3, 4).
+empty(4, 4).
+empty(5, 4).
+empty(6, 4).
+empty(7, 4).
+empty(8, 4).
+empty(9, 4).
+empty(10, 4).
+empty(0, 5).
+empty(1, 5).
+empty(2, 5).
+empty(3, 5).
+empty(4, 5).
+empty(5, 5).
+empty(6, 5).
+empty(7, 6).
+empty(8, 5).
+empty(9, 5).
+empty(10, 5).
+empty(0, 6).
+empty(1, 6).
+empty(2, 6).
+empty(4, 6).
+empty(5, 6).
+empty(6, 6).
+empty(7, 6).
+empty(8, 6).
+empty(9, 6).
+empty(10, 6).
+empty(0, 7).
+empty(1, 7).
+empty(2, 7).
+empty(3, 7).
+empty(4, 7).
+empty(6, 7).
+empty(8, 7).
+empty(10, 7).
+empty(0, 8).
+empty(1, 8).
+empty(2, 8).
+empty(3, 8).
+empty(4, 8).
+empty(5, 8).
+empty(6, 8).
+empty(7, 8).
+empty(8, 8).
+empty(9, 8).
+empty(10, 8).
+empty(0, 9).
+empty(1, 9).
+empty(2, 9).
+empty(3, 9).
+empty(4, 9).
+empty(5, 9).
+empty(6, 9).
+empty(7, 9).
+empty(8, 9).
+empty(9, 9).
+empty(10, 9).
+empty(0, 10).
+empty(1, 10).
+empty(2, 10).
+empty(3, 10).
+empty(4, 10).
+empty(5, 10).
+empty(6, 10).
+empty(7, 10).
+empty(8, 10).
+empty(9, 10).
+empty(10, 10).

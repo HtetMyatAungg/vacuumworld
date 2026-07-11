@@ -1,0 +1,26 @@
+cell_data( [] ).
+cell( (0,3), walls(west), dirt(none), agent(none) ).
+cell( (1,3), walls(none), dirt(none), agent(none) ).
+cell( (2,3), walls(none), dirt(orange), agent(none) ).
+cell( (0,4), walls(south,west), dirt(none), agent(none) ).
+cell( (1,4), walls(south), dirt(none), agent(none) ).
+cell( (2,4), walls(south), dirt(none), agent(none) ).
+cell( (0,2), walls(west), dirt(none), agent(none) ).
+cell( (1,2), walls(none), dirt(green), agent(none) ).
+cell( (2,2), walls(none), dirt(none), agent(none) ).
+cell( (0,1), walls(west), dirt(none), agent(none) ).
+cell( (1,1), walls(none), dirt(none), agent(none) ).
+cell( (2,1), walls(none), dirt(none), agent(none) ).
+cell( (0,0), walls(north,west), dirt(none), agent(none) ).
+cell( (1,0), walls(north), dirt(none), agent(none) ).
+cell( (2,0), walls(north), dirt(none), agent(green) ).
+cell( (3,0), walls(north), dirt(none), agent(none) ).
+cell( (3,1), walls(none), dirt(orange), agent(none) ).
+cell( (3,2), walls(none), dirt(none), agent(none) ).
+cell( (3,3), walls(none), dirt(none), agent(none) ).
+cell( (3,4), walls(south), dirt(none), agent(none) ).
+cell( (4,2), walls(east), dirt(none), agent(orange) ).
+cell( (4,3), walls(east), dirt(none), agent(none) ).
+cell( (4,4), walls(east,south), dirt(none), agent(none) ).
+cell( (4,1), walls(east), dirt(none), agent(none) ).
+cell( (4,0), walls(east,north), dirt(none), agent(none) ).

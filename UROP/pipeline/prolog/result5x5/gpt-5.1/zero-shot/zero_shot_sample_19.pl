@@ -1,0 +1,43 @@
+size(5,5).
+
+wall(0,0,north).
+wall(0,0,west).
+wall(1,0,north).
+wall(2,0,north).
+wall(3,0,north).
+wall(4,0,east).
+wall(4,0,north).
+wall(0,1,west).
+wall(0,2,west).
+wall(0,3,west).
+wall(0,4,south).
+wall(0,4,west).
+wall(1,4,south).
+wall(2,4,south).
+wall(3,4,south).
+wall(4,1,east).
+wall(4,2,east).
+wall(4,3,east).
+wall(4,4,east).
+wall(4,4,south).
+
+dirt(2,3,orange).
+dirt(1,2,green).
+dirt(3,1,orange).
+
+agent(2,0,'c942b0ce-6c70-4311-a5b7-6b2640fe417c',green).
+agent(4,2,'ec1d58f6-6db4-473d-af3e-518ca49c39f9',orange).
+
+location(X,Y,Content) :-
+    between(0,4,X),
+    between(0,4,Y),
+    ( dirt(X,Y,Colour) -> Content = dirt(Colour)
+    ; agent(X,Y,Id,Colour) -> Content = agent(Id,Colour)
+    ; Content = empty ).
+
+boundary_wall(X,Y,Direction) :-
+    size(W,H),
+    ( Direction = north, Y =:= 0, between(0,W1,X), W1 is W-1
+    ; Direction = south, H1 is H-1, Y =:= H1, between(0,W2,X), W2 is W-1
+    ; Direction = west,  X =:= 0, between(0,H1,Y), H1 is H-1
+    ; Direction = east,  W1 is W-1, X =:= W1, between(0,H2,Y), H2 is H-1 ).

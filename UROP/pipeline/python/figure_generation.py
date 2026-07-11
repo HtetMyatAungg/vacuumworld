@@ -28,6 +28,7 @@ DATASETS = {
             "gemini-3.1-flash-lite": "#eda100",  # yellow
             "deepseek-V3":    "#008300",  # green
             "gemma-4-31b":           "#4a3aa7",  # violet
+            "gpt-5.1":              "#00776b" #gray
         },
         # repair logs are written under the raw model string passed to the API,
         # which doesn't always match the name used elsewhere (e.g. deepseek-V3)
@@ -37,6 +38,7 @@ DATASETS = {
             "gemini-3.1-flash-lite": "gemini-3.1-flash-lite",
             "deepseek-V3":           "deepseek-V3",
             "gemma-4-31b":           "gemma-4-31b",
+            "gpt-5.1":               "gpt-5.1"
         },
         samples=range(1, 21),
         label="Large Models",

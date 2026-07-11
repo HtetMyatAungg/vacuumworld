@@ -1,53 +1,15 @@
-wall(0, 0, north).
-wall(0, 0, west).
-wall(1, 0, north).
-wall(2, 0, north).
-wall(3, 0, north).
-wall(4, 0, north).
-wall(4, 0, east).
-wall(0, 1, west).
-wall(4, 1, east).
-wall(0, 2, west).
-wall(4, 2, east).
-wall(0, 3, west).
-wall(4, 3, east).
-wall(0, 4, south).
-wall(0, 4, west).
-wall(1, 4, south).
-wall(2, 4, south).
-wall(3, 4, south).
-wall(4, 4, south).
-wall(4, 4, east).
+wall(X, Y, north) :- Y = 0.
+wall(X, Y, south) :- Y = 10.
+wall(X, Y, west) :- X = 0.
+wall(X, Y, east) :- X = 10.
 
-dirt(2, 3, orange).
-dirt(1, 2, green).
-dirt(3, 1, orange).
+dirt(1, 4, orange).
+dirt(3, 3, orange).
+dirt(3, 6, orange).
+dirt(5, 7, orange).
+dirt(7, 5, green).
+dirt(9, 2, green).
+dirt(9, 7, green).
 
-agent(2, 0, c942b0ce-6c70-4311-a5b7-6b2640fe417c, green).
-agent(4, 2, ec1d58f6-6db4-473d-af3e-518ca49c39f9, orange).
-
-location(0, 0, empty).
-location(1, 0, empty).
-location(2, 0, agent).
-location(3, 0, empty).
-location(4, 0, empty).
-location(0, 1, empty).
-location(1, 1, empty).
-location(2, 1, empty).
-location(3, 1, dirt).
-location(4, 1, empty).
-location(0, 2, empty).
-location(1, 2, dirt).
-location(2, 2, empty).
-location(3, 2, empty).
-location(4, 2, agent).
-location(0, 3, empty).
-location(1, 3, empty).
-location(2, 3, dirt).
-location(3, 3, empty).
-location(4, 3, empty).
-location(0, 4, empty).
-location(1, 4, empty).
-location(2, 4, empty).
-location(3, 4, empty).
-location(4, 4, empty).
+agent(1, 0, orange).
+agent(5, 0, green).

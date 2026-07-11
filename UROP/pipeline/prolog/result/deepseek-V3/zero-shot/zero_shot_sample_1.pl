@@ -1,46 +1,121 @@
-cell(0, 3, empty).
-cell(1, 3, empty).
-cell(2, 3, dirt(orange)).
-cell(0, 4, empty).
-cell(1, 4, empty).
-cell(2, 4, empty).
-cell(0, 2, empty).
-cell(1, 2, dirt(green)).
-cell(2, 2, empty).
-cell(0, 1, empty).
-cell(1, 1, empty).
-cell(2, 1, empty).
-cell(0, 0, empty).
-cell(1, 0, empty).
-cell(2, 0, agent('c942b0ce-6c70-4311-a5b7-6b2640fe417c', green)).
-cell(3, 0, empty).
-cell(3, 1, dirt(orange)).
-cell(3, 2, empty).
-cell(3, 3, empty).
-cell(3, 4, empty).
-cell(4, 2, agent('ec1d58f6-6db4-473d-af3e-518ca49c39f9', orange)).
-cell(4, 3, empty).
-cell(4, 4, empty).
-cell(4, 1, empty).
-cell(4, 0, empty).
-
-wall(0, 3, west).
-wall(0, 4, south).
-wall(0, 4, west).
-wall(1, 4, south).
-wall(2, 4, south).
-wall(0, 2, west).
-wall(0, 1, west).
-wall(0, 0, north).
-wall(0, 0, west).
-wall(1, 0, north).
-wall(2, 0, north).
-wall(3, 0, north).
-wall(3, 4, south).
-wall(4, 2, east).
-wall(4, 3, east).
-wall(4, 4, east).
-wall(4, 4, south).
-wall(4, 1, east).
-wall(4, 0, east).
-wall(4, 0, north).
+cell(0, 9, agent(null, dirt(null), walls([west]))).
+cell(1, 9, agent(null, dirt(null), walls([]))).
+cell(2, 9, agent(null, dirt(null), walls([]))).
+cell(0, 10, agent(null, dirt(null), walls([south, west]))).
+cell(1, 10, agent(null, dirt(null), walls([south]))).
+cell(2, 10, agent(null, dirt(null), walls([south]))).
+cell(0, 8, agent(null, dirt(null), walls([west]))).
+cell(1, 8, agent(null, dirt(null), walls([]))).
+cell(2, 8, agent(null, dirt(null), walls([]))).
+cell(0, 7, agent(null, dirt(null), walls([west]))).
+cell(1, 7, agent(null, dirt(null), walls([]))).
+cell(2, 7, agent(null, dirt(null), walls([]))).
+cell(0, 6, agent(null, dirt(null), walls([west]))).
+cell(1, 6, agent(null, dirt(null), walls([]))).
+cell(2, 6, agent(null, dirt(null), walls([]))).
+cell(0, 5, agent(null, dirt(null), walls([west]))).
+cell(1, 5, agent(null, dirt(null), walls([]))).
+cell(2, 5, agent(null, dirt(null), walls([]))).
+cell(0, 4, agent(null, dirt(null), walls([west]))).
+cell(1, 4, agent(null, dirt(orange), walls([]))).
+cell(2, 4, agent(null, dirt(null), walls([]))).
+cell(0, 3, agent(null, dirt(null), walls([west]))).
+cell(1, 3, agent(null, dirt(null), walls([]))).
+cell(2, 3, agent(null, dirt(null), walls([]))).
+cell(0, 2, agent(null, dirt(null), walls([west]))).
+cell(1, 2, agent(null, dirt(null), walls([]))).
+cell(2, 2, agent(null, dirt(null), walls([]))).
+cell(0, 1, agent(null, dirt(null), walls([west]))).
+cell(1, 1, agent(null, dirt(null), walls([]))).
+cell(2, 1, agent(null, dirt(null), walls([]))).
+cell(0, 0, agent(null, dirt(null), walls([north, west]))).
+cell(1, 0, agent(agent(d3af9897-9139-4ffe-8a15-2e9c6f06e71a, orange), dirt(null), walls([north]))).
+cell(2, 0, agent(null, dirt(null), walls([north]))).
+cell(3, 0, agent(null, dirt(null), walls([north]))).
+cell(3, 1, agent(null, dirt(null), walls([]))).
+cell(3, 2, agent(null, dirt(null), walls([]))).
+cell(3, 3, agent(null, dirt(orange), walls([]))).
+cell(3, 4, agent(null, dirt(null), walls([]))).
+cell(3, 5, agent(null, dirt(null), walls([]))).
+cell(3, 6, agent(null, dirt(orange), walls([]))).
+cell(3, 7, agent(null, dirt(null), walls([]))).
+cell(3, 8, agent(null, dirt(null), walls([]))).
+cell(3, 9, agent(null, dirt(null), walls([]))).
+cell(3, 10, agent(null, dirt(null), walls([south]))).
+cell(4, 8, agent(null, dirt(null), walls([]))).
+cell(4, 9, agent(null, dirt(null), walls([]))).
+cell(4, 10, agent(null, dirt(null), walls([south]))).
+cell(4, 7, agent(null, dirt(null), walls([]))).
+cell(4, 6, agent(null, dirt(null), walls([]))).
+cell(4, 5, agent(null, dirt(null), walls([]))).
+cell(4, 4, agent(null, dirt(null), walls([]))).
+cell(4, 3, agent(null, dirt(null), walls([]))).
+cell(4, 2, agent(null, dirt(null), walls([]))).
+cell(4, 1, agent(null, dirt(null), walls([]))).
+cell(4, 0, agent(null, dirt(null), walls([north]))).
+cell(5, 0, agent(agent(d6428e63-73b7-40a5-9cc9-ea3b5e61a86d, green), dirt(null), walls([north]))).
+cell(5, 1, agent(null, dirt(null), walls([]))).
+cell(5, 2, agent(null, dirt(null), walls([]))).
+cell(5, 3, agent(null, dirt(null), walls([]))).
+cell(5, 4, agent(null, dirt(null), walls([]))).
+cell(5, 5, agent(null, dirt(null), walls([]))).
+cell(5, 6, agent(null, dirt(null), walls([]))).
+cell(5, 7, agent(null, dirt(orange), walls([]))).
+cell(5, 8, agent(null, dirt(null), walls([]))).
+cell(5, 9, agent(null, dirt(null), walls([]))).
+cell(5, 10, agent(null, dirt(null), walls([south]))).
+cell(6, 8, agent(null, dirt(null), walls([]))).
+cell(6, 9, agent(null, dirt(null), walls([]))).
+cell(6, 10, agent(null, dirt(null), walls([south]))).
+cell(6, 7, agent(null, dirt(null), walls([]))).
+cell(6, 6, agent(null, dirt(null), walls([]))).
+cell(6, 5, agent(null, dirt(null), walls([]))).
+cell(6, 4, agent(null, dirt(null), walls([]))).
+cell(6, 3, agent(null, dirt(null), walls([]))).
+cell(6, 2, agent(null, dirt(null), walls([]))).
+cell(6, 1, agent(null, dirt(null), walls([]))).
+cell(6, 0, agent(null, dirt(null), walls([north]))).
+cell(7, 0, agent(null, dirt(null), walls([north]))).
+cell(7, 1, agent(null, dirt(null), walls([]))).
+cell(7, 2, agent(null, dirt(null), walls([]))).
+cell(7, 3, agent(null, dirt(null), walls([]))).
+cell(7, 4, agent(null, dirt(null), walls([]))).
+cell(7, 5, agent(null, dirt(green), walls([]))).
+cell(7, 6, agent(null, dirt(null), walls([]))).
+cell(7, 7, agent(null, dirt(null), walls([]))).
+cell(7, 8, agent(null, dirt(null), walls([]))).
+cell(7, 9, agent(null, dirt(null), walls([]))).
+cell(7, 10, agent(null, dirt(null), walls([south]))).
+cell(8, 8, agent(null, dirt(null), walls([]))).
+cell(8, 9, agent(null, dirt(null), walls([]))).
+cell(8, 10, agent(null, dirt(null), walls([south]))).
+cell(8, 7, agent(null, dirt(null), walls([]))).
+cell(8, 6, agent(null, dirt(null), walls([]))).
+cell(8, 5, agent(null, dirt(null), walls([]))).
+cell(8, 4, agent(null, dirt(null), walls([]))).
+cell(8, 3, agent(null, dirt(null), walls([]))).
+cell(8, 2, agent(null, dirt(null), walls([]))).
+cell(8, 1, agent(null, dirt(null), walls([]))).
+cell(8, 0, agent(null, dirt(null), walls([north]))).
+cell(9, 0, agent(null, dirt(null), walls([north]))).
+cell(9, 1, agent(null, dirt(null), walls([]))).
+cell(9, 2, agent(null, dirt(green), walls([]))).
+cell(9, 3, agent(null, dirt(null), walls([]))).
+cell(9, 4, agent(null, dirt(null), walls([]))).
+cell(9, 5, agent(null, dirt(null), walls([]))).
+cell(9, 6, agent(null, dirt(null), walls([]))).
+cell(9, 7, agent(null, dirt(green), walls([]))).
+cell(9, 8, agent(null, dirt(null), walls([]))).
+cell(9, 9, agent(null, dirt(null), walls([]))).
+cell(9, 10, agent(null, dirt(null), walls([south]))).
+cell(10, 8, agent(null, dirt(null), walls([east]))).
+cell(10, 9, agent(null, dirt(null), walls([east]))).
+cell(10, 10, agent(null, dirt(null), walls([east, south]))).
+cell(10, 7, agent(null, dirt(null), walls([east]))).
+cell(10, 6, agent(null, dirt(null), walls([east]))).
+cell(10, 5, agent(null, dirt(null), walls([east]))).
+cell(10, 4, agent(null, dirt(null), walls([east]))).
+cell(10, 3, agent(null, dirt(null), walls([east]))).
+cell(10, 2, agent(null, dirt(null), walls([east]))).
+cell(10, 1, agent(null, dirt(null), walls([east]))).
+cell(10, 0, agent(null, dirt(null), walls([east, north]))).
