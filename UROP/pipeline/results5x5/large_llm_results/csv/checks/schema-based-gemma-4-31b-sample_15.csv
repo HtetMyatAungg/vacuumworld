@@ -6,4 +6,5 @@ implies_grid,pass
 wall_count,fail
 no_interior_walls,fail
 cell_wall_counts,fail
+wall_placement,fail
 all_directions,pass

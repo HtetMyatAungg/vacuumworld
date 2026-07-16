@@ -1,14 +1,19 @@
 import csv
 import os
 import re
-import subprocess
+import sys
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
 PROMPT_TYPES = ["zero-shot", "schema-based", "one-shot"]
 CATEGORIES = ["dirt", "agent", "empty"]
 CHECKS = ["partition", "bounds", "coverage", "implies_grid",
-          "wall_count", "no_interior_walls", "cell_wall_counts", "all_directions"]
+          "wall_count", "no_interior_walls", "cell_wall_counts",
+          "wall_placement", "all_directions"]
+
+# Grid sizes wall_f1 sweeps over (must match SWEEP in to_csv.py): used to
+# zero-fill samples whose sweep could not be scored.
+SWEEP_NS = range(3, 14)
 
 GRIDLINE = "#e1e0d9"
 AXIS_LINE = "#c3c2b7"
@@ -16,11 +21,10 @@ TICK_INK = "#898781"
 SECONDARY_INK = "#52514e"
 PRIMARY_INK = "#0b0b0b"
 
-PROLOG_RESULT_DIR = "UROP/pipeline/prolog/result"
-
 DATASETS = {
     "large": dict(
         csv_dir="UROP/pipeline/results/large_llm_results/csv",
+        prolog_dir="UROP/pipeline/prolog/result8x8",
         fig_dir="UROP/pipeline/results/large_llm_results/figures",
         model_colors={
             "claude-sonnet-4.6":     "#2a78d6",  # blue
@@ -45,6 +49,7 @@ DATASETS = {
     ),
     "small": dict(
         csv_dir="UROP/pipeline/results/small_llm_results/csv",
+        prolog_dir="UROP/pipeline/prolog/result8x8",
         fig_dir="UROP/pipeline/results/small_llm_results/figures",
         model_colors={
             "gemma2-9b":   "#2a78d6",  # blue
@@ -81,17 +86,35 @@ def shared_legend(fig, axes, models):
                bbox_to_anchor=(0.5, -0.05), frameon=False)
 
 
+# Means are taken over the sample POPULATION (every sample whose generated .pl
+# exists), not over the survivors that happened to score. A sample that exists
+# but produced no CSV (timeout / non-terminating / load failure) or an ERROR
+# row is a translation failure and counts as 0 -- excluding it made a model
+# whose worst outputs hang look better than one whose worst outputs merely
+# score badly. Samples with no input .pl at all are genuinely absent and stay
+# excluded.
+
+def input_exists(prolog_dir, prompt_type, model, n):
+    prefix = prompt_type.replace("-", "_")
+    return os.path.exists(f"{prolog_dir}/{model}/{prompt_type}/{prefix}_sample_{n}.pl")
+
+
 # ---- Figure 1: wall-rule F1 vs grid size -------------------------------------
 
-def load_f1_by_n(csv_dir, samples, prompt_type, model):
+def load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model):
     f1_by_n = {}
     for n in samples:
+        if not input_exists(prolog_dir, prompt_type, model, n):
+            continue  # no generated sample: not part of the population
         path = f"{csv_dir}/f1_N/{prompt_type}-{model}-sample_{n}.csv"
+        if not os.path.exists(path):
+            for sweep_n in SWEEP_NS:  # failed to score: counts as 0, not absent
+                f1_by_n.setdefault(sweep_n, []).append(0.0)
+            continue
         with open(path, newline="") as f:
             for row in csv.DictReader(f):
-                if row["F1"] == "ERROR":
-                    continue
-                f1_by_n.setdefault(int(row["N"]), []).append(float(row["F1"]))
+                f1 = 0.0 if row["F1"] == "ERROR" else float(row["F1"])
+                f1_by_n.setdefault(int(row["N"]), []).append(f1)
     ns = sorted(f1_by_n)
     means = [sum(f1_by_n[n]) / len(f1_by_n[n]) for n in ns]
     return ns, means
@@ -110,14 +133,14 @@ def overlapping_groups(series_by_model):
     return [models for models in groups.values() if len(models) > 1]
 
 
-def plot_wall_f1_vs_grid_size(csv_dir, fig_dir, model_colors, samples, label):
+def plot_wall_f1_vs_grid_size(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
     models = list(model_colors)
     fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
 
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
         series_by_model = {}
         for model in models:
-            ns, means = load_f1_by_n(csv_dir, samples, prompt_type, model)
+            ns, means = load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model)
             series_by_model[model] = means
             ax.plot(ns, means, color=model_colors[model], linewidth=2,
                      marker="o", markersize=6, label=model)
@@ -146,7 +169,7 @@ def plot_wall_f1_vs_grid_size(csv_dir, fig_dir, model_colors, samples, label):
     fig.suptitle(f"Wall-Rule Generalization: F1 vs Grid Size ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.05, 1, 0.95])
 
-    out_path = f"{fig_dir}/f1_vs_grid_size.png"
+    out_path = f"{fig_dir}/f1_vs_grid_size.pdf"
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {out_path}")
@@ -154,19 +177,24 @@ def plot_wall_f1_vs_grid_size(csv_dir, fig_dir, model_colors, samples, label):
 
 # ---- Figure 2: content F1 by category (dirt / agent / empty) ----------------
 
-def load_content_f1(csv_dir, samples, prompt_type, model):
+def load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model):
     f1_by_category = {c: [] for c in CATEGORIES}
     for n in samples:
+        if not input_exists(prolog_dir, prompt_type, model, n):
+            continue  # no generated sample: not part of the population
         path = f"{csv_dir}/content_f1/{prompt_type}-{model}-sample_{n}.csv"
+        if not os.path.exists(path):
+            for c in CATEGORIES:  # failed to score: counts as 0, not absent
+                f1_by_category[c].append(0.0)
+            continue
         with open(path, newline="") as f:
             for row in csv.DictReader(f):
-                if row["F1"] == "ERROR":
-                    continue
-                f1_by_category[row["category"]].append(float(row["F1"]))
+                f1 = 0.0 if row["F1"] == "ERROR" else float(row["F1"])
+                f1_by_category[row["category"]].append(f1)
     return {c: (sum(v) / len(v) if v else 0.0) for c, v in f1_by_category.items()}
 
 
-def plot_content_f1(csv_dir, fig_dir, model_colors, samples, label):
+def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
     models = list(model_colors)
     fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
 
@@ -177,7 +205,7 @@ def plot_content_f1(csv_dir, fig_dir, model_colors, samples, label):
 
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
         for i, model in enumerate(models):
-            means = load_content_f1(csv_dir, samples, prompt_type, model)
+            means = load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model)
             offsets = [x + (i - (n_models - 1) / 2) * bar_width for x in x_base]
             values = [means[c] for c in CATEGORIES]
             ax.bar(offsets, values, width=bar_width * 0.9, color=model_colors[model],
@@ -194,7 +222,7 @@ def plot_content_f1(csv_dir, fig_dir, model_colors, samples, label):
     fig.suptitle(f"Content Translation F1: Dirt / Agent / Empty ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.05, 1, 0.95])
 
-    out_path = f"{fig_dir}/content_f1.png"
+    out_path = f"{fig_dir}/content_f1.pdf"
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {out_path}")
@@ -202,11 +230,17 @@ def plot_content_f1(csv_dir, fig_dir, model_colors, samples, label):
 
 # ---- Figure 3: constraint check pass rate heatmap ----------------------------
 
-def load_check_pass_rates(csv_dir, samples, prompt_type, model):
+def load_check_pass_rates(csv_dir, prolog_dir, samples, prompt_type, model):
     pass_counts = {c: 0 for c in CHECKS}
     totals = {c: 0 for c in CHECKS}
     for n in samples:
+        if not input_exists(prolog_dir, prompt_type, model, n):
+            continue  # no generated sample: not part of the population
         path = f"{csv_dir}/checks/{prompt_type}-{model}-sample_{n}.csv"
+        if not os.path.exists(path):
+            for c in CHECKS:  # failed to score: nothing verifiable, all fail
+                totals[c] += 1
+            continue
         with open(path, newline="") as f:
             for row in csv.DictReader(f):
                 check = row["check"]
@@ -218,14 +252,14 @@ def load_check_pass_rates(csv_dir, samples, prompt_type, model):
     return [pass_counts[c] / totals[c] if totals[c] else 0.0 for c in CHECKS]
 
 
-def plot_checks_heatmap(csv_dir, fig_dir, model_colors, samples, label):
+def plot_checks_heatmap(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
     models = list(model_colors)
     cmap = LinearSegmentedColormap.from_list("blue_seq", ["#fcfcfb", "#2a78d6", "#0d366b"])
 
     fig, axes = plt.subplots(1, 3, figsize=(15, 5.5), sharey=True)
 
     for idx, (ax, prompt_type) in enumerate(zip(axes, PROMPT_TYPES)):
-        matrix = [load_check_pass_rates(csv_dir, samples, prompt_type, model) for model in models]
+        matrix = [load_check_pass_rates(csv_dir, prolog_dir, samples, prompt_type, model) for model in models]
         # rows = checks, cols = models -> transpose
         matrix_t = list(zip(*matrix))
 
@@ -252,84 +286,59 @@ def plot_checks_heatmap(csv_dir, fig_dir, model_colors, samples, label):
     fig.colorbar(im, cax=cbar_ax, label="Pass rate")
     fig.suptitle(f"Constraint Check Pass Rate ({label})", fontsize=14, fontweight="bold")
 
-    out_path = f"{fig_dir}/checks_heatmap.png"
+    out_path = f"{fig_dir}/checks_heatmap.pdf"
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {out_path}")
 
 
-# ---- Figure 4: final Prolog validity per model (live swipl check) -----------
-
-def validate_with_swipl(path):
-    result = subprocess.run(
-        ["swipl", "--on-error=halt", "-l", path, "-g", "halt"],
-        capture_output=True, text=True,
-    )
-    return result.returncode == 0
-
-
-def load_validation_failures(result_dir, model, prompt_type, samples):
-    prefix = prompt_type.replace("-", "_")
-    fails = 0
-    for n in samples:
-        path = f"{result_dir}/{model}/{prompt_type}/{prefix}_sample_{n}.pl"
-        if not validate_with_swipl(path):
-            fails += 1
-    return fails
+# ---- (removed) Figure 4: final Prolog validity per model --------------------
+#
+# Dropped deliberately. It could only ever plot zero: the generation harness
+# retries each sample (up to 5 attempts) until `swipl --on-error=halt` loads it,
+# so every committed .pl validates by construction -- measured 0/120 failures in
+# all three prompt conditions. The information it appeared to convey is already
+# carried by repair_counts below (how many attempts that took) and by
+# failures.txt (what could not be scored).
 
 
-def plot_validation_failures(result_dir, fig_dir, model_colors, samples, label):
-    models = list(model_colors)
-    total = len(samples)
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+# ---- Figure 4: repair attempts needed per model (from repair logs) ----------
 
-    for ax, prompt_type in zip(axes, PROMPT_TYPES):
-        fail_counts = [load_validation_failures(result_dir, model, prompt_type, samples) for model in models]
-
-        bars = ax.bar(range(len(models)), fail_counts, color=[model_colors[m] for m in models], zorder=3)
-        for bar, fails in zip(bars, fail_counts):
-            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
-                     f"{fails}/{total}", ha="center", va="bottom",
-                     fontsize=8, color=SECONDARY_INK)
-
-        ax.set_title(prompt_type, fontsize=12, fontweight="semibold", color=PRIMARY_INK)
-        ax.set_xticks(range(len(models)))
-        ax.set_xticklabels(models, rotation=45, ha="right", fontsize=9, color=SECONDARY_INK)
-        ax.set_ylim(0, total)
-        style_axis(ax)
-
-    axes[0].set_ylabel(f"Samples failing SWI-Prolog validation (of {total})", color=SECONDARY_INK)
-    fig.suptitle(f"Final Prolog Validity per Model ({label})", fontsize=14, fontweight="bold")
-    fig.tight_layout(rect=[0, 0.02, 1, 0.95])
-
-    out_path = f"{fig_dir}/validation_failures.png"
-    fig.savefig(out_path, dpi=150, bbox_inches="tight")
-    plt.close(fig)
-    print(f"Saved: {out_path}")
-
-
-# ---- Figure 5: repair attempts needed per model (from repair logs) ----------
-
-REPAIR_DIR = "UROP/pipeline/results/repair"
+# The figures plot the 8x8 tree (prolog/result8x8), whose GENERATION repair
+# logs live under results8x8/repair -- results/repair holds the instruction
+# experiment's logs instead, and lacks schema-based/one-shot entirely, so
+# reading it here plotted the wrong experiment's repair counts as this one's.
+REPAIR_DIR = "UROP/pipeline/results8x8/repair"
 REPAIR_LINE = re.compile(r"sample (\d+): (\d+) attempt\(s\), (\w+)")
 
 
 def load_repair_stats(repair_dir, samples, prompt_type, repair_name):
+    """Return (mean_repairs, fail_count, n_logged).
+
+    The repair logs are append-only across runs, so a sample can appear more
+    than once and last-write-wins keeps the most recent entry. n_logged is how
+    many of the requested samples are actually present -- it is NOT always
+    len(samples) (deepseek-V3 zero-shot logs only 5 of 20), so the mean must be
+    reported against n_logged rather than the requested count.
+    """
     path = f"{repair_dir}/{repair_name}_{prompt_type}_repair.txt"
     latest = {}
-    with open(path) as f:
-        for line in f:
-            match = REPAIR_LINE.search(line)
-            if not match:
-                continue
-            n, attempts, status = int(match[1]), int(match[2]), match[3]
-            latest[n] = (attempts, status)  # last write wins if a sample was rerun
+    try:
+        with open(path) as f:
+            for line in f:
+                match = REPAIR_LINE.search(line)
+                if not match:
+                    continue
+                n, attempts, status = int(match[1]), int(match[2]), match[3]
+                latest[n] = (attempts, status)  # last write wins if a sample was rerun
+    except FileNotFoundError:
+        return 0.0, 0, 0
 
     samples = set(samples)
     repairs = [attempts - 1 for n, (attempts, status) in latest.items() if n in samples]
     fail_count = sum(1 for n, (_, status) in latest.items() if n in samples and status == "FAIL")
     mean_repairs = sum(repairs) / len(repairs) if repairs else 0.0
-    return mean_repairs, fail_count
+    return mean_repairs, fail_count, len(repairs)
 
 
 def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples, label):
@@ -337,17 +346,25 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
     fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
 
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
-        means, fail_counts = [], []
+        means, fail_counts, logged = [], [], []
         for model in models:
-            mean_repairs, fail_count = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
+            mean_repairs, fail_count, n_logged = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
             means.append(mean_repairs)
             fail_counts.append(fail_count)
+            logged.append(n_logged)
 
         bars = ax.bar(range(len(models)), means, color=[model_colors[m] for m in models], zorder=3)
-        for bar, fail_count in zip(bars, fail_counts):
+        for bar, fail_count, n_logged in zip(bars, fail_counts, logged):
+            notes = []
             if fail_count:
+                notes.append(f"{fail_count} FAIL")
+            # Flag bars whose mean rests on fewer samples than requested, so an
+            # incomplete repair log cannot masquerade as a full-sample mean.
+            if n_logged != len(samples):
+                notes.append(f"n={n_logged}")
+            if notes:
                 ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(),
-                         f"{fail_count} FAIL", ha="center", va="bottom",
+                         "\n".join(notes), ha="center", va="bottom",
                          fontsize=8, color="#b3261e")
 
         ax.set_title(prompt_type, fontsize=12, fontweight="semibold", color=PRIMARY_INK)
@@ -355,11 +372,11 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
         ax.set_xticklabels(models, rotation=45, ha="right", fontsize=9, color=SECONDARY_INK)
         style_axis(ax)
 
-    axes[0].set_ylabel(f"Mean repair attempts per sample (of {len(samples)} samples)", color=SECONDARY_INK)
+    axes[0].set_ylabel("Mean repair attempts per logged sample\n(n annotated where the log is incomplete)", color=SECONDARY_INK)
     fig.suptitle(f"Prolog Repair Attempts Needed per Model ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.02, 1, 0.95])
 
-    out_path = f"{fig_dir}/repair_counts.png"
+    out_path = f"{fig_dir}/repair_counts.pdf"
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved: {out_path}")
@@ -368,12 +385,10 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
 if __name__ == "__main__":
     for dataset in DATASETS.values():
         os.makedirs(dataset["fig_dir"], exist_ok=True)
-        args = (dataset["csv_dir"], dataset["fig_dir"], dataset["model_colors"],
-                dataset["samples"], dataset["label"])
+        args = (dataset["csv_dir"], dataset["prolog_dir"], dataset["fig_dir"],
+                dataset["model_colors"], dataset["samples"], dataset["label"])
         plot_wall_f1_vs_grid_size(*args)
         plot_content_f1(*args)
         plot_checks_heatmap(*args)
-        plot_validation_failures(PROLOG_RESULT_DIR, dataset["fig_dir"], dataset["model_colors"],
-                                  dataset["samples"], dataset["label"])
         plot_repair_counts(REPAIR_DIR, dataset["fig_dir"], dataset["model_colors"],
                             dataset["repair_names"], dataset["samples"], dataset["label"])

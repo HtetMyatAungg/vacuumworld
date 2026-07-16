@@ -1,0 +1,21 @@
+grid_size(11).
+
+cell(X, Y) :- between(0, 10, X), between(0, 10, Y).
+
+wall(0, Y, west) :- between(0, 10, Y).
+wall(10, Y, east) :- between(0, 10, Y).
+wall(X, 0, north) :- between(0, 10, X).
+wall(X, 10, south) :- between(0, 10, X).
+
+dirt(1, 4, orange).
+dirt(3, 3, orange).
+dirt(3, 6, orange).
+dirt(5, 7, orange).
+dirt(7, 5, green).
+dirt(9, 2, green).
+dirt(9, 7, green).
+
+agent(1, 0, 'd3af9897-9139-4ffe-8a15-2e9c6f06e71a', orange).
+agent(5, 0, 'd6428e63-73b7-40a5-9cc9-ea3b5e61a86d', green).
+
+is_empty(X, Y) :- cell(X, Y), \+ dirt(X, Y, _), \+ agent(X, Y, _, _).

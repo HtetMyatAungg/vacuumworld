@@ -1,4 +1,4 @@
-:- dynamic grid/2, grid_size/1, wall/3.
+:- dynamic grid/2, grid_size/1, grid_size/2, wall/3.
 
 direction(north).
 direction(south).
@@ -19,19 +19,48 @@ complete :- forall(oracle(F), model_seen(F)).
 exact    :- sound, complete.
 
 setup_grid(N) :-
+    % Reparametrise the grid size for BOTH arities models use. Unconstrained
+    % outputs frequently key their boundary rule on grid_size(Cols, Rows)
+    % (arity 2); retracting only grid_size/1 left that pinned to the
+    % demonstrated size, so a genuinely general rule scored like a hardcoded
+    % one. Assert both grid_size(N) and grid_size(N, N).
     retractall(grid_size(_)),
+    retractall(grid_size(_, _)),
     assertz(grid_size(N)),
+    assertz(grid_size(N, N)),
     retractall(grid(_, _)),
     N1 is N - 1,
     forall( ( between(0, N1, X), between(0, N1, Y) ),
             assertz(grid(X, Y)) ).
+
+% Walls may be exposed under any predicate name: a hardcoded wall/3, or a
+% generalising rule the model chose to call has_wall/3, boundary_wall/3,
+% is_wall/3, ... Rather than hardcoding that list -- or regex-rewriting the
+% source, which would turn a clause like `wall(X,Y,D) :- boundary_wall(X,Y,D).`
+% into a self-recursive hang -- discover any arity-3 predicate whose name
+% mentions "wall" and query it. sort/2 in predicted_walls dedups the union.
+% model_wall/3 must exclude itself or it recurses.
+wall_accessor(P) :-
+    current_predicate(P/3),
+    sub_atom(P, _, _, _, wall),
+    P \== model_wall.
+
+% NOTE: deliberately NOT wrapped in catch/3. current_predicate/1 already
+% guarantees the accessor exists, and some generated rules are genuinely buggy
+% (e.g. `wall(X,Y,south) :- Y =:= N-1, grid_size(N).` evaluates N before it is
+% bound). Those must surface as ERROR rows, not be silently scored as "no
+% walls" -- swallowing them would turn a broken rule into a real-looking score.
+model_wall(X, Y, D) :-
+    wall_accessor(P),
+    Goal =.. [P, X, Y, D],
+    call(Goal).
 
 predicted_walls(N, Walls) :-
     N1 is N - 1,
     findall(wall(X, Y, D), (
         between(0, N1, X), between(0, N1, Y),
         scored_direction(D),
-        wall(X, Y, D)
+        model_wall(X, Y, D)
     ), Ws),
     sort(Ws, Walls).
 

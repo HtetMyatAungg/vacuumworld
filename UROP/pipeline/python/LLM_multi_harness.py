@@ -41,7 +41,7 @@ Coordinate system:
 Percept log:
 {percepts}
 
-(Boundary wall rules are not shown — you must derive them yourself for the percept log above, generalised to work for any grid size.)
+(Boundary wall rules are not shown — you must derive them yourself for the percept log above, generalised to work for any grid size.), do not hardcode, design predicates for all entities from the percepts including all relevant argument.
 Produce ONLY valid SWI-Prolog that encodes the grid structure, its contents (dirt, agents, empty location), and boundary wall rules. Retain any location along with the type of content observed there, whenever that content is non-empty.
 No markdown, no comments, no explanation.
 """
@@ -155,10 +155,21 @@ PROMPT_TYPES = {
     "zero-shot-instruction": "zero_shot_instruction",
 }
 
+# Repair logs used to be opened in append mode, so entries from successive runs
+# (5x5 / 8x8 / 11x11) accumulated in one file. figure_generation's last-write-
+# wins could then take a sample's attempt count from a different experiment, and
+# a model could show more logged samples than it has. Truncate each log the
+# first time THIS run writes to it, then append within the run.
+_repair_logs_started = set()
+
+
 def write_repair_log(model, prompt_type, n, attempt, status):
     repair_path = f"UROP/pipeline/results/repair/{model}_{prompt_type}_repair.txt"
+    os.makedirs(os.path.dirname(repair_path), exist_ok=True)
+    mode = "a" if repair_path in _repair_logs_started else "w"
+    _repair_logs_started.add(repair_path)
     repair= f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}\n"
-    with open(repair_path, "a") as f:
+    with open(repair_path, mode) as f:
         f.write(repair)
 
 def strip_markdown(text):

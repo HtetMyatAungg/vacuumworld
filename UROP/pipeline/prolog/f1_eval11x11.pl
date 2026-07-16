@@ -1,9 +1,9 @@
-% ground truth/oracle: 5x5 sweep
+% ground truth/oracle: 11x11 sweep
 :- discontiguous oracle_dirt/3.
 :- discontiguous oracle_agent/4.
 :- discontiguous oracle_empty/2.
 :- discontiguous wall/3.
-grid_size(8).
+grid_size(11).
 grid(0, 9).
 grid(1, 9).
 grid(2, 9).

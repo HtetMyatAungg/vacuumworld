@@ -1,0 +1,296 @@
+% Grid size
+grid_size(11,11).
+
+% Walls
+wall(0,9,west).
+wall(1,9,none).
+wall(2,9,none).
+wall(0,10,south).
+wall(0,10,west).
+wall(1,10,south).
+wall(2,10,south).
+wall(0,8,west).
+wall(1,8,none).
+wall(2,8,none).
+wall(0,7,west).
+wall(1,7,none).
+wall(2,7,none).
+wall(0,6,west).
+wall(1,6,none).
+wall(2,6,none).
+wall(0,5,west).
+wall(1,5,none).
+wall(2,5,none).
+wall(0,4,west).
+wall(1,4,none).
+wall(2,4,none).
+wall(0,3,west).
+wall(1,3,none).
+wall(2,3,none).
+wall(0,2,west).
+wall(1,2,none).
+wall(2,2,none).
+wall(0,1,west).
+wall(1,1,none).
+wall(2,1,none).
+wall(0,0,north).
+wall(0,0,west).
+wall(1,0,north).
+wall(2,0,north).
+wall(3,0,north).
+wall(3,1,none).
+wall(3,2,none).
+wall(3,3,none).
+wall(3,4,none).
+wall(3,5,none).
+wall(3,6,none).
+wall(3,7,none).
+wall(3,8,none).
+wall(3,9,none).
+wall(3,10,south).
+wall(4,8,none).
+wall(4,9,none).
+wall(4,10,south).
+wall(4,7,none).
+wall(4,6,none).
+wall(4,5,none).
+wall(4,4,none).
+wall(4,3,none).
+wall(4,2,none).
+wall(4,1,none).
+wall(4,0,north).
+wall(5,0,north).
+wall(5,1,none).
+wall(5,2,none).
+wall(5,3,none).
+wall(5,4,none).
+wall(5,5,none).
+wall(5,6,none).
+wall(5,7,none).
+wall(5,8,none).
+wall(5,9,none).
+wall(5,10,south).
+wall(6,8,none).
+wall(6,9,none).
+wall(6,10,south).
+wall(6,7,none).
+wall(6,6,none).
+wall(6,5,none).
+wall(6,4,none).
+wall(6,3,none).
+wall(6,2,none).
+wall(6,1,none).
+wall(6,0,north).
+wall(7,0,north).
+wall(7,1,none).
+wall(7,2,none).
+wall(7,3,none).
+wall(7,4,none).
+wall(7,5,none).
+wall(7,6,none).
+wall(7,7,none).
+wall(7,8,none).
+wall(7,9,none).
+wall(7,10,south).
+wall(8,8,none).
+wall(8,9,none).
+wall(8,10,south).
+wall(8,7,none).
+wall(8,6,none).
+wall(8,5,none).
+wall(8,4,none).
+wall(8,3,none).
+wall(8,2,none).
+wall(8,1,none).
+wall(8,0,north).
+wall(9,0,north).
+wall(9,1,none).
+wall(9,2,none).
+wall(9,3,none).
+wall(9,4,none).
+wall(9,5,none).
+wall(9,6,none).
+wall(9,7,none).
+wall(9,8,none).
+wall(9,9,none).
+wall(9,10,south).
+wall(10,8,east).
+wall(10,9,east).
+wall(10,10,east).
+wall(10,10,south).
+wall(10,7,east).
+wall(10,6,east).
+wall(10,5,east).
+wall(10,4,east).
+wall(10,3,east).
+wall(10,2,east).
+wall(10,1,east).
+wall(10,0,east).
+wall(10,0,north).
+
+% Boundary walls (generalised)
+boundary_wall(X,Y,north) :-
+    Y = 0,
+    grid_size(Width,_),
+    X >= 0,
+    X < Width.
+
+boundary_wall(X,Y,south) :-
+    grid_size(Width,Height),
+    Y =:= Height - 1,
+    X >= 0,
+    X < Width.
+
+boundary_wall(X,Y,west) :-
+    X = 0,
+    grid_size(_,Height),
+    Y >= 0,
+    Y < Height.
+
+boundary_wall(X,Y,east) :-
+    grid_size(Width,Height),
+    X =:= Width - 1,
+    Y >= 0,
+    Y < Height.
+
+% Dirt
+dirt(1,4,orange).
+dirt(3,3,orange).
+dirt(3,6,orange).
+dirt(5,7,orange).
+dirt(7,5,green).
+dirt(9,2,green).
+dirt(9,7,green).
+
+% Agents
+agent(1,0,d3af9897-9139-4ffe-8a15-2e9c6f06e71a,orange).
+agent(5,0,d6428e63-73b7-40a5-9cc9-ea3b5e61a86d,green).
+
+% Locations
+location(0,0).
+location(1,0).
+location(2,0).
+location(3,0).
+location(4,0).
+location(5,0).
+location(6,0).
+location(7,0).
+location(8,0).
+location(9,0).
+location(10,0).
+location(0,1).
+location(1,1).
+location(2,1).
+location(3,1).
+location(4,1).
+location(5,1).
+location(6,1).
+location(7,1).
+location(8,1).
+location(9,1).
+location(10,1).
+location(0,2).
+location(1,2).
+location(2,2).
+location(3,2).
+location(4,2).
+location(5,2).
+location(6,2).
+location(7,2).
+location(8,2).
+location(9,2).
+location(10,2).
+location(0,3).
+location(1,3).
+location(2,3).
+location(3,3).
+location(4,3).
+location(5,3).
+location(6,3).
+location(7,3).
+location(8,3).
+location(9,3).
+location(10,3).
+location(0,4).
+location(1,4).
+location(2,4).
+location(3,4).
+location(4,4).
+location(5,4).
+location(6,4).
+location(7,4).
+location(8,4).
+location(9,4).
+location(10,4).
+location(0,5).
+location(1,5).
+location(2,5).
+location(3,5).
+location(4,5).
+location(5,5).
+location(6,5).
+location(7,5).
+location(8,5).
+location(9,5).
+location(10,5).
+location(0,6).
+location(1,6).
+location(2,6).
+location(3,6).
+location(4,6).
+location(5,6).
+location(6,6).
+location(7,6).
+location(8,6).
+location(9,6).
+location(10,6).
+location(0,7).
+location(1,7).
+location(2,7).
+location(3,7).
+location(4,7).
+location(5,7).
+location(6,7).
+location(7,7).
+location(8,7).
+location(9,7).
+location(10,7).
+location(0,8).
+location(1,8).
+location(2,8).
+location(3,8).
+location(4,8).
+location(5,8).
+location(6,8).
+location(7,8).
+location(8,8).
+location(9,8).
+location(10,8).
+location(0,9).
+location(1,9).
+location(2,9).
+location(3,9).
+location(4,9).
+location(5,9).
+location(6,9).
+location(7,9).
+location(8,9).
+location(9,9).
+location(10,9).
+location(0,10).
+location(1,10).
+location(2,10).
+location(3,10).
+location(4,10).
+location(5,10).
+location(6,10).
+location(7,10).
+location(8,10).
+location(9,10).
+location(10,10).
+
+% Empty locations (no dirt, no agent)
+empty_location(X,Y) :-
+    location(X,Y),
+    \+ dirt(X,Y,_),
+    \+ agent(X,Y,_,_).

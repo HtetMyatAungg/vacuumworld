@@ -3,7 +3,7 @@
 :- discontiguous oracle_agent/4.
 :- discontiguous oracle_empty/2.
 :- discontiguous wall/3.
-grid_size(8).
+grid_size(5).
 grid(0, 3).
 grid(1, 3).
 grid(2, 3).

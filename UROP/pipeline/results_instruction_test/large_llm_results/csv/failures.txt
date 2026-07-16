@@ -1,0 +1,1 @@
+f1 zero-shot-instruction gpt-5.1 sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)

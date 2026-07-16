@@ -1,0 +1,4 @@
+category,TP,FP,FN,Precision,Recall,F1
+dirt,5,0,0,1.0000,1.0000,1.0000
+agent,2,0,0,1.0000,1.0000,1.0000
+empty,ERROR,ERROR,ERROR,ERROR,ERROR,ERROR

@@ -1,0 +1,72 @@
+size(11,11).
+
+wall(0,0,north).
+wall(0,0,west).
+wall(1,0,north).
+wall(2,0,north).
+wall(3,0,north).
+wall(4,0,north).
+wall(5,0,north).
+wall(6,0,north).
+wall(7,0,north).
+wall(8,0,north).
+wall(9,0,north).
+wall(10,0,north).
+wall(0,1,west).
+wall(0,2,west).
+wall(0,3,west).
+wall(0,4,west).
+wall(0,5,west).
+wall(0,6,west).
+wall(0,7,west).
+wall(0,8,west).
+wall(0,9,west).
+wall(0,10,west).
+wall(1,10,south).
+wall(2,10,south).
+wall(3,10,south).
+wall(4,10,south).
+wall(5,10,south).
+wall(6,10,south).
+wall(7,10,south).
+wall(8,10,south).
+wall(9,10,south).
+wall(10,10,south).
+wall(10,1,east).
+wall(10,2,east).
+wall(10,3,east).
+wall(10,4,east).
+wall(10,5,east).
+wall(10,6,east).
+wall(10,7,east).
+wall(10,8,east).
+wall(10,9,east).
+wall(10,0,east).
+wall(10,0,north).
+
+dirt(1,4,orange).
+dirt(3,3,orange).
+dirt(3,6,orange).
+dirt(5,7,orange).
+dirt(7,5,green).
+dirt(9,2,green).
+dirt(9,7,green).
+
+agent(1,0,d3af9897-9139-4ffe-8a15-2e9c6f06e71a,orange).
+agent(5,0,d6428e63-73b7-40a5-9cc9-ea3b5e61a86d,green).
+
+content(X,Y,dirt(Color)) :-
+    dirt(X,Y,Color).
+content(X,Y,agent(Id,Color)) :-
+    agent(X,Y,Id,Color).
+content(X,Y,empty) :-
+    \+ dirt(X,Y,_),
+    \+ agent(X,Y,_,_),
+    X >= 0, X < 11,
+    Y >= 0, Y < 11.
+
+has_wall(X,Y,Dir) :- wall(X,Y,Dir).
+
+within_bounds(X,Y) :-
+    X >= 0, X < 11,
+    Y >= 0, Y < 11.

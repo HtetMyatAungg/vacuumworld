@@ -152,6 +152,22 @@ def strip_markdown(text):
     return "\n".join(lines[start:end])
 
 
+# Repair logs used to be opened in append mode, so entries from successive runs
+# accumulated in one file and figure_generation's last-write-wins could take a
+# sample's attempt count from a different experiment. Truncate each log the
+# first time THIS run writes to it, then append within the run.
+_repair_logs_started = set()
+
+
+def write_repair_log(model, prompt_type, n, attempt, status):
+    repair_path = f"UROP/pipeline/results/repair/{model}_{prompt_type}_repair.txt"
+    os.makedirs(os.path.dirname(repair_path), exist_ok=True)
+    mode = "a" if repair_path in _repair_logs_started else "w"
+    _repair_logs_started.add(repair_path)
+    with open(repair_path, mode) as f:
+        f.write(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}\n")
+
+
 def validate_prolog(file_path):
     return subprocess.run(["swipl", "--on-error=halt", "-l", file_path, "-g", "halt"], capture_output=True, text=True)
 
@@ -207,10 +223,7 @@ def call_qwen(prompt, n, prompt_type="zero-shot", model="qwen2.5:3b"):
         error_message = prolog_error_message(result)
         messages = [{"role": "user", "content": build_repair_prompt(prompt, code, error_message)}]
     status = "PASS" if result and result.returncode == 0 else "FAIL"
-    repair_path = f"UROP/pipeline/results/repair/{model}_{prompt_type}_repair.txt"
-    repair= f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}\n"
-    with open(repair_path, "a") as f:
-            f.write(repair)
+    write_repair_log(model, prompt_type, n, attempt, status)
     print(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}")
     if not result or result.returncode != 0:
         raise RuntimeError(f"{model} [{prompt_type}] sample {n} failed Prolog validation:\n{prolog_error_message(result)}")
@@ -246,10 +259,7 @@ def call_gemma(prompt, n, prompt_type="zero-shot", model="gemma3:4b"):
         error_message = prolog_error_message(result)
         messages = [{"role": "user", "content": build_repair_prompt(prompt, code, error_message)}]
     status = "PASS" if result and result.returncode == 0 else "FAIL"
-    repair_path = f"UROP/pipeline/results/repair/{model}_{prompt_type}_repair.txt"
-    repair= f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}\n"
-    with open(repair_path, "a") as f:
-        f.write(repair)
+    write_repair_log(model, prompt_type, n, attempt, status)
     print(f"{model} [{prompt_type}] sample {n}: {attempt + 1} attempt(s), {status}")
     if not result or result.returncode != 0:
         raise RuntimeError(f"{model} [{prompt_type}] sample {n} failed Prolog validation:\n{prolog_error_message(result)}")

@@ -1,9 +1,10 @@
 check,result
-partition,pass
-bounds,pass
+partition,fail
+bounds,fail
 coverage,fail
 implies_grid,pass
 wall_count,fail
 no_interior_walls,pass
 cell_wall_counts,fail
+wall_placement,pass
 all_directions,pass
