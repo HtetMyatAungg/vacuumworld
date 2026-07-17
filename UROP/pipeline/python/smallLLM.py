@@ -5,9 +5,6 @@ import os
 
 dotenv.load_dotenv()
 
-with open("UROP/pipeline/prolog/schema.pl", "r") as prolog:
-    schema = prolog.read()
-
 with open("UROP/pipeline/Percepts/World_Model_percepts.json", "r") as json:
     percepts = json.read()
 
