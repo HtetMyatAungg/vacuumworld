@@ -5,7 +5,9 @@ import sys
 import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 
-PROMPT_TYPES = ["zero-shot", "schema-based", "one-shot"]
+STANDARD_PROMPTS = ["zero-shot", "schema-based", "one-shot"]
+# The instruction experiment is a paired A/B, not the standard three arms.
+INSTRUCTION_PROMPTS = ["zero-shot", "zero-shot-instruction"]
 CATEGORIES = ["dirt", "agent", "empty"]
 CHECKS = ["partition", "bounds", "coverage", "implies_grid",
           "wall_count", "no_interior_walls", "cell_wall_counts",
@@ -21,52 +23,64 @@ TICK_INK = "#898781"
 SECONDARY_INK = "#52514e"
 PRIMARY_INK = "#0b0b0b"
 
+LARGE_COLORS = {
+    "claude-sonnet-4.6":     "#2a78d6",  # blue
+    "gemini-2.5-flash":      "#1baf7a",  # aqua
+    "gemini-3.1-flash-lite": "#eda100",  # yellow
+    "deepseek-V3":           "#008300",  # green
+    "gemma-4-31b":           "#4a3aa7",  # violet
+    "gpt-5.1":               "#00776b",  # teal
+}
+
+# repair logs are written under the raw model string passed to the API;
+# for the large models that string matches the name used elsewhere
+LARGE_REPAIR_NAMES = {m: m for m in LARGE_COLORS}
+
+SMALL_COLORS = {
+    "gemma2-9b":   "#2a78d6",  # blue
+    "qwen2.5-7b":  "#1baf7a",  # aqua
+    "gemma3-4b":   "#eda100",  # yellow
+    "qwen2.5-3b":  "#008300",  # green
+}
+
+# repair logs use the raw ollama tag (colon, not hyphen)
+SMALL_REPAIR_NAMES = {
+    "gemma2-9b":  "gemma2:9b",
+    "qwen2.5-7b": "qwen2.5:7b",
+    "gemma3-4b":  "gemma3:4b",
+    "qwen2.5-3b": "qwen2.5:3b",
+}
+
+
+def large_tree(results_dir, prolog_dir, label, prompts=STANDARD_PROMPTS):
+    return dict(
+        csv_dir=f"UROP/pipeline/{results_dir}/large_llm_results/csv",
+        prolog_dir=f"UROP/pipeline/prolog/{prolog_dir}",
+        fig_dir=f"UROP/pipeline/{results_dir}/large_llm_results/figures",
+        repair_dir=f"UROP/pipeline/{results_dir}/repair",
+        model_colors=LARGE_COLORS, repair_names=LARGE_REPAIR_NAMES,
+        prompt_types=prompts, samples=range(1, 21), label=label,
+    )
+
+
+# One dataset per (tree, model size) with scored samples; mirrors TREES in
+# to_csv.py so every tree's figures regenerate from current CSVs in one run.
 DATASETS = {
-    "large": dict(
-        csv_dir="UROP/pipeline/results/large_llm_results/csv",
+    "8x8-large": large_tree("results8x8", "result8x8", "8x8 Large Models"),
+    "8x8-small": dict(
+        csv_dir="UROP/pipeline/results8x8/small_llm_results/csv",
         prolog_dir="UROP/pipeline/prolog/result8x8",
-        fig_dir="UROP/pipeline/results/large_llm_results/figures",
-        model_colors={
-            "claude-sonnet-4.6":     "#2a78d6",  # blue
-            "gemini-2.5-flash":      "#1baf7a",  # aqua
-            "gemini-3.1-flash-lite": "#eda100",  # yellow
-            "deepseek-V3":    "#008300",  # green
-            "gemma-4-31b":           "#4a3aa7",  # violet
-            "gpt-5.1":              "#00776b" #gray
-        },
-        # repair logs are written under the raw model string passed to the API,
-        # which doesn't always match the name used elsewhere (e.g. deepseek-V3)
-        repair_names={
-            "claude-sonnet-4.6":     "claude-sonnet-4.6",
-            "gemini-2.5-flash":      "gemini-2.5-flash",
-            "gemini-3.1-flash-lite": "gemini-3.1-flash-lite",
-            "deepseek-V3":           "deepseek-V3",
-            "gemma-4-31b":           "gemma-4-31b",
-            "gpt-5.1":               "gpt-5.1"
-        },
-        samples=range(1, 21),
-        label="Large Models",
+        fig_dir="UROP/pipeline/results8x8/small_llm_results/figures",
+        repair_dir="UROP/pipeline/results8x8/repair",
+        model_colors=SMALL_COLORS, repair_names=SMALL_REPAIR_NAMES,
+        prompt_types=STANDARD_PROMPTS, samples=range(1, 21),
+        label="8x8 Small Models",
     ),
-    "small": dict(
-        csv_dir="UROP/pipeline/results/small_llm_results/csv",
-        prolog_dir="UROP/pipeline/prolog/result8x8",
-        fig_dir="UROP/pipeline/results/small_llm_results/figures",
-        model_colors={
-            "gemma2-9b":   "#2a78d6",  # blue
-            "qwen2.5-7b":  "#1baf7a",  # aqua
-            "gemma3-4b":   "#eda100",  # yellow
-            "qwen2.5-3b":   "#008300",  # green
-        },
-        # repair logs use the raw ollama tag (colon, not hyphen)
-        repair_names={
-            "gemma2-9b":  "gemma2:9b",
-            "qwen2.5-7b": "qwen2.5:7b",
-            "gemma3-4b":  "gemma3:4b",
-            "qwen2.5-3b": "qwen2.5:3b",
-        },
-        samples=range(1, 21),
-        label="Small Models",
-    ),
+    "5x5": large_tree("results5x5", "result5x5", "5x5 Large Models"),
+    "11x11": large_tree("results11x11", "result11x11", "11x11 Large Models"),
+    "instruction": large_tree("resultsinstruction", "result",
+                              "Instruction A/B, 11x11 Large Models",
+                              prompts=INSTRUCTION_PROMPTS),
 }
 
 
@@ -151,11 +165,11 @@ def overlapping_groups(series_by_model):
     return [models for models in groups.values() if len(models) > 1]
 
 
-def plot_wall_f1_vs_grid_size(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
+def plot_wall_f1_vs_grid_size(csv_dir, prolog_dir, fig_dir, model_colors, prompt_types, samples, label):
     models = list(model_colors)
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+    fig, axes = plt.subplots(1, len(prompt_types), figsize=(5 * len(prompt_types), 4.5), sharey=True)
 
-    for ax, prompt_type in zip(axes, PROMPT_TYPES):
+    for ax, prompt_type in zip(axes, prompt_types):
         series_by_model = {}
         for model in models:
             ns, means, cis = load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model)
@@ -215,16 +229,16 @@ def load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model):
     return {c: mean_ci(v) for c, v in f1_by_category.items()}
 
 
-def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
+def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, prompt_types, samples, label):
     models = list(model_colors)
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+    fig, axes = plt.subplots(1, len(prompt_types), figsize=(5 * len(prompt_types), 4.5), sharey=True)
 
     n_models = len(models)
     group_width = 0.8
     bar_width = group_width / n_models
     x_base = range(len(CATEGORIES))
 
-    for ax, prompt_type in zip(axes, PROMPT_TYPES):
+    for ax, prompt_type in zip(axes, prompt_types):
         for i, model in enumerate(models):
             stats = load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model)
             offsets = [x + (i - (n_models - 1) / 2) * bar_width for x in x_base]
@@ -276,13 +290,13 @@ def load_check_pass_rates(csv_dir, prolog_dir, samples, prompt_type, model):
     return [pass_counts[c] / totals[c] if totals[c] else 0.0 for c in CHECKS]
 
 
-def plot_checks_heatmap(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
+def plot_checks_heatmap(csv_dir, prolog_dir, fig_dir, model_colors, prompt_types, samples, label):
     models = list(model_colors)
     cmap = LinearSegmentedColormap.from_list("blue_seq", ["#fcfcfb", "#2a78d6", "#0d366b"])
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 5.5), sharey=True)
+    fig, axes = plt.subplots(1, len(prompt_types), figsize=(5 * len(prompt_types), 5.5), sharey=True)
 
-    for idx, (ax, prompt_type) in enumerate(zip(axes, PROMPT_TYPES)):
+    for idx, (ax, prompt_type) in enumerate(zip(axes, prompt_types)):
         matrix = [load_check_pass_rates(csv_dir, prolog_dir, samples, prompt_type, model) for model in models]
         # rows = checks, cols = models -> transpose
         matrix_t = list(zip(*matrix))
@@ -328,11 +342,9 @@ def plot_checks_heatmap(csv_dir, prolog_dir, fig_dir, model_colors, samples, lab
 
 # ---- Figure 4: repair attempts needed per model (from repair logs) ----------
 
-# The figures plot the 8x8 tree (prolog/result8x8), whose GENERATION repair
-# logs live under results8x8/repair -- results/repair holds the instruction
-# experiment's logs instead, and lacks schema-based/one-shot entirely, so
-# reading it here plotted the wrong experiment's repair counts as this one's.
-REPAIR_DIR = "UROP/pipeline/results8x8/repair"
+# Each tree's GENERATION repair logs live under its own <results>/repair
+# (dataset field repair_dir) -- reading another tree's logs here once plotted
+# the wrong experiment's repair counts as this one's.
 REPAIR_LINE = re.compile(r"sample (\d+): (\d+) attempt\(s\), (\w+)")
 
 
@@ -365,11 +377,11 @@ def load_repair_stats(repair_dir, samples, prompt_type, repair_name):
     return mean_repairs, ci, fail_count, len(repairs)
 
 
-def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples, label):
+def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, prompt_types, samples, label):
     models = list(model_colors)
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
+    fig, axes = plt.subplots(1, len(prompt_types), figsize=(5 * len(prompt_types), 4.5), sharey=True)
 
-    for ax, prompt_type in zip(axes, PROMPT_TYPES):
+    for ax, prompt_type in zip(axes, prompt_types):
         means, cis, fail_counts, logged = [], [], [], []
         for model in models:
             mean_repairs, ci, fail_count, n_logged = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
@@ -409,12 +421,19 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
 
 
 if __name__ == "__main__":
-    for dataset in DATASETS.values():
+    requested = sys.argv[1:] or list(DATASETS)
+    unknown = [r for r in requested if r not in DATASETS]
+    if unknown:
+        sys.exit(f"unknown dataset(s): {', '.join(unknown)}; choose from {', '.join(DATASETS)}")
+    for name in requested:
+        dataset = DATASETS[name]
         os.makedirs(dataset["fig_dir"], exist_ok=True)
         args = (dataset["csv_dir"], dataset["prolog_dir"], dataset["fig_dir"],
-                dataset["model_colors"], dataset["samples"], dataset["label"])
+                dataset["model_colors"], dataset["prompt_types"],
+                dataset["samples"], dataset["label"])
         plot_wall_f1_vs_grid_size(*args)
         plot_content_f1(*args)
         plot_checks_heatmap(*args)
-        plot_repair_counts(REPAIR_DIR, dataset["fig_dir"], dataset["model_colors"],
-                            dataset["repair_names"], dataset["samples"], dataset["label"])
+        plot_repair_counts(dataset["repair_dir"], dataset["fig_dir"],
+                           dataset["model_colors"], dataset["repair_names"],
+                           dataset["prompt_types"], dataset["samples"], dataset["label"])

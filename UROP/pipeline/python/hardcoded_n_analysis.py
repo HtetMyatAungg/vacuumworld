@@ -22,12 +22,12 @@ PROMPT_TYPES = ["zero-shot", "one-shot", "schema-based"]
 
 def csv_dir_for(model):
     base = "small_llm_results" if model in SMALL_MODELS else "large_llm_results"
-    return f"UROP/pipeline/results/{base}/csv/f1_N"
+    return f"UROP/pipeline/results8x8/{base}/csv/f1_N"
 
 
 def fig_dir_for(model):
     base = "small_llm_results" if model in SMALL_MODELS else "large_llm_results"
-    return f"UROP/pipeline/results/{base}/figures"
+    return f"UROP/pipeline/results8x8/{base}/figures"
 
 
 def expected_sample_ns(model, prompt_type):

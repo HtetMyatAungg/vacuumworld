@@ -39,7 +39,7 @@ SWEEP = "[3,4,5,6,7,8,9,10,11,12,13]"
 # so their small_models list is empty rather than scoring absent files as 0.
 TREES = {
     "8x8": {
-        "prolog": "result8x8", "oracle": "f1_eval.pl", "out": "results",
+        "prolog": "result8x8", "oracle": "f1_eval.pl", "out": "results8x8",
         "prompts": PROMPT_TYPES, "large": large_models, "small": small_models,
     },
     "5x5": {
@@ -58,7 +58,7 @@ TREES = {
     # comment above TREES warns about.
     "instruction": {
         "prolog": "result", "oracle": "f1_eval11x11.pl",
-        "out": "results_instruction_test",
+        "out": "resultsinstruction",
         "prompts": INSTRUCTION_PROMPT_TYPES, "large": large_models, "small": [],
     },
 }
