@@ -99,6 +99,22 @@ def input_exists(prolog_dir, prompt_type, model, n):
     return os.path.exists(f"{prolog_dir}/{model}/{prompt_type}/{prefix}_sample_{n}.pl")
 
 
+def mean_ci(values):
+    """Mean and half-width of the 95% CI over samples (0 when n < 2).
+
+    The CI quantifies sampling variance across the 20 generations of the SAME
+    world/prompt -- not variance across worlds, of which there is one per grid
+    size. Captions should say "95% CI over samples"."""
+    n = len(values)
+    if n == 0:
+        return 0.0, 0.0
+    mean = sum(values) / n
+    if n < 2:
+        return mean, 0.0
+    var = sum((v - mean) ** 2 for v in values) / (n - 1)
+    return mean, 1.96 * (var ** 0.5) / (n ** 0.5)
+
+
 # ---- Figure 1: wall-rule F1 vs grid size -------------------------------------
 
 def load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model):
@@ -116,8 +132,10 @@ def load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model):
                 f1 = 0.0 if row["F1"] == "ERROR" else float(row["F1"])
                 f1_by_n.setdefault(int(row["N"]), []).append(f1)
     ns = sorted(f1_by_n)
-    means = [sum(f1_by_n[n]) / len(f1_by_n[n]) for n in ns]
-    return ns, means
+    stats = [mean_ci(f1_by_n[n]) for n in ns]
+    means = [m for m, _ in stats]
+    cis = [c for _, c in stats]
+    return ns, means, cis
 
 
 def is_flat_and_uniform(series_by_model):
@@ -140,8 +158,11 @@ def plot_wall_f1_vs_grid_size(csv_dir, prolog_dir, fig_dir, model_colors, sample
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
         series_by_model = {}
         for model in models:
-            ns, means = load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model)
+            ns, means, cis = load_f1_by_n(csv_dir, prolog_dir, samples, prompt_type, model)
             series_by_model[model] = means
+            ax.fill_between(ns, [m - c for m, c in zip(means, cis)],
+                            [m + c for m, c in zip(means, cis)],
+                            color=model_colors[model], alpha=0.15, linewidth=0)
             ax.plot(ns, means, color=model_colors[model], linewidth=2,
                      marker="o", markersize=6, label=model)
 
@@ -164,7 +185,7 @@ def plot_wall_f1_vs_grid_size(csv_dir, prolog_dir, fig_dir, model_colors, sample
         ax.set_ylim(-0.05, 1.05)
         style_axis(ax)
 
-    axes[0].set_ylabel(f"Wall-rule F1 (mean of {len(samples)} samples)", color=SECONDARY_INK)
+    axes[0].set_ylabel(f"Wall-rule F1 (mean ± 95% CI, {len(samples)} samples)", color=SECONDARY_INK)
     shared_legend(fig, axes, models)
     fig.suptitle(f"Wall-Rule Generalization: F1 vs Grid Size ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.05, 1, 0.95])
@@ -191,7 +212,7 @@ def load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model):
             for row in csv.DictReader(f):
                 f1 = 0.0 if row["F1"] == "ERROR" else float(row["F1"])
                 f1_by_category[row["category"]].append(f1)
-    return {c: (sum(v) / len(v) if v else 0.0) for c, v in f1_by_category.items()}
+    return {c: mean_ci(v) for c, v in f1_by_category.items()}
 
 
 def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
@@ -205,11 +226,14 @@ def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
 
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
         for i, model in enumerate(models):
-            means = load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model)
+            stats = load_content_f1(csv_dir, prolog_dir, samples, prompt_type, model)
             offsets = [x + (i - (n_models - 1) / 2) * bar_width for x in x_base]
-            values = [means[c] for c in CATEGORIES]
+            values = [stats[c][0] for c in CATEGORIES]
+            errors = [stats[c][1] for c in CATEGORIES]
             ax.bar(offsets, values, width=bar_width * 0.9, color=model_colors[model],
-                   label=model, zorder=3)
+                   label=model, zorder=3,
+                   yerr=errors, ecolor=SECONDARY_INK, error_kw=dict(linewidth=1),
+                   capsize=1.5)
 
         ax.set_title(prompt_type, fontsize=12, fontweight="semibold", color=PRIMARY_INK)
         ax.set_xticks(list(x_base))
@@ -217,7 +241,7 @@ def plot_content_f1(csv_dir, prolog_dir, fig_dir, model_colors, samples, label):
         ax.set_ylim(0, 1.05)
         style_axis(ax)
 
-    axes[0].set_ylabel(f"Content F1 (mean of {len(samples)} samples)", color=SECONDARY_INK)
+    axes[0].set_ylabel(f"Content F1 (mean ± 95% CI, {len(samples)} samples)", color=SECONDARY_INK)
     shared_legend(fig, axes, models)
     fig.suptitle(f"Content Translation F1: Dirt / Agent / Empty ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.05, 1, 0.95])
@@ -337,8 +361,8 @@ def load_repair_stats(repair_dir, samples, prompt_type, repair_name):
     samples = set(samples)
     repairs = [attempts - 1 for n, (attempts, status) in latest.items() if n in samples]
     fail_count = sum(1 for n, (_, status) in latest.items() if n in samples and status == "FAIL")
-    mean_repairs = sum(repairs) / len(repairs) if repairs else 0.0
-    return mean_repairs, fail_count, len(repairs)
+    mean_repairs, ci = mean_ci(repairs)
+    return mean_repairs, ci, fail_count, len(repairs)
 
 
 def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples, label):
@@ -346,14 +370,16 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
     fig, axes = plt.subplots(1, 3, figsize=(15, 4.5), sharey=True)
 
     for ax, prompt_type in zip(axes, PROMPT_TYPES):
-        means, fail_counts, logged = [], [], []
+        means, cis, fail_counts, logged = [], [], [], []
         for model in models:
-            mean_repairs, fail_count, n_logged = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
+            mean_repairs, ci, fail_count, n_logged = load_repair_stats(repair_dir, samples, prompt_type, repair_names[model])
             means.append(mean_repairs)
+            cis.append(ci)
             fail_counts.append(fail_count)
             logged.append(n_logged)
 
-        bars = ax.bar(range(len(models)), means, color=[model_colors[m] for m in models], zorder=3)
+        bars = ax.bar(range(len(models)), means, color=[model_colors[m] for m in models], zorder=3,
+                      yerr=cis, ecolor=SECONDARY_INK, error_kw=dict(linewidth=1), capsize=2)
         for bar, fail_count, n_logged in zip(bars, fail_counts, logged):
             notes = []
             if fail_count:
@@ -372,7 +398,7 @@ def plot_repair_counts(repair_dir, fig_dir, model_colors, repair_names, samples,
         ax.set_xticklabels(models, rotation=45, ha="right", fontsize=9, color=SECONDARY_INK)
         style_axis(ax)
 
-    axes[0].set_ylabel("Mean repair attempts per logged sample\n(n annotated where the log is incomplete)", color=SECONDARY_INK)
+    axes[0].set_ylabel("Repair attempts per logged sample (mean ± 95% CI)\n(n annotated where the log is incomplete)", color=SECONDARY_INK)
     fig.suptitle(f"Prolog Repair Attempts Needed per Model ({label})", fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.02, 1, 0.95])
 

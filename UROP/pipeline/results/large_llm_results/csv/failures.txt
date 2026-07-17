@@ -1,6 +1,6 @@
 checks zero-shot claude-sonnet-4.6 sample 6: NON-TERMINATING: tautological recursion `agent(X,Y,Id,Colour) :- agent(X,Y,Id,Colour).`
+content_f1 zero-shot claude-sonnet-4.6 sample 6: NON-TERMINATING: tautological recursion `agent(X,Y,Id,Colour) :- agent(X,Y,Id,Colour).`
 checks zero-shot claude-sonnet-4.6 sample 13: NON-TERMINATING: tautological recursion `agent(X,Y,ID,Colour) :- agent(X,Y,ID,Colour).`
+content_f1 zero-shot claude-sonnet-4.6 sample 13: NON-TERMINATING: tautological recursion `agent(X,Y,ID,Colour) :- agent(X,Y,ID,Colour).`
 f1 zero-shot gpt-5.1 sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 checks zero-shot gpt-5.1 sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 zero-shot claude-sonnet-4.6 sample 6: NON-TERMINATING: tautological recursion `agent(X,Y,Id,Colour) :- agent(X,Y,Id,Colour).`
-content_f1 zero-shot claude-sonnet-4.6 sample 13: NON-TERMINATING: tautological recursion `agent(X,Y,ID,Colour) :- agent(X,Y,ID,Colour).`

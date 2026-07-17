@@ -1,13 +1,4 @@
+content_f1 schema-based gemma2-9b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 f1 schema-based qwen2.5-3b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 checks schema-based qwen2.5-3b sample 2: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-f1 schema-based qwen2.5-3b sample 20: NON-TERMINATING: tautological recursion `grid(X,Y) :- grid(X,Y).`
-checks schema-based qwen2.5-3b sample 20: NON-TERMINATING: tautological recursion `grid(X,Y) :- grid(X,Y).`
-f1 one-shot qwen2.5-7b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-checks one-shot qwen2.5-7b sample 14: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-checks one-shot qwen2.5-3b sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-checks one-shot qwen2.5-3b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 schema-based gemma2-9b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
 content_f1 schema-based qwen2.5-3b sample 7: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 schema-based qwen2.5-3b sample 15: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 schema-based qwen2.5-3b sample 20: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
-content_f1 one-shot qwen2.5-3b sample 3: TIMEOUT: killed after 10s (likely non-terminating generated Prolog)
